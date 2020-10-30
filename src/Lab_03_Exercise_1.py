@@ -1,4 +1,4 @@
-#Exercise 1a
+# Exercise 1
 
 name = input("Dwse to onoma sou: ")
 
