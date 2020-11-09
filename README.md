@@ -1,8 +1,8 @@
 # PythonLab Examples
 
-Small PythonLab programming language projects. 
+Small PythonLab programming language projects.
 
-The course includes teaching in: 
+The course includes teaching in:
 
 * general principles of program design
 * algorithms
@@ -25,8 +25,6 @@ Language syntax:
 * subroutines
 
 ## List of programs
-
-
 
 ## Contributing
 
