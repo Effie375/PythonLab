@@ -1,5 +1,3 @@
-# Exercise 2
-
 try:
     miktes_apodoxes = float(input("Dwse tis miktes apodoxes: "))
 except:

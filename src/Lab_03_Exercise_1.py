@@ -1,6 +1,4 @@
-# Exercise 1
-
-name = input("Dwse to onoma sou: ")
+name = input("Enter your name: ")
 
 try:
     proodos = float(input("Dwse vathmo proodou: "))

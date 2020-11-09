@@ -1,5 +1,3 @@
-# Exercise 3b
-
 my_name = input("Enter your name: ")
 my_age = int(input("Enter your age: "))
 now_year = 2020

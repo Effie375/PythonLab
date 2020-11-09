@@ -1,5 +1,3 @@
-#Exercise 1
-
 name = input("Dwse to onoma sou: ")
 
 try:

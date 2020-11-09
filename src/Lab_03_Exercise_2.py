@@ -1,6 +1,4 @@
-# Exercise 2
-
-number = input("Dwse arithmo: ")
+number = input("Enter a number: ")
 
 if number.isdigit():
     number = int(number)
@@ -9,4 +7,4 @@ if number.isdigit():
     else:
         print("kopikes, prospathise ksana!")
 else:
-    print("mi egkiros arithmos")
+    print("Invalid number!")

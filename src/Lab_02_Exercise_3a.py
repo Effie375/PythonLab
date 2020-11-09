@@ -1,5 +1,3 @@
-# Exercise 3a
-
 import datetime
 
 def calc_year(age):
@@ -8,6 +6,7 @@ def calc_year(age):
 
 
 my_name = input("Enter your name: ")
+
 try:
     my_age = int(input("Enter your age: "))
 except:
