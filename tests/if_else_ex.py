@@ -18,9 +18,12 @@ def find_max(number_1, number_2):
         max_number = number_1
     return max_number
 
+
 num1 = int(input("Enter the first integer number: "))
 num2 = int(input("Enter the second integer number: "))
+
 max_num = find_max(num1, num2)
+
 print("The maximum number is: ", max_num, "\n")
 
 # Exercise 3
@@ -30,7 +33,9 @@ second_attempt = int(input("How many meters did you jump in the second attempt? 
 third_attempt = int(input("How many meters did you jump in the first attempt? "))
 
 average = (first_attempt + second_attempt + third_attempt)/3
+
 print("The average is: ", round(average, 2), " meter.\n")
+
 if average > 8:
     print("You qualified for the next race!\n")
  
