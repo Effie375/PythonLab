@@ -1,8 +1,8 @@
 #list_of_consonants = ["b","c","d","f","g","j","k","l","m","n","p","q","r","s","t","v","w","x","z"]
 #list_of_vowels = ["a","e","h","y","u","i","o"]
 
-list_of_consonants = "bcdfgjklmnpqrstvwxz"
-list_of_vowels = "aehyuio"
+list_of_consonants = "bcdfgjklmnpqrstvwxzBCDFGJKLMNPQRSTVXZ"
+list_of_vowels = "aehyuioAEHYUIO"
 
 consonants_counter = 0
 vowel_counter = 0

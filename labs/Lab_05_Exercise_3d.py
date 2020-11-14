@@ -9,7 +9,7 @@ vowel_counter = 0
 other_counter = 0
 letter = 0
 
-word = input("Enter a word: ")
+word = input("Enter a word: ").lower()
 
 while letter < len(word):
     if word[letter] in list_of_vowels:

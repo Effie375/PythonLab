@@ -1,24 +1,21 @@
-#list_according_to=["b","c","d","f","g","j","k","l","m","n","p","q","r","s","t","v","w","x","z"]
-#list_of_vowels=["a","e","h","y","u","i","o"]
+#list_of_consonants = ["b","c","d","f","g","j","k","l","m","n","p","q","r","s","t","v","w","x","z"]
+#list_of_vowels = ["a","e","h","y","u","i","o"]
 
-list_according_to = "bcdfgjklmnpqrstvwxz"
+list_of_consonants = "bcdfgjklmnpqrstvwxz"
 list_of_vowels = "aehyuio"
 
-i = 0
-vow = 0
-agr = 0
+consonants_counter = 0
+vowel_counter = 0
+letter = 0
 
 word = input("Enter a word: ")
 
-while i < len(word):
-    if word[i] in list_of_vowels:
-        vow += 1
-    elif word[i] in list_according_to:
-        agr += 1
-    i += 1
+while letter < len(word):
+    if word[letter] in list_of_vowels:
+        vowel_counter += 1
+    elif word[letter] in list_of_consonants:
+        consonants_counter += 1
+    letter += 1
     
-    
-print("The vowels are:", vow)
-print("The agreements are:",agr)
-print("Τhe symbols and the blanks are", bal)
-
+print("\nThe vowels are %d." % vowel_counter)
+print("The consonants are %d." % consonants_counter)
