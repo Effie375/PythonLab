@@ -6,9 +6,12 @@
 """
 
 # Το πρόγραμμα δεν έχει τελειώσει ακόμα!
-
+employee =[]
 sal = 1
 
 while sal > 0:
     sal = int(input("Enter a salary: "))
-    average =
+    employee.append(sal)
+    sal = sal + 0
+    average = sal/len(employee)
+print(average)
