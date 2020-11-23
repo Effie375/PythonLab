@@ -10,13 +10,26 @@
 stund=[]
 grades=[]
 
-while (len(stund) and len(grades)) <= 2:
+i = 0 
+
+while i < 20:
     stundets = input("\nEnter your Name: ")
     stund.append(stundets)
     grad = int(input("Enter your grade: "))
     grades.append(grad)
+    i += 1
 
-# print(stund, grades)
+max_index = 0
+i = 0
+
+while i < len(grades):
+    if grades[i] > grades[max_index]:
+        max_index = i
+    i += 1
+
+print("%s won the competition with an excellent %d." % (stund[max_index], grades[max_index]) )
+
+
 
 
 

@@ -6,5 +6,34 @@
 υπολογίζει και θα εµφανίζει την ελάχιστη θερµοκρασία και την 
 ηµέρα που σημειώθηκε καθώς και τη μέγιστη θερµοκρασία και την ηµέρα που σημειώθηκε.
 '''
+days = []
+temps = []
 
-# Το πρόγραμμα δεν έχει τελειώσει ακόμα!
+i = 0
+
+while i < 30:
+    day = input("\nEnter a day: ")
+    tem = int(input("Enter a temperature:"))
+    days.append(day)
+    temps.append(tem)
+    i += 1
+
+
+max= 0
+i = 0
+
+while i < len(temps):
+    if temps[i] > temps[max]:
+        max = i
+    i += 1
+print("\nThe highest temperature was recorded on %s and had %d degrees."% (days[max], temps[max]))
+
+min = 0
+i = 0
+
+while i < len(temps):
+    if temps[i] < temps[min]:
+        min = i
+    i += 1
+print("The lowest temperature was recorded on %s and had %d degrees" % (days[min], temps[min]))
+
