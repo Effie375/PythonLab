@@ -39,7 +39,7 @@ def find_min_idx_val(_list):
     return min_index, _list[min_index]
 
 
-def check_num(_num):
+def is_Odd(_num):
    if _num % 2:
       return True # monos
    else:
