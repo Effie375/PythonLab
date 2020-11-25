@@ -1,17 +1,15 @@
-"""
-Να γράψετε πρόγραμμα το οποίο να διαβάζει το μισθό των υπαλλήλων 
-μιας εταιρείας και να υπολογίζει και να εμφανίζει τον μέσο όρο των 
-μισθών. Η διαδικασία να επαναλαμβάνεται μέχρι να μας δοθεί μισθός 
-μικρότερος ή ίσος του 0.
-"""
-
-# Το πρόγραμμα δεν έχει τελειώσει ακόμα!
-employee =[]
-sal = 1
+counter = 0 
+sum = 0
+sal = float(input("Enter a salary: "))
 
 while sal > 0:
-    sal = int(input("Enter a salary: "))
-    employee.append(sal)
-    sal = sal + 0
-    average = sal/len(employee)
-print(average)
+    counter += 1
+    sum += sal
+    sal = float(input("Enter a salary: "))
+
+
+if counter != 0:
+    average = sum / counter
+    print("The average salary of the employees is %.2f $." % average)
+else:
+    print("You did not enter a salary!")

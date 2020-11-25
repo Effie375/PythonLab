@@ -1,4 +1,3 @@
-# Υπολογισμός αθροίσματος
 sum = 0
 
 weight = float(input("Enter the package weight in kg: "))

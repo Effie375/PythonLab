@@ -4,22 +4,23 @@
 απολυτηρίου των µαθητών και θα εµφανίζει τους µαθητές 
 που ο βαθµός τους είναι µεγαλύτερος από το µέσο όρο των αποφοίτων.
 """
+
 stund = []
 grades = []
 
 i = 0
-counter = 0
 sum = 0
 
 while i < 4:
-    name = input("\nEnter your name: ")
+    name = input("Enter your name: ")
     grad = int(input("Enter your grade: ")) 
     stund.append(name)
     grades.append(grad)
     sum += grad
-    counter += 1
     i += 1
-average = sum / counter
+
+# to check division with zero!
+average = sum / i
 
 i = 0
 

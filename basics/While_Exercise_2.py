@@ -1,7 +1,15 @@
-"""
-Να γραφτεί πρόγραμμα σε γλώσσα Python που να διαβάζει ηλικίες και 
-να υπολογίζει τον μέσο όρο ηλικιών. Το πρόγραμμα θα τερματίζεται, 
-όταν πληκτρολογηθεί αριθμός μικρότερος ή ίσος του μηδενός.
-"""
+counter = 0
+sum = 0
 
-# Το πρόγραμμα δεν έχει τελειώσει ακόμα!
+age = int(input("Enter your age: "))
+
+while age > 0:
+    counter += 1
+    sum += age
+    age = int(input("Enter your age: "))
+    
+if counter != 0:
+    average = sum / counter
+    print("The average age is %.1f." % average)
+else:
+    print("You don't enter any age.")
