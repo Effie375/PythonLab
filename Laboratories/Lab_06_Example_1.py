@@ -1,10 +1,3 @@
-"""
-Να γραφεί ένα πρόγραμμα που διαβάζει 5 αριθμούς 
-και θα τους αποθηκεύει σε μία λίστα. Στη συνέχεια 
-θα διαβάζει έναν τυχαίο αριθμό και θα αναζητά αν 
-ο αριθμός βρίσκεται στη λίστα και σε ποια θέση.
-"""
-
 i = 0 
 numbers = []
 
@@ -13,13 +6,18 @@ while i < 5:
     numbers.append(num)
     i += 1
 
-key = int(input("Enter a random number: "))
+key = int(input("Enter a key number: "))
 
 i = 0
+flag = False
 
-while i < len(numbers):
+while ((i < len(numbers)) and not flag):
     if key == numbers[i]:
         index = i
+        flag = True
     i += 1
 
-print("The number %d is in position: %d" % (key, index))
+if flag:
+    print("The number %d is in position %d." % (key, index))
+else:
+    print("The key number %d is not in the list." % key)
