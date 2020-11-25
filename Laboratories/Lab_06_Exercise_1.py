@@ -5,12 +5,13 @@
 χρήση της μεθόδου count().
 """
 
-num = 1
+num = int(input("Enter a number: "))
 numbers = []
 
 while num != 0:
-    num = int(input("Enter a number: "))
     numbers.append(num)
+    num = int(input("Enter a number: "))
+    
 
 i = 0
 counter = 0
@@ -22,4 +23,4 @@ while i < len(numbers):
         counter += 1
     i += 1
 
-print("Τhe number %d has been entered %d times" % (key, counter))
+print("Τhe number %d has been entered %d times." % (key, counter))
