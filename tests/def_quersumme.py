@@ -9,11 +9,10 @@ def quersumme(num):
     return qs
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     num = int(input("Enter a number: "))
     qs = num
     while(qs >= 10):
         qs = quersumme(qs)
     # displaying output
     print("Quersumme:", qs)
-    

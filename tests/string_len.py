@@ -1,7 +1,7 @@
-name = "Petro"
+name = 'Petro'
 result = len(name) * 2
 
-if result == len(name):
+if (result == len(name)):
   result = 0
 else:
   result = 1
