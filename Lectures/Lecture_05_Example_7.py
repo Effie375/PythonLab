@@ -9,4 +9,5 @@ while i < len(list):
     if list[i] == key:
         counter += 1
     i += 1
-    
+
+print("To stoixeio pou anazitas exei eisaxthei %d fores." % counter)    
