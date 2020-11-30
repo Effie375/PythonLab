@@ -1,6 +1,8 @@
-# PythonLab Examples
+# Introduction to programming with Python
 
-Small PythonLab programming language projects.
+**PythonLab** is aimed at beginners who want to learn programming easily and relatively quickly. **Python** is a general purpose programming language, very high level, simple and easy to learn, powerful, dynamic, efficient, productive and scalable. It is suitable for both beginners and experienced developers. It can be used both for educational purposes and for the development of integrated applications.
+
+Examples in **PythonLab** were developed in Python version **3.8.2** and in a **Windows** environment.
 
 The course includes teaching in:
 

@@ -1,107 +1,103 @@
-x = 1
-y = 5
-z = 10
-w = 5
-t = 0
+x, y, z, w, t = 1, 5, 10, 5, 0
 
-# Erotisi 1
-if (y>x):
-    print("Erotisi 1: TRUE")
+# Question 1
+if (y > x):
+    print("Question 01 is TRUE.")
 else:
-    print("Erotisi 1: FALSE")
+    print("Question 01 is FALSE.")
 
-# Erotisi 2
-if (z>y):
-    print("Erotisi 2: TRUE")
+# Question 2
+if (z > y):
+    print("Question 02 is TRUE.")
 else:
-    print("Erotisi 2: FALSE")
+    print("Question 02 is FALSE.")
 
-# Erotisi 3
-if (w>=y): # simenei oti to w einai megalitero ή ίσο του y
-    print("Erotisi 3: TRUE")
+# Question 3
+if (w >= y):
+    print("Question 03 is TRUE.")
 else:
-    print("Erotisi 3: FALSE")
+    print("Question 03 is FALSE.")
 
-# Erotisi 4
-if (w==y):
-    print("Erotisi 4: TRUE")
+# Question 4
+if (w == y):
+    print("Question 04 is TRUE.")
 else:
-    print("Erotisi 4: FALSE")
+    print("Question 04 is FALSE.")
 
-# Erotisi 5
+# Question 5
 if (x):
-    print("Erotisi 5: TRUE")
+    print("Question 05 is TRUE.")
 else:
-    print("Erotisi 5: FALSE")
+    print("Question 05: FALSE.")
 
-# Erotisi 6
+# Question 6
 if (t):
-    print("Erotisi 6: TRUE")
+    print("Question 06 is TRUE.")
 else:
-    print("Erotisi 6: FALSE")
+    print("Question 06 is FALSE")
 
-# Erotisi 7
+# Question 7
 if (not x):
-    print("Erotisi 7: TRUE")
+    print("Question 07 is TRUE.")
 else:
-    print("Erotisi 7: FALSE")
+    print("Question 07 is FALSE.")
 
-# Erotisi 8
+# Question 8
 if (not t):
-    print("Erotisi 8: TRUE")
+    print("Question 08 is TRUE.")
 else:
-    print("Erotisi 8: FALSE")
+    print("Question 08 is FALSE.")
 
-# Erotisi 9
-if (not y>x):
-    print("Erotisi 9: TRUE")
+# Question 9
+if (not y > x):
+    print("Question 09 is TRUE.")
 else:
-    print("Erotisi 9: FALSE")
+    print("Question 09 is FALSE.")
 
-# Erotisi 10
-if (not z>y):
-    print("Erotisi 10: TRUE")
+# Question 10
+if (not z > y):
+    print("Question 10 is TRUE.")
 else:
-    print("Erotisi 10: FALSE")
+    print("Question 10 is FALSE.")
 
-# Erotisi 11
-if (not w>=y):
-    print("Erotisi 11: TRUE")
+# Question 11
+if (not w >= y):
+    print("Question 11 is TRUE.")
 else:
-    print("Erotisi 11: FALSE")
+    print("Question 11 is FALSE.")
 
-# Erotisi 12
-if (not w==y):
-    print("Erotisi 12: TRUE")
+# Question 12
+if (not w == y):
+    print("Question 12 is TRUE.")
 else:
-    print("Erotisi 12: FALSE")
+    print("Question 12 is FALSE.")
 
-# Erotisi 13
-if (w>=y and w==y):
-    print("Erotisi 13: TRUE")
+# Question 13
+if (w >= y and w == y):
+    print("Question 13 is TRUE.")
 else:
-    print("Erotisi 13: FALSE")
+    print("Question 13 is FALSE.")
 
-# Erotisi 14
-if (w>=y or w==y):
-    print("Erotisi 14: TRUE")
+# Question 14
+if (w >= y or w == y):
+    print("Question 14 is TRUE.")
 else:
-    print("Erotisi 14: FALSE")
+    print("Question 14 is FALSE.")
 
-# Erotisi 15
-if (w>=y or w!=y):
-    print("Erotisi 15: TRUE")
+# Question 15
+if (w >= y or w != y):
+    print("Question 15 is TRUE.")
 else:
-    print("Erotisi 15: FALSE")
+    print("Question 15 is FALSE.")
 
-# Erotisi 16
-if (z%y):
-    print("Erotisi 16: TRUE")
+# Question 16
+if (z % y):
+    print("Question 16 is TRUE.")
 else:
-    print("Erotisi 16: FALSE")
+    print("Question 16 is FALSE.")
 
-# Erotisi 17
+# Question 17
 if (not z//y):
-    print("Erotisi 17: TRUE")
+    print("Question 17 is TRUE.")
 else:
-    print("Erotisi 17: FALSE")
+    print("Question 17 is FALSE.")
