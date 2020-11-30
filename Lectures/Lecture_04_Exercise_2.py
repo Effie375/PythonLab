@@ -13,7 +13,10 @@
 # Το πρόγραμμα δεν έχει τελειώσει ακόμα!
 
 money = 20
+weeks = 0
+i = 0
 
-while money >= 3000:
-    week = 20 * money
-    print(week)
+while money <= 3000:
+    money = 2 * money
+    i += 1
+print(i)
