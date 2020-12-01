@@ -1,11 +1,16 @@
-name = input("Dwse to onoma sou: ")
+def _main():
+    name = input("Δώσε το ονομά σου: ")
 
-try:
-    proodos = float(input("Dwse vathmo proodou: "))
-    grapta = float(input("Dwse vathmo graptwn: "))
-except:
-    print("Mi egkiros vathmos!")
-else: 
-    telikos_vathmos = round(0.2 * proodos + 0.8 * grapta, 1)
-    print("Onoma foititi:", name)
-    print("Telikos vathmos:", telikos_vathmos)
+    try:
+        proodos = float(input("Δώσε βαθμό προόδου: "))
+        grapta = float(input("Δώσε βαθμό γραπτών: "))
+    except:
+        print("Μη έγκυρος βαθμός!")
+    else: 
+        telikos_vathmos = round(0.2 * proodos + 0.8 * grapta, 1)
+        print("Όνομα φοιτητή: %s" % name)
+        print("Τελικός βαθμός: %.1f" % telikos_vathmos)
+
+
+if __name__ == "__main__":
+    _main()
