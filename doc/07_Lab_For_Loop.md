@@ -1,4 +1,4 @@
-# 07 Laboratory - For -Loop
+# 07 Laboratory - For Loop
 
 ## [Exercise 1](../Laboratories/Lab_07_Exercise_1.py)
 
