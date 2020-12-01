@@ -12,10 +12,5 @@ while (i < len(list)) and (not found):
     else:
         i += 1
 
-"""
-Δεν μπορεί να μετατραπεί σε FOR,
-καθώς δεν γνωρίζουμε πόσες επαναλήψεις
-πρέπει να γίνουν.
-"""
 
 print("To %d vrisketai sti %d thesi." % (key, thesi))
