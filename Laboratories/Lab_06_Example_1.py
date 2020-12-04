@@ -1,15 +1,16 @@
-i = 0 
+max_elements = 5
 numbers = []
+i = 0 
 
-while i < 5:
-    num = int(input("Enter a number: "))
+while i < max_elements:
+    num = int(input("Δώσε έναν αριθμό: "))
     numbers.append(num)
     i += 1
 
-key = int(input("Enter a key number: "))
+key = int(input("Δώσε τον αριθμό που αναζητάτε: "))
 
-i = 0
 flag = False
+i = 0
 
 while ((i < len(numbers)) and not flag):
     if key == numbers[i]:
@@ -18,6 +19,6 @@ while ((i < len(numbers)) and not flag):
     i += 1
 
 if flag:
-    print("The number %d is in position %d." % (key, index))
+    print("Ο αριθμός που αναζητάτε %d βρίσκεται στη θέση %d." % (key, index))
 else:
-    print("The key number %d is not in the list." % key)
+    print("Ο αριθμός που αναζητάτε %d δε βρίσκεται στη λίστα." % key)

@@ -1,27 +1,22 @@
-odd = 0
-even = 0
-i = 0 
-sum = 0
-
+odd = even = sum = i = 0
+max_elements = 10
 list = []
 
-while i < 10:
-    num = int(input("Enter a number: "))
-    list.append(num)
-    sum += num 
-    if num % 2 == 0:
+while i < max_elements:
+    number = int(input("Δώσε έναν αριθμό: "))
+    list.append(number)
+    sum += number 
+    if number % 2 == 0:
         even += 1
     else:
         odd += 1
     i += 1
 
-print("The sum of the numbers is:", sum)
-print("The number of odd numbers is:", odd)
-print("The number of even numbers is:",even)
+print("Tο άθροισμα των αριθμών είναι %d." % sum)
+print("Tο πλήθος των περιττών είναι %d. " % odd)
+print("Το πλήθος των άρτιων είναι %d." % even)
 
-i = 0
-max = 0
-min = 0
+max = min = i = 0
 
 while i < 10:
     if list[i] > list[max]:
@@ -31,4 +26,5 @@ while i < 10:
     i += 1
 
 diff = list[max] - list[min]
-print("Τhe difference between the %d and the %d number is %d." % (list[max], list[min], diff))
+
+print("H διαφορά μεταξύ του %d και του %d είναι %d." % (list[max], list[min], diff))

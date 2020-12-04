@@ -15,4 +15,4 @@ else:
     x -= 3
     y += 1
 
-print("\nx: %d , y: %.1f" %(x,y))
+print("x: %d , y: %.1f" % (x, y))

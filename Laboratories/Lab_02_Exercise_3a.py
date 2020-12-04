@@ -5,12 +5,12 @@ def calc_year(age):
     return now_year + 100 - age 
 
 
-my_name = input("Enter your name: ")
+my_name = input("Δώσε το όνομα σου: ")
 
 try:
-    my_age = int(input("Enter your age: "))
+    my_age = int(input("Δώσε την ηλικία σου: "))
 except:
-    print("Please enter an integer!")
+    print("Παρακαλώ δώσε ακέραιο αριθμό!")
 else:
     end_year = calc_year(my_age)
-    print(my_name, " in ", end_year, " will be 100 years old.")
+    print("%s το %d θα είναι 100 ετών." % (my_name, end_year))

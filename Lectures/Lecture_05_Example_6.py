@@ -1,16 +1,14 @@
 list = [5,7,8,9,3]
-
-key = int(input("Dwse stoixeio pou anazhtas: "))
-
 found = False
-i = 0
-thesi = 0
+thesi = i = 0
+
+key = int(input("Δώσε στοιχείο που αναζητάς: "))
 
 while (i<len(list)) and (not found):
     if list[i] == key:
-        thesi=i
-        found=True
+        thesi = i
+        found = True
     else:
-        i+=1
+        i += 1
 
-print("To %d vrisketai sti thesi %d." % (key,thesi))
+print("Το %d βρίσκεται στη θέση %d." % (key,thesi))

@@ -1,5 +1,6 @@
-counter = 0
-sum = 0
+# greek prints and inputs
+
+counter = sum = 0
 
 age = int(input("Enter your age: "))
 

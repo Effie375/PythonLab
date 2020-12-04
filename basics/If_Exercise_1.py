@@ -1,8 +1,10 @@
+# greek prints and inputs
+
 salary = int(input("Enter your salary: "))
 
 if salary <= 800:
-    print("You are low paid.\n")
+    print("You are low paid.")
 elif salary <= 1400:
-    print("You are middle paid.\n")
+    print("You are middle paid.")
 else:
-    print("You are high paid.\n")
+    print("You are high paid.")

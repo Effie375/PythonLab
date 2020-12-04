@@ -1,4 +1,8 @@
-counter = 0 
+# greek prints and inputs
+# print format %
+
+counter = 0
+
 num = int(input("Enter a number: "))
 
 while num != 0:

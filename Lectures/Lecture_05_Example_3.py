@@ -1,21 +1,20 @@
-list = [5,7,8,9,3]
-
-megisto = list[0]
+lista = [5,7,8,9,3]
+elaxisto = lista[0]
+megisto = lista[0]
 i = 0
 
-while i < len(list):
-    if list[i] > megisto:
-        megisto = list[i]
+while i < len(lista):
+    if lista[i] > megisto:
+        megisto = lista[i]
     i += 1
 
-print("O megistos aritmos einai to:", megisto)
+print("Ο μέγιστος αριθμός είναι το: %d" % megisto)
 
-elaxisto = list[0]
 i = 0
 
-while i < len(list):
-    if list[i] < elaxisto:
-        elaxisto = list[i]
+while i < len(lista):
+    if lista[i] < elaxisto:
+        elaxisto = lista[i]
     i += 1
 
-print("O elaxistos aritmos einai to:", elaxisto)
+print("Ο ελάχιστος αριθμός είναι το: %d" % elaxisto)

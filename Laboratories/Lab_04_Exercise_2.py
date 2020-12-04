@@ -1,21 +1,20 @@
-sinolo = 0
-i = 0
+total = i = 0
 
 while i < 6:
-    bathmos = input("Dwse bathmo: ")
-    while not bathmos.isdigit():
-        bathmos = input("Dwse ksana bathmo: ")
-    bathmos = float(bathmos)
-    sinolo = sinolo + bathmos
+    degree = input("Δώσε βαθμό: ")
+    while not degree.isdigit():
+        degree = input("Δώσε ξανά βαθμό: ")
+    degree = float(degree)
+    total += degree
     i += 1
 
-mesos_oros = (sinolo/6)
+average = (total/6)
 
-if (mesos_oros >= 8.5 and mesos_oros <= 10):
-    print("arista me meso oro", mesos_oros)
-elif (mesos_oros >= 6.5 and mesos_oros <= 8.49):
-    print("lian kalos me meso oro", mesos_oros)
-elif (mesos_oros >= 5 and mesos_oros <= 6.49):
-    print("kalos me meso oro", mesos_oros)
+if (average >= 8.5 and average <= 10):
+    print("Άριστα με μέσο όρο: %.1f" % average)
+elif (average >= 6.5 and average <= 8.49):
+    print("Λιαν καλός με μέσο όρο: %.1f" % average)
+elif (average >= 5 and average <= 6.49):
+    print("Κάλος με μέσο όρο: %.1f" % average)
 else:
-    print("kopikes")
+    print("Κόπηκες!")

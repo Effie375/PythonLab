@@ -1,10 +1,8 @@
-list = [5,7,8,9,3]
+lista = [5,7,8,9,3]
+sum = i = 0
 
-sum = 0
-i = 0
-
-while i < len(list):
-    sum += list[i]
+while i < len(lista):
+    sum += lista[i]
     i += 1
 
-print("Sum:", sum)
+print("Άθροισμα: %d" % sum)

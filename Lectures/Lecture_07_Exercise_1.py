@@ -4,11 +4,14 @@
 που διαβάστηκαν.
 '''
 
-# To πρόγραμμα δεν έχει τελείωσει.
-
+max_elements = 5 # --> 100
 list = []
 
-for item in range(100):
-    num = int(input("Enter a number: "))
+for item in range(max_elements):
+    num = int(input("Δώσε έναν αριθμό: "))
     list.append(num)
-print("Your list is:", list)
+
+print("Η λίστα σου είναι:", list)
+
+for list in range(max_elements,0,-1):
+    print(list)

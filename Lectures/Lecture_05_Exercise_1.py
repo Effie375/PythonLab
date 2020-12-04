@@ -1,17 +1,17 @@
 max_elements = 100
+new_lista=[]
+lista=[]
 i = 0
-list=[]
-new_list=[]
 
 while i < max_elements:
-    num = int(input("Enter a number: "))
-    list.append(num)
+    num = int(input("Δώσε έναν αριθμό: "))
+    lista.append(num)
     i += 1
 
-j = len(list)
+j = len(lista)
 
 while j > 0:
-    new_list.append(list[j-1])
+    new_lista.append(lista[j-1])
     j -= 1
 
-print("\nThe new list is %s." % new_list)
+print("Η νέα λίστα είναι %s." % new_lista)

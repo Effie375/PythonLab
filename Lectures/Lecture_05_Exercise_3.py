@@ -1,14 +1,12 @@
+max_temperatures = 30
+max = min = i = 0
 temps = []
 
-i = 0
-
-while i < 30:
-    tem = int(input("Enter a temperature:"))
+while i < max_temperatures:
+    tem = int(input("Δώσε μια θερμοκρασία: "))
     temps.append(tem)
     i += 1
 
-max= 0
-min = 0
 i = 0
 
 while i < len(temps):
@@ -18,6 +16,5 @@ while i < len(temps):
         min = i
     i += 1
 
-print("The lowest temperature was %d degrees on %d day." % (temps[min],min+1))
-print("The highest temperature was %d degrees on %d day." % (temps[max],max+1))
-
+print("Η χαμηλότερη θερμοκρασία ήταν %d βαθμούς την %d μέρα." % (temps[min],min+1))
+print("Η υψηλότερη θερμοκρασία ήταν %d βαθμούς την  %d μέρα." % (temps[max],max+1))

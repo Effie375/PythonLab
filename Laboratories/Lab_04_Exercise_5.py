@@ -1,10 +1,10 @@
 sum = 0
 
-num = int(input("Enter a number: ")) 
+number = int(input("Δώσε έναν αριθμό: ")) 
 
-while num:
-   digit = num % 10
-   num /= 10 
+while number:
+   digit = number % 10
+   number /= 10 
    sum += digit
 
-print("The sum of the digits are %d." % sum)
+print("Το άθροισμα των ψηφίων είναι %d." % sum)

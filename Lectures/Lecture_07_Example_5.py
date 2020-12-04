@@ -1,12 +1,9 @@
 list = [5,7,8,9,3]
 
-key = int(input("Dwse stoixeio pou anazitas: "))
+key = int(input("Δώσε στοιχείο που αναζητάς: "))
 
 for i in range(len(list)):
     if list[i] == key:
         thesi = i
 
-print("To %d vrisketai sti %d thesi." % (key, thesi))
-
-
-    
+print("Το %d βρίσκεται στη %d θέση." % (key, thesi))

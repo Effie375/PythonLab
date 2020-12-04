@@ -1,18 +1,17 @@
-ginomeno = 0
-arithmos = 1
 flag = False
+product = 0
+number = 1
 
-while arithmos != 0:
-    arithmos = input("Dwse arithmo: ")
+while number != 0:
+    number = input("Δώσε αριθμό: ")
     while  not arithmos.isdigit(): 
-        arithmos = input("EIPA Dwse arithmo: ")         
-    arithmos = int(arithmos)
+        number = input("Δώσε ξανά αριθμό: ")         
+    number = int(arithmos)
     if (flag == False):
-        if arithmos != 0:
-            ginomeno = 1
+        if number != 0:
+            product = 1
         flag = True
-    if arithmos != 0:
-        ginomeno = ginomeno * arithmos
+    if number != 0:
+        product *= number
 
-print("Ginomeno: ", ginomeno)
-
+print("Γινόμενο: %d" % product)

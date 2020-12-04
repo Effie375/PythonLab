@@ -1,7 +1,7 @@
 list = []
 
 for n in range(5):
-    num = int(input("Dwse stoixeio gia tin %d thesi: " % n))
+    num = int(input("Δώσε στοιχείο για την %d θέση: " % n))
     list.append(num)
 
 print(list)

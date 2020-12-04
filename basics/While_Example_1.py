@@ -1,12 +1,13 @@
-counter = 0 
-sum = 0
+# greek prints and inputs
+
+counter = sum = 0 
+
 sal = float(input("Enter a salary: "))
 
 while sal > 0:
     counter += 1
     sum += sal
     sal = float(input("Enter a salary: "))
-
 
 if counter != 0:
     average = sum / counter

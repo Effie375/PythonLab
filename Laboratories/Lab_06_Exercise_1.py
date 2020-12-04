@@ -1,19 +1,18 @@
-num = int(input("Enter a number: "))
 numbers = []
+
+num = int(input("Δώσε έναν αριθμό: "))
 
 while num != 0:
     numbers.append(num)
-    num = int(input("Enter a number: "))
-    
+    num = int(input("Δώσε έναν αριθμό: "))  
 
-i = 0
-counter = 0
+counter = i = 0
 
-key = int(input("Enter the number you are looking for: "))
+key = int(input("Δώσε έναν αριθμό που αναζητάς: "))
 
 while i < len(numbers):
     if key == numbers[i]:
         counter += 1
     i += 1
 
-print("Τhe number %d has been entered %d times." % (key, counter))
+print("Ο αριθμός %d έχει εισαχθεί %d φορές." % (key, counter))

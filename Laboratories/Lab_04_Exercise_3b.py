@@ -1,6 +1,6 @@
-year = int(input("Enter a year: "))
+year = int(input("Δώσε ένα έτος: "))
 
 if (year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0):
-    print(year, "is a leap year.")
+    print("%d είναι δίσεκτο έτος." % year)
 else: 
-    print(year, "is not a leap year.")
+    print("%d δεν είναι δίσεκτο έτος." % year)
