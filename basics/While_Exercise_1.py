@@ -1,11 +1,9 @@
-# greek prints and inputs
-
 sum = 0
 
-weight = float(input("Enter the package weight in kg: "))
+weight = float(input("Δώσε το βάρος της συσκευασίας σε κιλά: "))
 
 while weight > 0:
     sum += weight
-    weight = float(input("Enter the package weight in kg: "))
+    weight = float(input("Δώσε το βάρος της συσκευασίας σε κιλά: "))
     
-print("The total weight is %d kg." % sum)
+print("Το συνολικό βάρος είναι %d κιλά." % sum)

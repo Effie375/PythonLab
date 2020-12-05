@@ -1,13 +1,10 @@
-# greek prints and inputs
-# print format %
-
 counter = 0
 
-num = int(input("Enter a number: "))
+num = int(input("Δώσε έναν αριθμό: "))
 
 while num != 0:
     if num % 2:
         counter += 1
-    num = int(input("Enter a number: "))
+    num = int(input("Δώσε έναν αριθμό: "))
 
-print("Τhe odd numbers are:", counter) 
+print("Οι περιττόι αριθμοί είναι %d." % counter) 

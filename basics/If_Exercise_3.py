@@ -1,12 +1,10 @@
-# greek prints and inputs
-
-first_attempt = int(input("How many meters did you jump in the first attempt? "))
-second_attempt = int(input("How many meters did you jump in the second attempt? "))
-third_attempt = int(input("How many meters did you jump in the first attempt? "))
+first_attempt = int(input("Πόσα μέτρα πήδηξες στην πρώτη προσπάθεια; "))
+second_attempt = int(input("Πόσα μέτρα πήδηξες στη δεύτερη προσπάθεια; "))
+third_attempt = int(input("Πόσα μέτρα πήδηξες στην τρίτη προσπάθεια; "))
 
 average = (first_attempt + second_attempt + third_attempt)/3
 
-print("The average is", round(average, 2), "meter.")
+print("Ο μέσος όρος είναι", round(average, 2), "μέτρα.")
 
 if average > 8:
-    print("You qualified for the next race!")
+    print("Προκριθήκατε στον επόμενο αγώνα!")

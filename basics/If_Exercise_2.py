@@ -1,6 +1,3 @@
-# greek prints and inputs
-# print format %
-
 def find_max(number_1, number_2):
     max_number = number_2
     if number_1 > number_2:
@@ -8,9 +5,9 @@ def find_max(number_1, number_2):
     return max_number
 
 
-num1 = int(input("Enter the first integer number: "))
-num2 = int(input("Enter the second integer number: "))
+num1 = int(input("Δώσε έναν αριθμό: "))
+num2 = int(input("Δώσε άλλον έναν αριθμό: "))
 
 max_num = find_max(num1, num2)
 
-print("The maximum number is: ", max_num)
+print("Ο μεγαλύτερος αριθμός είναι: ", max_num)

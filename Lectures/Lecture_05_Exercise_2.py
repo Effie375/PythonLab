@@ -1,5 +1,3 @@
-# print format %
-
 max_students = 200
 sum = i = 0
 grades = []
@@ -20,5 +18,5 @@ i = 0
 
 while i < len(grades):
     if grades[i] > average:
-        print("Οι μαθητές που έχουν υψηλές βαθμολογίες είνα:",stund[i])
+        print("Οι μαθητές που έχουν υψηλές βαθμολογίες είνα: %s"% stund[i])
     i += 1
