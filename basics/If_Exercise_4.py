@@ -1,7 +1,7 @@
-car_displacement = int(input("Τι κυβικά έχει το αυτοκίνητό; "))
+car_displacement = int(input("Πόσα κυβικά έχει το αυτοκίνητό σου; "))
 
 if car_displacement <= 1100:
-    print("Ο φόρος αντιστοιχεί στα 100 €.")
+    print("Ο φόρος αντιστοιχεί στα 100€.")
 elif car_displacement <= 1400:
     print("Ο φόρος αντιστοιχεί στα 150€.")
 elif car_displacement <= 2000:

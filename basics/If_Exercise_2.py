@@ -10,4 +10,4 @@ num2 = int(input("Δώσε άλλον έναν αριθμό: "))
 
 max_num = find_max(num1, num2)
 
-print("Ο μεγαλύτερος αριθμός είναι: ", max_num)
+print("Ο μεγαλύτερος αριθμός είναι: %d" % max_num)
