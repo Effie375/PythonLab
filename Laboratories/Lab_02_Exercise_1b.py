@@ -6,6 +6,6 @@ try:
 except:
     print("Μη έγκυρος βαθμός!")
 else: 
-    telikos_vathmos = round(0.2 * proodos + 0.8 * grapta, 1)
+    telikos_vathmos = 0.2 * proodos + 0.8 * grapta
     print("Όνομα φοιτητή: %s" % name)
     print("Τελικός βαθμός: %.1f" % telikos_vathmos)
