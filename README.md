@@ -33,7 +33,9 @@ Language syntax:
 * [03 If Statements](doc/03_Lecture_If_Statements.md)
 * [04 While Loops](doc/04_Lecture_While_Loops.md)
 * [05 Introduction to Lists](doc/05_Lecture_Introduction_to_Lists.md)
-* [07 For Loop](doc/07_Lecture_For_Loop.md)
+* [06 For Loop](doc/06_Lecture_For_Loop.md)
+* [07 Testing](doc/07_Lecture_Testing.md)
+* [08 Arrays Search Sort](doc/08_Lecture_Arrays_Search_Sort.md)
 
 ## List of Laboratories
 
@@ -44,6 +46,7 @@ Language syntax:
 * [05 Lists 1](doc/05_Lab_Lists.md)
 * [06 Lists 2](doc/06_Lab_Lists.md)
 * [07 For Loop](doc/07_Lab_For_Loop.md)
+* [08 Lists and loops](doc/08_Lab_Lists_and_loops.md)
 
 ## Contributing
 
