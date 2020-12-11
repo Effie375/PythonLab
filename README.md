@@ -47,6 +47,7 @@ Language syntax:
 * [06 Lists 2](doc/06_Lab_Lists.md)
 * [07 For Loop](doc/07_Lab_For_Loop.md)
 * [08 Lists and loops](doc/08_Lab_Lists_and_loops.md)
+* [09 Search Sort](doc/09_Lab_Search_Sort.md)
 
 ## Contributing
 
