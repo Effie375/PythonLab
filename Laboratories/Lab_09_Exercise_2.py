@@ -1,23 +1,17 @@
-"""
-Έστω ότι δημιουργείτε ένα πρόγραμμα το οποίο κρατά το όνομα επτά
-παικτών.
-Να δημιουργηθεί πίνακας players στον οποίο θα αποθηκεύονται τα
-ονόματα των 7 παικτών.
-Θα ταξινομεί τα ονόματα σε φθίνουσα σειρά και θα εμφανίζει τα
-ονόματα των παικτών ταξινομημένα.
-"""
-
+max_players = 7
 players = []
 
-for i in range(7):
-    paiktis = input("Dwse onoma paikti: ")
-    players.append(paiktis)
-print(players)
+for i in range(max_players):
+    player = input("Δώσε όνομα παίκτη: ")
+    players.append(player)
 
-for i in range(1,7):
-    for j in range(6,i-1,-1):
+print("Μη ταξινομημένοι παίκτες: %s" % players)
+
+for i in range(len(players)):
+    for j in range(len(players)-1,i,-1):
         if players[j-1] < players[j]:
             temp = players[j-1]
             players[j-1]= players[j]
             players[j] = temp
-print(players)
+
+print("Ταξινομημένοι παίκτες: %s" % players)
