@@ -1,3 +1,9 @@
+![GitHub](https://img.shields.io/github/license/Effie375/PythonLab)
+![GitHub repo size](https://img.shields.io/github/repo-size/Effie375/PythonLab)
+![Lines of code](https://img.shields.io/tokei/lines/github/Effie375/PythonLab)
+![GitHub issues](https://img.shields.io/github/issues-raw/Effie375/PythonLab)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Effie375/PythonLab)
+
 # Introduction to programming with Python
 
 **PythonLab** is aimed at beginners who want to learn programming easily and relatively quickly. **Python** is a general purpose programming language, very high level, simple and easy to learn, powerful, dynamic, efficient, productive and scalable. It is suitable for both beginners and experienced developers. It can be used both for educational purposes and for the development of integrated applications.
