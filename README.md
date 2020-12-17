@@ -4,7 +4,7 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/Effie375/PythonLab)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Effie375/PythonLab)
 
-# Introduction to programming with Python
+# Introduction to programming with Python🐍
 
 **PythonLab** is aimed at beginners who want to learn programming easily and relatively quickly. **Python** is a general purpose programming language, very high level, simple and easy to learn, powerful, dynamic, efficient, productive and scalable. It is suitable for both beginners and experienced developers. It can be used both for educational purposes and for the development of integrated applications.
 
@@ -32,7 +32,7 @@ Language syntax:
 * lists
 * subroutines
 
-## List of Lectures
+## 📁List of Lectures
 
 * [01 Basic Concepts](doc/01_Lecture_Basic_Concepts.md)
 * [02 Simple Commands](doc/02_Lecture_Simple_Commands.md)
@@ -43,7 +43,7 @@ Language syntax:
 * [07 Testing](doc/07_Lecture_Testing.md)
 * [08 Arrays Search Sort](doc/08_Lecture_Arrays_Search_Sort.md)
 
-## List of Laboratories
+## 📁List of Laboratories
 
 * [01 Introduction](doc/01_Lab_Introduction.md)
 * [02 Basic Commands](doc/02_Lab_Basic_Commands.md)
@@ -55,7 +55,7 @@ Language syntax:
 * [08 Lists and loops](doc/08_Lab_Lists_and_loops.md)
 * [09 Search Sort](doc/09_Lab_Search_Sort.md)
 
-## Contributing
+## 🔨Contributing
 
 This is a personal learning project for me.
 
