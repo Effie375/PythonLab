@@ -42,6 +42,7 @@ Language syntax:
 * [06 For Loop](doc/06_Lecture_For_Loop.md)
 * [07 Testing](doc/07_Lecture_Testing.md)
 * [08 Arrays Search Sort](doc/08_Lecture_Arrays_Search_Sort.md)
+* [09 Two Dimensions Lists](doc/09_Lecture__Two_Dimensions_Lists.md)
 
 ## 📁List of Laboratories
 
@@ -54,6 +55,7 @@ Language syntax:
 * [07 For Loop](doc/07_Lab_For_Loop.md)
 * [08 Lists and loops](doc/08_Lab_Lists_and_loops.md)
 * [09 Search Sort](doc/09_Lab_Search_Sort.md)
+* [10 2D Lists](doc/10_Lab_2D_Lists.md)
 
 ## 🔨Contributing
 
