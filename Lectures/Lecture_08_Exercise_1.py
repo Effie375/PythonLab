@@ -2,7 +2,7 @@ max_elements = 100
 list = []
 
 for i in range(max_elements):
-    num = int(input("Δώσε στοιχείο: "))
+    num = int(input("Δώσε στοιχείο: ").strip)
     list.append(num)
 
 for i in range(len(list)):
@@ -12,5 +12,5 @@ for i in range(len(list)):
             list[j-1] = list[j]
             list[j] = temp 
 
-print("Ο ελάχιστος αριθμός της λίστας είναι: %s" % list[0])
-print("Ο μέγιστος αριθμός της λίστας είναι: %s" % list[i])
+print(f"Ο ελάχιστος αριθμός της λίστας είναι: {list[0]}")
+print(f"Ο μέγιστος αριθμός της λίστας είναι: {list[i]}")

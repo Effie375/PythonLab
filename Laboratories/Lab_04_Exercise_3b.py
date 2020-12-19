@@ -1,6 +1,6 @@
-year = int(input("Δώσε ένα έτος: "))
+year = int(input("Δώσε ένα έτος: ").strip())
 
 if (year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0):
-    print("%d είναι δίσεκτο έτος." % year)
+    print(f"{year} είναι δίσεκτο έτος.")
 else: 
-    print("%d δεν είναι δίσεκτο έτος." % year)
+    print(f"{year} δεν είναι δίσεκτο έτος.")

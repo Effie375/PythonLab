@@ -1,4 +1,4 @@
-miktes_apodoxes = float(input("Δώσε τις μεικτές αποδοχές: "))
+miktes_apodoxes = float(input("Δώσε τις μεικτές αποδοχές: ").strip())
 
 asfaleia = miktes_apodoxes * 0.03
 foros = miktes_apodoxes * 0.05

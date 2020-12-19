@@ -1,6 +1,6 @@
-num_1 = float(input("Δώσε έναν αριθμό: "))
-num_2 = float(input("Δώσε έναν αριθμό: "))
-num_3 = float(input("Δώσε έναν αριθμό: "))
+num_1 = float(input("Δώσε έναν αριθμό: ").strip())
+num_2 = float(input("Δώσε έναν αριθμό: ").strip())
+num_3 = float(input("Δώσε έναν αριθμό: ").strip())
 
 sum = num_1 + num_2 + num_3
 

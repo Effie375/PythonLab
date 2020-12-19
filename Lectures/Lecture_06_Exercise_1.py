@@ -8,10 +8,10 @@ max_elements = 5 # --> 100
 list = []
 
 for item in range(max_elements):
-    num = int(input("Δώσε έναν αριθμό: "))
+    num = int(input("Δώσε έναν αριθμό: ").strip())
     list.append(num)
 
-print("Η λίστα σου είναι:", list)
+print(f"Η λίστα σου είναι:{list}")
 
 for list in range(max_elements,0,-1):
     print(list)

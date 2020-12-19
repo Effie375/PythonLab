@@ -2,10 +2,10 @@ max_players = 7
 players = []
 
 for i in range(max_players):
-    player = input("Δώσε όνομα παίκτη: ")
+    player = input("Δώσε όνομα παίκτη: ").strip()
     players.append(player)
 
-print("Μη ταξινομημένοι παίκτες: %s" % players)
+print(f"Μη ταξινομημένοι παίκτες: {players}")
 
 for i in range(len(players)):
     for j in range(len(players)-1,i,-1):
@@ -14,4 +14,4 @@ for i in range(len(players)):
             players[j-1]= players[j]
             players[j] = temp
 
-print("Ταξινομημένοι παίκτες: %s" % players)
+print("Ταξινομημένοι παίκτες: {players}")

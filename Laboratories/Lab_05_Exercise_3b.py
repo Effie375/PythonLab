@@ -2,7 +2,7 @@ consonants_counter = vowel_counter = other_counter = letter = 0
 list_of_consonants = "bcdfgjklmnpqrstvwxz"
 list_of_vowels = "aehyuio"
 
-word = input("Δώσε μια λέξη: ")
+word = input("Δώσε μια λέξη: ").strip()
 
 while letter < len(word):
     if word[letter] in list_of_vowels:
@@ -13,6 +13,6 @@ while letter < len(word):
         other_counter += 1
     letter += 1
     
-print("Τα φωνήεντα της λέξης είναι %d." % vowel_counter)
-print("Τα σύμφωνα της λέξης είναι %d." % consonants_counter)
-print("Τα υπόλοιπα σύμβολα ή κεφαλαία γράμματα είναι %d." % other_counter)
+print(f"Τα φωνήεντα της λέξης είναι {vowel_counter}.")
+print(f"Τα σύμφωνα της λέξης είναι {consonants_counter}.")
+print(f"Τα υπόλοιπα σύμβολα ή κεφαλαία γράμματα είναι {other_counter}.")

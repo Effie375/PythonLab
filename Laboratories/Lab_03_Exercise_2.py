@@ -1,4 +1,4 @@
-number = input("Δώσε το όνομά σου: ")
+number = input("Δώσε το όνομά σου: ").split()
 
 if number.isdigit():
     number = int(number)

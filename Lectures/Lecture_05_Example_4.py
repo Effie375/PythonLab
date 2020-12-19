@@ -6,4 +6,4 @@ while i < len(list):
         maxThesi = i
     i += 1
 
-print("H max θέση είναι: %d" % maxThesi)
+print(f"H max θέση είναι: {maxThesi}")

@@ -5,9 +5,9 @@ maxIndex = 0
 i = 0 
 
 while i < max_students:
-    student = input("Δώσε το όνομά σου: ")
+    student = input("Δώσε το όνομά σου: ").strip()
     student_list.append(student)
-    grad = int(input("Δώσε τον βαθμό σου: "))
+    grad = int(input("Δώσε τον βαθμό σου: ").strip())
     grades_list.append(grad)
     i += 1
 
@@ -18,4 +18,4 @@ while i < len(grades_list):
         maxIndex = i
     i += 1
 
-print("%s κέρδισε τον διαγωνισμό με βαθμό %d." % (student_list[maxIndex], grades_list[maxIndex]))
+print(f"{student_list[maxIndex]} κέρδισε τον διαγωνισμό με βαθμό {grades_list[maxIndex]}.")

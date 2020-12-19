@@ -1,6 +1,6 @@
-a = int(input("a: "))
-x = int(input("x: "))
-y = float(input("y: "))
+a = int(input("a: ").strip())
+x = int(input("x: ").strip())
+y = float(input("y: ").strip())
 
 if a == 10:
     x = x % 2
@@ -15,4 +15,4 @@ else:
     x -= 3
     y += 1
 
-print("x: %d , y: %.1f" % (x, y))
+print(f"x: {x} , y: %.1f" % y)

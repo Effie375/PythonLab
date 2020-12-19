@@ -1,5 +1,5 @@
-first_dice = input("Δώσε το πρώτο ζάρι: ")
-second_dice = input("Δώσε το δεύτερο ζάρι: ")
+first_dice = input("Δώσε το πρώτο ζάρι: ").split()
+second_dice = input("Δώσε το δεύτερο ζάρι: ").split()
 
 if first_dice.isdigit() and second_dice.isdigit():
     first_dice = int(first_dice)

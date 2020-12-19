@@ -6,10 +6,10 @@ for item in list:
         maxThesi = thesi
     thesi +=1 
 
-print("H maxThesi με τον 1ο τρόπο: %d" % maxThesi)
+print(f"H maxThesi με τον 1ο τρόπο: {maxThesi}")
 
 for i in range(len(list)):
     if list[i] > list[maxThesi]:
         maxThesi = i
 
-print("H maxThesi με τον 2ο τρόπο: %d" % maxThesi)
+print(f"H maxThesi με τον 2ο τρόπο: {maxThesi}")

@@ -1,11 +1,11 @@
 product = number = 1 
 
 while number != 0: 
-    number = input("Δώσε αριθμό: ") 
+    number = input("Δώσε αριθμό: ").strip()
     while  not number.isdigit(): 
-        number = input("Δώσε ξανά αριθμό: ")         
+        number = input("Δώσε ξανά αριθμό: ").strip()         
     number = int(number)    
     if number != 0: 
         product *= number
 
-print("Γινόμενο: %d" % product)
+print(f"Γινόμενο: {product}")
