@@ -12,8 +12,8 @@ if first_dice.isdigit() and second_dice.isdigit():
         elif first_dice == second_dice:
             print("Διπλές.")
         else:
-            print("Πρώτο ζάρι %d." % first_dice)
-            print("Δεύτερο ζάρι %d." % second_dice)
+            print(f"Πρώτο ζάρι {first_dice}.")
+            print(f"Δεύτερο ζάρι {second_dice}.")
     else:
         print("Λάθος!!")
 else: 
