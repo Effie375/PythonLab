@@ -1,4 +1,4 @@
-year = int(input("Δώσε ένα έτος: "))
+year = int(input("Δώσε ένα έτος: ").split())
 
 if year % 4 == 0:
     if year % 100 == 0:
@@ -12,6 +12,6 @@ else:
      leap_year = False
 
 if leap_year:
-    print("%d είναι δίσεκτο έτος." % year)
+    print(f"{year}είναι δίσεκτο έτος.")
 else:
-    print("%d δεν είναι δίσεκτο έτος." % year)
+    print(f"{year} δεν είναι δίσεκτο έτος.")

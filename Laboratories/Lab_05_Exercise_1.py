@@ -3,7 +3,7 @@ max_elements = 10
 list = []
 
 while i < max_elements:
-    number = int(input("Δώσε έναν αριθμό: "))
+    number = int(input("Δώσε έναν αριθμό: ").strip())
     list.append(number)
     sum += number 
     if number % 2 == 0:
@@ -12,9 +12,9 @@ while i < max_elements:
         odd += 1
     i += 1
 
-print("Tο άθροισμα των αριθμών είναι %d." % sum)
-print("Tο πλήθος των περιττών είναι %d. " % odd)
-print("Το πλήθος των άρτιων είναι %d." % even)
+print(f"Tο άθροισμα των αριθμών είναι {sum}.")
+print(f"Tο πλήθος των περιττών είναι {odd}. ")
+print(f"Το πλήθος των άρτιων είναι {even}.")
 
 max = min = i = 0
 
@@ -27,4 +27,4 @@ while i < 10:
 
 diff = list[max] - list[min]
 
-print("H διαφορά μεταξύ του %d και του %d είναι %d." % (list[max], list[min], diff))
+print(f"H διαφορά μεταξύ του {list[max]} και του {list[min]} είναι {diff}.")

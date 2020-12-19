@@ -3,11 +3,11 @@ numbers = []
 i = 0 
 
 while i < max_elements:
-    num = int(input("Δώσε έναν αριθμό: "))
+    num = int(input("Δώσε έναν αριθμό: ").strip())
     numbers.append(num)
     i += 1
 
-key = int(input("Δώσε τον αριθμό που αναζητάτε: "))
+key = int(input("Δώσε τον αριθμό που αναζητάτε: ").strip())
 
 flag = False
 i = 0
@@ -19,6 +19,6 @@ while ((i < len(numbers)) and not flag):
     i += 1
 
 if flag:
-    print("Ο αριθμός που αναζητάτε %d βρίσκεται στη θέση %d." % (key, index))
+    print(f"Ο αριθμός που αναζητάτε {key} βρίσκεται στη θέση {index}.")
 else:
-    print("Ο αριθμός που αναζητάτε %d δε βρίσκεται στη λίστα." % key)
+    print(f"Ο αριθμός που αναζητάτε {key} δε βρίσκεται στη λίστα.")

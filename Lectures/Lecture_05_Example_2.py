@@ -5,4 +5,4 @@ while i < len(lista):
     sum += lista[i]
     i += 1
 
-print("Άθροισμα: %d" % sum)
+print(f"Άθροισμα: {sum}")

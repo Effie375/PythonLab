@@ -10,5 +10,5 @@ for item in list:
     if item < elaxisto:
         elaxisto = item
 
-print("Μέγιστο: %d" % megisto)
-print("Ελάχιστο: %d" % elaxisto)
+print(f"Μέγιστο: {megisto}")
+print(f"Ελάχιστο: {elaxisto}")

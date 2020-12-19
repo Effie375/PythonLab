@@ -3,6 +3,6 @@ key = 55555
 
 while num != key:
     sum += num
-    num = int(input("Δώσε έναν αριθμό: "))
+    num = int(input("Δώσε έναν αριθμό: ").strip())
 
-print("Το άθροισμα είναι %d." % sum)
+print(f"Το άθροισμα είναι {sum}")

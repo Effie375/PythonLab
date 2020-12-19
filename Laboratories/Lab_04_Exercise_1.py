@@ -1,5 +1,5 @@
-first_dice = input("Δώσε το πρώτο ζάρι: ")
-second_dice = input("Δώσε το δεύτερο ζάρι: ")
+first_dice = input("Δώσε το πρώτο ζάρι: ").split()
+second_dice = input("Δώσε το δεύτερο ζάρι: ").split()
 
 if first_dice.isdigit() and second_dice.isdigit():
     first_dice = int(first_dice)
@@ -12,8 +12,8 @@ if first_dice.isdigit() and second_dice.isdigit():
         elif first_dice == second_dice:
             print("Διπλές.")
         else:
-            print("Πρώτο ζάρι %d." % first_dice)
-            print("Δεύτερο ζάρι %d." % second_dice)
+            print(f"Πρώτο ζάρι {first_dice}.")
+            print(f"Δεύτερο ζάρι {second_dice}.")
     else:
         print("Λάθος!!")
 else: 

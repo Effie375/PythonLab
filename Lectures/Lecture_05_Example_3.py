@@ -8,7 +8,7 @@ while i < len(lista):
         megisto = lista[i]
     i += 1
 
-print("Ο μέγιστος αριθμός είναι το: %d" % megisto)
+print(f"Ο μέγιστος αριθμός είναι το: {megisto}")
 
 i = 0
 
@@ -17,4 +17,4 @@ while i < len(lista):
         elaxisto = lista[i]
     i += 1
 
-print("Ο ελάχιστος αριθμός είναι το: %d" % elaxisto)
+print(f"Ο ελάχιστος αριθμός είναι το: {elaxisto}")

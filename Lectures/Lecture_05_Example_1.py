@@ -3,6 +3,8 @@ lista = []
 i = 0
 
 while i < max_elements:
-    num = int(input("Δώσε στοιχείο για την %d θέση: " % i))
+    num = int(input(f"Δώσε στοιχείο για την {i} θέση: ").strip())
     lista.append(num)
     i += 1
+
+print(f"Η λίστα μας είναι: {lista}")
