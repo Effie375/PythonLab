@@ -251,9 +251,11 @@ print ("Το άθροισμα των αριθμών", x, "και", y, " είνα
 
 ### Οι Εντολές `input` και `print` σε ένα Παράδειγμα
 
-<a href="https://www.youtube.com/watch?v=pPwgrQ6ZbIA" target="_blank">
-<img src="images/Video_1.PNG" alt="HTML tutorial">
-</a>
+<!-- blank line -->
+<figure class="video_container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pPwgrQ6ZbIA?start=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
+<!-- blank line -->
 
 **Παράδειγµα 2**:
 
