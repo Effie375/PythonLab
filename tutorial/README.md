@@ -71,7 +71,9 @@ y = 'Hello World!'
 
 Να γράψετε τον τύπο δεδομένων (int, float, bool, str) για καθένα από τα παρακάτω δεδομένα:
 
+![Exercise 1](images/Exercise_1.PNG)
 
+Για να δείτε την λύση πατίστε [εδώ](images/Exercise_1S.PNG).
 
 ## Τελεστές και εκφράσεις
 
