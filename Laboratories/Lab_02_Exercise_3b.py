@@ -1,7 +1,8 @@
-my_name = input("Enter your name: ")
-my_age = int(input("Enter your age: "))
 now_year = 2020
+
+my_name = input("Δώσε το όνομά σου: ").strip()
+my_age = int(input("Δώσε την ηλικία σου: ").strip())
 
 end_year = 100 + now_year - my_age
 
-print(my_name, " in ", end_year, " will be 100 years old.")
+print(f"{my_name} το {end_year} θα είναι 100 ετών.")

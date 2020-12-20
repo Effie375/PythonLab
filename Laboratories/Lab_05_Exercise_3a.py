@@ -1,14 +1,8 @@
-#list_of_consonants = ["b","c","d","f","g","j","k","l","m","n","p","q","r","s","t","v","w","x","z"]
-#list_of_vowels = ["a","e","h","y","u","i","o"]
-
+consonants_counter = vowel_counter = letter = 0
 list_of_consonants = "bcdfgjklmnpqrstvwxz"
 list_of_vowels = "aehyuio"
 
-consonants_counter = 0
-vowel_counter = 0
-letter = 0
-
-word = input("Enter a word: ")
+word = input("Δώσε μια λέξη: ").strip()
 
 while letter < len(word):
     if word[letter] in list_of_vowels:
@@ -16,6 +10,6 @@ while letter < len(word):
     elif word[letter] in list_of_consonants:
         consonants_counter += 1
     letter += 1
-    
-print("\nThe vowels are %d." % vowel_counter)
-print("The consonants are %d." % consonants_counter)
+
+print(f"Η λέξη {word} περιέχει {vowel_counter} φωνήεντα.")
+print(f"Η λέξη {word} περιέχει {consonants_counter} σύμφωνα.")

@@ -1,8 +1,8 @@
-salary = int(input("Enter your salary: "))
+salary = int(input("Δώσε το μισθό σου: "))
 
 if salary <= 800:
-    print("You are low paid.\n")
+    print("Είσαι χαμηλόμισθος.")
 elif salary <= 1400:
-    print("You are middle paid.\n")
+    print("Είσαι μεσαία αμειβόμενος.")
 else:
-    print("You are high paid.\n")
+    print("Είσαι υψηλόμισθος.")

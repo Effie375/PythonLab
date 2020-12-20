@@ -1,13 +1,13 @@
-name = input("Enter your name: ")
+name = input("Δώσε το όνομά σου: ").split()
 
 try:
-    proodos = float(input("Dwse vathmo proodou: "))
-    grapta = float(input("Dwse vathmo graptwn: "))
+    proodos = float(input("Δώσε βαθμό προόδου: ").split)
+    grapta = float(input("Δώσε βαθμό γραπτών: ").split)
 except:
-    print("Mi egkiros vathmos!")
+    print("Μη έγκυρος βαθμός!")
 else: 
     telikos_vathmos = round(0.2 * proodos + 0.8 * grapta, 1)
     if telikos_vathmos >= 5:
-        print("perases")
+        print("Πέρασες!")
     else:
-        print("apetixes")
+        print("Απέτυχες!")

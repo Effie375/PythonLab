@@ -1,7 +1,10 @@
-list = []
+max_elements = 5
+lista = []
 i = 0
 
-while i < 5:
-    num = int(input("Dwse stoixeio gia tin %d thesi: " % i))
-    list.append(num)
+while i < max_elements:
+    num = int(input(f"Δώσε στοιχείο για την {i} θέση: ").strip())
+    lista.append(num)
     i += 1
+
+print(f"Η λίστα μας είναι: {lista}")

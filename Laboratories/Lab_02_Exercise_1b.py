@@ -1,11 +1,11 @@
-name = input("Dwse to onoma sou: ")
+name = input("Δώσε το ονομά σου: ").strip()
 
 try:
-    proodos = float(input("Dwse vathmo proodou: "))
-    grapta = float(input("Dwse vathmo graptwn: "))
+    proodos = float(input("Δώσε βαθμό προόδου: ").strip())
+    grapta = float(input("Δώσε βαθμό γραπτών: ").strip())
 except:
-    print("Mi egkiros vathmos!")
+    print("Μη έγκυρος βαθμός!")
 else: 
-    telikos_vathmos = round(0.2 * proodos + 0.8 * grapta, 1)
-    print("Onoma foititi:", name)
-    print("Telikos vathmos:", telikos_vathmos)
+    telikos_vathmos = 0.2 * proodos + 0.8 * grapta
+    print(f"Όνομα φοιτητή: {name}.)
+    print("Τελικός βαθμός: %.1f" % telikos_vathmos)

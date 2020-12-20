@@ -1,10 +1,10 @@
-number = input("Enter a number: ")
+number = input("Δώσε το όνομά σου: ").split()
 
 if number.isdigit():
     number = int(number)
     if (number >= 5) and (number <= 10):
-        print("perases to mathima!")
+        print("Πέρασες το μάθημα!")
     else:
-        print("kopikes, prospathise ksana!")
+        print("Κόπηκες, προσπάθησε ξανά!")
 else:
-    print("Invalid number!")
+    print("Μη έγκυρος αριθμός!")

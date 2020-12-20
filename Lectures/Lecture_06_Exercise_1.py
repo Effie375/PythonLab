@@ -3,11 +3,15 @@
 αριθμούς και να τους εμφανίζει ανάποδα από τη σειρά 
 που διαβάστηκαν.
 '''
-# To πρόγραμμα δεν έχει τελείωσει.
 
+max_elements = 5 # --> 100
 list = []
 
-for item in range(100):
-    num = int(input("Enter a number: "))
+for item in range(max_elements):
+    num = int(input("Δώσε έναν αριθμό: ").strip())
     list.append(num)
-print("Your list is:", list)
+
+print(f"Η λίστα σου είναι:{list}")
+
+for list in range(max_elements,0,-1):
+    print(list)

@@ -1,15 +1,14 @@
-team_a = input("Enter the points of the first team: ")
-team_b = input ("Enter the points of the second team: ")
-
+team_a = input("Δώσε τους πόντους της πρώτης ομάδας: ").split()
+team_b = input ("Δώσε τους πόντους της δεύτερης ομάδας: ").split()
 
 if not(team_a.isdigit() and team_b.isdigit()):
-    team_a = input("Please enter the points of the first team: ")
-    team_b = input ("Please enter the points of the second team: ")
+    team_a = input("Παρακαλώ δώσε τους πόντους της πρώτης ομάδας: ").split()
+    team_b = input ("Παρακαλώ δώσε τους πόντους της πρώτης ομάδας: ").split()
 
 team_a = int(team_a)
 team_b = int(team_b)
 
 if team_a == 25:
-    print("\nThe first team is the winner!")
+    print("Η πρώτη ομάδα είναι νικήτρια!")
 else:
-    print("\nThe second team is the winner!")
+    print("Η δεύτερη ομάδα είναι νικήτρια!")
