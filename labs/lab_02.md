@@ -60,14 +60,20 @@
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει το όνομα και τους βαθμούς ενός φοιτητή και θα εμφανίζει τον τελικό βαθμό του δίπλα από το όνομά του.
 
 ```python
-name = input("Δώσε το όνομα σου: ")
-proodos = float(input("Δώσε βαθμό προόδου: "))
-grapta = float(input("Δώσε βαθμό γραπτών: "))
+# diavasma apo ton xrhsth
+onoma = input("Dwse onoma foithth: ")
+proodos = input("Vathmos proodou: ")
+grapto = input("Vathmos graptou: ")
 
-telikos_vathmos = 0.2 * proodos + 0.8 * grapta
+# Metatroph apo str se int
+proodos = int(proodos)
+grapto = int(grapto)
 
-print("Όνομα φοιτητή:", name)
-print("Τελικός βαθμός: %.1f" % telikos_vathmos)
+# Ypologismos telikou va8mou
+telikosVathmos = proodos * 0.2 + grapto * 0.8
+
+# Ektypwsh apotelesmatos
+print(onoma, telikosVathmos)
 ```
 
 ### [2.3.2 Άσκηση 2](source/lab_02/lab_02_exercise_2a.py)
@@ -81,18 +87,26 @@ print("Τελικός βαθμός: %.1f" % telikos_vathmos)
 * Καθαρές Αποδοχές:
 
 ```python
-miktes_apodoxes = float(input("Δώσε τις μεικτές αποδοχές: "))
+# Diavasma miktwn apolavwn
+miktes = input("Miktes apodoxes: ")
 
-asfaleia = miktes_apodoxes * 0.03
-foros = miktes_apodoxes * 0.05
-loipes_kratiseis = miktes_apodoxes * 0.09
-kathares_apodoxes = miktes_apodoxes - asfaleia - foros - loipes_kratiseis
-    
-print("Μεικτές αποδοχές: %.2f" % miktes_apodoxes)
-print("Ασφάλεια: %.2f" % asfaleia)
-print("Φόρος: %.2f" % foros)
-print("Λοιπές κρατήσεις: %.2f" % loipes_kratiseis)
-print("Καθαρές αποδοχές: %.2f" % kathares_apodoxes)
+# Metatroph apo str se int
+miktes = float(miktes)
+
+# Ypologismos epi merous eisforwn
+asfaleia = miktes * 0.03
+foros = miktes * 0.05
+loipa = miktes * 0.09
+
+# Oi ka8ares apolaves einai oi miktes meiwn oles tis eisfores
+kathara = miktes - asfaleia - foros - loipa
+
+# Ektypwsh
+print("Miktes apodoxes:", miktes)
+print("Asfaleia:", asfaleia)
+print("Foros:", foros)
+print("Loipes krathseis:", loipa)
+print("Kathara:", kathara)
 ```
 
 ### [2.3.3 Άσκηση 3](source/lab_02/lab_02_exercise_3a.py)
@@ -100,12 +114,20 @@ print("Καθαρές αποδοχές: %.2f" % kathares_apodoxes)
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει το όνομα και την ηλικία του χρήστη και θα εμφανίζει το έτος στο οποίο θα είναι 100 ετών (Να θεωρηθεί ότι το τωρινό έτος είναι το 2020).
 
 ```python
-now_year = 2020
+# diavasma apo ton xrhsth
+onoma = input("Poio einai to onoma sou: ")
+hlikia = input("Poia einai h hlikia sou: ")
 
-my_name = input("Δώσε το όνομά σου: ")
-my_age = int(input("Δώσε την ηλικία σου: "))
+# Metatroph ths hlikias se int apo str
+hlikia = int(hlikia)
 
-end_year = 100 + now_year - my_age
+twrinoEtos = 2020
 
-print("O/H", my_name, "το", end_year, "θα είναι 100 ετών.")
+# Ypologismos etous gennhshs
+etosGennhshs = twrinoEtos - hlikia
+
+# Ypologismos xronias pou 8a ginei 100
+ekatoXronwn = etosGennhshs + 100
+
+print("O/H", onoma, "8a ginei 100 to etos", ekatoXronwn)
 ```
