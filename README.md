@@ -4,33 +4,33 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/Effie375/PythonLab)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Effie375/PythonLab)
 
-# Introduction to programming with Python🐍
+# Εισαγωγή στον Προγραμματισμό 🐍
 
-**PythonLab** is aimed at beginners who want to learn programming easily and relatively quickly. **Python** is a general purpose programming language, very high level, simple and easy to learn, powerful, dynamic, efficient, productive and scalable. It is suitable for both beginners and experienced developers. It can be used both for educational purposes and for the development of integrated applications.
+Το **PythonLab** απευθύνεται σε αρχάριους που θέλουν να μάθουν προγραμματισμό εύκολα και σχετικά γρήγορα. Η **Python** είναι μια γλώσσα προγραμματισμού γενικής χρήσης, πολύ υψηλού επιπέδου, απλή και εύκολη στην εκμάθηση, ισχυρή, δυναμική, αποτελεσματική, παραγωγική και επεκτάσιμη. Είναι κατάλληλη τόσο για αρχάριους όσο και για έμπειρους προγραμματιστές. Μπορεί να χρησιμοποιηθεί τόσο για εκπαιδευτικούς σκοπούς όσο και για την ανάπτυξη ολοκληρωμένων εφαρμογών.
 
-Examples in **PythonLab** were developed in Python version **3.8.2** and in a **Windows** environment.
+Τα παραδείγματα στο **PythonLab** αναπτύχθηκαν στην έκδοση Python **3.8.2** σε περιβάλλον **Windows**.
 
-The course includes teaching in:
+Το μάθημα περιλαμβάνει τη διδασκαλία σε:
 
-- general principles of program design
-- algorithms
-- logic flowcharts
-- algorithm design techniques
-- algorithmic problem solving
+- Γενικές αρχές σχεδίασης προγραμμάτων
+- Αλγόριθμοι
+- Λογικά διαγράμματα ροής
+- Τεχνικές σχεδιασμού αλγορίθμου
+- Επίλυση αλγοριθμικών προβλημάτων
 
-Language syntax:
+Συντακτικό της γλώσσας:
 
-- variables
-- constants
-- expressions
-- basic data types
-- sentences
-- operators
-- data input / output
-- flow control commands
-- repetitions
-- lists
-- subroutines
+- Μεταβλητές
+- Σταθερές
+- Εκφράσεις
+- Βασικοί τύποι δεδομένων
+- Προτάσεις
+- Τελεστές
+- Είσοδος/έξοδος δεδομένων
+- Εντολές ελέγχου ροής
+- Επαναλήψεις
+- Λίστες
+- Υποπρογράμματα
 
 ## 📁 Περιεχόμενα Θεωρίας
 
@@ -57,8 +57,8 @@ Language syntax:
 - [09 Αναζήτηση - Ταξινόμηση](labs/lab_09.md)
 - [10 Πολυδιάστατες λίστες](labs/lab_10.md)
 
-## 🔨 Contributing
+## 🔨 Συνεισφορά (Contributing)
 
-This is a personal learning project for me.
+Αυτό είναι ένα προσωπικό Repository.
 
-Please feel free to fork this repo. Read our Contribution Guidelines before you contribute.
+Μη διστάσετε να κάνετε fork αυτό το Repository. Διαβάστε τις Οδηγίες προτού θελήσετε να συνεισφέρετε.
