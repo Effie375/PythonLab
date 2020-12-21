@@ -1,4 +1,4 @@
-year = int(input("Δώσε ένα έτος: ").split())
+year = int(input("Δώσε ένα έτος: ").strip())
 
 if year % 4 == 0:
     if year % 100 == 0:

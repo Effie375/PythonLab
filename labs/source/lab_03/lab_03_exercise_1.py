@@ -1,8 +1,8 @@
-name = input("Δώσε το όνομά σου: ").split()
+name = input("Δώσε το όνομά σου: ").strip()
 
 try:
-    proodos = float(input("Δώσε βαθμό προόδου: ").split)
-    grapta = float(input("Δώσε βαθμό γραπτών: ").split)
+    proodos = float(input("Δώσε βαθμό προόδου: ").strip())
+    grapta = float(input("Δώσε βαθμό γραπτών: ").strip())
 except:
     print("Μη έγκυρος βαθμός!")
 else: 

@@ -1,9 +1,9 @@
 total = i = 0
 
 while i < 6:
-    degree = input("Δώσε βαθμό: ").split()
+    degree = input("Δώσε βαθμό: ").strip()
     while not degree.isdigit():
-        degree = input("Δώσε ξανά βαθμό: ").split()
+        degree = input("Δώσε ξανά βαθμό: ").strip()
     degree = float(degree)
     total += degree
     i += 1
