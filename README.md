@@ -32,7 +32,7 @@ Language syntax:
 - lists
 - subroutines
 
-## 📁Περιεχόμενα Θεωρίας
+## 📁 Περιεχόμενα Θεωρίας
 
 - [01 Βασικές έννοιες](lectures/lecture_01.md)
 - [02 Τύποι μεταβλητών - Απλές εντολές](lectures/lecture_02.md)
@@ -44,7 +44,7 @@ Language syntax:
 - [08 Μονοδιάστατες λίστες - Αναζήτηση - Ταξινόμηση](lectures/lecture_08.md)
 - [09 Λίστες δύο διαστάσεων](lectures/lecture_09.md)
 
-## 📁Περιεχόμενα Εργαστηρίου
+## 📁 Περιεχόμενα Εργαστηρίου
 
 - [01 Εισαγωγή στην γλώσσα προγραμματισμού Python](labs/lab_01.md)
 - [02 Βασικές εντολές](labs/lab_02.md)
@@ -57,7 +57,7 @@ Language syntax:
 - [09 Αναζήτηση - Ταξινόμηση](labs/lab_09.md)
 - [10 Πολυδιάστατες λίστες](labs/lab_10.md)
 
-## 🔨Contributing
+## 🔨 Contributing
 
 This is a personal learning project for me.
 
