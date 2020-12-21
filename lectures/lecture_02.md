@@ -168,8 +168,8 @@ print("Hello")
 x = input("Dwse enan arithmo: ")
 y = input("Dwse enan akoma arithmo: ")
 
-x=int(x)
-y=int(y)
+x = int(x)
+y = int(y)
 
 sum = x + y
 

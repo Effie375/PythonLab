@@ -124,6 +124,7 @@ print("To synolo einai:", synolo)
 ginomeno = 0
 arithmos = 1
 flag = False
+
 while arithmos != 0:
     arithmos = input("Dwse arithmo: ")
     while  not arithmos.isdigit():

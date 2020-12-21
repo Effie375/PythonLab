@@ -53,7 +53,7 @@
 ---
 
 - Πηγαίνουμε στη σελίδα *repl.it*.
-- Πατάμε το Start coding και από τις γλώσσες (languages) επιλέγουμε `Python`.Στη συνέχεια πατάμε Create repl.
+- Πατάμε το Start coding και από τις γλώσσες (languages) επιλέγουμε `Python`. Στη συνέχεια πατάμε Create repl.
 - ΠΡΟΣΟΧΗ! Στις ρυθμίσεις στο πεδίο indent type πρέπει να είναι πάντα επιλεγμένο το `spaces` και ΌΧΙ το `tabs`.
 
 [Home](../README.md) | [Εργαστήριο 2](lab_02.md)
