@@ -56,7 +56,7 @@ variable = 100
 python -V
 ```
 
-![Version](images/Version.PNG)
+![Version](../images/Version.PNG)
 
 Η έκδοση είναι η `3.8.5`!
 
@@ -109,9 +109,9 @@ z = "abc123"
 
 Να γράψετε τον τύπο δεδομένων (int, float, bool, str) για καθένα από τα παρακάτω δεδομένα:
 
-![Exercise 1](images/Exercise_1.PNG)
+![Exercise 1](../images/Exercise_1.PNG)
 
-Για να δείτε την λύση πατήστε [εδώ](images/Exercise_1S.PNG).
+Για να δείτε την λύση πατήστε [εδώ](../images/Exercise_1S.PNG).
 
 ## 2.6 Έτοιμες συναρτήσεις
 
@@ -140,7 +140,7 @@ print("Hello")
 
 ### 2.9.1 Παράδειγµα 1
 
-[![Video 1](images/Video_1.PNG)](https://www.youtube.com/watch?v=pPwgrQ6ZbIA)
+[![Video 2](../images/Video_1.PNG)](https://www.youtube.com/watch?v=pPwgrQ6ZbIA)
 
 ```python
 x = input("Δώσε τον πρώτο αριθμό: ")

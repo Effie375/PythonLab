@@ -74,7 +74,7 @@
 - Εμφανίζει ένα σφάλμα κάθε φορά.
 - Python, Java, Ruby, ...
 
-[![Video 2](images/Video_1.PNG)](https://www.youtube.com/watch?v=vauRAoWVQDc)
+[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=vauRAoWVQDc)
 
 ## 1.7 Προγραμματιστικό περιβάλλον
 
