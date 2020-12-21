@@ -1,20 +1,23 @@
-first_dice = input("Δώσε το πρώτο ζάρι: ").strip()
-second_dice = input("Δώσε το δεύτερο ζάρι: ").strip()
+# Eisagwgh dedomenwn
+zaria1 = input("Dwse 1h zaria: ")
+zaria2 = input("Dwse 2h zaria: ")
 
-if first_dice.isdigit() and second_dice.isdigit():
-    first_dice = int(first_dice)
-    second_dice = int(second_dice)
-    if (first_dice >= 1 and first_dice <= 6) and (second_dice >= 1 and second_dice <= 6):
-        if ((first_dice == 4) and (second_dice == 4)):
-            print("Ντόρτια.")
-        elif ((first_dice == 1) and (second_dice == 2)) or ((first_dice == 2) and (second_dice == 1)) :
-            print("Ασσόδυο.")
-        elif first_dice == second_dice:
-            print("Διπλές.")
-        else:
-            print(f"Πρώτο ζάρι {first_dice}.")
-            print(f"Δεύτερο ζάρι {second_dice}.")
+# Elegxoume an auto pou egrapse o xrhsths einai noumera
+if zaria1.isdigit() and zaria2.isdigit():
+  # Metatropi apo str se int
+  zaria1 = int(zaria1)
+  zaria2 = int(zaria2)
+  # elegxoume an ta noumera twn zariwn htan metaksi 1 - 6
+  if (zaria1 >= 1 and zaria1 <= 6) and (zaria2 >= 1 and zaria2 <= 6):
+    if zaria1 == 4 and zaria2 == 4:
+      print("Ntortia")
+    elif (zaria1 == 1 and zaria2 == 2) or (zaria1 == 2 and zaria2 == 1):
+      print("Assodyo")
+    elif zaria1 == zaria2:
+      print("Diples", zaria1 + zaria2)
     else:
-        print("Λάθος!!")
-else: 
-    print("Λάθος!!")
+      print(zaria1 + zaria2)
+  else:
+    print("Error! Giati oi zaries einai ektos orion 1 kai 6?")
+else:
+  print("Error! Giati egrapses leksi?")

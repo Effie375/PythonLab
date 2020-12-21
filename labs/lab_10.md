@@ -20,7 +20,7 @@
 - Πρόσθεση στοιχείων
   - `my_list[x].append(a)`. Εισάγει την τιμή της μεταβλητής a στο τέλοςτης λίστας που βρίσκεται στη θέση «x» της λίστας my_list.
 
-## 10.2 Παράδειγμα
+## [10.2 Παράδειγμα](source/lab_10/lab_10_example_1.py)
 
 ---
 
@@ -28,22 +28,28 @@
 
 ```python
 lista = []
+
 for i in range(5):
-    ypolista = []
-    for j in range(10):
-        n = int(input("Δώσε αριθμό: "))
-        ypolista.append(n)
-    lista.append(ypolista)
+  ypolista = []
+  for j in range(10):
+    n = int(input("Δώσε αριθμό: "))
+    ypolista.append(n)
+  lista.append(ypolista)
+
 meg_athroisma = 0
+
 for ypolista in lista:
-    athroisma = 0 
-    for i in ypolista:
-       athroisma += i 
-    if athroisma > meg_athroisma:
-        meg_athroisma = athroisma 
-        meg_lista = ypolista
+  athroisma = 0 
+  for i in ypolista:
+    athroisma += i 
+  if athroisma > meg_athroisma:
+    meg_athroisma = athroisma 
+    meg_lista = ypolista
+        
 print(meg_lista)
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_example_1.py).
 
 ## 10.3 Ασκήσεις
 
@@ -63,6 +69,8 @@ print(meg_lista)
 
 ```
 
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_exercise_1.py).
+
 ### [Άσκηση 2](source/lab_10/lab_10_exercise_2.py)
 
 Να γραφεί πρόγραμμα το οποίο:
@@ -75,6 +83,8 @@ print(meg_lista)
 ```python
 
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_exercise_2.py).
 
 ### [Άσκηση 3](source/lab_10/lab_10_exercise_3.py)
 
@@ -89,6 +99,8 @@ print(meg_lista)
 
 ```
 
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_exercise_3.py).
+
 ### [Άσκηση 4](source/lab_10/lab_10_exercise_4.py)
 
 Ένας αθλητής πρέπει να αγωνιστεί σε 4 αθλήματα επιτυχώς για να κερδίσει ένα μετάλλιο. Κάθε άθλημα έχει 3 προσπάθειες. (Οι βαθμοί μπορούν να είναι από 0-10)
@@ -102,5 +114,7 @@ print(meg_lista)
 ```python
 
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_exercise_4.py).
 
 [Home](../README.md) | [Lab 1](lab_01.md) | [Lab 2](lab_02.md) | [Lab 3](lab_03.md) | [Lab 4](lab_04.md) | [Lab 5](lab_05.md) | [Lab 6](lab_06.md) | [Lab 7](lab_07.md) | [Lab 8](lab_08.md) | [Lab 9](lab_09.md) | [Lab 10](lab_10.md)

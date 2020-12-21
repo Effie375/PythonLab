@@ -1,17 +1,16 @@
-max_elements = 10
-new_lista = []
-lista = []
 i = 0
+l = []
 
-while i < max_elements:
-    number = int(input("Δώσε έναν αριθμό: ").strip())
-    lista.append(number)
-    i += 1
+while i < 10:
+  number = int(input("Δώσε νούμερο: "))
+  l.append(number)
+  i += 1
 
-j = len(lista)
+j = 9
+new_l = []
 
-while j > 0:
-    new_lista.append(lista[j-1])
-    j -= 1
-
-print(f"Η νέα λίστα είναι:{new_lista}")
+while j >= 0:
+  new_l.append(l[j])
+  j -= 1
+  
+print(new_l)

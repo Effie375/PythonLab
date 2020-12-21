@@ -1,10 +1,10 @@
-sum = 0
+athroisma = 0
 
-number = int(input("Δώσε έναν αριθμό: ").strip()) 
+number = int(input("Δώσε αριθμό: "))
 
-while number:
-   digit = number % 10
-   number /= 10 
-   sum += digit
+while number != 0:
+  tel_pshfio = number % 10
+  number = number // 10
+  athroisma += tel_pshfio
 
-print(f"Το άθροισμα των ψηφίων είναι {sum}.")
+print("Άθροισμα:", athroisma)

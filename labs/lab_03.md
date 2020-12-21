@@ -7,7 +7,7 @@
 ---
 
 - 3.1 Εντολές
-- 3.2 Παράδειγμα if
+- 3.2 Παράδειγμα
 - 3.3 Ασκήσεις
 
 ## 3.1 Εντολές
@@ -27,7 +27,7 @@
 
 **ΠΡΟΣΟΧΗ:** Οι εντολές if και else τελείωνουν με τον τερματικό χαρακτήρα `:` αλλιώς θα προκύψει **syntaxerror**.
 
-## 3.2 Παράδειγμα if
+## [3.2 Παράδειγμα](source/lab_03/lab_03_example_1.py)
 
 ---
 
@@ -35,12 +35,14 @@
 number = input("Δώσε έναν αριθμό: ")
 
 if number.isdigit() == True:
-    number = int(number)
-    if number == 0:
-        print("Μηδέν")
-    else:
-        print("Άλλος αριθμός")
+  number = int(number)
+  if number == 0:
+    print("Μηδέν")
+  else:
+    print("Άλλος αριθμός")
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_03/lab_03_example_1.py)
 
 ## 3.3 Ασκήσεις
 
@@ -56,19 +58,21 @@ if number.isdigit() == True:
 
 ```python
 # Διάβασμα αποτελεσμάτων
-onoma = input("Dwse onoma foithth: ")
-proodos = int(input("Vathmos ergasias: "))
-grapto = int(input("Vathmos graptou: "))
+onoma = input("Δώσε όνομα φοιτητή: ")
+proodos = int(input("Βαθμός εργασίας: "))
+grapto = int(input("Βαθμός γραπτού: "))
 
 # Υπολογισμός τελικού βαθμού
 telikosVathmos = proodos * 0.2 + grapto * 0.8
 
 # Έλεγχος εαν είναι πάνω από 5
 if telikosVathmos >= 5:
-    print(onoma, "Πέρασες")
+  print(onoma, "Πέρασες")
 else:
-    print(onoma, "Απέτυχες")
+  print(onoma, "Απέτυχες")
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_03/lab_03_exercise_1.py)
 
 ### [Άσκηση 2](source/lab_03/lab_03_exercise_2.py)
 
@@ -85,17 +89,19 @@ number = input("Δώσε αριθμό: ")
 
 # Έλεγχος αν είναι αριθμός
 if number.isdigit():
-    # Αφού ξέρουμε ότι είναι αριθμός
-    number = int(number)
-    # Ελέγχουμε αν ο αριθμός είναι μεταξύ 5 - 10
-    if number >= 5 and number <= 10:
-        print("Πέρασες το μάθημα!")
-    else:
-        print("Κόπηκες. Προσπάθησε ξανά!")
+  # Αφού ξέρουμε ότι είναι αριθμός
+  number = int(number)
+  # Ελέγχουμε αν ο αριθμός είναι μεταξύ 5 - 10
+  if number >= 5 and number <= 10:
+    print("Πέρασες το μάθημα!")
+  else:
+    print("Κόπηκες. Προσπάθησε ξανά!")
 # Τερματίζει με μήνυμα λάθους
 else:
-    print("Αυτό δεν είναι αριθμός!")
+  print("Αυτό δεν είναι αριθμός!")
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_03/lab_03_exercise_2.py)
 
 ### [Άσκηση 3](source/lab_03/lab_03_exercise_3.py)
 
@@ -110,24 +116,26 @@ else:
 
 ```python
 # Διάβασμα αποτελεσμάτων
-team_a = input("Δώσε τους πόντους της ομάδας 1: ")
-team_b = input ("Δώσε τους πόντους της ομάδας 2: ")
+omada1 = input("Δώσε τους πόντους της ομάδας 1: ")
+omada2 = input ("Δώσε τους πόντους της ομάδας 2: ")
 
 # Έλεγχος αν είναι αριθμός
-if not(team_a.isdigit() and team_b.isdigit()):
-    # Ζήτα ξανά να διαβάσουμε αριθμό
-    team_a = input("Eipa dwse pontous gia omada 1: ")
-    team_b = input ("Eipa dwse pontous gia omada 2: ")
+if not(omada1.isdigit() and omada2.isdigit()):
+  # Ζήτα ξανά να διαβάσουμε αριθμό
+  omada1 = input("Είπα δώσε πόντους για ομάδα 1: ")
+  omada2 = input ("Είπα δώσε πόντους για ομάδα 2: ")
 
 # Αφού ξέρουμε ότι είναι αριθμός
-team_a = int(team_a)
-team_b = int(team_b)
+omada1 = int(omada1)
+omada2 = int(omada2)
 
 # Ελέγχουμε αν η ομάδα 1 συγκέντρωσε 25 βαθμούς
-if team_a == 25:
-    print("Η ομάδα 1 κέρδισε!")
+if omada1 == 25:
+  print("Η ομάδα 1 κέρδισε!")
 else:
-    print("Η ομάδα 2 κέρδισε!")
+  print("Η ομάδα 2 κέρδισε!")
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_03/lab_03_exercise_3.py)
 
 [Home](../README.md) | [Lab 1](lab_01.md) | [Lab 2](lab_02.md) | [Lab 3](lab_03.md) | [Lab 4](lab_04.md) | [Lab 5](lab_05.md) | [Lab 6](lab_06.md) | [Lab 7](lab_07.md) | [Lab 8](lab_08.md) | [Lab 9](lab_09.md) | [Lab 10](lab_10.md)

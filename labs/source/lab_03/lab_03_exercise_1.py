@@ -1,13 +1,13 @@
-name = input("Δώσε το όνομά σου: ").strip()
+# Διάβασμα αποτελεσμάτων
+onoma = input("Δώσε όνομα φοιτητή: ")
+proodos = int(input("Βαθμός εργασίας: "))
+grapto = int(input("Βαθμός γραπτού: "))
 
-try:
-    proodos = float(input("Δώσε βαθμό προόδου: ").strip())
-    grapta = float(input("Δώσε βαθμό γραπτών: ").strip())
-except:
-    print("Μη έγκυρος βαθμός!")
-else: 
-    telikos_vathmos = round(0.2 * proodos + 0.8 * grapta, 1)
-    if telikos_vathmos >= 5:
-        print("Πέρασες!")
-    else:
-        print("Απέτυχες!")
+# Υπολογισμός τελικού βαθμού
+telikosVathmos = proodos * 0.2 + grapto * 0.8
+
+# Έλεγχος εαν είναι πάνω από 5
+if telikosVathmos >= 5:
+  print(onoma, "Πέρασες")
+else:
+  print(onoma, "Απέτυχες")

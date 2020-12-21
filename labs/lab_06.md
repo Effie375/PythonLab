@@ -9,7 +9,7 @@
 - 6.1 Παράδειγμα
 - 6.2 Ασκήσεις
 
-## 6.1 Παράδειγμα
+## [6.1 Παράδειγμα](source/lab_06/lab_06_example_1.py)
 
 ---
 
@@ -18,23 +18,30 @@
 ```python
 i = 0
 list = []
+
 while i < 5:
-    number = int(input("Δώσε αριθμό: "))
-    list.append(number)
-    i += 1
+  number = int(input("Δώσε αριθμό: "))
+  list.append(number)
+  i += 1
+
 key = int(input("Δώσε στοιχείο που αναζητάς: "))
+
 found = False
 j = 0
+
 while (j < len(list) and not found):
-    if list[j] == key:
-        thesi = j
-        found = True
-    j += 1
+  if list[j] == key:
+    thesi = j
+    found = True
+  j += 1
+
 if found == True:
-    print("Το στοιχείο βρίσκεται στη θέση", thesi)
+  print("Το στοιχείο βρίσκεται στη θέση", thesi)
 else:
-    print("Το στοιχείο που αναζητάς δεν υπάρχει.")
+  print("Το στοιχείο που αναζητάς δεν υπάρχει.")
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_06/lab_06_example_1.py)
 
 ## 6.2 Ασκήσεις
 
@@ -48,6 +55,8 @@ else:
 
 ```
 
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_06/lab_06_exercise_1.py)
+
 ### [Άσκηση 2](source/lab_06/lab_06_exercise_2.py)
 
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει θετικούς αριθμούς μέχρι να δοθεί ο αριθμός 0. Μετά θα εμφανίζει πόσες φορές εισήχθη ο κάθε αριθμός.
@@ -55,5 +64,7 @@ else:
 ```python
 
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_06/lab_06_exercise_2.py)
 
 [Home](../README.md) | [Lab 1](lab_01.md) | [Lab 2](lab_02.md) | [Lab 3](lab_03.md) | [Lab 4](lab_04.md) | [Lab 5](lab_05.md) | [Lab 6](lab_06.md) | [Lab 7](lab_07.md) | [Lab 8](lab_08.md) | [Lab 9](lab_09.md) | [Lab 10](lab_10.md)

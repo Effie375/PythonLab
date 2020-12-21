@@ -36,43 +36,58 @@ for i in range([start], stop, [step]):
 
 ---
 
-### 7.2.1 Παράδειγμα 1
+### [7.2.1 Παράδειγμα 1](source/lab_07/lab_07_example_1.py)
 
 Να γραφεί ένα πρόγραμμα το οποίο θα δέχεται έναν αριθμό και θα τυπώνει το άθροισμα όλων των ακεραίων μέχρι και αυτόν τον αριθμό.
 
 ```python
-number = int(input("Δώσε αριθμό: "))
 athroisma = 0
+
+number = int(input("Δώσε αριθμό: "))
+
 for i in range(number + 1):
-    athroisma = athroisma + i
+  athroisma = athroisma + i
+
 print(athroisma)
 ```
 
-### 7.2.2 Παράδειγμα 2
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_07/lab_07_example_1.py)
+
+### [7.2.2 Παράδειγμα 2](source/lab_07/lab_07_example_2.py)
 
 Να γραφεί ένα πρόγραμμα το οποίο θα δέχεται έναν αριθμό και θα ελέγχει εάν είναι πρώτος.(Πρώτος είναι ένας αριθμός που διαιρείται μόνο από το 1 και τον εαυτό του).
 
 ```python
-number = int(input("Δώσε αριθμό: "))
 prime = True
+
+number = int(input("Δώσε αριθμό: "))
+
 for i in range(2, number // 2 + 1):
-    if number % i == 0:
-        prime = False
+  if number % i == 0:
+    prime = False
+
 print(prime)
 ```
 
-### 7.2.3 Παράδειγμα 3
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_07/lab_07_example_2.py)
+
+### [7.2.3 Παράδειγμα 3](source/lab_07/lab_07_example_3.py)
 
 Να γραφεί ένα πρόγραμμα το οποίο θα δέχεται μία λέξη και θα μετράει πόσες φορές περιέχει το γράμμα 'e'.
 
 ```python
-word = input("Δώσε λέξη: ")
 e_counter = 0
+
+word = input("Δώσε λέξη: ")
+
 for i in word:
-    if i == 'e':
-        e_counter += 1
+  if i == 'e':
+    e_counter += 1
+
 print(e_counter)
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_07/lab_07_example_3.py)
 
 ## 7.3 Ασκήσεις
 
@@ -86,6 +101,8 @@ print(e_counter)
 
 ```
 
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_07/lab_07_exercise_1.py)
+
 ### [Άσκηση 2](source/lab_07/lab_07_exercise_2.py)
 
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει 10 αριθμούς. Μετά θα δέχεται έναν αριθμό και θα εμφανίζει στον χρήστη ποιοι από τους αριθμούς που εισήχθησαν διαιρούνται από αυτόν.
@@ -93,6 +110,8 @@ print(e_counter)
 ```python
 
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_07/lab_07_exercise_2.py)
 
 ### [Άσκηση 3](source/lab_07/lab_07_exercise_3.py)
 
@@ -102,6 +121,8 @@ print(e_counter)
 
 ```
 
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_07/lab_07_exercise_3.py)
+
 ### [Άσκηση 4](source/lab_07/lab_07_exercise_4.py)
 
 Να γραφεί ένα πρόγραμμα που θα δέχεται από τον χρήστη μια λέξη και θα εμφανίζει πόσες φορές εμφανίστηκε το κάθε γράμμα.
@@ -109,6 +130,8 @@ print(e_counter)
 ```python
 
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_07/lab_07_exercise_4.py)
 
 ### [Άσκηση 5](source/lab_07/lab_07_exercise_5.py)
 
@@ -123,5 +146,7 @@ print(e_counter)
 ```python
 
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_07/lab_07_exercise_5.py)
 
 [Home](../README.md) | [Lab 1](lab_01.md) | [Lab 2](lab_02.md) | [Lab 3](lab_03.md) | [Lab 4](lab_04.md) | [Lab 5](lab_05.md) | [Lab 6](lab_06.md) | [Lab 7](lab_07.md) | [Lab 8](lab_08.md) | [Lab 9](lab_09.md) | [Lab 10](lab_10.md)

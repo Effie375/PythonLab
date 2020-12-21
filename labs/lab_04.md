@@ -6,27 +6,30 @@
 
 ---
 
-- 4.1 Παράδειγμα if
+- 4.1 Παράδειγμα
 - 4.2 Εντολή επανάληψης while
 - 4.3 While παράδειγμα
 - 4.4 Έλεγχος ορθότητας
 - 4.5 Ασκήσεις
 
-## 4.1 Παράδειγμα if
+## [4.1 If Παράδειγμα](source/lab_04/lab_04_example_1.py)
 
 ---
 
 ```python
-number = input("Dwse enan ari8mo: ")
+number = input("Δώσε έναν αριθμό: ")
+
 if number.isdigit() == True:
-    number = int(number)
-    if number == 0:
-        print("Mhden")
-    elif(number % 2) == 0:
-        print("Artios")
-    else:
-        print("Monos")
+  number = int(number)
+  if number == 0:
+    print("Μηδέν")
+  elif(number % 2) == 0:
+    print("Άρτιος")
+  else:
+    print("Περιττός")
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_example_1.py)
 
 ## 4.2 Εντολή επανάληψης while
 
@@ -34,7 +37,7 @@ if number.isdigit() == True:
 
 **ΠΡΟΣΟΧΗ!** Ένα while πρέπει **ΠΑΝΤΑ** να μεταβάλλει τουλάχιστον μία από τις μεταβλητές που ανήκουν στο *CONDITION*, αλλιώς θα δημιουργηθεί ένας ατέρμων βρόγχος (*infinite loop*).Δηλαδή το πρόγραμμα θα κολλήσει μέσα στον βρόγχο επ’ άπειρων.
 
-## 4.3 While παράδειγμα
+## [4.3 While παράδειγμα](source/lab_04/lab_04_example_2.py)
 
 ---
 
@@ -43,31 +46,39 @@ if number.isdigit() == True:
 ```python
 i = 0
 synolo = 0
+
 while i < 10:
-    number = int(input("Dwse arithmo: "))
-    synolo = synolo + number
-    i = i + 1 
-print("To synolo einai: ", synolo)
+  number = int(input("Δώσε αριθμό: "))
+  synolo = synolo + number
+  i = i + 1 
+
+print("Το σύνολο είναι: ", synolo)
 ```
 
-## 4.4 Έλεγχος ορθότητας
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_example_2.py)
+
+## [4.4 Έλεγχος ορθότητας](source/lab_04/lab_04_example_3.py)
 
 ---
 
 Να γραφεί ένα πρόγραμμα το οποίο διαβάζει 10 αριθμούς και τυπώνει το άθροισμα τους. Εάν ο χρήστης δεν εισάγει αριθμό, να επαναλαμβάνεται η ερώτηση.
 
 ```python
-i= 0
-synolo= 0
+i = 0
+synolo = 0
+
 while i < 10:
-    number = input("Dwse arithmo: ")
-    while not number.isdigit():
-        number = input("Dwse arithmo: ")
-    number = int(number)
-    synolo = synolo + number
-    i = i+ 1 
-print("To synolo einai:", synolo)
+  number = input("Δώσε αριθμό: ")
+  while not number.isdigit():
+    number = input("Δώσε αριθμό: ")
+  number = int(number)
+  synolo = synolo + number
+  i = i + 1 
+
+print("Το σύνολο είναι:", synolo)
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_example_3.py)
 
 ## 4.5 Ασκήσεις
 
@@ -88,6 +99,8 @@ print("To synolo einai:", synolo)
 
 ```
 
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_exercise_1.py)
+
 ### [Άσκηση 2](source/lab_04/lab_04_exercise_2.py)
 
 Ένας φοιτητής πρέπει να περάσει 6 μαθήματα σε ένα εξάμηνο. Να γραφεί πρόγραμμα που να διαβάζει τους βαθμούς του φοιτητή και να υπολογίζει το μέσο όρο της βαθμολογίας του για το συγκεκριμένο εξάμηνο. Ανάλογα με το μέσο όρο να εμφανίζεται το μήνυμα «Άριστα» (8,5-10), «Λίαν Καλώς» (6,5-8,49) και «Καλώς» (5-6,49).
@@ -96,7 +109,9 @@ print("To synolo einai:", synolo)
 
 ```
 
-### [Άσκηση 3](source/lab_04/lab_04_exercise_3a.py)
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_exercise_2.py)
+
+### [Άσκηση 3](source/lab_04/lab_04_exercise_3.py)
 
 Μία χρονιά έχει 365 μέρες. Όμως, ο χρόνος που χρειάζεται η γη για να περιστραφεί γύρω από τον ήλιο είναι λίγο μεγαλύτερος. Για αυτό, μερικές χρονιές χρειάζεται να προσθέτουμε την 29η Φεβρουαρίου για να διορθωθεί αυτό το σφάλμα. Αυτά τα έτη, που ονομάζονται δίσεκτα
 υπολογίζονται ως εξής:
@@ -116,7 +131,9 @@ print("To synolo einai:", synolo)
 
 ```
 
-### [Άσκηση 4](source/lab_04/lab_04_exercise_4b.py)
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_exercise_3.py)
+
+### [Άσκηση 4](source/lab_04/lab_04_exercise_4.py)
 
 Να γραφεί ένα πρόγραμμα το οποίο θα δέχεται από τον χρήστη αριθμούς και θα υπολογίζει το γινόμενό τους. Το πρόγραμμα θα τερματίζει όταν ο χρήστης εισάγει τον αριθμό 0. Να γίνεται έλεγχος ορθότητας.
 
@@ -126,30 +143,38 @@ arithmos = 1
 flag = False
 
 while arithmos != 0:
-    arithmos = input("Δώσε αριθμό: ")
-    while  not arithmos.isdigit():
-        arithmos = input("ΕΙΠΑ δώσε αριθμό: ")
-    arithmos = int(arithmos)
-    if flag == False and arithmos != 0:
-        ginomeno = 1
-        flag = True
-    if arithmos != 0:
-        ginomeno = ginomeno * arithmos
-print("Γινόμενο:", ginomeno)        
+  arithmos = input("Δώσε αριθμό: ")
+  while not arithmos.isdigit():
+    arithmos = input("Είπα δώσε αριθμό: ")
+  arithmos = int(arithmos)
+  if flag == False and arithmos != 0:
+    ginomeno = 1
+    flag = True
+  if arithmos != 0:
+    ginomeno = ginomeno * arithmos
+
+print("Γινόμενο:", ginomeno)     
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_exercise_4.py)
 
 ### [Άσκηση 5](source/lab_04/lab_04_exercise_5.py)
 
 Να γραφεί ένα πρόγραμμα το οποίο θα δέχεται από τον χρήστη έναν αριθμό και θα τυπώνει το άθροισμα των ψηφίων του.
 
 ```python
-number = int(input("Δώσε αριθμό: "))
 athroisma = 0
+
+number = int(input("Δώσε αριθμό: "))
+
 while number != 0:
-    tel_pshfio = number % 10
-    number = number // 10
-    athroisma += tel_pshfio
+  tel_pshfio = number % 10
+  number = number // 10
+  athroisma += tel_pshfio
+
 print("Άθροισμα:", athroisma)
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_exercise_5.py)
 
 [Home](../README.md) | [Lab 1](lab_01.md) | [Lab 2](lab_02.md) | [Lab 3](lab_03.md) | [Lab 4](lab_04.md) | [Lab 5](lab_05.md) | [Lab 6](lab_06.md) | [Lab 7](lab_07.md) | [Lab 8](lab_08.md) | [Lab 9](lab_09.md) | [Lab 10](lab_10.md)
