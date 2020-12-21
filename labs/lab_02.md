@@ -132,4 +132,4 @@ ekatoXronwn = etosGennhshs + 100
 print("O/H", onoma, "8a ginei 100 to etos", ekatoXronwn)
 ```
 
-[**Εργαστήριο 1**](lab_01.md) | [**Home**](../README.md) | [**Εργαστήριο 3**](lab_03.md)
+[Εργαστήριο 1](lab_01.md) | [Home](../README.md) | [Εργαστήριο 3](lab_03.md)

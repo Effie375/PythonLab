@@ -92,3 +92,5 @@ print(y <= x) # True
 ## 3.8 Παραδείγματα
 
 ## 3.9 Ασκήσεις
+
+[Θεωρία 2](lecture_02.md) | [Home](../README.md) | [Θεωρία 4](lecture_04.md)

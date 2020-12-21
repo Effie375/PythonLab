@@ -39,7 +39,7 @@
 
 ---
 
-Ο τύπος integer (int) µας επιτρέπει να επεξεργαζόµαστε **ακεραίους αριθµούς**. Εαν δεν γνωρίζεται τους ακεραίους αριθμούς πατήστε [εδώ](Numbers.md).
+Ο τύπος integer (int) µας επιτρέπει να επεξεργαζόµαστε **ακεραίους αριθµούς**. Εαν δεν γνωρίζεται τους ακεραίους αριθμούς πατήστε [εδώ](misc/numbers.md).
 
 Δήλωση Μεταβλητών Τύπου **Integer**:
 
@@ -188,3 +188,5 @@ telikos_misthos = arxikos_misthos - arxikos_misthos * (foros / 100)
 print('Onoma:', onoma)
 print('Misthos:', telikos_misthos)
 ```
+
+[Θεωρία 1](lecture_01.md) | [Home](../README.md) | [Θεωρία 3](lecture_03.md)

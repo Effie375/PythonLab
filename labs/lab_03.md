@@ -130,4 +130,4 @@ else:
     print("H omada 2 kerdise!")
 ```
 
-[**Εργαστήριο 2**](lab_02.md) | [**Home**](../README.md) | [**Εργαστήριο 4**](lab_04.md)
+[Εργαστήριο 2](lab_02.md) | [Home](../README.md) | [Εργαστήριο 4](lab_04.md)

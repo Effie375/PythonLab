@@ -208,3 +208,5 @@ print(15 / 3 - 2) # Apotelesma -> 3.0
 ---
 
 ![Πράξεις](../images/Prakseis.PNG)
+
+[Home](../README.md) | [Θεωρία 2](lecture_02.md)

@@ -12,3 +12,5 @@
 - 4.4 Η εντολή While - Flow Chart
 - 4.5 Παράδειγματα
 - 4.6 Ασκήσεις
+
+[Θεωρία 3](lecture_03.md) | [Home](../README.md) | [Θεωρία 5](lecture_05.md)
