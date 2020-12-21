@@ -73,7 +73,7 @@ print("To synolo einai:", synolo)
 
 ---
 
-### [4.5.1 Άσκηση 1](source/lab_04/lab_04_exercise_1.py)
+### [Άσκηση 1](source/lab_04/lab_04_exercise_1.py)
 
 Να γραφεί πρόγραμμα το οποίο:
 
@@ -88,7 +88,7 @@ print("To synolo einai:", synolo)
 
 ```
 
-### [4.5.2 Άσκηση 2](source/lab_04/lab_04_exercise_2.py)
+### [Άσκηση 2](source/lab_04/lab_04_exercise_2.py)
 
 Ένας φοιτητής πρέπει να περάσει 6 μαθήματα σε ένα εξάμηνο. Να γραφεί πρόγραμμα που να διαβάζει τους βαθμούς του φοιτητή και να υπολογίζει το μέσο όρο της βαθμολογίας του για το συγκεκριμένο εξάμηνο. Ανάλογα με το μέσο όρο να εμφανίζεται το μήνυμα «Άριστα» (8,5-10), «Λίαν Καλώς» (6,5-8,49) και «Καλώς» (5-6,49).
 
@@ -96,7 +96,7 @@ print("To synolo einai:", synolo)
 
 ```
 
-### [4.5.3 Άσκηση 3](source/lab_04/lab_04_exercise_3a.py)
+### [Άσκηση 3](source/lab_04/lab_04_exercise_3a.py)
 
 Μία χρονιά έχει 365 μέρες. Όμως, ο χρόνος που χρειάζεται η γη για να περιστραφεί γύρω από τον ήλιο είναι λίγο μεγαλύτερος. Για αυτό, μερικές χρονιές χρειάζεται να προσθέτουμε την 29η Φεβρουαρίου για να διορθωθεί αυτό το σφάλμα. Αυτά τα έτη, που ονομάζονται δίσεκτα
 υπολογίζονται ως εξής:
@@ -116,7 +116,7 @@ print("To synolo einai:", synolo)
 
 ```
 
-### [4.5.4 Άσκηση 4](source/lab_04/lab_04_exercise_4b.py)
+### [Άσκηση 4](source/lab_04/lab_04_exercise_4b.py)
 
 Να γραφεί ένα πρόγραμμα το οποίο θα δέχεται από τον χρήστη αριθμούς και θα υπολογίζει το γινόμενό τους. Το πρόγραμμα θα τερματίζει όταν ο χρήστης εισάγει τον αριθμό 0. Να γίνεται έλεγχος ορθότητας.
 
@@ -126,30 +126,30 @@ arithmos = 1
 flag = False
 
 while arithmos != 0:
-    arithmos = input("Dwse arithmo: ")
+    arithmos = input("Δώσε αριθμό: ")
     while  not arithmos.isdigit():
-        arithmos = input("EIPA Dwse arithmo: ")
+        arithmos = input("ΕΙΠΑ δώσε αριθμό: ")
     arithmos = int(arithmos)
     if flag == False and arithmos != 0:
         ginomeno = 1
         flag = True
     if arithmos != 0:
         ginomeno = ginomeno * arithmos
-print("Ginomeno: ", ginomeno)        
+print("Γινόμενο:", ginomeno)        
 ```
 
-### [4.5.5 Άσκηση 5](source/lab_04/lab_04_exercise_5.py)
+### [Άσκηση 5](source/lab_04/lab_04_exercise_5.py)
 
 Να γραφεί ένα πρόγραμμα το οποίο θα δέχεται από τον χρήστη έναν αριθμό και θα τυπώνει το άθροισμα των ψηφίων του.
 
 ```python
-number = int(input("Dwse arithmo: "))
+number = int(input("Δώσε αριθμό: "))
 athroisma = 0
 while number != 0:
-    tel_pshfio = number %10
+    tel_pshfio = number % 10
     number = number // 10
     athroisma += tel_pshfio
-print("Athroisma:", athroisma)
+print("Άθροισμα:", athroisma)
 ```
 
 [Εργαστήριο 3](lab_03.md) | [Home](../README.md) | [Εργαστήριο 5](lab_05.md)

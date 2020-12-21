@@ -16,7 +16,7 @@
 ---
 
 ```python
-key = int(input("Dose stoixeio pou anazitas: "))
+key = int(input("Δώσε στοιχείο που αναζητάς: "))
 done = True
 thesi = 0
 for i in list:
@@ -25,7 +25,7 @@ for i in list:
         done = False
     thesi += 1
 if done == True:
-    print("To stoixeio pou anazitas den einai sti lista")
+    print("Το στοιχείο που αναζητάς δεν είναι στη λίστα.")
 ```
 
 ## 9.2 Ταξινόμηση
@@ -50,7 +50,7 @@ for i in range(1,5):
 ```python
 list = []
 for i in range(5):
-    num = int(input("Dose stoixeia: "))
+    num = int(input("Δώσε στοιχείο: "))
     list.append(num)
 print(list)
 for i in range(1,5):
@@ -66,7 +66,7 @@ print(list)
 
 ---
 
-### [9.4.1 Άσκηση 1](source/lab_09/lab_09_exercise_1.py)
+### [Άσκηση 1](source/lab_09/lab_09_exercise_1.py)
 
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει 10 ακεραίους αριθμούς και έπειτα θα ζητά έναν ακέραιο τον οποίο θα αναζητά και αν υπάρχει θα εμφανίζει τη θέση του αλλιώς θα εμφανίζει μήνυμα ότι δεν υπάρχει το στοιχείο στον πίνακα.
 
@@ -78,7 +78,7 @@ print(list)
 
 ```
 
-### [9.4.2 Άσκηση 2](source/lab_09/lab_09_exercise_2.py)
+### [Άσκηση 2](source/lab_09/lab_09_exercise_2.py)
 
 Έστω ότι δημιουργείτε ένα πρόγραμμα το οποίο κρατά το όνομα επτά παικτών.
 

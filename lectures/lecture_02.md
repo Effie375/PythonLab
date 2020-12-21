@@ -165,15 +165,15 @@ print("Hello")
 [![Video 2](../images/Video_1.PNG)](https://www.youtube.com/watch?v=pPwgrQ6ZbIA)
 
 ```python
-x = input("Dwse enan arithmo: ")
-y = input("Dwse enan akoma arithmo: ")
+x = input("Δώσε έναν αριθμό: ")
+y = input("Δώσε έναν ακόμα αριθμό: ")
 
 x = int(x)
 y = int(y)
 
 sum = x + y
 
-print ("To athroisma twn arithmwn", x, "kai", y, " einai", sum)
+print ("Το άθροισμα των αριθμών", x, "και", y, "είναι", sum)
 ```
 
 Στο παράδειγμα αυτό βλέπουμε ξεκάθαρα ότι η συνάρτηση `input` επιστρέφει  πάντα συμβολοσειρά **string** και έτσι οι μεταβλητές `x` και `y` δεν δείχνουν σε αριθμό. Συνεπώς πρέπει να μετατρέψουμε και τις δύο μεταβλητές σε **integer**.
@@ -181,12 +181,12 @@ print ("To athroisma twn arithmwn", x, "kai", y, " einai", sum)
 ### 2.9.2 Παράδειγµα 2
 
 ```python
-onoma = input('Dwse onoma ipallilou: ')
-arxikos_misthos = int(input('Dwse mistho: '))
-foros = int(input('Dwse pososto forou: '))
+onoma = input('Δώσε όνομα υπαλλήλου: ')
+arxikos_misthos = int(input('Δώσε μισθό: '))
+foros = int(input('Δώσε ποσοστό φόρου: '))
 telikos_misthos = arxikos_misthos - arxikos_misthos * (foros / 100)
-print('Onoma:', onoma)
-print('Misthos:', telikos_misthos)
+print('Όνομα:', onoma)
+print('Μισθός:', telikos_misthos)
 ```
 
 [Θεωρία 1](lecture_01.md) | [Home](../README.md) | [Θεωρία 3](lecture_03.md)

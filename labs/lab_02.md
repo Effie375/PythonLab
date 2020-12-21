@@ -51,7 +51,7 @@
 
 ---
 
-### [2.3.1 Άσκηση 1](source/lab_02/lab_02_exercise_1a.py)
+### [Άσκηση 1](source/lab_02/lab_02_exercise_1a.py)
 
 Ένας φοιτητής για να επιτύχει στο μάθημα «Εισαγωγή στον Προγραμματισμό» πρέπει να δώσει μία πρόοδο και να συμμετάσχει στις γραπτές εξετάσεις στο τέλος του εξαμήνου. Ο υπολογισμός του τελικού βαθμού βασίζεται στον εξής τύπο:
 
@@ -60,23 +60,23 @@
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει το όνομα και τους βαθμούς ενός φοιτητή και θα εμφανίζει τον τελικό βαθμό του δίπλα από το όνομά του.
 
 ```python
-# diavasma apo ton xrhsth
-onoma = input("Dwse onoma foithth: ")
-proodos = input("Vathmos proodou: ")
-grapto = input("Vathmos graptou: ")
+# Διάβασμα από τον χρήστη
+onoma = input("Δώσε ονομα φοιτητή: ")
+proodos = input("Βαθμός προόδου: ")
+grapto = input("Βαθμός  γραπτού: ")
 
-# Metatroph apo str se int
+# Μετατροπή από str σε int
 proodos = int(proodos)
 grapto = int(grapto)
 
-# Ypologismos telikou va8mou
+# Υπολογισμός τλεικού βαθμού
 telikosVathmos = proodos * 0.2 + grapto * 0.8
 
-# Ektypwsh apotelesmatos
+# Εκτύπωση αποτελέσματος
 print(onoma, telikosVathmos)
 ```
 
-### [2.3.2 Άσκηση 2](source/lab_02/lab_02_exercise_2a.py)
+### [Άσκηση 2](source/lab_02/lab_02_exercise_2a.py)
 
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει τις μικτές αποδοχές ενός υπαλλήλου και θα υπολογίζει και θα εμφανίζει τις καθαρές αποδοχές του. Ο υπάλληλος πληρώνει 3% προς ασφαλιστικά ταμεία, 5% φόρο και 9% λοιπές κρατήσεις. Το πρόγραμμα θα εμφανίζει τα αποτελέσματα ως εξής:
 
@@ -87,49 +87,49 @@ print(onoma, telikosVathmos)
 * Καθαρές Αποδοχές:
 
 ```python
-# Diavasma miktwn apolavwn
-miktes = input("Miktes apodoxes: ")
+# Διάβασμα μεικτών απολαβών
+miktes = input("Μικτές αποδοχές: ")
 
-# Metatroph apo str se int
+# Μετατροπή από str σε int
 miktes = float(miktes)
 
-# Ypologismos epi merous eisforwn
+# Υπολογισμός επί μέρους εισφορών
 asfaleia = miktes * 0.03
 foros = miktes * 0.05
 loipa = miktes * 0.09
 
-# Oi ka8ares apolaves einai oi miktes meiwn oles tis eisfores
+# Οι καθαρές απολαβές ειναι οι μεικτές μείον όλες τις εισφορές
 kathara = miktes - asfaleia - foros - loipa
 
-# Ektypwsh
-print("Miktes apodoxes:", miktes)
-print("Asfaleia:", asfaleia)
-print("Foros:", foros)
-print("Loipes krathseis:", loipa)
-print("Kathara:", kathara)
+# Εκτύπωση
+print("Μικτές αποδοχές:", miktes)
+print("Ασφάλεια:", asfaleia)
+print("Φόρος:", foros)
+print("Λοιπές κρατήσεις:", loipa)
+print("Καθαρά:", kathara)
 ```
 
-### [2.3.3 Άσκηση 3](source/lab_02/lab_02_exercise_3a.py)
+### [Άσκηση 3](source/lab_02/lab_02_exercise_3a.py)
 
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει το όνομα και την ηλικία του χρήστη και θα εμφανίζει το έτος στο οποίο θα είναι 100 ετών (Να θεωρηθεί ότι το τωρινό έτος είναι το 2020).
 
 ```python
-# diavasma apo ton xrhsth
-onoma = input("Poio einai to onoma sou: ")
-hlikia = input("Poia einai h hlikia sou: ")
+# Διάβασμα από τον χρήστη
+onoma = input("Ποιο είναι το όνομα σου: ")
+hlikia = input("Ποια είναι η ηλικία σου: ")
 
-# Metatroph ths hlikias se int apo str
+# Μετατορπή της ηλικίας σε int από str
 hlikia = int(hlikia)
 
 twrinoEtos = 2020
 
-# Ypologismos etous gennhshs
+# Υπολογισμός έτους γέννησης
 etosGennhshs = twrinoEtos - hlikia
 
-# Ypologismos xronias pou 8a ginei 100
+# Υπολογισμός χρονιάς που θα γίνει 100
 ekatoXronwn = etosGennhshs + 100
 
-print("O/H", onoma, "8a ginei 100 to etos", ekatoXronwn)
+print("O/H", onoma, "θα γίνει 100 το έτος", ekatoXronwn)
 ```
 
 [Εργαστήριο 1](lab_01.md) | [Home](../README.md) | [Εργαστήριο 3](lab_03.md)

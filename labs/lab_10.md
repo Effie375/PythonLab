@@ -31,7 +31,7 @@ lista = []
 for i in range(5):
     ypolista = []
     for j in range(10):
-        n = int(input("DWSE ARITHMO "))
+        n = int(input("Δώσε αριθμό: "))
         ypolista.append(n)
     lista.append(ypolista)
 meg_athroisma = 0
@@ -49,7 +49,7 @@ print(meg_lista)
 
 ---
 
-### [10.3.1 Άσκηση 1](source/lab_10/lab_10_exercise_1.py)
+### [Άσκηση 1](source/lab_10/lab_10_exercise_1.py)
 
 Ένας φοιτητής για να φοιτήσει στο Τ.Π.Τ.Ε. πρέπει να ολοκληρώσει 8 εξάμηνα. Κάθε εξάμηνο αποτελείται από 6 μαθήματα.
 
@@ -63,7 +63,7 @@ print(meg_lista)
 
 ```
 
-### [10.3.2 Άσκηση 2](source/lab_10/lab_10_exercise_2.py)
+### [Άσκηση 2](source/lab_10/lab_10_exercise_2.py)
 
 Να γραφεί πρόγραμμα το οποίο:
 
@@ -76,7 +76,7 @@ print(meg_lista)
 
 ```
 
-### [10.3.3 Άσκηση 3](source/lab_10/lab_10_exercise_3.py)
+### [Άσκηση 3](source/lab_10/lab_10_exercise_3.py)
 
 Ένας φοιτητής πρέπει να παρακολουθήσει 2 εξάμηνα για ένα σεμινάριο. Σε κάθε εξάμηνο θα πρέπει να εξεταστεί σε δυο μαθήματα. (Οι βαθμοί μπορούν να είναι από 0-10)
 
@@ -89,7 +89,7 @@ print(meg_lista)
 
 ```
 
-### [10.3.4 Άσκηση 4](source/lab_10/lab_10_exercise_4.py)
+### [Άσκηση 4](source/lab_10/lab_10_exercise_4.py)
 
 Ένας αθλητής πρέπει να αγωνιστεί σε 4 αθλήματα επιτυχώς για να κερδίσει ένα μετάλλιο. Κάθε άθλημα έχει 3 προσπάθειες. (Οι βαθμοί μπορούν να είναι από 0-10)
 

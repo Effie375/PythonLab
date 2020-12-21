@@ -32,21 +32,21 @@
 ---
 
 ```python
-number = input("Dwse enan ari8mo: ")
+number = input("Δώσε έναν αριθμό: ")
 
 if number.isdigit() == True:
     number = int(number)
     if number == 0:
-        print("Mhden")
+        print("Μηδέν")
     else:
-        print("Allos arithmos")
+        print("Άλλος αριθμός")
 ```
 
 ## 3.3 Ασκήσεις
 
 ---
 
-### [3.3.1 Άσκηση 1](source/lab_03/lab_03_exercise_1.py)
+### [Άσκηση 1](source/lab_03/lab_03_exercise_1.py)
 
 Ένας φοιτητής για να επιτύχει στο μάθημα «Εισαγωγή στον Προγραμματισμό» πρέπει να δώσει μία πρόοδο και να συμμετάσχει στις γραπτές εξετάσεις στο τέλος του εξαμήνου. Ο υπολογισμός του τελικού βαθμού βασίζεται στον εξής τύπο:
 
@@ -55,49 +55,49 @@ if number.isdigit() == True:
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει το όνομα και τους βαθμούς ενός φοιτητή και στο τέλος να εμφανίζεται το μήνυμα «Πέρασες» αν ο βαθμός του είναι μεγαλύτερος ή ίσος με 5, και «Απέτυχες» στην αντίθετη περίπτωση.
 
 ```python
-# Diavasma apotelesmatwn
+# Διάβασμα αποτελεσμάτων
 onoma = input("Dwse onoma foithth: ")
 proodos = int(input("Vathmos ergasias: "))
 grapto = int(input("Vathmos graptou: "))
 
-# Ypologismos telikou vathmou
+# Υπολογισμός τελικού βαθμού
 telikosVathmos = proodos * 0.2 + grapto * 0.8
 
-# Elegxos an einai panw apo 5
+# Έλεγχος εαν είναι πάνω από 5
 if telikosVathmos >= 5:
-    print(onoma, "Perases")
+    print(onoma, "Πέρασες")
 else:
-    print(onoma, "Apetyxes")
+    print(onoma, "Απέτυχες")
 ```
 
-### [3.3.2 Άσκηση 2](source/lab_03/lab_03_exercise_2.py)
+### [Άσκηση 2](source/lab_03/lab_03_exercise_2.py)
 
 Να γραφεί πρόγραμμα το οποίο:
 
 1. Θα διαβάζει έναν αριθμό.
 2. Θα ελέγχει αν ο χρήστης εισήγαγε νούμερα, αλλιώς θα βγάζει μήνυμα λάθους και θα τερματίζει.
 3. Αν ο αριθμός είναι από το 5 έως το 10, θα τυπώνει «Πέρασες το μάθημα!»
-4. Αλλιώς θα τυπώνει «Κόπηκες, προσπάθησε ξανά!»
+4. Αλλιώς θα τυπώνει «Κόπηκες. Προσπάθησε ξανά!»
 
 ```python
-# Diavasma apotelesmatwn
-number = input("Dwse arithmo: ")
+# Διάβασμα αποτελεσμάτων
+number = input("Δώσε αριθμό: ")
 
-# Elegxos an einai arithmos
+# Έλεγχος αν είναι αριθμός
 if number.isdigit():
-    # Afou kseroume oti einai arithmos:
+    # Αφού ξέρουμε ότι είναι αριθμός
     number = int(number)
-    # Elegxoume oti o arithmos einai metaksi 5-10
+    # Ελέγχουμε αν ο αριθμός είναι μεταξύ 5 - 10
     if number >= 5 and number <= 10:
-        print("Perases to mathima!")
+        print("Πέρασες το μάθημα!")
     else:
-        print("Kopikes. Prospathise ksana!")
-# Termatizei me minima lathous
+        print("Κόπηκες. Προσπάθησε ξανά!")
+# Τερματίζει με μήνυμα λάθους
 else:
-    print("Auto den einai arithmos!")
+    print("Αυτό δεν είναι αριθμός!")
 ```
 
-### [3.3.3 Άσκηση 3](source/lab_03/lab_03_exercise_3.py)
+### [Άσκηση 3](source/lab_03/lab_03_exercise_3.py)
 
 Ένα σετ αγώνα βόλει τερματίζει, όταν μια από τις δυο ομάδες συγκεντρώσει 25 πόντους.
 
@@ -109,25 +109,25 @@ else:
 4. Αλλιώς θα εμφανίζει «Η ομάδα 2 κέρδισε!»
 
 ```python
-# Diavasma apotelesmatwn
-team_a = input("Dwse tous pontous tis prwtis omadas: ")
-team_b = input ("Dwse tous pontous tis deuteris omadas: ")
+# Διάβασμα αποτελεσμάτων
+team_a = input("Δώσε τους πόντους της ομάδας 1: ")
+team_b = input ("Δώσε τους πόντους της ομάδας 2: ")
 
-# Elegxos an einai arithmos
+# Έλεγχος αν είναι αριθμός
 if not(team_a.isdigit() and team_b.isdigit()):
-    # Zita ksana na diavasoume arithmo
+    # Ζήτα ξανά να διαβάσουμε αριθμό
     team_a = input("Eipa dwse pontous gia omada 1: ")
     team_b = input ("Eipa dwse pontous gia omada 2: ")
 
-# Afou kseroume oti einai arithmos:
+# Αφού ξέρουμε ότι είναι αριθμός
 team_a = int(team_a)
 team_b = int(team_b)
 
-# Elegxoume oti h omada 1 sygkentrwse 25 vathmous
+# Ελέγχουμε αν η ομάδα 1 συγκέντρωσε 25 βαθμούς
 if team_a == 25:
-    print("H omada 1 kerdise!")
+    print("Η ομάδα 1 κέρδισε!")
 else:
-    print("H omada 2 kerdise!")
+    print("Η ομάδα 2 κέρδισε!")
 ```
 
 [Εργαστήριο 2](lab_02.md) | [Home](../README.md) | [Εργαστήριο 4](lab_04.md)
