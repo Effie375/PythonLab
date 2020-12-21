@@ -90,4 +90,4 @@ print(new_l)
 
 ```
 
-[Εργαστήριο 4](lab_04.md) | [Home](../README.md) | [Εργαστήριο 6](lab_06.md)
+[Home](../README.md) | [Lab 1](lab_01.md) | [Lab 2](lab_02.md) | [Lab 3](lab_03.md) | [Lab 4](lab_04.md) | [Lab 5](lab_05.md) | [Lab 6](lab_06.md) | [Lab 7](lab_07.md) | [Lab 8](lab_08.md) | [Lab 9](lab_09.md) | [Lab 10](lab_10.md)
