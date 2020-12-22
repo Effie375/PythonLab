@@ -13,3 +13,4 @@ else:
     print(f"Φόρος 5% {foros}")
     print(f"Λοιπές κρατήσεις 9%: {loipes_kratiseis}")
     print(f"Καθαρές αποδοχές: {kathares_apodoxes}")
+    
