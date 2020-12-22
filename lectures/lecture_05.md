@@ -67,6 +67,8 @@ i = 0
 while i < len(list):
   sum += list[i]
   i += 1
+
+print("Άθροισμα:", sum)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_05/lecture_05_example_2.py).

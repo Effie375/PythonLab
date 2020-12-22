@@ -5,3 +5,5 @@ i = 0
 while i < len(list):
     sum += list[i]
     i += 1
+
+print("Άθροισμα:", sum)
