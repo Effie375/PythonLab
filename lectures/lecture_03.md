@@ -137,7 +137,7 @@ print("Ο μέγιστος είναι ο", max)
 
 ---
 
-### [3.8.1 Παράδειγμα 1](source/lecture_03/lecture_03_example_1.py)
+### [Παράδειγμα 1](source/lecture_03/lecture_03_example_1.py)
 
 ```python
 a = int(input("Δώσε έναν αριθμό: "))
@@ -153,7 +153,7 @@ print(apot)
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_03/lecture_03_example_1.py).
 
-### [3.8.2 Παράδειγμα 2](source/lecture_03/lecture_03_example_2.py)
+### [Παράδειγμα 2](source/lecture_03/lecture_03_example_2.py)
 
 ```python
 a = int(input("Δώσε έναν αριθμό: "))
@@ -223,4 +223,4 @@ print(ypoloipo)
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_03/lecture_03_exercise_2.py).
 
-[Home](../README.md) | [Lecture 1](lecture_01.md) | [Lecture 2](lecture_02.md) | [Lecture 3](lecture_03.md) | [Lecture 4](lecture_04.md) | [Lecture 5](lecture_05.md) | [Lecture 6](lecture_06.md) | [Lecture 7](lecture_07.md) | [Lecture 8](lecture_08.md) | [Lecture 9](lecture_09.md)
+[Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 7](lecture_07.md) | [Lect 8](lecture_08.md) | [Lect 9](lecture_09.md)

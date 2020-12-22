@@ -1,4 +1,4 @@
-list = [8,45,7,9,4]
+list = [8, 45, 7, 9, 4]
 
 index = 0
 max = list[index]

@@ -1,4 +1,4 @@
-list = [6,5,41,2,7]
+list = [6, 5, 41, 2, 7]
 
 index = 0
 min = list[index]

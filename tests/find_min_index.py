@@ -1,4 +1,4 @@
-list = [100,2,10,5]
+list = [100, 2, 10, 5]
 
 min_index = 0
 index = 0

@@ -3,6 +3,5 @@
 
 age = int(input("Enter your age: "))
 
-for i in range(0,age+1,2):
+for i in range(0, age + 1, 2):
     print(i)
-

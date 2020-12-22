@@ -1,5 +1,6 @@
 import random
 
+
 def swap(list, j):
     temp = list[j-1]
     list[j-1] = list[j]
@@ -7,7 +8,7 @@ def swap(list, j):
     return list
 
 
-A = [random.randint(0,100) for x in range(random.randint(10,20))]
+A = [random.randint(0, 100) for x in range(random.randint(10, 20))]
 
 print(A)
 
