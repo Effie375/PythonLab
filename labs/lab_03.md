@@ -36,10 +36,10 @@ number = input("Δώσε έναν αριθμό: ")
 
 if number.isdigit() == True:
   number = int(number)
-  if number == 0:
-    print("Μηδέν")
-  else:
-    print("Άλλος αριθμός")
+    if number == 0:
+      print("Μηδέν")
+    else:
+      print("Άλλος αριθμός")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_03/lab_03_example_1.py)
