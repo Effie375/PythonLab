@@ -3,7 +3,7 @@
 ![Lines of code](https://img.shields.io/tokei/lines/github/Effie375/PythonLab)
 ![GitHub issues](https://img.shields.io/github/issues-raw/Effie375/PythonLab)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Effie375/PythonLab)
-![Lint](https://github.com/Effie375/PythonLab/workflows/Lint/badge.svg)
+![flake8 Lint](https://github.com/Effie375/PythonLab/workflows/flake8%20Lint/badge.svg)
 
 # Εισαγωγή στον Προγραμματισμό 🐍
 
