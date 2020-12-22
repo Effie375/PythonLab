@@ -52,7 +52,25 @@ else:
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει αριθμούς μέχρι να δωθεί ο αριθμός 0. Μετά θα δέχεται έναν αριθμό και θα εμφανίζει στον χρήστη πόσες φορές είχε εισαχθεί αυτός ο αριθμός. Να μην γίνει χρήση της μεθόδου count().
 
 ```python
+l = []
 
+number = int(input("Δώσε αριθμό: "))
+
+while number != 0:
+  l.append(number)
+  number = int(input("Δώσε αριθμό: "))
+
+counter = 0
+i=0
+
+number = int(input("Δώσε αριθμό για μέτρηση: "))
+
+while i < len(l):
+  if l[i] == number:
+    counter += 1
+  i += 1
+
+print("O αριθμός", number, "είσηχθη", counter, "φορές")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_06/lab_06_exercise_1.py)
@@ -62,7 +80,30 @@ else:
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει θετικούς αριθμούς μέχρι να δοθεί ο αριθμός 0. Μετά θα εμφανίζει πόσες φορές εισήχθη ο κάθε αριθμός.
 
 ```python
+megisto = 0
+l=[]
 
+number = int(input("Δώσε αριθμό: "))
+
+while number != 0:
+  l.append(number)
+  if number > megisto:
+    megisto = number
+  number = int(input("Δώσε αριθμό: "))
+
+i = 1
+
+while i <= megisto:
+  j = 0
+  counter = 0
+  while j < len(l):
+    if l[j] == i:
+      counter += 1
+      j += 1
+
+    if counter != 0 :
+      print("Ο αριθμός", i, "εισήχθη", counter, "φορές.")
+    i += 1 
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_06/lab_06_exercise_2.py)

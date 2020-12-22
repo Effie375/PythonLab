@@ -76,7 +76,49 @@ print(new_l)
 - Τη διαφορά του μέγιστου από το ελάχιστο στοιχείο της λίστας.
 
 ```python
+lista = []
+i = 0
 
+# Δίαβασμα πίνακα
+while i < 10:
+  number = int(input("Δώσε αριθμό: "))
+  lista.append(number)
+  i= i + 1
+
+# Αρχικοποίηση μεταβλητών
+j = 0
+k = 0
+l = 0
+athroisma = 0
+artios = 0
+perittos = 0
+megistos = lista[0]
+elaxistos = lista[0]
+
+# Yπολογισμός ζητούμενων
+while j < 10:
+  athroisma=athroisma+lista[j]
+  j = j + 1
+
+print("Το άθροισμα είναι: ", athroisma)
+
+while k < 10:
+  if lista[k] % 2 == 0:
+    artios += 1
+  else:
+    perittos += 1
+  k += 1
+
+print("To πλήθος των άρτιων είναι: ", artios, " Tο πλήθος των περιττών είναι: ", perittos)
+
+while l < 10:
+  if megistos < lista[l]:
+    megistos = lista[l]
+  if elaxistos > lista[l]:
+    elaxistos = lista[l]
+  l += 1
+    
+print("Η διαφορά είναι: ", megistos-elaxistos)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_05/lab_05_exercise_1.py)
@@ -87,7 +129,19 @@ print(new_l)
 Να μην γίνει χρήση της μεθόδου count().
 
 ```python
+cont=True
+l = []
 
+while cont:
+  leksi = (input("Δώσε λέξη: "))
+  thesi = int(input("Δώσε θέση: "))
+  if thesi >= 0 and thesi <= len(l):
+    l.insert(thesi, leksi)
+  else:
+    cont = False
+    print("Τέλος εισαγωγής δεδομένων.")
+
+print(l)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_05/lab_05_exercise_2.py)
@@ -97,7 +151,25 @@ print(new_l)
 Να γραφεί ένα πρόγραμμα το οποίο θα διαβάζει μία λέξη και θα επιστρέφει πόσα φωνήεντα (a,e,h,y,u,i,o) και πόσα σύμφωνα είχε (b,c,d,f,g,j,k,l,m,n,p,q,r,s,t,v,w,x,z).
 
 ```python
+lexi = input("Δώσε λέξη: ")
 
+vowels = 'aehiouy'
+consonants = 'bcdfgjklmnpqrstvwxz'
+
+v_counter=0
+c_counter=0
+i=0
+
+while i < len(lexi):
+  if lexi[i] in vowels:
+    v_counter+=1
+  # Μπορεί να έχει και άλλους χαρακτήρες όπως " h /, αυτά δε θέλουμε να τα μετρήσουμε.
+  elif lexi[i] in consonants:
+    c_counter+=1
+    i += 1
+
+print("Φωνήεντα: ",v_counter)
+print("Σύμφωνα: ",c_counter)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_05/lab_05_exercise_3.py)

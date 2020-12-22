@@ -33,20 +33,21 @@ for i in range(5):
   ypolista = []
   for j in range(10):
     n = int(input("Δώσε αριθμό: "))
-    ypolista.append(n)
+    polista.append(n)
   lista.append(ypolista)
 
 meg_athroisma = 0
 
 for ypolista in lista:
-  athroisma = 0 
+  athroisma = 0
   for i in ypolista:
-    athroisma += i 
+    athroisma += i
   if athroisma > meg_athroisma:
-    meg_athroisma = athroisma 
+    meg_athroisma = athroisma
     meg_lista = ypolista
-        
+
 print(meg_lista)
+
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_example_1.py).
@@ -66,7 +67,31 @@ print(meg_lista)
 - Υπολογίζει και εμφανίζει πόσα μαθήματα πέρασε και τι μέσο όρο είχε σε αυτό το εξάμηνο.
 
 ```python
+eksamina = []
 
+for i in range(8):
+  vathmoi = []
+  for j in range(6):
+    vathmos = float(input("Δώσε βαθμό: "))
+    vathmoi.append(vathmos)
+eksamina.append(vathmoi)
+
+ar_eksaminou = int(input("Ποιο εξάμηνο θες να δείς;"))
+
+# Aφαιρούμε 1 γιατί ο χρήστης θα δώσει π.χ. 1 για το πρώτο εξάμηνο
+# ενώ αυτό είναι στη θέση 0.
+eksamino = eksamina[ar_eksaminou-1]
+
+souma = 0
+perasmena = 0
+
+for mathima in eksamino:
+  souma += mathima
+  if mathima >= 5:
+    perasmena += 1
+
+print("Ο μέσος όρος είναι: ",souma/len(eksamino))
+print("Πέρασες: ",perasmena)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_exercise_1.py).
@@ -81,7 +106,42 @@ print(meg_lista)
 - θα εμφανίζει τον κύκλο με την μεγαλύτερη μέση τηλεθέαση.
 
 ```python
+seasons = int(input("Δώσε κύκλους: "))
+episodes = int(input("Δώσε επεισόδια άνα κύκλο: "))
 
+thle8eash = []
+
+for i in range(seasons):
+  thl_season = []
+  for j in range(episodes):
+    thl = float(input("Dwse thle8eash gia %dx%d: " % (i+1,j+1)))
+    thl_season.append(thl)
+  thle8eash.append(thl_season)
+
+maxThlSeason = 0
+maxThlEpi = 0
+minThlSeason = 0
+minThlEpi = 0
+maxMO = 0
+
+for i in range(seasons):
+  soumaSeason = 0
+  for j in range(episodes):
+  if thle8eash[i][j] > thle8eash[maxThlSeason][maxThlEpi]:
+    maxThlSeason = i
+    maxThlEpi = j
+  if thle8eash[i][j] < thle8eash[minThlSeason][maxThlEpi]:
+    minThlSeason = i
+    minThlEpi = j
+  soumaSeason += thle8eash[i][j]
+
+if maxMO < soumaSeason:
+  maxMO = soumaSeason
+  maxMOSeason = i
+
+print("Eπεισόδιο με μέγιστη τηλεθέαση: %dx%d" % (maxThlSeason+1,maxThlEpi+1))
+print("Eπεισόδιο με ελάχιστη τηλεθέαση: %dx%d" % (minThlSeason+1,minThlEpi+1))
+print("Σεζόν με μεγαλύτερο μέσο όρο τηλεθέασης:", maxMOSeason+1)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_exercise_2.py).
@@ -96,7 +156,28 @@ print(meg_lista)
 - Να υπολογίζει και να εμφανίζει το μεγαλύτερο βαθμό που συγκέντρωσε ο φοιτητής από όλα τα μαθήματα.
 
 ```python
+# Διάβασμα βαθμών
+eksamino = []
 
+for i in range(2):
+  mathima = []
+  for j in range(2):
+    vathmos = float(input("Δώσε βαθμό για %d εξάμηνο και %d μάθημα: "% (i+1,j+1)))
+    mathima.append(vathmos)
+    eksamino.append(mathima)
+
+# Εμφάνιση βαθμών ανά εξάμηνο
+print("Οι βαθμοί του φοιτητή είναι:", eksamino)
+
+# Υπολογισμός μέγιστου με βάση το κάθε μάθημα
+meg_vathmos = mathima[0]
+
+for mathima in eksamino:
+  for i in mathima:
+    if meg_vathmos < i:
+      meg_vathmos = i
+
+print("O μέγιστος βαθμός είναι:", meg_vathmos)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_exercise_3.py).
@@ -112,7 +193,48 @@ print(meg_lista)
 - Να βρίσκει και να εμφανίζει το μέγιστο βαθμό από όλες τις προσπάθειες και να αναζητά πόσες φορές συγκεντρώθηκε αυτός ο βαθμός στο σύνολο των βαθμών.
 
 ```python
+# Διάβασμα προσπαθειών
+athlimata = []
 
+for i in range(3):
+  vathmoi = []
+  for j in range(3):
+    vathmos = float(input("Δώσε βαθμό για άθλημα %d και προσπάθεια %d: " % (i+1,j+1)))
+    vathmoi.append(vathmos)
+  athlimata.append(vathmoi)
+
+# Υπολογισμός και εμφάνιση αθλήματος με μεγαλύτερους βαθμούς
+maxsum=0
+
+for vathmoi in athlimata:
+  sum=0
+  for i in vathmoi:
+    sum+=i
+    if sum>maxsum:
+      maxsum=sum
+      maxathlima=vathmoi
+
+print("To άθλημα με τους μεγαλύτερους βαθμούς είναι:", maxathlima,"και το άθροισμα είναι:", maxsum)
+
+# Υπολογισμός μέγιστου βαθμού σε κάθε άθλημα
+meg_vathmos=athlimata[0][0]
+
+for vathmoi in athlimata:
+  for i in vathmoi:
+    if i>meg_vathmos:
+      meg_vathmos=i
+
+print("Ο μέγιστος βαθμός του αθλητή είναι:", meg_vathmos)
+
+# Αναζήτηση φορών μέγιστου βαθμού σε κάθε άθλημα
+vathmos_counter = 0
+
+for vathmoi in athlimata:
+  for i in vathmoi:
+    if i == meg_vathmos:
+      vathmos_counter+=1
+
+print("O μέγιστος βαθμός βρέθηκε %d φορές." % (vathmos_counter))
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_exercise_4.py).

@@ -1,11 +1,11 @@
-# Diavasma etous
-etos = int(input("Dwse etos: "))
+# Διάβασμα έτους
+etos = int(input("Δώσε έτος: "))
 
-#An diaireitai me 4 einai dysekto
+# Αν διαιρείται με 4 είναι δίσεκτο
 if etos % 4 == 0:
-    # Ektos an diareitai kai me 100
+    # Εκτός και αν διαιρείται και με 100
     if etos % 100 == 0:
-        # Alla kai se auth thn periptwsh an diareitai me 400 einai disekto
+        # Aλλα και σε αυτήν την περίπτωση αν διαιρείται με 400 είναι δίσεκτο
         if etos % 400 == 0:
             disekto = True
         else:
@@ -15,8 +15,8 @@ if etos % 4 == 0:
 else:
     disekto = False
 
-# Ektypwsh apotelesmatwn
+# Eκτύπωση αποτελεσμάτων
 if disekto:
-    print("Einai disekto")
+    print("Είναι δίσκετο")
 else:
-    print("Den einai disekto")
+    print("Δεν είναι δίσεκτο")

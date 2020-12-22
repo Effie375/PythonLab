@@ -94,7 +94,25 @@ print(list)
 Οι αριθμοί είναι μοναδικοί στον πίνακα.
 
 ```python
+list = []
 
+for i in range(10):
+  num = int(input("Δώσε στοιχεία: "))
+  list.append(num)
+
+key = int(input("Δώσε στοιχείο που αναζητάς: "))
+
+done = True
+thesi = 0
+
+for i in list:
+  if i == key:
+    print(thesi)
+    done = False
+  thesi += 1
+
+if done == True:
+  print("To στοιχείο που αναζητάς δεν είναι στη λίστα.")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_exercise_1.py).
@@ -106,7 +124,20 @@ print(list)
 Να δημιουργηθεί πίνακας players στον οποίο θα αποθηκεύονται τα ονόματα των 7 παικτών. Θα ταξινομεί τα ονόματα σε φθίνουσα σειρά και θα εμφανίζει τα ονόματα των παικτών ταξινομημένα.
 
 ```python
+players = []
 
+for i in range(7):
+  name = input("Dose onoma paikti: ")
+  players.append(name)
+
+for i in range(1,7):
+  for j in range(6, i-1, -1):
+    if players [j-1] < players [j]:
+      temp = players[j-1]
+      players[j-1] = players[j]
+      players[j] = temp
+
+print("Παίκτες:", players)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_exercise_2.py).
