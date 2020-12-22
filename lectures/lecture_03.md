@@ -85,12 +85,142 @@ print(y <= x) # True
 
 ## 3.5 If Statement - 1η Μορφή
 
+---
+
+```python
+if (συνθήκη ή συνθήκες):
+  E1
+
+if x > 0:
+  print("Θετικός αριθμός")
+
+if (x >= 10) and (x <= 99):
+  print("Διψήφιος αριθμός")
+```
+
 ## 3.6 If Statement - 2η Μορφή
+
+---
+
+```python
+if (συνθήκη ή συνθήκες):
+  Ε1
+else:
+  E2
+
+if (x % 2 == 0):
+  print("Άρτιος αριθμός")
+else:
+  print("Περιττός αριθμός")
+```
 
 ## 3.7 Υπολογισμός μέγιστου τριών αριθμών
 
+---
+
+```python
+x = int(input("Δώσε έναν αριθμό: "))
+y = int(input("Δώσε έναν αριθμό: "))
+z = int(input("Δώσε έναν αριθμό: "))
+
+max = x
+
+if y > max:
+  max = y
+if z > max:
+  max = z
+
+print("Ο μέγιστος είναι ο", max)
+```
+
 ## 3.8 Παραδείγματα
 
+---
+
+### [3.8.1 Παράδειγμα 1](source/lecture_03/lecture_03_example_1.py)
+
+```python
+a = int(input("Δώσε έναν αριθμό: "))
+b = int(input("Δώσε έναν άλλο αριθμό: "))
+
+if a > b:
+  apot = a + b
+else:
+  apot=a * b
+
+print(apot)
+```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_03/lecture_03_example_1.py).
+
+### [3.8.2 Παράδειγμα 2](source/lecture_03/lecture_03_example_2.py)
+
+```python
+a = int(input("Δώσε έναν αριθμό: "))
+b = int(input("Δώσε ένα άλλον αριθμό: "))
+
+if a > b:
+  sum = a + b
+  gin = a * b
+  print(sum, gin)
+else:
+  diaf = a - b
+  print(diaf)
+```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_03/lecture_03_example_2.py).
+
 ## 3.9 Ασκήσεις
+
+---
+
+### [Άσκηση 1](source/lecture_03/lecture_03_exercise_1.py)
+
+Να γίνει πρόγραµµα σε Python το οποίο να εκτελεί τα εξής:
+
+1. Να διαβάζει τρεις πραγµατικούς αριθµούς.
+2. Να υπολογίζει το άθροισµά τους.
+3. Αν το άθροισµα είναι µεγαλύτερο του 100 τότε να υπολογίζει και να εµφανίζει το γινόµενο των δύο πρώτων αριθµών αλλιώς θα εµφανίζει την απόλυτη τιµή της διαφοράς των δύο τελευταίων.
+
+```python
+a = float(input("Δώσε έναν αριθμό: "))
+b = float(input("Δώσε έναν άλλον αριθμό: "))
+c = float(input("Δώσε έναν ακόμα αριθμό: "))
+
+sum = a + b + c
+
+if sum > 100:
+  gin = a * b
+  print(gin)
+else:
+  apolyth = abs(b - c)
+  print(apolyth)
+```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_03/lecture_03_exercise_1.py).
+
+### [Άσκηση 2](source/lecture_03/lecture_03_exercise_2.py)
+
+Να γίνει πρόγραµµα σε Python το οποίο να εκτελεί τα εξής:
+
+1. Να διαβάζει τρεις πραγµατικούς αριθµούς
+2. Να υπολογίζει το άθροισµά τους
+3. Αν το άθροισµα είναι µεγαλύτερο του 100 τότε να υπολογίζει και να εµφανίζει το γινόµενο των δύο πρώτων αριθµών αλλιώς θα εµφανίζει την απόλυτη τιµή της διαφοράς των δύο τελευταίων
+
+```python
+a = int(input("Δώσε έναν αριθμό: "))
+b = int(input("Δώσε έναν άλλον αριθμό: "))
+c = int(input("Δώσε έναν ακόμα αριθμό: "))
+
+if (a + b) % 2 == 0:
+  gin = a * (b // c)
+  print(gin)
+else:
+  ypoloipo = c % (a + b)
+
+print(ypoloipo)
+```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_03/lecture_03_exercise_2.py).
 
 [Home](../README.md) | [Lecture 1](lecture_01.md) | [Lecture 2](lecture_02.md) | [Lecture 3](lecture_03.md) | [Lecture 4](lecture_04.md) | [Lecture 5](lecture_05.md) | [Lecture 6](lecture_06.md) | [Lecture 7](lecture_07.md) | [Lecture 8](lecture_08.md) | [Lecture 9](lecture_09.md)
