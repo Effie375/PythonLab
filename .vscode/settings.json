@@ -2,4 +2,5 @@
     "editor.tabSize": 4,
     "activestate.promptRuntimeCreation": false,
     "editor.wordWrap": "on",
+    "files.autoSave": "onFocusChange",
 }
