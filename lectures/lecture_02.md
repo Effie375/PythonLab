@@ -160,7 +160,7 @@ print("Hello")
 
 ---
 
-### 2.9.1 Παράδειγµα 1
+### [2.9.1 Παράδειγµα 1](source/lecture_02/lecture_02_example_1.py)
 
 [![Video 2](../images/Video_1.PNG)](https://www.youtube.com/watch?v=pPwgrQ6ZbIA)
 
@@ -176,17 +176,23 @@ sum = x + y
 print ("Το άθροισμα των αριθμών", x, "και", y, "είναι", sum)
 ```
 
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_02/lecture_02_example_1.py).
+
 Στο παράδειγμα αυτό βλέπουμε ξεκάθαρα ότι η συνάρτηση `input` επιστρέφει  πάντα συμβολοσειρά **string** και έτσι οι μεταβλητές `x` και `y` δεν δείχνουν σε αριθμό. Συνεπώς πρέπει να μετατρέψουμε και τις δύο μεταβλητές σε **integer**.
 
-### 2.9.2 Παράδειγµα 2
+### [2.9.2 Παράδειγµα 2](source/lecture_02/lecture_02_example_2.py)
 
 ```python
 onoma = input('Δώσε όνομα υπαλλήλου: ')
 arxikos_misthos = int(input('Δώσε μισθό: '))
 foros = int(input('Δώσε ποσοστό φόρου: '))
+
 telikos_misthos = arxikos_misthos - arxikos_misthos * (foros / 100)
+
 print('Όνομα:', onoma)
 print('Μισθός:', telikos_misthos)
 ```
 
-[Θεωρία 1](lecture_01.md) | [Home](../README.md) | [Θεωρία 3](lecture_03.md)
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_02/lecture_02_example_2.py).
+
+[Home](../README.md) | [Lecture 1](lecture_01.md) | [Lecture 2](lecture_02.md) | [Lecture 3](lecture_03.md) | [Lecture 4](lecture_04.md) | [Lecture 5](lecture_05.md) | [Lecture 6](lecture_06.md) | [Lecture 7](lecture_07.md) | [Lecture 8](lecture_08.md) | [Lecture 9](lecture_09.md)
