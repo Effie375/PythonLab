@@ -44,6 +44,8 @@ if number.isdigit() == True:
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_03/lab_03_example_1.py)
 
+[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=DPezCNKQzOs)
+
 ## 3.3 Ασκήσεις
 
 ---
