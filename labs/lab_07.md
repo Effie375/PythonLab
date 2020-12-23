@@ -76,18 +76,20 @@ print(prime)
 Να γραφεί ένα πρόγραμμα το οποίο θα δέχεται μία λέξη και θα μετράει πόσες φορές περιέχει το γράμμα 'e'.
 
 ```python
-e_counter = 0
+leksi = input("Δώσε λέξη: ")
 
-word = input("Δώσε λέξη: ")
+counter = 0
 
-for i in word:
-  if i == 'e':
-    e_counter += 1
+for gramma in leksi:
+  if gramma == 'e':
+    counter += 1
 
-print(e_counter)
+print(counter)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_07/lab_07_example_3.py)
+
+[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=Jrjm3JegGMI)
 
 ## 7.3 Ασκήσεις
 

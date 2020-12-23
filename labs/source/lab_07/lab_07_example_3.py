@@ -1,9 +1,9 @@
-e_counter = 0
+leksi = input("Δώσε λέξη: ")
 
-word = input("Δώσε λέξη: ")
+counter = 0
 
-for i in word:
-    if i == 'e':
-        e_counter += 1
+for gramma in leksi:
+	if gramma == 'e':
+		counter += 1
 
-print(e_counter)
+print(counter)
