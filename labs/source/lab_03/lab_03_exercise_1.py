@@ -1,7 +1,7 @@
 # Διάβασμα αποτελεσμάτων
 onoma = input("Δώσε όνομα φοιτητή: ")
 proodos = int(input("Βαθμός εργασίας: "))
-grapto = int(input("Βαθμός γραπτού: "))
+grapto = int(input("Βαθμός γραπτών: "))
 
 # Υπολογισμός τελικού βαθμού
 telikosVathmos = proodos * 0.2 + grapto * 0.8

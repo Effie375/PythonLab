@@ -62,7 +62,7 @@ if number.isdigit() == True:
 # Διάβασμα αποτελεσμάτων
 onoma = input("Δώσε όνομα φοιτητή: ")
 proodos = int(input("Βαθμός εργασίας: "))
-grapto = int(input("Βαθμός γραπτού: "))
+grapto = int(input("Βαθμός γραπτών: "))
 
 # Υπολογισμός τελικού βαθμού
 telikosVathmos = proodos * 0.2 + grapto * 0.8
@@ -75,6 +75,8 @@ else:
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_03/lab_03_exercise_1.py)
+
+[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=gbxCdKKeawI)
 
 ### [Άσκηση 2](source/lab_03/lab_03_exercise_2.py)
 
