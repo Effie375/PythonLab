@@ -1,6 +1,6 @@
 # Python program to multiply two numbers
 
-def _multiple(num1,num2):
+def _multiple(num1, num2):
     return num1 * num2
 
 

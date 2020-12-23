@@ -13,9 +13,9 @@ A = [random.randint(0, 100) for x in range(random.randint(10, 20))]
 print(A)
 
 for i in range(len(A)):
-    for j in range(len(A)-1,i,-1):
+    for j in range(len(A)-1, i, -1):
         if A[j-1] > A[j]:
-            A = swap(A,j)
+            A = swap(A, j)
 
 print(A)
 

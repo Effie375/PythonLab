@@ -7,11 +7,11 @@ Python's print() function comes with a parameter called 'end'. By default, the v
 """ # noqa: E501
 
 # ends the output with a <space>
-print("Welcome to" , end = ' ')
+print("Welcome to", end = ' ')
 print("GeeksforGeeks")
 
 """ One more program to demonstrate working of end parameter. """
 
 # ends the output with '@'
-print("Python" , end = '@')
+print("Python", end = '@')
 print("GeeksforGeeks")

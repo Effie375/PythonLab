@@ -2,9 +2,9 @@ import PySimpleGUI as sg
 
 sg.theme("Black")  # Add a touch of color
 # All the stuff inside your window.
-layout = [  [sg.Text("Enter the frist path"),sg.InputText()],
+layout = [[sg.Text("Enter the frist path"), sg.InputText()],
             [sg.Text("Enter the second path"), sg.InputText()],
-            [sg.Button("Save"), sg.Button("Plot")] ]
+            [sg.Button("Save"), sg.Button("Plot")]]
 
 # Create the Window
 window = sg.Window('CFS', layout)
