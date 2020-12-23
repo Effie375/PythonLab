@@ -19,9 +19,9 @@ for i in range(len(A)):
 
 print(A)
 
-mikos = len(A)//2
+mikos = len(A) // 2
 
-if len(A)%2 == 0:
+if len(A) % 2 == 0:
     a = A[mikos-1]
     b = A[mikos]
     diamesos = (a+b)/2

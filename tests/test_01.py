@@ -73,7 +73,3 @@ print(R)
 
 x = 1
 y = 1
-
-print((x and False) == False)
-print((False and x) == False)
-print((y and x) == (x and y))

@@ -10,7 +10,7 @@
 
 # print(hello)
 
-# auto einai sintaktiko lathos epeidi den mporei mia metabliti na exei keno. px:
+# auto einai sintaktiko lathos epeidi den mporei i metabliti na exei keno.
 # hello World = "xxx"
 
 # kai auto einai sintaktiko lathos. px:
@@ -18,12 +18,12 @@
 # print(hello World)
 
 # auto den einai sinaktiko lathos kai gia auton ton logo einai lathos
-# ektelesis. px: 
+# ektelesis. px:
 
 # print(hello)
 # print("Tha emfanistei kai as min douleuei to 1o print!")
 
-# Meta to print mporei na iparxei keno. px: 
+# Meta to print mporei na iparxei keno. px:
 # print ("a")
 
 # Den mporei na to treksei NameError epeidi den exei na kataxorisei

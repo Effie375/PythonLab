@@ -9,7 +9,7 @@ def _check_odd_even(num):
         return 1
 
 
-if __name__ == '__main__':    
+if __name__ == '__main__':
     a = _check_odd_even(5)
     b = _check_odd_even(4)
     print(a, b)
