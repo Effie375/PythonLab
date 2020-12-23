@@ -1,10 +1,10 @@
-arithmoi = []
+list = []
 
 for i in range(10):
-    arithmoi.append(int(input("Δώσε αριθμό: ")))
+    list.append(int(input("Δώσε αριθμό: ")))
 
 num = int(input("Δώσε αριθμό για έλεγχο διαιρετέων: "))
 
-for i in arithmoi:
-    if i % num == 0:
-        print(i)
+for arithmos in list:
+    if arithmos % num == 0:
+        print(arithmos)

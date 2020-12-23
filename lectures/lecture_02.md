@@ -162,7 +162,7 @@ print("Hello")
 
 ### [2.9.1 Παράδειγµα 1](source/lecture_02/lecture_02_example_1.py)
 
-[![Video 2](../images/Video_1.PNG)](https://www.youtube.com/watch?v=pPwgrQ6ZbIA)
+[![Video 2](../images/Video_1.PNG)](https://www.youtube.com/watch?v=pPwgrQ6ZbIA&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=2&t=43s)
 
 ```python
 x = input("Δώσε έναν αριθμό: ")

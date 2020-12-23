@@ -89,7 +89,7 @@ print(counter)
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_07/lab_07_example_3.py)
 
-[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=Jrjm3JegGMI)
+[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=Jrjm3JegGMI&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=5)
 
 ## 7.3 Ασκήσεις
 
@@ -131,19 +131,21 @@ print("Ο μέσος όρος είναι", mo)
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει 10 αριθμούς. Μετά θα δέχεται έναν αριθμό και θα εμφανίζει στον χρήστη ποιοι από τους αριθμούς που εισήχθησαν διαιρούνται από αυτόν.
 
 ```python
-arithmoi = []
+list = []
 
 for i in range(10):
-  arithmoi.append(int(input("Δώσε αριθμό: ")))
+  list.append(int(input("Δώσε αριθμό: ")))
 
 num = int(input("Δώσε αριθμό για έλεγχο διαιρετέων: "))
 
-for i in arithmoi:
-  if i % num == 0:
-    print(i)
+for arithmos in list:
+  if arithmos % num == 0:
+    print(arithmos)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_07/lab_07_exercise_2.py)
+
+[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=fJFbtvlDB3o&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=6)
 
 ### [Άσκηση 3](source/lab_07/lab_07_exercise_3.py)
 
