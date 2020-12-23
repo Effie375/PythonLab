@@ -3,7 +3,7 @@ import datetime
 
 def calc_year(age):
     now_year = datetime.datetime.today().year
-    return now_year + 100 - age 
+    return now_year + 100 - age
 
 
 my_name = input("Δώσε το όνομα σου: ").strip()

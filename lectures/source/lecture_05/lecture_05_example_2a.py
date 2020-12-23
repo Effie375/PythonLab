@@ -1,4 +1,4 @@
-lista = [5,7,8,9,3]
+lista = [5, 7, 8, 9, 3]
 sum = i = 0
 
 while i < len(lista):

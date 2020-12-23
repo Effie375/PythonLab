@@ -1,4 +1,4 @@
-list = [5,7,8,9,3]
+list = [5, 7, 8, 9, 3]
 found = False
 thesi = i = 0
 

@@ -3,7 +3,7 @@ marks = []
 i = 0
 
 while i < 20:
-    onoma = input ("Δώσε όνομα: ")
+    onoma = input("Δώσε όνομα: ")
     vathmos = int(input("Δώσε βαθμό: "))
     names.append(onoma)
     marks.append(vathmos)

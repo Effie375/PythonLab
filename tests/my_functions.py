@@ -40,7 +40,7 @@ def find_min_idx_val(_list):
 
 
 def is_Odd(_num):
-   if _num % 2:
-      return True # monos
+    if _num % 2:
+       return True # Μονός
    else:
-      return False # zigos
+       return False # Ζυγός

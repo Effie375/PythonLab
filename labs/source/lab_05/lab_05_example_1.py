@@ -1,16 +1,16 @@
 i = 0
-l = []
+ls = []
 
 while i < 10:
     number = int(input("Δώσε νούμερο: "))
-    l.append(number)
+    ls.append(number)
     i += 1
 
 j = 9
-new_l = []
+new_ls = []
 
 while j >= 0:
-    new_l.append(l[j])
+    new_ls.append(ls[j])
     j -= 1
 
-print(new_l)
+print(new_ls)

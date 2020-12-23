@@ -1,4 +1,4 @@
-lista = [5,7,8,9,3]
+lista = [5, 7, 8, 9, 3]
 elaxisto = lista[0]
 megisto = lista[0]
 i = 0
