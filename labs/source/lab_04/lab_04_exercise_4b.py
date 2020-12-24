@@ -4,10 +4,10 @@ number = 1
 
 while number != 0:
     number = input("Δώσε αριθμό: ").strip()
-    while  not arithmos.isdigit(): 
-        number = input("Δώσε ξανά αριθμό: ").strip()      
-    number = int(arithmos)
-    if (flag == False):
+    while not number.isdigit():
+        number = input("Δώσε ξανά αριθμό: ").strip()  
+    number = int(number)
+    if (flag is False):
         if number != 0:
             product = 1
         flag = True

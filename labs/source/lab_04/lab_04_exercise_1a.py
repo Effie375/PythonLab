@@ -7,7 +7,7 @@ if first_dice.isdigit() and second_dice.isdigit():
     if (first_dice >= 1 and first_dice <= 6) and (second_dice >= 1 and second_dice <= 6):
         if ((first_dice == 4) and (second_dice == 4)):
             print("Ντόρτια.")
-        elif ((first_dice == 1) and (second_dice == 2)) or ((first_dice == 2) and (second_dice == 1)) :
+        elif ((first_dice == 1) and (second_dice == 2)) or ((first_dice == 2) and (second_dice == 1)):
             print("Ασσόδυο.")
         elif first_dice == second_dice:
             print("Διπλές.")
@@ -16,5 +16,5 @@ if first_dice.isdigit() and second_dice.isdigit():
             print(f"Δεύτερο ζάρι {second_dice}.")
     else:
         print("Λάθος!!")
-else: 
+else:
     print("Λάθος!!")

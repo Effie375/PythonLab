@@ -11,7 +11,7 @@ for i in list:
 
 k = 0
 
-for i in list: 
+for i in list:
     if i == key:
         k += 1
 

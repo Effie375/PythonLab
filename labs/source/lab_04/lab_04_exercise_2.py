@@ -1,7 +1,7 @@
 i = 0
 athroisma = 0
 
-while i< 6:
+while i < 6:
     vathmos = int(input("Δώσε βαθμό: "))
     athroisma = athroisma + vathmos
     i = i + 1

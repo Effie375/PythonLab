@@ -1,4 +1,4 @@
-counter = sum = 0 
+counter = sum = 0
 
 sal = float(input("Δώσε το μισθό σου: "))
 

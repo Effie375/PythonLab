@@ -6,7 +6,7 @@ for i in range(max_elements):
     list.append(num)
 
 for i in range(len(list)):
-    for j in range(len(list)-1,i,-1):
+    for j in range(len(list)-1, i, -1):
         if list[j-1] > list[j]:
             temp = list[j-1]
             list[j-1] = list[j]

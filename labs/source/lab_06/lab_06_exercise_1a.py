@@ -4,7 +4,7 @@ num = int(input("Δώσε έναν αριθμό: ").strip())
 
 while num != 0:
     numbers.append(num)
-    num = int(input("Δώσε έναν αριθμό: ").strip())  
+    num = int(input("Δώσε έναν αριθμό: ").strip())
 
 counter = i = 0
 

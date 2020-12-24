@@ -6,7 +6,7 @@ thle8eash = []
 for i in range(seasons):
     thl_season = []
     for j in range(episodes):
-        thl = float(input("Δώσε τηλεθέαση %dx%d: " % (i+1,j+1)))
+        thl = float(input("Δώσε τηλεθέαση %dx%d: " % (i+1, j+1)))
         thl_season.append(thl)
     thle8eash.append(thl_season)
 
@@ -31,6 +31,6 @@ if maxMO < soumaSeason:
     maxMO = soumaSeason
     maxMOSeason = i
 
-print("Eπεισόδιο με μέγιστη τηλεθέαση: %dx%d" % (maxThlSeason+1,maxThlEpi+1))
-print("Eπεισόδιο με ελάχιστη τηλεθέαση: %dx%d" % (minThlSeason+1,minThlEpi+1))
+print("Eπεισόδιο με μέγιστη τηλεθέαση: %dx%d" % (maxThlSeason+1, maxThlEpi+1))
+print("Eπεισόδιο με ελάχιστη τηλεθέαση: %dx%d" % (minThlSeason+1, minThlEpi+1))
 print("Σεζόν με μεγαλύτερο μέσο όρο τηλεθέασης:", maxMOSeason+1)

@@ -7,7 +7,7 @@ while arithmos != 0:
     while not arithmos.isdigit():
         arithmos = input("Είπα δώσε αριθμό: ")
     arithmos = int(arithmos)
-    if flag == False and arithmos != 0:
+    if flag is False and arithmos != 0:
         ginomeno = 1
         flag = True
     if arithmos != 0:

@@ -5,7 +5,7 @@ list = []
 while i < max_elements:
     number = int(input("Δώσε έναν αριθμό: ").strip())
     list.append(number)
-    sum += number 
+    sum += number
     if number % 2 == 0:
         even += 1
     else:

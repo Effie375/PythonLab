@@ -17,7 +17,7 @@ while (j < len(list) and not found):
         found = True
     j += 1
 
-if found == True:
+if found is True:
     print("Το στοιχείο βρίσκεται στη θέση", thesi)
 else:
     print("Το στοιχείο που αναζητάς δεν υπάρχει.")

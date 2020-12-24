@@ -12,5 +12,5 @@ for i in range(1, 5):
             temp = list[j-1]
             list[j-1] = list[j]
             list[j] = temp
-    
+
 print(list)

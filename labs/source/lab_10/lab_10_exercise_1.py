@@ -21,5 +21,5 @@ for mathima in eksamino:
     if mathima >= 5:
         perasmena += 1
 
-print("Ο μέσος όρος είναι: ",souma/len(eksamino))
-print("Πέρασες: ",perasmena)
+print("Ο μέσος όρος είναι: ", souma/len(eksamino))
+print("Πέρασες: ", perasmena)

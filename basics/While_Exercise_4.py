@@ -7,4 +7,4 @@ while num != 0:
         counter += 1
     num = int(input("Δώσε έναν αριθμό: "))
 
-print("Οι περιττόι αριθμοί είναι %d." % counter) 
+print("Οι περιττόι αριθμοί είναι %d." % counter)

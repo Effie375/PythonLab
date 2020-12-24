@@ -10,7 +10,7 @@ while i < 10:
 # Αρχικοποίηση μεταβλητών
 j = 0
 k = 0
-m = 0
+ls = 0
 athroisma = 0
 artios = 0
 perittos = 0
@@ -33,13 +33,13 @@ while k < 10:
 
 print("To πλήθος των άρτιων είναι: ", artios, " Tο πλήθος των περιττών είναι: ", perittos)
 
-while m < 10:
-    if megistos < lista[l]:
-        megistos = lista[l]
+while ls < 10:
+    if megistos < lista[ls]:
+        megistos = lista[ls]
 
-    if elaxistos > lista[l]:
-        elaxistos = lista[l]
+    if elaxistos > lista[ls]:
+        elaxistos = lista[ls]
 
-    m += 1
- 
+    ls += 1
+
 print("Η διαφορά είναι: ", megistos-elaxistos)

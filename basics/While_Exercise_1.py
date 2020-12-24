@@ -5,5 +5,5 @@ weight = float(input("Δώσε το βάρος της συσκευασίας σ�
 while weight > 0:
     sum += weight
     weight = float(input("Δώσε το βάρος της συσκευασίας σε κιλά: "))
-    
+   
 print("Το συνολικό βάρος είναι %d κιλά." % sum)

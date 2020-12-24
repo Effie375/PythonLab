@@ -6,10 +6,10 @@ if year % 4 == 0:
             leap_year = True
         else:
             leap_year = False
-    else: 
-        leap_year = True    
+    else:
+        leap_year = True
 else:
-     leap_year = False
+    leap_year = False
 
 if leap_year:
     print(f"{year}είναι δίσεκτο έτος.")

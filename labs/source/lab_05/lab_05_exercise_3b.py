@@ -12,7 +12,7 @@ while letter < len(word):
     else:
         other_counter += 1
     letter += 1
-    
+  
 print(f"Τα φωνήεντα της λέξης είναι {vowel_counter}.")
 print(f"Τα σύμφωνα της λέξης είναι {consonants_counter}.")
 print(f"Τα υπόλοιπα σύμβολα ή κεφαλαία γράμματα είναι {other_counter}.")
