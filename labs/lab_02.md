@@ -79,6 +79,8 @@ print(onoma, telikosVathmos)
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_02/lab_02_exercise_1.py).
 
+[![Video 2](../images/Video_1.PNG)](https://www.youtube.com/watch?v=wMsbKOItZ9A&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=4)
+
 ### [Άσκηση 2](source/lab_02/lab_02_exercise_2.py)
 
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει τις μικτές αποδοχές ενός υπαλλήλου και θα υπολογίζει και θα εμφανίζει τις καθαρές αποδοχές του. Ο υπάλληλος πληρώνει 3% προς ασφαλιστικά ταμεία, 5% φόρο και 9% λοιπές κρατήσεις. Το πρόγραμμα θα εμφανίζει τα αποτελέσματα ως εξής:

@@ -145,8 +145,45 @@ z = "abc123"
 Η εντολή `print` εμφανίζει στην οθόνη ένα string. Εάν ζητήσουμε να εμφανίσει το περιεχόμενο μιας μεταβλητής που δεν είναι *string*, το μετατρέπει πρώτα σε string και μετά το εμφανίζει. Μπορούμε να ζητήσουμε την εμφάνιση σύνθετων αριθμητικών παραστάσεων με μεταβλητές ή και με αριθμούς. Σε αυτήν την περίπτωση πρώτα εκτελεί τους υπολογισμούς και στην συνέχεια μετατρέπει το αποτέλεσμα σε *string* και το εμφανίζει στην οθόνη. Για παράδειγµα:
 
 ```python
-print("Hello")
+print(19)
+
+print("Γεια σου Μαρία")
+
+onoma_1 = "Μαρία"
+
+print("Γεια σου", onoma_1)
+
+onoma_2 = "Ελένη"
+
+print("Γεια σου", onoma_1, "και", onoma_2)
+
+print(onoma_1, onoma_2)
+
+ilikia = 19
+
+print("Η", onoma_1, "είναι", ilikia, "χρονών")
+
+print(ilikia)
+
+arithmos_1 = 10
+arithmos_2 = 5
+
+athroisma = arithmos_1 + arithmos_2
+
+print(athroisma)
+
+print("Η %s είναι %d χρονών" % (onoma_1, ilikia))
+
+print("Γεια σου %s" % (onoma_2))
+
+timi = 1.50
+
+print("Το τετράδιο κοστίζει %.2f Ευρώ" % (timi))
+
+print("%d + %d = %d" % (arithmos_1, arithmos_2, athroisma))
 ```
+
+[![Video 2](../images/Video_1.PNG)](https://www.youtube.com/watch?v=4mzJ3WGUdb0&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=2&t=2s)
 
 ## 2.8 input
 
