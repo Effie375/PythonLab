@@ -16,13 +16,15 @@
 ---
 
 ```python
+list = [1, 6, 3, 5, 4, 6]
+
 key = int(input("Δώσε στοιχείο που αναζητάς: "))
 
 done = True
 thesi = 0
 
-for i in list:
-  if i == key:
+for arithmos in list:
+  if arithmos == key:
     print(thesi)
     done = False
   thesi += 1
@@ -33,13 +35,15 @@ if done == True:
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_example_1.py).
 
+[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=wPpjbmPlCIk&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=13)
+
 ## [9.2 Ταξινόμηση](source/lab_09/lab_09_example_2.py)
 
 ---
 
 ```python
 # Δημιουργία λίστας
-list = [4,8,3,1,7]
+list = [4, 8, 3, 1, 7]
 
 for i in range(1,5):
   for j in range(4, i-1, -1):
@@ -89,8 +93,6 @@ print(list)
 
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει 10 ακεραίους αριθμούς και έπειτα θα ζητά έναν ακέραιο τον οποίο θα αναζητά και αν υπάρχει θα εμφανίζει τη θέση του αλλιώς θα εμφανίζει μήνυμα ότι δεν υπάρχει το στοιχείο στον πίνακα.
 
-Η αναζήτηση να πραγματοποιηθεί και με την εντολή for και με την εντολή while.
-
 Οι αριθμοί είναι μοναδικοί στον πίνακα.
 
 ```python
@@ -116,6 +118,8 @@ if done == True:
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_exercise_1.py).
+
+[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=R5txHdGj8M0&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=13)
 
 ### [Άσκηση 2](source/lab_09/lab_09_exercise_2.py)
 
