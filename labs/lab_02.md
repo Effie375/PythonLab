@@ -95,7 +95,7 @@ print(onoma, telikosVathmos)
 # Διάβασμα μεικτών απολαβών
 miktes = input("Μικτές αποδοχές: ")
 
-# Μετατροπή από str σε int
+# Μετατροπή από str σε float
 miktes = float(miktes)
 
 # Υπολογισμός επί μέρους εισφορών
@@ -107,14 +107,16 @@ loipa = miktes * 0.09
 kathara = miktes - asfaleia - foros - loipa
 
 # Εκτύπωση
-print("Μικτές αποδοχές:", miktes)
-print("Ασφάλεια:", asfaleia)
-print("Φόρος:", foros)
-print("Λοιπές κρατήσεις:", loipa)
-print("Καθαρές αποδοχές:", kathara)
+print("Μικτές αποδοχές: %.2f" % miktes)
+print("Ασφάλεια: %.2f" % asfaleia)
+print("Φόρος: %.2f" % foros)
+print("Λοιπές κρατήσεις: %.2f" % loipa)
+print("Καθαρές αποδοχές: %.2f" % kathara)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_02/lab_02_exercise_2.py)
+
+[![Video 2](../images/Video_1.PNG)](https://www.youtube.com/watch?v=t4_LIXlzdK4&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=5&t=1s)
 
 ### [Άσκηση 3](source/lab_02/lab_02_exercise_3.py)
 
