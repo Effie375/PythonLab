@@ -114,7 +114,7 @@ thle8eash = []
 for i in range(seasons):
   thl_season = []
   for j in range(episodes):
-    thl = float(input("Dwse thle8eash gia %dx%d: " % (i+1,j+1)))
+    thl = float(input("Δώσε τηλεθέαση για %dx%d: " % (i+1,j+1)))
     thl_season.append(thl)
   thle8eash.append(thl_season)
 

@@ -1,6 +1,6 @@
 max_elements = 5
 numbers = []
-i = 0 
+i = 0
 
 while i < max_elements:
     num = int(input("Δώσε έναν αριθμό: ").strip())
@@ -19,6 +19,6 @@ while ((i < len(numbers)) and not flag):
     i += 1
 
 if flag:
-    print(f"Ο αριθμός που αναζητάτε {key} βρίσκεται στη θέση {index}.")
+    print(f"Ο αριθμός που αναζητάτε {key} βρίσκεται στη θέση{index}.")
 else:
     print(f"Ο αριθμός που αναζητάτε {key} δε βρίσκεται στη λίστα.")

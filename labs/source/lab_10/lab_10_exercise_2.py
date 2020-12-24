@@ -6,7 +6,7 @@ thle8eash = []
 for i in range(seasons):
     thl_season = []
     for j in range(episodes):
-        thl = float(input("Dwse thle8eash gia %dx%d: " % (i+1,j+1)))
+        thl = float(input("Δώσε τηλεθέαση %dx%d: " % (i+1,j+1)))
         thl_season.append(thl)
     thle8eash.append(thl_season)
 
@@ -19,12 +19,12 @@ maxMO = 0
 for i in range(seasons):
     soumaSeason = 0
     for j in range(episodes):
-    if thle8eash[i][j] > thle8eash[maxThlSeason][maxThlEpi]:
-        maxThlSeason = i
-        maxThlEpi = j
-    if thle8eash[i][j] < thle8eash[minThlSeason][maxThlEpi]:
-        minThlSeason = i
-        minThlEpi = j
+        if thle8eash[i][j] > thle8eash[maxThlSeason][maxThlEpi]:
+            maxThlSeason = i
+            maxThlEpi = j
+            if thle8eash[i][j] < thle8eash[minThlSeason][maxThlEpi]:
+                minThlSeason = i
+                minThlEpi = j
     soumaSeason += thle8eash[i][j]
 
 if maxMO < soumaSeason:

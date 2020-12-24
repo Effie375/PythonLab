@@ -127,7 +127,7 @@ if done == True:
 players = []
 
 for i in range(7):
-  name = input("Dose onoma paikti: ")
+  name = input("Δώσε όνομα παίκτη: ")
   players.append(name)
 
 for i in range(1,7):

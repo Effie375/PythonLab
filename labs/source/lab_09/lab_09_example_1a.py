@@ -1,4 +1,4 @@
-list = [9,3,7,5,2] 
+list = [9, 3, 7, 5, 2] 
 
 key = int(input("Δώσε στοιχείο που αναζητάς: ").strip())
 
@@ -9,7 +9,7 @@ for i in list:
     if i == key:
         print(f"Το {key} βρίσκεται στη {thesi} θέση της λίστας.")
         found = True
-    thesi += 1 
+    thesi += 1
 
-if found == False:
+if found is False:
     print(f"Το {key} δε βρίσκεται στη λίστα.")

@@ -21,7 +21,7 @@ max = min = i = 0
 while i < 10:
     if list[i] > list[max]:
         max = i
-    elif list[i] < list[min] :
+    elif list[i] < list[min]:
         min = i
     i += 1
 

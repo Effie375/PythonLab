@@ -10,11 +10,11 @@ for i in range(5):
 meg_athroisma = 0
 
 for ypolista in lista:
-    athroisma = 0 
+    athroisma = 0
     for i in ypolista:
-        athroisma += i 
+        athroisma += i
     if athroisma > meg_athroisma:
-        meg_athroisma = athroisma 
+        meg_athroisma = athroisma
         meg_lista = ypolista
-        
+
 print(meg_lista)

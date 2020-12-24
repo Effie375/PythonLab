@@ -9,5 +9,5 @@ for i in list:
         done = False
     thesi += 1
 
-if done == True:
+if done is True:
     print("Το στοιχείο που αναζητάς δεν είναι στη λίστα.")

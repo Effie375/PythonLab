@@ -5,12 +5,12 @@ i = 0
 while i < 10:
     number = int(input("Δώσε αριθμό: "))
     lista.append(number)
-    i= i + 1
+    i += 1
 
 # Αρχικοποίηση μεταβλητών
 j = 0
 k = 0
-l = 0
+m = 0
 athroisma = 0
 artios = 0
 perittos = 0
@@ -19,7 +19,7 @@ elaxistos = lista[0]
 
 # Yπολογισμός ζητούμενων
 while j < 10:
-    athroisma=athroisma+lista[j]
+    athroisma += lista[j]
     j = j + 1
 
 print("Το άθροισμα είναι: ", athroisma)
@@ -33,13 +33,13 @@ while k < 10:
 
 print("To πλήθος των άρτιων είναι: ", artios, " Tο πλήθος των περιττών είναι: ", perittos)
 
-while l<10:
-    if megistos<lista[l]:
-        megistos=lista[l]
+while m < 10:
+    if megistos < lista[l]:
+        megistos = lista[l]
 
-    if elaxistos>lista[l]:
-        elaxistos=lista[l]
+    if elaxistos > lista[l]:
+        elaxistos = lista[l]
 
-    l+=1
-    
+    m += 1
+ 
 print("Η διαφορά είναι: ", megistos-elaxistos)

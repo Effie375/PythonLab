@@ -14,4 +14,4 @@ while j > 0:
     new_lista.append(lista[j-1])
     j -= 1
 
-print(f"Η νέα λίστα είναι:{new_lista}")
+print(f"Η νέα λίστα είναι: {new_lista}")
