@@ -59,6 +59,8 @@ print("Το σύνολο είναι: ", synolo)
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_example_2.py)
 
+[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=TllJBVYcrwU&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=12)
+
 ## [4.4 Έλεγχος ορθότητας](source/lab_04/lab_04_example_3.py)
 
 ---
@@ -81,6 +83,8 @@ print("Το σύνολο είναι:", synolo)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_example_3.py)
+
+[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=7WAnutfgA_4&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=13)
 
 ## 4.5 Ασκήσεις
 
