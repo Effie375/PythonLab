@@ -31,6 +31,8 @@ if number.isdigit() == True:
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_example_1.py)
 
+[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=oVyvV9fyMqA&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=11)
+
 ## 4.2 Εντολή επανάληψης while
 
 ---
