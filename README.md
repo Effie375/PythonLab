@@ -4,6 +4,7 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/Effie375/PythonLab)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Effie375/PythonLab)
 ![flake8 Lint](https://github.com/Effie375/PythonLab/workflows/flake8%20Lint/badge.svg)
+[![Gitter](https://badges.gitter.im/TPTE_Python/community.svg)](https://gitter.im/TPTE_Python/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 # Εισαγωγή στον Προγραμματισμό 🐍
 
