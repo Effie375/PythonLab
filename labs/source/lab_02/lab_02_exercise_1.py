@@ -1,14 +1,14 @@
 # Διάβασμα από τον χρήστη
 onoma = input("Δώσε ονομα φοιτητή: ")
-proodos = input("Βαθμός προόδου: ")
-grapto = input("Βαθμός γραπτού: ")
+proodos = input("Δώσε βαθμό προόδου: ")
+grapta = input("Δώσε βαθμό γραπτών: ")
 
 # Μετατροπή από str σε int
 proodos = int(proodos)
-grapto = int(grapto)
+grapta = int(grapta)
 
 # Υπολογισμός τελικού βαθμού
-telikosVathmos = proodos * 0.2 + grapto * 0.8
+telikosVathmos = proodos * 0.2 + grapta * 0.8
 
 # Εκτύπωση αποτελέσματος
 print(onoma, telikosVathmos)

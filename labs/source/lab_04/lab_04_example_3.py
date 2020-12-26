@@ -4,7 +4,7 @@ synolo = 0
 while i < 10:
     number = input("Δώσε αριθμό: ")
     while not number.isdigit():
-        number = input("Δώσε αριθμό: ")
+        number = input("Είπα δώσε αριθμό: ")
     number = int(number)
     synolo = synolo + number
     i = i + 1

@@ -44,7 +44,7 @@ if number.isdigit() == True:
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_03/lab_03_example_1.py)
 
-[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=DPezCNKQzOs&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=3)
+[![Video 4](../images/Video_1.PNG)](https://www.youtube.com/watch?v=DPezCNKQzOs&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=3)
 
 ## 3.3 Ασκήσεις
 
@@ -61,11 +61,11 @@ if number.isdigit() == True:
 ```python
 # Διάβασμα αποτελεσμάτων
 onoma = input("Δώσε όνομα φοιτητή: ")
-proodos = int(input("Βαθμός εργασίας: "))
-grapto = int(input("Βαθμός γραπτών: "))
+proodos = int(input("Δώσε βαθμό προόδου: "))
+grapta = int(input("Δώσε βαθμό γραπτών: "))
 
 # Υπολογισμός τελικού βαθμού
-telikosVathmos = proodos * 0.2 + grapto * 0.8
+telikosVathmos = proodos * 0.2 + grapta * 0.8
 
 # Έλεγχος εαν είναι πάνω από 5
 if telikosVathmos >= 5:
@@ -76,7 +76,7 @@ else:
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_03/lab_03_exercise_1.py)
 
-[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=gbxCdKKeawI&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=4)
+[![Video 5](../images/Video_1.PNG)](https://www.youtube.com/watch?v=gbxCdKKeawI&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=4)
 
 ### [Άσκηση 2](source/lab_03/lab_03_exercise_2.py)
 
@@ -107,7 +107,7 @@ else:
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_03/lab_03_exercise_2.py)
 
-[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=fKQuK2gKkUk&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=9)
+[![Video 6](../images/Video_1.PNG)](https://www.youtube.com/watch?v=fKQuK2gKkUk&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=9)
 
 ### [Άσκηση 3](source/lab_03/lab_03_exercise_3.py)
 
@@ -144,6 +144,6 @@ else:
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_03/lab_03_exercise_3.py)
 
-[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=oq5iNCeyoKg&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=10)
+[![Video 7](../images/Video_1.PNG)](https://www.youtube.com/watch?v=oq5iNCeyoKg&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=10)
 
 [Home](../README.md) | [Lab 1](lab_01.md) | [Lab 2](lab_02.md) | [Lab 3](lab_03.md) | [Lab 4](lab_04.md) | [Lab 5](lab_05.md) | [Lab 6](lab_06.md) | [Lab 7](lab_07.md) | [Lab 8](lab_08.md) | [Lab 9](lab_09.md) | [Lab 10](lab_10.md)

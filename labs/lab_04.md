@@ -31,7 +31,7 @@ if number.isdigit() == True:
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_example_1.py)
 
-[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=oVyvV9fyMqA&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=11)
+[![Video 8](../images/Video_1.PNG)](https://www.youtube.com/watch?v=oVyvV9fyMqA&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=11)
 
 ## 4.2 Εντολή επανάληψης while
 
@@ -59,7 +59,7 @@ print("Το σύνολο είναι: ", synolo)
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_example_2.py)
 
-[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=TllJBVYcrwU&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=12)
+[![Video 9](../images/Video_1.PNG)](https://www.youtube.com/watch?v=TllJBVYcrwU&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=12)
 
 ## [4.4 Έλεγχος ορθότητας](source/lab_04/lab_04_example_3.py)
 
@@ -74,7 +74,7 @@ synolo = 0
 while i < 10:
   number = input("Δώσε αριθμό: ")
   while not number.isdigit():
-    number = input("Δώσε αριθμό: ")
+    number = input("Είπα δώσε αριθμό: ")
   number = int(number)
   synolo = synolo + number
   i = i + 1 
@@ -84,7 +84,7 @@ print("Το σύνολο είναι:", synolo)
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_example_3.py)
 
-[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=7WAnutfgA_4&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=13)
+[![Video 10](../images/Video_1.PNG)](https://www.youtube.com/watch?v=7WAnutfgA_4&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=13)
 
 ## 4.5 Ασκήσεις
 
@@ -129,6 +129,8 @@ else:
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_exercise_1.py)
 
+[![Video 11](../images/Video_1.PNG)](https://www.youtube.com/watch?v=lIKLAjDxl-A&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=14)
+
 ### [Άσκηση 2](source/lab_04/lab_04_exercise_2.py)
 
 Ένας φοιτητής πρέπει να περάσει 6 μαθήματα σε ένα εξάμηνο. Να γραφεί πρόγραμμα που να διαβάζει τους βαθμούς του φοιτητή και να υπολογίζει το μέσο όρο της βαθμολογίας του για το συγκεκριμένο εξάμηνο. Ανάλογα με το μέσο όρο να εμφανίζεται το μήνυμα «Άριστα» (8,5-10), «Λίαν Καλώς» (6,5-8,49) και «Καλώς» (5-6,49).
@@ -157,6 +159,8 @@ else:
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_exercise_2.py)
+
+[![Video 12](../images/Video_1.PNG)](https://www.youtube.com/watch?v=6u4uAYDxuoY&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=15)
 
 ### [Άσκηση 3](source/lab_04/lab_04_exercise_3.py)
 
