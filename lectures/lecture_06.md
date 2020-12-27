@@ -96,6 +96,8 @@ print("Μέγιστο:", megisto)
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_3.py).
 
+[![Video 2](../images/Video_1.PNG)](https://www.youtube.com/watch?v=fWRJpy46Taw&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=17)
+
 ## [6.6 Έυρεση MIN](source/lecture_06/lecture_06_example_4.py)
 
 ---
@@ -112,6 +114,8 @@ print("Ελάχιστο:", elaxisto)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_4.py).
+
+[![Video 2](../images/Video_1.PNG)](https://www.youtube.com/watch?v=tvqc83gCffg&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=18&t=35s)
 
 ## [6.7 Έυρεση MAX με θέση I](source/lecture_06/lecture_06_example_5.py)
 
