@@ -1,14 +1,9 @@
-![GitHub](https://img.shields.io/github/license/Effie375/PythonLab)
-![GitHub repo size](https://img.shields.io/github/repo-size/Effie375/PythonLab)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Feffie375.github.io%2FPythonLab%2F&count_bg=%23D321DF&title_bg=%23555555&icon=apachecassandra.svg&icon_color=%23E5DEDE&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+[![Gitter](https://badges.gitter.im/TPTE_Python/community.svg)](https://gitter.im/TPTE_Python/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+![flake8 Lint](https://github.com/Effie375/PythonLab/workflows/flake8%20Lint/badge.svg)
 ![Lines of code](https://img.shields.io/tokei/lines/github/Effie375/PythonLab)
 ![GitHub issues](https://img.shields.io/github/issues-raw/Effie375/PythonLab)
-![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Effie375/PythonLab)
-![flake8 Lint](https://github.com/Effie375/PythonLab/workflows/flake8%20Lint/badge.svg)
-[![Gitter](https://badges.gitter.im/TPTE_Python/community.svg)](https://gitter.im/TPTE_Python/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-![Visits](https://badges.pufler.dev/visits/Effie375/PythonLab)
-[![HitCount](http://hits.dwyl.com/effie375/PythonLab.svg)](http://hits.dwyl.com/effie375/PythonLab)
-
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Feffie375.github.io%2FPythonLab%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+![GitHub](https://img.shields.io/github/license/Effie375/PythonLab)
 
 # Εισαγωγή στον Προγραμματισμό 🐍
 
