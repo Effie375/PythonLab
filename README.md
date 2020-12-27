@@ -6,7 +6,7 @@
 ![flake8 Lint](https://github.com/Effie375/PythonLab/workflows/flake8%20Lint/badge.svg)
 [![Gitter](https://badges.gitter.im/TPTE_Python/community.svg)](https://gitter.im/TPTE_Python/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 ![Visits](https://badges.pufler.dev/visits/Effie375/PythonLab)
-[![HitCount](http://hits.dwyl.com/Effie375/PythonLab.svg)](http://hits.dwyl.com/Effie375/PythonLab)
+[![HitCount](http://hits.dwyl.com/effie375/PythonLab.svg)](http://hits.dwyl.com/effie375/PythonLab)
 
 # Εισαγωγή στον Προγραμματισμό 🐍
 
