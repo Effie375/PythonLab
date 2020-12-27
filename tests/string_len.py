@@ -1,4 +1,4 @@
-name = 'Petros'
+name = 'Petro'
 result = len(name) * 2
 
 if (result == len(name)):
