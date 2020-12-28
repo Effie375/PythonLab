@@ -44,7 +44,7 @@ if number.isdigit() == True:
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_03/lab_03_example_1.py)
 
-[![Video 4](../images/Video_1.PNG)](https://www.youtube.com/watch?v=DPezCNKQzOs&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=3)
+[![Video 4](../images/Video_1.PNG)](https://www.youtube.com/watch?v=M6J63RwCXCI&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=7)
 
 ## 3.3 Ασκήσεις
 
