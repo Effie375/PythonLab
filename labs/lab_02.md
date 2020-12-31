@@ -21,11 +21,11 @@
   - `var3 = var1 + var2`
   - Σύμβολα: `+`, `-`, `*`, `/`, `//`, `%`, `**`
 - Εισαγωγή από τον χρήστη
-  - `var1 = input("Mhnyma pros xrhsth")`
+  - `var1 = input("Μήνυμα προς χρήστη")`
 - Εκτύπωση στην οθόνη
   - `print(var1)`
   - `print(var1, var2, var3)`
-  - `print("Keimeno", var1)`
+  - `print("Κείμενο", var1)`
 - Μετατροπή str σε αριθμό
   - Ακέραιο(int): `i = int("5")` ή `var1 = int(var1)`
   - Πραγματικό(float): `f = float("6.7")` ή `number = float(number)`
@@ -38,7 +38,7 @@
 
 Μία μεταβλητή πρέπει να έχει όνομα τέτοιο ώστε να γίνετε άμεσα κατανοητό το περιεχόμενο και η χρήση της.
 
-- Τα ονόματα μπορούν να είναι όσο μεγάλα θέλουμε, μπορούν να περιέχουν γράμματα και αριθμούς, αλλά πρέπει να ξεκινούν με ένα γράμμα ή τον  χαρακτήρα  `_`
+- Τα ονόματα μπορούν να είναι όσο μεγάλα θέλουμε, μπορούν να περιέχουν γράμματα και αριθμούς, αλλά πρέπει να ξεκινούν με ένα γράμμα ή τον  χαρακτήρα  **_**
 - Τα πεζά διακρίνονται από τα κεφαλαία γράμματα (case sensitive), για παράδειγμα οι day, Day, DAy, DAY, dAy, daY, DaY, dAY είναι διαφορετικές μεταβλητές.
 - Δεν επιτρέπονται κενά, εισαγωγικά, τελείες, κόμματα και άλλοι παρόμοιοι χαρακτήρες.
 
@@ -56,15 +56,15 @@
 
 Ένας φοιτητής για να επιτύχει στο μάθημα «Εισαγωγή στον Προγραμματισμό» πρέπει να δώσει μία πρόοδο και να συμμετάσχει στις γραπτές εξετάσεις στο τέλος του εξαμήνου. Ο υπολογισμός του τελικού βαθμού βασίζεται στον εξής τύπο:
 
-`Τελικός Βαθμός = Πρόοδος * 20% + Γραπτά * 80%`
+`Τελικός Βαθμός = Πρόοδος * 20% + Γραπτό * 80%`
 
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει το όνομα και τους βαθμούς ενός φοιτητή και θα εμφανίζει τον τελικό βαθμό του δίπλα από το όνομά του.
 
 ```python
 # Διάβασμα από τον χρήστη
-onoma = input("Δώσε ονομα φοιτητή: ")
-proodos = input("Βαθμός προόδου: ")
-grapto = input("Βαθμός γραπτού: ")
+name = input("Δώσε όνομα φοιτητή: ")
+proodos = input("Δώσε βαθμό προόδου: ")
+grapto = input("Δώσε βαθμό γραπτού: ")
 
 # Μετατροπή από str σε int
 proodos = int(proodos)
@@ -74,10 +74,12 @@ grapto = int(grapto)
 telikosVathmos = proodos * 0.2 + grapto * 0.8
 
 # Εκτύπωση αποτελέσματος
-print(onoma, telikosVathmos)
+print(name, telikosVathmos)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_02/lab_02_exercise_1.py).
+
+[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=vFFMY9CbKhE&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=4)
 
 ### [Άσκηση 2](source/lab_02/lab_02_exercise_2.py)
 
@@ -93,7 +95,7 @@ print(onoma, telikosVathmos)
 # Διάβασμα μεικτών απολαβών
 miktes = input("Μικτές αποδοχές: ")
 
-# Μετατροπή από str σε int
+# Μετατροπή από str σε float
 miktes = float(miktes)
 
 # Υπολογισμός επί μέρους εισφορών
@@ -105,14 +107,16 @@ loipa = miktes * 0.09
 kathara = miktes - asfaleia - foros - loipa
 
 # Εκτύπωση
-print("Μικτές αποδοχές:", miktes)
-print("Ασφάλεια:", asfaleia)
-print("Φόρος:", foros)
-print("Λοιπές κρατήσεις:", loipa)
-print("Καθαρές αποδοχές:", kathara)
+print("Μικτές αποδοχές: %.2f" % miktes)
+print("Ασφάλεια: %.2f" % asfaleia)
+print("Φόρος: %.2f" % foros)
+print("Λοιπές κρατήσεις: %.2f" % loipa)
+print("Καθαρές αποδοχές: %.2f" % kathara)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_02/lab_02_exercise_2.py)
+
+[![Video 2](../images/Video_1.PNG)](https://www.youtube.com/watch?v=R2IlsE4mM6A&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=5)
 
 ### [Άσκηση 3](source/lab_02/lab_02_exercise_3.py)
 
@@ -138,5 +142,7 @@ print("O/H", onoma, "θα γίνει 100 το έτος", ekatoXronwn)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_02/lab_02_exercise_3.py)
+
+[![Video 3](../images/Video_1.PNG)](https://www.youtube.com/watch?v=q6Nk4IFGyWA&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=6)
 
 [Home](../README.md) | [Lab 1](lab_01.md) | [Lab 2](lab_02.md) | [Lab 3](lab_03.md) | [Lab 4](lab_04.md) | [Lab 5](lab_05.md) | [Lab 6](lab_06.md) | [Lab 7](lab_07.md) | [Lab 8](lab_08.md) | [Lab 9](lab_09.md) | [Lab 10](lab_10.md)

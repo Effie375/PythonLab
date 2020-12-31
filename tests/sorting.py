@@ -3,8 +3,6 @@ import time
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
-# NOTE: Python version >=3.3 is required, due to "yield from" feature.
-
 def swap(A, i, j):
     """Helper function to swap elements i and j of list A."""
 

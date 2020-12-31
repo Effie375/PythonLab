@@ -221,4 +221,6 @@ print(fib)
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_07/lab_07_exercise_5.py)
 
+[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=eQgYOa1_MJU&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=19&t=10s)
+
 [Home](../README.md) | [Lab 1](lab_01.md) | [Lab 2](lab_02.md) | [Lab 3](lab_03.md) | [Lab 4](lab_04.md) | [Lab 5](lab_05.md) | [Lab 6](lab_06.md) | [Lab 7](lab_07.md) | [Lab 8](lab_08.md) | [Lab 9](lab_09.md) | [Lab 10](lab_10.md)

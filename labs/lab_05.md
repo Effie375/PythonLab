@@ -42,25 +42,30 @@
 Να γραφεί ένα πρόγραμμα που διαβάζει 10 νούμερα και τυπώνει την λίστα με ανάποδη σειρά.
 
 ```python
+list = []
 i = 0
-l = []
 
 while i < 10:
   number = int(input("Δώσε νούμερο: "))
-  l.append(number)
+  list.append(number)
   i += 1
 
+print(list)
+
+new_list = []
+
 j = 9
-new_l = []
 
 while j >= 0:
-  new_l.append(l[j])
+  new_list.append(list[j])
   j -= 1
-  
-print(new_l)
+
+print(new_list)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_05/lab_05_example_1.py)
+
+[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=CpFO-bNoKh0&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=14)
 
 ## 5.3 Ασκήσεις
 

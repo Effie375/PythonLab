@@ -22,7 +22,7 @@ print("H χειρότερη προσπάθεια είναι:", elaxisto)
 
 if megisto > record:
     print("Το νέο ρεκόρ είναι ", megisto)
-elif megisto > record - 0.5:
+elif record - megisto < 0.5:
     print("H καλύτερη προσπάθεια είναι:", megisto)
 else:
     print("Oι προσπάθειες του αθλητή δεν ήταν ικανοποιητικές.")

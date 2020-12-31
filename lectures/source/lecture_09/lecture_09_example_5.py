@@ -5,4 +5,4 @@ for ypolista in ls:
     for item in ypolista:
         sumGrammhs += item
 
-    print("Άθροισμα γραμμής:",sumGrammhs)
+    print("Άθροισμα γραμμής:", sumGrammhs)

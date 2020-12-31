@@ -1,7 +1,7 @@
 # Διάβασμα μεικτών απολαβών
 miktes = input("Μικτές αποδοχές: ")
 
-# Μετατροπή από str σε int
+# Μετατροπή από str σε float
 miktes = float(miktes)
 
 # Υπολογισμός επί μέρους εισφορών
@@ -13,8 +13,8 @@ loipa = miktes * 0.09
 kathara = miktes - asfaleia - foros - loipa
 
 # Εκτύπωση
-print("Μικτές αποδοχές:", miktes)
-print("Ασφάλεια:", asfaleia)
-print("Φόρος:", foros)
-print("Λοιπές κρατήσεις:", loipa)
-print("Καθαρές αποδοχές:", kathara)
+print("Μικτές αποδοχές: %.2f" % miktes)
+print("Ασφάλεια: %.2f" % asfaleia)
+print("Φόρος: %.2f" % foros)
+print("Λοιπές κρατήσεις: %.2f" % loipa)
+print("Καθαρές αποδοχές: %.2f" % kathara)

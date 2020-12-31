@@ -1,12 +1,15 @@
-miktes_apodoxes = float(input("Δώσε τις μεικτές αποδοχές: ").strip())
+try:
+    miktes_apodoxes = float(input("Δώσε τις μεικτές αποδοχές: "))
+except:
+    print("Μη έγκυρες αποδοχές!")
+else:
+    asfaleia = round(miktes_apodoxes * 0.03, 2)
+    foros = round(miktes_apodoxes * 0.05, 2)
+    loipes_kratiseis = round(miktes_apodoxes * 0.09, 2)
+    kathares_apodoxes = round(miktes_apodoxes - asfaleia - foros - loipes_kratiseis, 2)
 
-asfaleia = miktes_apodoxes * 0.03
-foros = miktes_apodoxes * 0.05
-loipes_kratiseis = miktes_apodoxes * 0.09
-kathares_apodoxes = miktes_apodoxes - asfaleia - foros - loipes_kratiseis
-   
-print(f"Μεικτές αποδοχές: {miktes_apodoxes:.2f}")
-print(f"Ασφάλεια 3%: {asfaleia:.2f}")
-print(f"Φόρος 5%: {foros:.2f}")
-print(f"Λοιπές κρατήσεις 9% {loipes_kratiseis:.2f}")
-print(f"Καθαρές αποδοχές: {kathares_apodoxes:.2f}")
+    print(f"Μεικτές αποδοχές: {miktes_apodoxes}")
+    print(f"Ασφάλεια 3%: {asfaleia}")
+    print(f"Φόρος 5% {foros}")
+    print(f"Λοιπές κρατήσεις 9%: {loipes_kratiseis}")
+    print(f"Καθαρές αποδοχές: {kathares_apodoxes}")
