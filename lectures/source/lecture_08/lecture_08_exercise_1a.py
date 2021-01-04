@@ -10,7 +10,7 @@ for i in range(len(list)):
         if list[j-1] > list[j]:
             temp = list[j-1]
             list[j-1] = list[j]
-            list[j] = temp 
+            list[j] = temp
 
 print(f"Ο ελάχιστος αριθμός της λίστας είναι: {list[0]}")
 print(f"Ο μέγιστος αριθμός της λίστας είναι: {list[i]}")

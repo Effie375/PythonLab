@@ -184,7 +184,7 @@ while num != 0:
 if plithos > 0:
   print("Θετικοί:", plithos)
 else:
-  print ("Δεν υπάρχουν θετικοί :(")
+  print("Δεν υπάρχουν θετικοί :(")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_04/lecture_04_exercise_1.py).

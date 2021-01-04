@@ -18,6 +18,6 @@ while i < len(temp):
         maxThesi = i
     i += 1
 
-print("Η μέγιστη θερμοκρασία είναι", temp[maxThesi , "την ημέρα", maxThesi)
+print("Η μέγιστη θερμοκρασία είναι", temp[maxThesi], "την ημέρα", maxThesi)
 
-print("Η ελάχιστη θερμοκρασία είναι", temp[minThesi , "την ημέρα", minThesi)
+print("Η ελάχιστη θερμοκρασία είναι", temp[minThesi], "την ημέρα", minThesi)

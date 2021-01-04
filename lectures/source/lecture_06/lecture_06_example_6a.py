@@ -1,6 +1,7 @@
-list = [5,7,8,9,3]
+list = [5, 7, 8, 9, 3]
+
 found = False
-i = 0 
+i = 0
 
 key = int(input("Δώσε στοιχείο που αναζητάς: ").strip())
 

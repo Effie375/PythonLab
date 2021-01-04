@@ -4,11 +4,13 @@ key = int(input("Δώσε στοιχείο που αναζητάς: "))
 
 key_counter = 0
 found = False
+i = 0
+j = 0
 
-while i<5 and not found:
-    while j<4 and not found:
+while i < 5 and not found:
+    while j < 4 and not found:
         if key == ls[i][j]:
-            print(i,j)
+            print(i, j)
             found = True
-        j+=1
-    i+=1
+        j += 1
+    i += 1

@@ -162,7 +162,7 @@ eksamino = []
 for i in range(2):
   mathima = []
   for j in range(2):
-    vathmos = float(input("Δώσε βαθμό για %d εξάμηνο και %d μάθημα: "% (i+1,j+1)))
+    vathmos = float(input("Δώσε βαθμό για %d εξάμηνο και %d μάθημα: "% (i + 1,j + 1)))
     mathima.append(vathmos)
     eksamino.append(mathima)
 

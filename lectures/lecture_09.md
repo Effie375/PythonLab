@@ -146,7 +146,7 @@ for j in range(4):
 ls = [[2, 3, 4, 1], [7, 3, 3, 9], [6, 5, 5, 8], [1, 9, 4, 1], [0, 4, 7, 4]]
 
 for ypolista in ls:
-  megistoGrammhs = ypolista[0
+  megistoGrammhs = ypolista[0]
   for i in ypolista:
     if megistoGrammhs < i:
       megistoGrammhs = i
@@ -186,8 +186,8 @@ key_counter = 0
 for i in range(5):
   for j in range(4):
     if key == ls[i][j]:
-      print(i,j)
-      key_counter+=1
+      print(i, j)
+      key_counter += 1
 print("Βρέθηκε %d φορές." % (key_counter))
 ```
 
@@ -204,14 +204,16 @@ key = int(input("Δώσε στοιχείο που αναζητάς: "))
 
 key_counter = 0
 found = False
+i = 0
+j = 0
 
-while i<5 and not found:
-  while j<4 and not found:
+while i < 5 and not found:
+  while j < 4 and not found:
     if key == ls[i][j]:
-      print(i,j)
+      print(i, j)
       found = True
-    j+=1
-  i+=1
+    j += 1
+  i += 1
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_10.py).
@@ -221,13 +223,13 @@ while i<5 and not found:
 ---
 
 ```python
-A[[2, 3, 4, 1], [7, 8 , 19, 12], [6, 15, 10, 18], [11, 21, 24, 23], [0, -4, -7, 35]]
+A = [[2, 3, 4, 1], [7, 8, 19, 12], [6, 15, 10, 18], [11, 21, 24, 23], [0, -4, -7, 35]]
 
 print("Η μη ταξινομημένη λίστα είναι:", A)
 
 for k in range(5):
-  for i in range(1,4):
-    for j in range(3,i-1,-1):
+  for i in range(1, 4):
+    for j in range(3, i-1, -1):
       if A[k][j-1] > A[k][j]:
         temp = A[k][j-1]
         A[k][j-1] = A[k][j]
@@ -244,8 +246,8 @@ print("Η ταξινομημένη λίστα:", A)
 
 ```python
 for k in range(4):
-  for i in range(1,5):
-    for j in range(4,i-1,-1):
+  for i in range(1, 5):
+    for j in range(4, i-1, -1):
       if A[j-1][k] > A[j][k]:
         temp = A[j-1][k]
         A[j-1][k] = A[j][k]
@@ -264,15 +266,15 @@ print("Η ταξινομημένη λίστα:", A)
 # Ίδιο πλήθος γραµµών και στηλών
 # Άθροισµα Διαγωνίων
 
-sum1=0
-sum2=0
+sum1 = 0
+sum2 = 0
 
 for i in range(4):
   for j in range(4):
-    if i==j:
-      sum1+=A[i][j]
-    if i+j==3:
-      sum2+=A[i][j]
+    if i == j:
+      sum1 += A[i][j]
+    if i + j == 3:
+      sum2 += A[i][j]
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_13.py).
@@ -286,10 +288,10 @@ for i in range(4):
 ```python
 A = []
 
-for ypolista in ls:
+for ypolista in A:
   sum = 0
   for i in ypolista:
-    sum+=i
+    sum += i
 
 A.append(sum)
 ```
@@ -299,14 +301,14 @@ A.append(sum)
 ### [Παράδειγμα 2](source/lecture_09/lecture_09_example_15.py)
 
 ```python
-B=[]
+B = []
 
 for key in A:
   counter = 0
   for ypolista in ls:
     for i in ypolista:
       if i == key:
-        counter+=1
+        counter += 1
   B.append(counter)
 ```
 

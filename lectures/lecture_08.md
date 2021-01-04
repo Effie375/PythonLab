@@ -19,7 +19,7 @@
 ---
 
 ```python
-list = [9,7,8,9,3]
+list = [9, 7, 8, 9, 3]
 
 key = int(input("Δώσε στοιχείο που αναζητάς: "))
 
@@ -66,7 +66,7 @@ print("Το %d έχει εισαχθεί %d φορές." % (key, counter))
 ---
 
 ```python
-key = int(input("Δώσε στοιχείο που αναζητάς: ")
+key = int(input("Δώσε στοιχείο που αναζητάς: "))
 
 found = False
 i = 0
@@ -95,7 +95,7 @@ A = [5, 7, 8, 9, 3]
 print("Η λίστα μας πριν τη ταξινόμηση είναι: %s" % A)
 
 for i in range(len(A)):
-  for j in range(len(A)-1,i,-1):
+  for j in range(len(A)-1, i, -1):
     if A[j-1] > A[j]:
       temp = A[j-1]
       A[j-1] = A[j]
@@ -118,12 +118,12 @@ Grades = [1, 2, 5, 7, 9]
 for i in range(1, 5):
   for j in range(4, i-1, -1):
     if Grades[j-1] > Grades[j]:
-      temp=Grades[j-1]
-      Grades[j-1]=Grades[j]
-      Grades[j]=temp
-      temp2=Names[j-1]
-      Names[j-1]=Names[j]
-      Names[j]=temp2
+      temp = Grades[j-1]
+      Grades[j-1] = Grades[j]
+      Grades[j] = temp
+      temp2 = Names[j-1]
+      Names[j-1] = Names[j]
+      Names[j] = temp2
 
 print(Names)
 print(Grades)

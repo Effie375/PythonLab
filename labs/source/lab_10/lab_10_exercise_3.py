@@ -4,7 +4,7 @@ eksamino = []
 for i in range(2):
     mathima = []
     for j in range(2):
-        vathmos = float(input("Δώσε βαθμό για %d εξάμηνο και %d μάθημα: " % (i+1, j+1)))
+        vathmos = float(input("Δώσε βαθμό για %d εξάμηνο και %d μάθημα: " % (i + 1, j + 1)))
         mathima.append(vathmos)
         eksamino.append(mathima)
 
@@ -12,7 +12,7 @@ for i in range(2):
 print("Οι βαθμοί του φοιτητή είναι:", eksamino)
 
 # Υπολογισμός μέγιστου με βάση το κάθε μάθημα
-meg_vathmos=mathima[0]
+meg_vathmos = mathima[0]
 
 for mathima in eksamino:
     for i in mathima:

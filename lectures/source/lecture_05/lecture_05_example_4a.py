@@ -1,4 +1,5 @@
 list = [5, 7, 8, 9, 3]
+
 maxThesi = i = 0
 
 while i < len(list):

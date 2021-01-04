@@ -14,6 +14,7 @@ class sort(object):
 		if not os.path.lexists(self.path):
 			os.mkdir(self.path)
 
+
 	def merge_sort(self, s, start, end):
 		if end - start < 2:
 			return
@@ -22,6 +23,7 @@ class sort(object):
 		self.merge_sort(s, end - m, end)
 		self.merge(start, m, end, s)
 
+	
 	def merge(self, start, m, end, s):
 		i, j = start, m
 		while i < m and j < end:
@@ -52,12 +54,13 @@ class sort(object):
 			self.draw(s, fun = 'QUICK SORT')
 		self.quick_sort(s, a, left - 1)
 		self.quick_sort(s, left + 1, b)
-
+	
+	
 	def select_sort(self, s):
 		self.draw(s, fun = 'SELECTION SORT')
 		for i in range(len(s)):
 			if self.search(s, i):
-				self.draw(s, fun = 'SELECTION SORT')
+				self.draw(s, fun = 'SELECTION SORT')	
 
 	def search(self, s, i):
 		index, value = i, s[i]
@@ -66,6 +69,7 @@ class sort(object):
 				index, value = j, s[j]
 		s[index], s[i] = s[i], s[index]
 		return index != i
+
 
 	def heap_adjust(self, s, m, length):
 		j = 2 * m + 1
@@ -80,6 +84,7 @@ class sort(object):
 				break
 			s[m], s[j], m, j= s[j], s[m], j, 2 * j + 1
 
+
 	def heap_sort(self, s):
 		i = len(s) // 2 - 1
 		while i >= 0:
@@ -90,14 +95,16 @@ class sort(object):
 			s[0], s[i - 1], i = s[i - 1], s[0], i - 1
 			self.draw(s, fun = 'HEAP SORT')
 			self.heap_adjust(s, 0, i)
-
+	
+	
 	def insert_sort(self, s):
 		i = j = len(s)
 		while i > 0:
 			if self.insert_next(s, j - i):
 				self.draw(s, fun = 'INSERT SORT')
 			i -= 1
-
+			
+			
 	def insert_next(self, s, k):
 		index, value = k, s[k]
 		for i in range(k, len(s)):
@@ -105,6 +112,7 @@ class sort(object):
 				index, value = i, s[i]
 		s[k], s[index] = s[index], s[k]
 		return index != k
+
 
 	def shell_sort(self, s):
 		count, t = 1, int(np.log2(len(s) + 1))
@@ -115,6 +123,7 @@ class sort(object):
 					self.draw(s, fun = 'SHELL SORT')
 			count += 1
 
+
 	def insert_shell(self, s, start, end):
 		index, value = start, s[start]
 		for i in range(start, end + 1):
@@ -122,14 +131,16 @@ class sort(object):
 				index, value = i, s[i]
 		s[start], s[index] = s[index], s[start]
 		return index != start
-
+	
+	
 	def bubble_sort(self, s):
 		for j in range(len(s) - 1):
 			for i in range(len(s) - j - 1):
 				if s[i] > s[i + 1]:
 					s[i], s[i + 1] = s[i + 1], s[i]
 					self.draw(s, fun = 'BUBBLE SORT')
-
+				
+			
 	def draw(self, s, fun):
 		if len(s):
 			self.count += 1
@@ -138,7 +149,8 @@ class sort(object):
 			plt.title(fun)
 			plt.savefig('sp/' + str(self.count))
 			plt.pause(0.0001)
-
+		
+	
 	def get_gif(self):
 		name = os.listdir(self.path)
 		name.sort(key=lambda x:int(x[:-4]))
@@ -149,17 +161,18 @@ class sort(object):
 
 
 if __name__ == '__main__':
-    import random
-    s = list(random.randint(1,100) for x in range(100))
-    p = sort()
-    p.bubble_sort(s)
-    """
+	import random
+	s = list(random.randint(1,100) for x in range(100))
+	p = sort()
+	p.bubble_sort(s)
+
+"""
     p.select_sort(s)
     p.heap_sort(s)
     p.quick_sort(s,0,len(s)-1)
     p.merge_sort(s, 0, len(s))
     p.insert_sort(s)
     p.shell_sort(s)
-    #p.bubble_sort(s)
+    p.bubble_sort(s)
     p.get_gif()
-    """
+"""# noqa: E501

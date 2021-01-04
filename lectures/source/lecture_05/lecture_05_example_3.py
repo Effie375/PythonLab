@@ -1,4 +1,5 @@
 list = [1, 4, 6, 9, 7, 2]
+
 megisto = list[0]
 i = 0
 

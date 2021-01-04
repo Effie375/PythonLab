@@ -1,8 +1,8 @@
 max_students = 20
-student_list =[]
-grades_list=[]
+student_list = []
+grades_list = []
 maxIndex = 0
-i = 0 
+i = 0
 
 while i < max_students:
     student = input("Δώσε το όνομά σου: ").strip()

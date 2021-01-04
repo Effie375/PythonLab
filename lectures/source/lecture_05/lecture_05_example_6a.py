@@ -4,7 +4,7 @@ thesi = i = 0
 
 key = int(input("Δώσε στοιχείο που αναζητάς: ").strip())
 
-while (i<len(list)) and (not found):
+while(i<len(list)) and (not found):
     if list[i] == key:
         thesi = i
         found = True

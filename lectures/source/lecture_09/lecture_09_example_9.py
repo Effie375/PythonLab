@@ -7,6 +7,6 @@ key_counter = 0
 for i in range(5):
     for j in range(4):
         if key == ls[i][j]:
-            print(i,j)
-            key_counter+=1
+            print(i, j)
+            key_counter += 1
 print("Βρέθηκε %d φορές." % (key_counter))

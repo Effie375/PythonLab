@@ -10,4 +10,4 @@ while num != 0:
 if plithos > 0:
     print("Θετικοί:", plithos)
 else:
-    print ("Δεν υπάρχουν θετικοί :(")
+    print("Δεν υπάρχουν θετικοί :(")

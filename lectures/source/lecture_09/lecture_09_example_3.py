@@ -5,6 +5,6 @@ megisto = ls[0][0]
 for ypolista in ls:
     for item in ypolista:
         if item > megisto:
-            megisto=item
+            megisto = item
 
 print(megisto)

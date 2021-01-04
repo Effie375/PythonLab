@@ -4,7 +4,7 @@ key = int(input("Δώσε στοιχείο που αναζητάς: "))
 
 counter = 0
 
-for i in list: 
+for i in list:
     if i == key:
         counter += 1
 
