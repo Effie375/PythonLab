@@ -3,6 +3,7 @@ lexi = input("Δώσε λέξη: ")
 vowels = 'aehiouy'
 consonants = 'bcdfgjklmnpqrstvwxz'
 
+# Αρχικοποίηση μεταβλητών
 v_counter = 0
 c_counter = 0
 i = 0

@@ -17,9 +17,12 @@
 ---
 
 ```python
+# Διάβασμα από τον χρήστη
 number = input("Δώσε έναν αριθμό: ")
 
-if number.isdigit() == True:
+# Έλεγχος αν είναι αριθμός
+if number.isdigit() is True:
+  # Μετατροπή από str σε int
   number = int(number)
   if number == 0:
     print("Μηδέν")
@@ -52,9 +55,10 @@ synolo = 0
 while i < 10:
   number = int(input("Δώσε αριθμό: "))
   synolo = synolo + number
-  i = i + 1 
+  i = i + 1
 
-print("Το σύνολο είναι: ", synolo)
+# Εκτύπωση αποτελέσματος
+print("Το σύνολο είναι:", synolo)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_example_2.py)
@@ -77,8 +81,9 @@ while i < 10:
     number = input("Είπα δώσε αριθμό: ")
   number = int(number)
   synolo = synolo + number
-  i = i + 1 
+  i = i + 1
 
+# Εκτύπωση αποτελέσματος
 print("Το σύνολο είναι:", synolo)
 ```
 
@@ -122,9 +127,9 @@ if zaria1.isdigit() and zaria2.isdigit():
     else:
       print(zaria1 + zaria2)
   else:
-    print("Error! Γιατί οι ζαριές είναι εκτός ορίων 1 και 6;")
+    print("Γιατί οι ζαριές είναι εκτός ορίων 1 και 6;")
 else:
-    print("Error! Γιατί έγραψες λέξη;")
+  print("Γιατί έγραψες λέξη;")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_exercise_1.py)
@@ -139,11 +144,12 @@ else:
 i = 0
 athroisma = 0
 
-while i< 6:
-  vathmos = int(input("Δώσε βαθμό: "))
+while i < 6:
+  vathmos = float(input("Δώσε βαθμό: "))
   athroisma = athroisma + vathmos
   i = i + 1
 
+# Υπολογισμός μέσου όρου
 mo = athroisma / 6
 
 if mo > 10:
@@ -186,17 +192,17 @@ etos = int(input("Δώσε έτος: "))
 if etos % 4 == 0:
   # Εκτός και αν διαιρείται και με 100
   if etos % 100 == 0:
-     # Aλλα και σε αυτήν την περίπτωση αν διαιρείται με 400 είναι δίσεκτο
-     if etos % 400 == 0:
-       disekto = True
-      else:
-        disekto = False
+    # Aλλα και σε αυτήν την περίπτωση αν διαιρείται με 400 είναι δίσεκτο
+    if etos % 400 == 0:
+      disekto = True
+    else:
+      disekto = False
   else:
     disekto = True
 else:
-    disekto = False
+  disekto = False
 
-# Eκτύπωση αποτελεσμάτων
+# Eκτύπωση αποτελέσματος
 if disekto:
   print("Είναι δίσκετο")
 else:
@@ -217,15 +223,16 @@ flag = False
 while arithmos != 0:
   arithmos = input("Δώσε αριθμό: ")
   while not arithmos.isdigit():
-    arithmos = input("Είπα δώσε αριθμό: ")
+    arithmos = input("Δώσε σωστά αριθμό: ")
   arithmos = int(arithmos)
-  if flag == False and arithmos != 0:
+  if flag is False and arithmos != 0:
     ginomeno = 1
     flag = True
   if arithmos != 0:
     ginomeno = ginomeno * arithmos
 
-print("Γινόμενο:", ginomeno)     
+# Eκτύπωση αποτελέσματος
+print("Γινόμενο:", ginomeno)   
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_04/lab_04_exercise_4.py)
@@ -237,6 +244,7 @@ print("Γινόμενο:", ginomeno)
 ```python
 athroisma = 0
 
+# Διάβασμα από τον χρ΄ήστη και μετατροπ΄ή από str σε int
 number = int(input("Δώσε αριθμό: "))
 
 while number != 0:
@@ -244,6 +252,7 @@ while number != 0:
   number = number // 10
   athroisma += tel_pshfio
 
+# Eκτύπωση αποτελέσματος
 print("Άθροισμα:", athroisma)
 ```
 

@@ -1,3 +1,4 @@
+# Αρχικοποίηση μεταβλητών
 lista = []
 i = 0
 
@@ -43,4 +44,4 @@ while ls < 10:
 
     ls += 1
 
-print("Η διαφορά είναι: ", megistos-elaxistos)
+print("Η διαφορά είναι: ", megistos - elaxistos)

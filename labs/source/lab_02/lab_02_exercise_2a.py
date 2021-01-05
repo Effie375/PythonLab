@@ -8,10 +8,10 @@ else:
     asfaleia = round(miktes_apodoxes * 0.03, 2)
     foros = round(miktes_apodoxes * 0.05, 2)
     loipa = round(miktes_apodoxes * 0.09, 2)
-    
+
     # Οι καθαρές απολαβές ειναι οι μεικτές μείον όλες τις εισφορές
     kathara = round(miktes_apodoxes - asfaleia - foros - loipa, 2)
-    
+
     # Εκτύπωση
     print(f"Μεικτές αποδοχές: {miktes_apodoxes}")
     print(f"Ασφάλεια 3%: {asfaleia}")

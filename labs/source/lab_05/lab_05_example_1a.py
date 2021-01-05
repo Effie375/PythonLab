@@ -1,3 +1,4 @@
+# Αρχικοποίηση μεταβλητών
 max_elements = 10
 new_lista = []
 lista = []

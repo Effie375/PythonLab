@@ -42,15 +42,14 @@
 Να γραφεί ένα πρόγραμμα που διαβάζει 10 νούμερα και τυπώνει την λίστα με ανάποδη σειρά.
 
 ```python
+# Αρχικοποίηση μεταβλητών
 list = []
 i = 0
 
 while i < 10:
-  number = int(input("Δώσε νούμερο: "))
+  number = int(input("Δώσε έναν αριθμό: "))
   list.append(number)
   i += 1
-
-print(list)
 
 new_list = []
 
@@ -60,7 +59,7 @@ while j >= 0:
   new_list.append(list[j])
   j -= 1
 
-print(new_list)
+print("Η νέα λίστα είναι:", new_list)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_05/lab_05_example_1.py)
@@ -81,19 +80,20 @@ print(new_list)
 - Τη διαφορά του μέγιστου από το ελάχιστο στοιχείο της λίστας.
 
 ```python
+# Αρχικοποίηση μεταβλητών
 lista = []
 i = 0
 
 # Δίαβασμα πίνακα
 while i < 10:
-  number = int(input("Δώσε αριθμό: "))
-  lista.append(number)
-  i= i + 1
+    number = int(input("Δώσε αριθμό: "))
+    lista.append(number)
+    i += 1
 
 # Αρχικοποίηση μεταβλητών
 j = 0
 k = 0
-l = 0
+ls = 0
 athroisma = 0
 artios = 0
 perittos = 0
@@ -102,7 +102,7 @@ elaxistos = lista[0]
 
 # Yπολογισμός ζητούμενων
 while j < 10:
-  athroisma=athroisma+lista[j]
+  athroisma += lista[j]
   j = j + 1
 
 print("Το άθροισμα είναι: ", athroisma)
@@ -114,16 +114,19 @@ while k < 10:
     perittos += 1
   k += 1
 
-print("To πλήθος των άρτιων είναι: ", artios, " Tο πλήθος των περιττών είναι: ", perittos)
+print("To πλήθος των άρτιων είναι: ", artios)
+print("Tο πλήθος των περιττών είναι: ", perittos)
 
-while l < 10:
-  if megistos < lista[l]:
-    megistos = lista[l]
-  if elaxistos > lista[l]:
-    elaxistos = lista[l]
-  l += 1
-    
-print("Η διαφορά είναι: ", megistos-elaxistos)
+while ls < 10:
+  if megistos < lista[ls]:
+    megistos = lista[ls]
+
+  if elaxistos > lista[ls]:
+    elaxistos = lista[ls]
+
+  ls += 1
+
+print("Η διαφορά είναι: ", megistos - elaxistos)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_05/lab_05_exercise_1.py)
@@ -134,19 +137,20 @@ print("Η διαφορά είναι: ", megistos-elaxistos)
 Να μην γίνει χρήση της μεθόδου count().
 
 ```python
-cont=True
-l = []
+# Αρχικοποίηση μεταβλητών
+cont = True
+ls = []
 
 while cont:
   leksi = (input("Δώσε λέξη: "))
   thesi = int(input("Δώσε θέση: "))
-  if thesi >= 0 and thesi <= len(l):
-    l.insert(thesi, leksi)
+  if thesi >= 0 and thesi <= len(ls):
+    ls.insert(thesi, leksi)
   else:
     cont = False
     print("Τέλος εισαγωγής δεδομένων.")
 
-print(l)
+print(ls)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_05/lab_05_exercise_2.py)
@@ -161,20 +165,25 @@ lexi = input("Δώσε λέξη: ")
 vowels = 'aehiouy'
 consonants = 'bcdfgjklmnpqrstvwxz'
 
-v_counter=0
-c_counter=0
-i=0
+# Αρχικοποίηση μεταβλητών
+v_counter = 0
+c_counter = 0
+i = 0
 
 while i < len(lexi):
   if lexi[i] in vowels:
-    v_counter+=1
-  # Μπορεί να έχει και άλλους χαρακτήρες όπως " h /, αυτά δε θέλουμε να τα μετρήσουμε.
+    v_counter += 1
   elif lexi[i] in consonants:
-    c_counter+=1
+    c_counter += 1
     i += 1
+  else:
+    """
+    Μπορεί να έχει και άλλους χαρακτήρες όπως " h /, αυτά δε θέλουμε να τα μετρήσουμε.
+    """  # noqa: E501
+    pass
 
-print("Φωνήεντα: ",v_counter)
-print("Σύμφωνα: ",c_counter)
+print("Φωνήεντα: ", v_counter)
+print("Σύμφωνα: ", c_counter)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_05/lab_05_exercise_3.py)

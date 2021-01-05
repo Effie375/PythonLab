@@ -1,9 +1,11 @@
+# Αρχικοποίηση μεταβλητών
 odd = even = sum = i = 0
 max_elements = 10
 list = []
 
+# Δίαβασμα πίνακα
 while i < max_elements:
-    number = int(input("Δώσε έναν αριθμό: ").strip())
+    number = int(input("Δώσε αριθμό: ").strip())
     list.append(number)
     sum += number
     if number % 2 == 0:
@@ -16,15 +18,17 @@ print(f"Tο άθροισμα των αριθμών είναι {sum}.")
 print(f"Tο πλήθος των περιττών είναι {odd}. ")
 print(f"Το πλήθος των άρτιων είναι {even}.")
 
-max = min = i = 0
+# Αρχικοποίηση μεταβλητών
+megistos = elaxistos = i = 0
 
+# Yπολογισμός ζητούμενων
 while i < 10:
-    if list[i] > list[max]:
-        max = i
-    elif list[i] < list[min]:
-        min = i
+    if list[i] > list[megistos]:
+        megistos = i
+    elif list[i] < list[elaxistos]:
+        elaxistos = i
     i += 1
 
-diff = list[max] - list[min]
+diafora = list[megistos] - list[elaxistos]
 
-print(f"H διαφορά μεταξύ του {list[max]} και του {list[min]} είναι {diff}.")
+print(f"H διαφορά max και min είναι {diafora}.")

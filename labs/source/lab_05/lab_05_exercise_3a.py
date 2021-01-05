@@ -1,3 +1,4 @@
+# Αρχικοποίηση μεταβλητών
 consonants_counter = vowel_counter = other_counter = letter = 0
 list_of_consonants = "bcdfgjklmnpqrstvwxz"
 list_of_vowels = "aehyuio"

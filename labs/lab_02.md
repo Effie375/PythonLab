@@ -138,6 +138,7 @@ etosGennhshs = twrinoEtos - hlikia
 # Υπολογισμός χρονιάς που θα γίνει 100
 ekatoXronwn = etosGennhshs + 100
 
+# Εκτύπωση
 print("O/H", onoma, "θα γίνει 100 το έτος", ekatoXronwn)
 ```
 
