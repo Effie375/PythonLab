@@ -4,10 +4,10 @@ try:
     proodos = float(input("Δώσε βαθμό προόδου: ").strip())
     grapta = float(input("Δώσε βαθμό γραπτών: ").strip())
 except ValueError:
-    print("Μη έγκυρος βαθμός!")
+    print(f"Μη έγκυρος βαθμός!")
 else:
     telikos_vathmos = round(0.2 * proodos + 0.8 * grapta, 1)
     if telikos_vathmos >= 5:
-        print("Πέρασες!")
+        print(f"Πέρασες!")
     else:
-        print("Απέτυχες!")
+        print(f"Απέτυχες!")

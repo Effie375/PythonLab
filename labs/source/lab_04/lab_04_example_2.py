@@ -6,4 +6,4 @@ while i < 10:
     synolo = synolo + number
     i = i + 1
 
-print("Το σύνολο είναι: ", synolo)
+print("Το σύνολο είναι:", synolo)

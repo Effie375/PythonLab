@@ -6,15 +6,15 @@ if dice1.isdigit() and dice2.isdigit():
     dice2 = int(dice2)
     if (dice1 >= 1 and dice1 <= 6) and (dice2 >= 1 and dice2 <= 6):
         if ((dice1 == 4) and (dice2 == 4)):
-            print("Ντόρτια.")
+            print(f"Ντόρτια.")
         elif (dice1 == 1 and dice2 == 2) or (dice1 == 2 and dice2 == 1):
-            print("Ασσόδυο.")
+            print(f"Ασσόδυο.")
         elif dice1 == dice2:
-            print("Διπλές.")
+            print(f"Διπλές.")
         else:
             print(f"Πρώτο ζάρι {dice1}.")
             print(f"Δεύτερο ζάρι {dice2}.")
     else:
-        print("Λάθος!!")
+        print(f"Λάθος!")
 else:
-    print("Λάθος!!")
+    print(f"Λάθος!")

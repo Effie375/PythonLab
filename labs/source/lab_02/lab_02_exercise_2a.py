@@ -1,7 +1,7 @@
 try:
-    miktes_apodoxes = float(input("Δώσε τις μεικτές αποδοχές: "))
+    miktes_apodoxes = float(input("Δώσε τις μεικτές αποδοχές: ").strip())
 except ValueError:
-    print("Μη έγκυρες αποδοχές!")
+    print(f"Μη έγκυρες αποδοχές!")
 else:
     asfaleia = round(miktes_apodoxes * 0.03, 2)
     foros = round(miktes_apodoxes * 0.05, 2)

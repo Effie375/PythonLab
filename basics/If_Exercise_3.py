@@ -1,10 +1,10 @@
-first_attempt = float(input("Πόσα μέτρα πήδηξες στην πρώτη προσπάθεια; "))
-second_attempt = float(input("Πόσα μέτρα πήδηξες στη δεύτερη προσπάθεια; "))
-third_attempt = float(input("Πόσα μέτρα πήδηξες στην τρίτη προσπάθεια; "))
+first_attempt = float(input("Πόσα μέτρα πήδηξες την 1η φορά; ").strip())
+second_attempt = float(input("Πόσα μέτρα πήδηξες την 2η φορά; ").strip())
+third_attempt = float(input("Πόσα μέτρα πήδηξες την 3η φορά; ").strip())
 
-average = (first_attempt + second_attempt + third_attempt)/3
+average = (first_attempt + second_attempt + third_attempt) / 3
 
-print("Ο μέσος όρος είναι %.2f μέτρα." % average)
+print(f"Ο μέσος όρος είναι {average:.2f} μέτρα.")
 
 if average > 8:
-    print("Προκριθήκατε στον επόμενο αγώνα!")
+    print(f"Προκριθήκατε στον επόμενο αγώνα!")

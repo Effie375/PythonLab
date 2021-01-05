@@ -5,9 +5,9 @@ def find_max(number_1, number_2):
     return max_number
 
 
-num1 = int(input("Δώσε έναν αριθμό: "))
-num2 = int(input("Δώσε άλλον έναν αριθμό: "))
+num1 = int(input("Δώσε έναν αριθμό: ").strip())
+num2 = int(input("Δώσε άλλον έναν αριθμό: ").strip())
 
 max_num = find_max(num1, num2)
 
-print("Ο μεγαλύτερος αριθμός είναι: %d" % max_num)
+print(f"Ο μεγαλύτερος αριθμός είναι: {max_num}")
