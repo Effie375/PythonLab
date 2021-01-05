@@ -11,7 +11,8 @@ window = sg.Window('CFS', layout)
 # Event Loop to process "events" and get the "values" of the inputs
 while True:
     event, values = window.read()
-    if event == sg.WIN_CLOSED or event == "Save" or event == "Plot": # if user closes window or clicks cancel
+    # if user closes window or clicks cancel
+    if event == sg.WIN_CLOSED or event == "Save" or event == "Plot":
         break
     print("Please enter a path.", values[0])
 

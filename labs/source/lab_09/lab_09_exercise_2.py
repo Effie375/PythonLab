@@ -10,5 +10,5 @@ for i in range(1, 7):
             temp = players[j-1]
             players[j-1] = players[j]
             players[j] = temp
-     
+
 print("Παίκτες:", players)

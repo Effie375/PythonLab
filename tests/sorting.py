@@ -17,7 +17,6 @@ def bubblesort(A):
     if len(A) == 1:
         return
 
-
     swapped = True
     for i in range(len(A) - 1):
         if not swapped:
@@ -56,7 +55,7 @@ def mergesort(A, start, end):
 
 def merge(A, start, mid, end):
     """Helper function for merge sort."""
-    
+
     merged = []
     leftIdx = start
     rightIdx = mid + 1
@@ -181,6 +180,7 @@ if __name__ == "__main__":
     # NOTE: Alternatively, iteration could be re-declared within update_fig()
     # with the "global" keyword (or "nonlocal" keyword).
     iteration = [0]
+
     def update_fig(A, rects, iteration):
         for rect, val in zip(rects, A):
             rect.set_height(val)

@@ -8,6 +8,6 @@ telikosVathmos = proodos * 0.2 + grapta * 0.8
 
 # Έλεγχος εαν είναι πάνω από 5
 if telikosVathmos >= 5:
-	print(onoma, "Πέρασες")
+    print(onoma, "Πέρασες")
 else:
-	print(onoma, "Απέτυχες")
+    print(onoma, "Απέτυχες")

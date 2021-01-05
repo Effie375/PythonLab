@@ -14,25 +14,26 @@ class Example(Frame):
 
         self.initUI()
 
-
     def initUI(self):
 
         self.parent.title("Buttons")
 
         self.pack(fill=BOTH, expand=1)
 
-        btn1 = Button(self, text="Button 1",
-            command=lambda: self.onClick("Button 1"))
+        btn1 = Button(self, 
+                      text="Button 1",
+                      command=lambda: self.onClick("Button 1"))
         btn1.pack(padx=5, pady=5)
 
-        btn2 = Button(self, text="Button 2",
-            command=lambda: self.onClick("Button 2"))
+        btn2 = Button(self, 
+                      text="Button 2",
+                      command=lambda: self.onClick("Button 2"))
         btn2.pack(padx=5, pady=5)
 
-        btn2 = Button(self, text="Button 3",
-            command=lambda: self.onClick("Button 3"))
+        btn2 = Button(self, 
+                      text="Button 3",
+                      command=lambda: self.onClick("Button 3"))
         btn2.pack(padx=5, pady=5)
-
 
     def onClick(self, text):
         messagebox.showinfo("Button label", text)
