@@ -18,4 +18,4 @@ while i < len(grades_list):
         maxIndex = i
     i += 1
 
-print(f"{student_list[maxIndex]} κέρδισε τον διαγωνισμό με βαθμό {grades_list[maxIndex]}.")
+print(f"{student_list[maxIndex]} κέρδισε με βαθμό {grades_list[maxIndex]}.")

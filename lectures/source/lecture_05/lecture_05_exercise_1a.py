@@ -1,6 +1,6 @@
 max_elements = 100
-new_lista=[]
-lista=[]
+new_lista = []
+lista = []
 i = 0
 
 while i < max_elements:

@@ -44,4 +44,4 @@ def is_Odd(_num):
     if _num % 2:
         return True  # Μονός
     else:
-       return False  # Ζυγός
+        return False  # Ζυγός

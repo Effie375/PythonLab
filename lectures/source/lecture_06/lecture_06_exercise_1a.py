@@ -4,7 +4,7 @@
 που διαβάστηκαν.
 '''
 
-max_elements = 5 # --> 100
+max_elements = 5  # --> 100
 list = []
 
 for item in range(max_elements):
