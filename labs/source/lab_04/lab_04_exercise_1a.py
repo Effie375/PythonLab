@@ -1,19 +1,19 @@
-first_dice = input("Δώσε το πρώτο ζάρι: ").strip()
-second_dice = input("Δώσε το δεύτερο ζάρι: ").strip()
+dice1 = input("Δώσε το πρώτο ζάρι: ").strip()
+dice2 = input("Δώσε το δεύτερο ζάρι: ").strip()
 
-if first_dice.isdigit() and second_dice.isdigit():
-    first_dice = int(first_dice)
-    second_dice = int(second_dice)
-    if (first_dice >= 1 and first_dice <= 6) and (second_dice >= 1 and second_dice <= 6):
-        if ((first_dice == 4) and (second_dice == 4)):
+if dice1.isdigit() and dice2.isdigit():
+    dice1 = int(dice1)
+    dice2 = int(dice2)
+    if (dice1 >= 1 and dice1 <= 6) and (dice2 >= 1 and dice2 <= 6):
+        if ((dice1 == 4) and (dice2 == 4)):
             print("Ντόρτια.")
-        elif ((first_dice == 1) and (second_dice == 2)) or ((first_dice == 2) and (second_dice == 1)):
+        elif (dice1 == 1 and dice2 == 2) or (dice1 == 2 and dice2 == 1):
             print("Ασσόδυο.")
-        elif first_dice == second_dice:
+        elif dice1 == dice2:
             print("Διπλές.")
         else:
-            print(f"Πρώτο ζάρι {first_dice}.")
-            print(f"Δεύτερο ζάρι {second_dice}.")
+            print(f"Πρώτο ζάρι {dice1}.")
+            print(f"Δεύτερο ζάρι {dice2}.")
     else:
         print("Λάθος!!")
 else:

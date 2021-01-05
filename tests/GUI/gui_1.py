@@ -20,17 +20,17 @@ class Example(Frame):
 
         self.pack(fill=BOTH, expand=1)
 
-        btn1 = Button(self, 
+        btn1 = Button(self,
                       text="Button 1",
                       command=lambda: self.onClick("Button 1"))
         btn1.pack(padx=5, pady=5)
 
-        btn2 = Button(self, 
+        btn2 = Button(self,
                       text="Button 2",
                       command=lambda: self.onClick("Button 2"))
         btn2.pack(padx=5, pady=5)
 
-        btn2 = Button(self, 
+        btn2 = Button(self,
                       text="Button 3",
                       command=lambda: self.onClick("Button 3"))
         btn2.pack(padx=5, pady=5)
