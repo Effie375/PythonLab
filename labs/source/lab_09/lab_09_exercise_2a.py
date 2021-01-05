@@ -7,8 +7,8 @@ for i in range(max_players):
 
 print(f"Μη ταξινομημένοι παίκτες: {players}")
 
-for i in range(len(players)-1):
-    for j in range(len(players)-1, i, -1):
+for i in range(1, max_players):
+    for j in range(max_players-1, i-1, -1):
         if players[j-1] < players[j]:
             temp = players[j-1]
             players[j-1] = players[j]

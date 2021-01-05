@@ -16,6 +16,7 @@
 ---
 
 ```python
+# Δημιουργία λίστας
 list = [1, 6, 3, 5, 4, 6]
 
 key = int(input("Δώσε στοιχείο που αναζητάς: "))
@@ -29,7 +30,7 @@ for arithmos in list:
     done = False
   thesi += 1
 
-if done == True:
+if done is True:
   print("Το στοιχείο που αναζητάς δεν είναι στη λίστα.")
 ```
 
@@ -45,15 +46,16 @@ if done == True:
 # Δημιουργία λίστας
 list = [4, 8, 3, 1, 7]
 
-for i in range(1,5):
+print("H μη ταξινομημένη λίστα είναι:", list)
+
+for i in range(1, 5):
   for j in range(4, i-1, -1):
     if list[j-1] > list[j]:
       temp = list[j-1]
       list[j-1] = list[j]
       list[j] = temp
 
-# Εκτύπωση ταξινομημένης λίστας
-print("Η ταξινομημένη λίστα μας είναι:", list)
+print(f"H ταξινομημένη λίστα είναι:", list)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_example_2.py).
@@ -71,16 +73,16 @@ for i in range(5):
   num = int(input("Δώσε στοιχείο: "))
   list.append(num)
 
-print(list)
+print("H μη ταξινομημένη λίστα είναι:", list)
 
-for i in range(1,5):
+for i in range(1, 5):
   for j in range(4, i-1, -1):
     if list[j-1] > list[j]:
       temp = list[j-1]
       list[j-1] = list[j]
       list[j] = temp
-      
-print(list)
+
+print("H ταξινομημένη λίστα είναι:", list)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_example_3.py).
@@ -113,7 +115,7 @@ for i in list:
     done = False
   thesi += 1
 
-if done == True:
+if done is True:
   print("To στοιχείο που αναζητάς δεν είναι στη λίστα.")
 ```
 
@@ -134,9 +136,9 @@ for i in range(7):
   name = input("Δώσε όνομα παίκτη: ")
   players.append(name)
 
-for i in range(1,7):
+for i in range(1, 7):
   for j in range(6, i-1, -1):
-    if players [j-1] < players [j]:
+    if players[j-1] < players[j]:
       temp = players[j-1]
       players[j-1] = players[j]
       players[j] = temp

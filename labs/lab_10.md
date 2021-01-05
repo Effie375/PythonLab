@@ -33,7 +33,7 @@ for i in range(5):
   ypolista = []
   for j in range(10):
     n = int(input("Δώσε αριθμό: "))
-    polista.append(n)
+    ypolista.append(n)
   lista.append(ypolista)
 
 meg_athroisma = 0
@@ -47,7 +47,6 @@ for ypolista in lista:
     meg_lista = ypolista
 
 print(meg_lista)
-
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_example_1.py).
@@ -90,8 +89,8 @@ for mathima in eksamino:
   if mathima >= 5:
     perasmena += 1
 
-print("Ο μέσος όρος είναι: ",souma/len(eksamino))
-print("Πέρασες: ",perasmena)
+print("Ο μέσος όρος είναι: ", souma/len(eksamino))
+print("Πέρασες: ", perasmena)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_exercise_1.py).
@@ -114,7 +113,7 @@ thle8eash = []
 for i in range(seasons):
   thl_season = []
   for j in range(episodes):
-    thl = float(input("Δώσε τηλεθέαση για %dx%d: " % (i+1,j+1)))
+    thl = float(input("Δώσε τηλεθέαση %dx%d: " % (i+1, j+1)))
     thl_season.append(thl)
   thle8eash.append(thl_season)
 
@@ -127,20 +126,20 @@ maxMO = 0
 for i in range(seasons):
   soumaSeason = 0
   for j in range(episodes):
-  if thle8eash[i][j] > thle8eash[maxThlSeason][maxThlEpi]:
-    maxThlSeason = i
-    maxThlEpi = j
-  if thle8eash[i][j] < thle8eash[minThlSeason][maxThlEpi]:
-    minThlSeason = i
-    minThlEpi = j
+    if thle8eash[i][j] > thle8eash[maxThlSeason][maxThlEpi]:
+      maxThlSeason = i
+      maxThlEpi = j
+      if thle8eash[i][j] < thle8eash[minThlSeason][maxThlEpi]:
+        minThlSeason = i
+        minThlEpi = j
   soumaSeason += thle8eash[i][j]
 
 if maxMO < soumaSeason:
   maxMO = soumaSeason
   maxMOSeason = i
 
-print("Eπεισόδιο με μέγιστη τηλεθέαση: %dx%d" % (maxThlSeason+1,maxThlEpi+1))
-print("Eπεισόδιο με ελάχιστη τηλεθέαση: %dx%d" % (minThlSeason+1,minThlEpi+1))
+print("Eπεισόδιο με μέγιστη τηλεθέαση: %dx%d" % (maxThlSeason+1, maxThlEpi+1))
+print("Eπεισόδιο με ελάχιστη τηλεθέαση: %dx%d" % (minThlSeason+1, minThlEpi+1))
 print("Σεζόν με μεγαλύτερο μέσο όρο τηλεθέασης:", maxMOSeason+1)
 ```
 
@@ -162,7 +161,8 @@ eksamino = []
 for i in range(2):
   mathima = []
   for j in range(2):
-    vathmos = float(input("Δώσε βαθμό για %d εξάμηνο και %d μάθημα: "% (i + 1,j + 1)))
+    vathmos = input("Βαθμός εξαμήνου %d και %d μάθημα: " % (i + 1, j + 1))
+    vathmos = float(vathmos)
     mathima.append(vathmos)
     eksamino.append(mathima)
 
@@ -199,30 +199,31 @@ athlimata = []
 for i in range(3):
   vathmoi = []
   for j in range(3):
-    vathmos = float(input("Δώσε βαθμό για άθλημα %d και προσπάθεια %d: " % (i+1,j+1)))
+    vathmos = input("Βαθμός αθλήματος %d & προσπάθεια %d: " % (i+1, j+1))
+    vathmos = float(vathmos)
     vathmoi.append(vathmos)
   athlimata.append(vathmoi)
 
 # Υπολογισμός και εμφάνιση αθλήματος με μεγαλύτερους βαθμούς
-maxsum=0
+maxsum = 0
 
 for vathmoi in athlimata:
-  sum=0
+  sum = 0
   for i in vathmoi:
-    sum+=i
-    if sum>maxsum:
-      maxsum=sum
-      maxathlima=vathmoi
+    sum += i
+    if sum > maxsum:
+      maxsum = sum
+      maxathlima = vathmoi
 
-print("To άθλημα με τους μεγαλύτερους βαθμούς είναι:", maxathlima,"και το άθροισμα είναι:", maxsum)
+print("Ο max βαθμός είναι:", maxathlima, "και το άθροισμα είναι:", maxsum)
 
 # Υπολογισμός μέγιστου βαθμού σε κάθε άθλημα
-meg_vathmos=athlimata[0][0]
+meg_vathmos = athlimata[0][0]
 
 for vathmoi in athlimata:
   for i in vathmoi:
-    if i>meg_vathmos:
-      meg_vathmos=i
+    if i > meg_vathmos:
+      meg_vathmos = i
 
 print("Ο μέγιστος βαθμός του αθλητή είναι:", meg_vathmos)
 
@@ -232,7 +233,7 @@ vathmos_counter = 0
 for vathmoi in athlimata:
   for i in vathmoi:
     if i == meg_vathmos:
-      vathmos_counter+=1
+      vathmos_counter += 1
 
 print("O μέγιστος βαθμός βρέθηκε %d φορές." % (vathmos_counter))
 ```
