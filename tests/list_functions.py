@@ -18,7 +18,7 @@ print("The min element in the list is:", min_value)
 index = 0
 
 while index < len(list):
-    if func.check_num(list[index]):
+    if func.is_Odd(list[index]):
         print("o arithmos %d einai monos!" % list[index])
     else:
         print("o arithmos %d einai zigos!" % list[index])
