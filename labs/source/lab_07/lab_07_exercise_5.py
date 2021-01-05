@@ -1,6 +1,6 @@
-fib_no = (input("Δώσε αριθμό Fibonacci:"))
+fib_no = input("Δώσε αριθμό Fibonacci:")
 while not fib_no.isdigit():
-    fib_no = (input("Είπα δώσε αριθμό Fibonacci:"))
+    fib_no = input("Δώσε σωστό αριθμό Fibonacci:")
 
 fib_no = int(fib_no)
 

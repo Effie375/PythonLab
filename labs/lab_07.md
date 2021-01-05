@@ -24,8 +24,8 @@ for i in list:
 
 ```python
 for i in range([start], stop, [step]):
-    ...E1
-    ...E2
+  ...E1
+  ...E2
 ```
 
 - start, ο αριθμός εκκίνησης (Προαιρετικό,ΑρχικήΤιμή = 0)
@@ -101,27 +101,22 @@ print(counter)
 
 ```python
 sum = 0
-l = []
+ls = []
 
 for i in range(7):
-  vathmos=int(input("Δώσε βαθμό: "))
-  l.append(vathmos)
+  vathmos = int(input("Δώσε βαθμό: "))
+  ls.append(vathmos)
 
-k = 1 
+k = 1
 
-for i in l: 
-  i = i * 5 * k 
-  k = k + 1 
-  um = sum + i 
+for i in ls:
+  i = i * 5 * k
+  k = k + 1
+  um = sum + i
+
 mo = sum / 7
 
 print("Ο μέσος όρος είναι", mo)
-
-# Εναλλακτικά k = 5
-# for i in l:
-  # i = i * k
-  # k = k + 5
-  # sum = sum + i
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_07/lab_07_exercise_1.py)
@@ -154,7 +149,7 @@ for arithmos in list:
 ```python
 limit = int(input("Δώσε αριθμό: "))
 
-for i in range(1,limit+1):
+for i in range(1, limit+1):
   prime = True
   for j in range(2, i//2+1):
     if i % j == 0:
@@ -170,18 +165,17 @@ for i in range(1,limit+1):
 Να γραφεί ένα πρόγραμμα που θα δέχεται από τον χρήστη μια λέξη και θα εμφανίζει πόσες φορές εμφανίστηκε το κάθε γράμμα.
 
 ```python
-word = input("Δώσε λέξη: ").lower()
+leksi = input("Δώσε λέξη: ").lower()
 
 grammata = "abcdefghijklmnopqrstuvwxyz"
 
 for letter in grammata:
   counter = 0
-  for grammaLeksis in word:
+  for grammaLeksis in leksi:
     if grammaLeksis == letter:
       counter += 1
   if counter != 0:
-    print("To γράμμα <%s> εμφανίστηκε %d φορές." % (letter, counter))
-  counter = 0
+    print("To γράμμα '%s' εμφανίστηκε %d φορές." % (letter, counter))
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_07/lab_07_exercise_4.py)
@@ -197,9 +191,9 @@ for letter in grammata:
 ![Fibonacci 2](../images/fibonacci_2.PNG)
 
 ```python
-fib_no = (input("Δώσε αριθμό Fibonacci:"))
+fib_no = input("Δώσε αριθμό Fibonacci:")
 while not fib_no.isdigit():
-  fib_no = (input("Είπα δώσε αριθμό Fibonacci:"))
+  fib_no = input("Δώσε σωστό αριθμό Fibonacci:")
 
 fib_no = int(fib_no)
 

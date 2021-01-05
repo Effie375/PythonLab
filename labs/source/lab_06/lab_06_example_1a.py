@@ -1,3 +1,4 @@
+# Αρχικοποίηση μεταβλητών
 max_elements = 5
 numbers = []
 i = 0
@@ -9,6 +10,7 @@ while i < max_elements:
 
 key = int(input("Δώσε τον αριθμό που αναζητάτε: ").strip())
 
+# Αρχικοποίηση μεταβλητών
 flag = False
 i = 0
 
@@ -19,6 +21,6 @@ while ((i < len(numbers)) and not flag):
     i += 1
 
 if flag:
-    print(f"Ο αριθμός που αναζητάτε {key} βρίσκεται στη θέση{index}.")
+    print(f"Ο αριθμός που αναζητάς {key} βρίσκεται στη θέση {index}.")
 else:
-    print(f"Ο αριθμός που αναζητάτε {key} δε βρίσκεται στη λίστα.")
+    print(f"Ο αριθμός που αναζητάς {key} δεν βρίσκεται στη λίστα.")

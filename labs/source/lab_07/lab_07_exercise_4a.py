@@ -1,7 +1,11 @@
-'''
-Να γραφεί ένα πρόγραμμα που θα δέχεται
-από τον χρήστη μια λέξη και θα εμφανίζει
-πόσες φορές εμφανίστηκε το κάθε γράμμα.
-'''
+leksi = input("Δώσε λέξη: ").lower().strip()
 
-# To πρόγραμμα δεν έχει τελείωσει.
+grammata = "abcdefghijklmnopqrstuvwxyz"
+
+for letter in grammata:
+    counter = 0
+    for grammaLeksis in leksi:
+        if grammaLeksis == letter:
+            counter += 1
+    if counter != 0:
+        print(f"To γράμμα '{letter}' εμφανίστηκε {counter} φορές.")

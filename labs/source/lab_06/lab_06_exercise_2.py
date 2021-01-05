@@ -1,3 +1,4 @@
+# Αρχικοποίηση μεταβλητών
 megisto = 0
 ls = []
 
@@ -8,7 +9,6 @@ while number != 0:
     if number > megisto:
         megisto = number
     number = int(input("Δώσε αριθμό: "))
-
     i = 1
 
 while i <= megisto:
@@ -18,7 +18,6 @@ while i <= megisto:
         if ls[j] == i:
             counter += 1
         j += 1
-
     if counter != 0:
         print("Ο αριθμός", i, "εισήχθη", counter, "φορές.")
     i += 1

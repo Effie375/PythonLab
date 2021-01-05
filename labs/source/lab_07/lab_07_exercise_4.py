@@ -8,4 +8,4 @@ for letter in grammata:
         if grammaLeksis == letter:
             counter += 1
     if counter != 0:
-        print("To γράμμα <%s> εμφανίστηκε %d φορές." % (letter, counter))
+        print("To γράμμα '%s' εμφανίστηκε %d φορές." % (letter, counter))
