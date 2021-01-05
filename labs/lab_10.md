@@ -27,15 +27,18 @@
 Να γραφεί ένα πρόγραμμα, το οποίο θα διαβάζει 5 λίστες από 10 θετικούς ακεραίους αριθμούς και θα τυπώνει τη λίστα με το μεγαλύτερο άθροισμα.
 
 ```python
+# Αρχικοποίηση μεταβλητών
 lista = []
 
 for i in range(5):
   ypolista = []
   for j in range(10):
+    # Εισαγωγή δεδομένων
     n = int(input("Δώσε αριθμό: "))
     ypolista.append(n)
   lista.append(ypolista)
 
+# Αρχικοποίηση μεταβλητών
 meg_athroisma = 0
 
 for ypolista in lista:
@@ -46,6 +49,7 @@ for ypolista in lista:
     meg_athroisma = athroisma
     meg_lista = ypolista
 
+# Εκτύπωση αποτελέσματος
 print(meg_lista)
 ```
 
@@ -66,21 +70,25 @@ print(meg_lista)
 - Υπολογίζει και εμφανίζει πόσα μαθήματα πέρασε και τι μέσο όρο είχε σε αυτό το εξάμηνο.
 
 ```python
+# Αρχικοποίηση μεταβλητών
 eksamina = []
 
 for i in range(8):
   vathmoi = []
   for j in range(6):
+    # Εισαγωγή δεδομένων
     vathmos = float(input("Δώσε βαθμό: "))
     vathmoi.append(vathmos)
 eksamina.append(vathmoi)
 
+# Εισαγωγή δεδομένων
 ar_eksaminou = int(input("Ποιο εξάμηνο θες να δείς;"))
 
 # Aφαιρούμε 1 γιατί ο χρήστης θα δώσει π.χ. 1 για το πρώτο εξάμηνο
 # ενώ αυτό είναι στη θέση 0.
 eksamino = eksamina[ar_eksaminou-1]
 
+# Αρχικοποίηση μεταβλητών
 souma = 0
 perasmena = 0
 
@@ -89,6 +97,7 @@ for mathima in eksamino:
   if mathima >= 5:
     perasmena += 1
 
+# Εκτύπωση αποτελεσμάτων
 print("Ο μέσος όρος είναι: ", souma/len(eksamino))
 print("Πέρασες: ", perasmena)
 ```
@@ -105,18 +114,22 @@ print("Πέρασες: ", perasmena)
 - θα εμφανίζει τον κύκλο με την μεγαλύτερη μέση τηλεθέαση.
 
 ```python
+# Εισαγωγή δεδομένων
 seasons = int(input("Δώσε κύκλους: "))
 episodes = int(input("Δώσε επεισόδια άνα κύκλο: "))
 
+# Αρχικοποίηση μεταβλητών
 thle8eash = []
 
 for i in range(seasons):
   thl_season = []
   for j in range(episodes):
+    # Εισαγωγή δεδομένων
     thl = float(input("Δώσε τηλεθέαση %dx%d: " % (i+1, j+1)))
     thl_season.append(thl)
   thle8eash.append(thl_season)
 
+# Αρχικοποίηση μεταβλητών
 maxThlSeason = 0
 maxThlEpi = 0
 minThlSeason = 0
@@ -138,6 +151,7 @@ if maxMO < soumaSeason:
   maxMO = soumaSeason
   maxMOSeason = i
 
+# Εκτύπωση αποτελεσμάτων
 print("Eπεισόδιο με μέγιστη τηλεθέαση: %dx%d" % (maxThlSeason+1, maxThlEpi+1))
 print("Eπεισόδιο με ελάχιστη τηλεθέαση: %dx%d" % (minThlSeason+1, minThlEpi+1))
 print("Σεζόν με μεγαλύτερο μέσο όρο τηλεθέασης:", maxMOSeason+1)
@@ -161,6 +175,7 @@ eksamino = []
 for i in range(2):
   mathima = []
   for j in range(2):
+    # Εισαγωγή δεδομένων
     vathmos = input("Βαθμός εξαμήνου %d και %d μάθημα: " % (i + 1, j + 1))
     vathmos = float(vathmos)
     mathima.append(vathmos)
@@ -177,6 +192,7 @@ for mathima in eksamino:
     if meg_vathmos < i:
       meg_vathmos = i
 
+# Εκτύπωση αποτελέσματος
 print("O μέγιστος βαθμός είναι:", meg_vathmos)
 ```
 
@@ -199,7 +215,9 @@ athlimata = []
 for i in range(3):
   vathmoi = []
   for j in range(3):
+    # Εισαγωγή δεδομένων
     vathmos = input("Βαθμός αθλήματος %d & προσπάθεια %d: " % (i+1, j+1))
+    # Μετατροπή από str σε float
     vathmos = float(vathmos)
     vathmoi.append(vathmos)
   athlimata.append(vathmoi)
@@ -215,6 +233,7 @@ for vathmoi in athlimata:
       maxsum = sum
       maxathlima = vathmoi
 
+# Εκτύπωση αποτελέσματος
 print("Ο max βαθμός είναι:", maxathlima, "και το άθροισμα είναι:", maxsum)
 
 # Υπολογισμός μέγιστου βαθμού σε κάθε άθλημα
@@ -225,6 +244,7 @@ for vathmoi in athlimata:
     if i > meg_vathmos:
       meg_vathmos = i
 
+# Εκτύπωση αποτελέσματος
 print("Ο μέγιστος βαθμός του αθλητή είναι:", meg_vathmos)
 
 # Αναζήτηση φορών μέγιστου βαθμού σε κάθε άθλημα
@@ -235,6 +255,7 @@ for vathmoi in athlimata:
     if i == meg_vathmos:
       vathmos_counter += 1
 
+# Εκτύπωση αποτελέσματος
 print("O μέγιστος βαθμός βρέθηκε %d φορές." % (vathmos_counter))
 ```
 

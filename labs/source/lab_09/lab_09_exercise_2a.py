@@ -1,7 +1,9 @@
+# Αρχικοποίηση μεταβλητών
 max_players = 7
 players = []
 
 for i in range(max_players):
+    # Διάβασμα από τον χρήστη
     player = input("Δώσε όνομα παίκτη: ").strip()
     players.append(player)
 
@@ -14,4 +16,5 @@ for i in range(1, max_players):
             players[j-1] = players[j]
             players[j] = temp
 
+# Εκτύπωση αποτελεσμάτων
 print(f"Ταξινομημένοι παίκτες: {players}")

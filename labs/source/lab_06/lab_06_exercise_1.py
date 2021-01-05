@@ -11,6 +11,7 @@ while number != 0:
 counter = 0
 i = 0
 
+# Εισαγωγή δεδομένων
 number = int(input("Δώσε αριθμό για μέτρηση: "))
 
 while i < len(ls):
@@ -18,4 +19,5 @@ while i < len(ls):
         counter += 1
     i += 1
 
+# Εκτύπωση αποτελεσμάτων
 print("O αριθμός", number, "είσηχθη", counter, "φορές")

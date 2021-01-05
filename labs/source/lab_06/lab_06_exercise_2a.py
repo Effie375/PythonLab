@@ -2,6 +2,7 @@
 megisto = 0
 ls = []
 
+# Εισαγωγή δεδομένων
 number = int(input("Δώσε αριθμό: ").strip())
 
 while number != 0:

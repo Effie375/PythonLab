@@ -7,6 +7,7 @@ while i < 5:
     list.append(number)
     i += 1
 
+# Εισαγωγή δεδομένων
 key = int(input("Δώσε στοιχείο που αναζητάς: "))
 
 # Αρχικοποίηση μεταβλητών
@@ -19,6 +20,7 @@ while (j < len(list) and not found):
         found = True
     j += 1
 
+# Εκτύπωση αποτελεσμάτων
 if found is True:
     print("Το στοιχείο βρίσκεται στη θέση", thesi)
 else:

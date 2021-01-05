@@ -8,6 +8,7 @@ while i < max_elements:
     numbers.append(num)
     i += 1
 
+# Εισαγωγή δεδομένων
 key = int(input("Δώσε τον αριθμό που αναζητάτε: ").strip())
 
 # Αρχικοποίηση μεταβλητών
@@ -20,6 +21,7 @@ while ((i < len(numbers)) and not flag):
         flag = True
     i += 1
 
+# Εκτύπωση αποτελεσμάτων
 if flag:
     print(f"Ο αριθμός που αναζητάς {key} βρίσκεται στη θέση {index}.")
 else:

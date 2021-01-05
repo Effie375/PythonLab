@@ -14,6 +14,7 @@ while i < max_elements:
         odd += 1
     i += 1
 
+# Εκτύπωση αποτελεσμάτων
 print(f"Tο άθροισμα των αριθμών είναι {sum}.")
 print(f"Tο πλήθος των περιττών είναι {odd}. ")
 print(f"Το πλήθος των άρτιων είναι {even}.")
@@ -29,6 +30,8 @@ while i < 10:
         elaxistos = i
     i += 1
 
+# Υπολογισμός διαφοράς
 diafora = list[megistos] - list[elaxistos]
 
+# Εκτύπωση αποτελέσματος
 print(f"H διαφορά max και min είναι {diafora}.")

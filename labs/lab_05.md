@@ -51,14 +51,15 @@ while i < 10:
   list.append(number)
   i += 1
 
+# Αρχικοποίηση μεταβλητών
 new_list = []
-
 j = 9
 
 while j >= 0:
   new_list.append(list[j])
   j -= 1
 
+# Εκτύπωση αποτελεσμάτων
 print("Η νέα λίστα είναι:", new_list)
 ```
 
@@ -105,6 +106,7 @@ while j < 10:
   athroisma += lista[j]
   j = j + 1
 
+# Εκτύπωση αποτελέσματος
 print("Το άθροισμα είναι: ", athroisma)
 
 while k < 10:
@@ -114,6 +116,7 @@ while k < 10:
     perittos += 1
   k += 1
 
+# Εκτύπωση αποτελεσμάτων
 print("To πλήθος των άρτιων είναι: ", artios)
 print("Tο πλήθος των περιττών είναι: ", perittos)
 
@@ -126,6 +129,7 @@ while ls < 10:
 
   ls += 1
 
+# Εκτύπωση αποτελέσματος
 print("Η διαφορά είναι: ", megistos - elaxistos)
 ```
 
@@ -150,6 +154,7 @@ while cont:
     cont = False
     print("Τέλος εισαγωγής δεδομένων.")
 
+# Εκτύπωση αποτελέσματος
 print(ls)
 ```
 
@@ -160,15 +165,15 @@ print(ls)
 Να γραφεί ένα πρόγραμμα το οποίο θα διαβάζει μία λέξη και θα επιστρέφει πόσα φωνήεντα (a,e,h,y,u,i,o) και πόσα σύμφωνα είχε (b,c,d,f,g,j,k,l,m,n,p,q,r,s,t,v,w,x,z).
 
 ```python
-lexi = input("Δώσε λέξη: ")
-
+# Αρχικοποίηση μεταβλητών
 vowels = 'aehiouy'
 consonants = 'bcdfgjklmnpqrstvwxz'
-
-# Αρχικοποίηση μεταβλητών
 v_counter = 0
 c_counter = 0
 i = 0
+
+# Εισαγωγή δεδομένων
+lexi = input("Δώσε λέξη: ")
 
 while i < len(lexi):
   if lexi[i] in vowels:
@@ -182,6 +187,7 @@ while i < len(lexi):
     """  # noqa: E501
     pass
 
+# Εκτύπωση αποτελεσμάτων
 print("Φωνήεντα: ", v_counter)
 print("Σύμφωνα: ", c_counter)
 ```

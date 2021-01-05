@@ -10,4 +10,5 @@ for i in range(1, 5):
             list[j-1] = list[j]
             list[j] = temp
 
+# Εκτύπωση αποτελέσματος
 print("H ταξινομημένη λίστα είναι:", list)

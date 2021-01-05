@@ -1,3 +1,4 @@
+# Εισαγωγή δεδομένων
 limit = int(input("Δώσε αριθμό: ").strip())
 
 for i in range(1, limit+1):
@@ -6,4 +7,5 @@ for i in range(1, limit+1):
         if i % j == 0:
             prime = False
         if prime:
+            # Εκτύπωση αποτελέσματος
             print(i)

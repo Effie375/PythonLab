@@ -9,10 +9,12 @@ while i < max_elements:
     lista.append(number)
     i += 1
 
+# Αρχικοποίηση μεταβλητών
 j = len(lista)
 
 while j > 0:
     new_lista.append(lista[j-1])
     j -= 1
 
+# Εκτύπωση αποτελεσμάτων
 print(f"Η νέα λίστα είναι: {new_lista}")

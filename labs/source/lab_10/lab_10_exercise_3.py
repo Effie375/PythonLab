@@ -4,6 +4,7 @@ eksamino = []
 for i in range(2):
     mathima = []
     for j in range(2):
+        # Εισαγωγή δεδομένων
         vathmos = input("Βαθμός εξαμήνου %d και %d μάθημα: " % (i + 1, j + 1))
         vathmos = float(vathmos)
         mathima.append(vathmos)
@@ -20,4 +21,5 @@ for mathima in eksamino:
         if meg_vathmos < i:
             meg_vathmos = i
 
+# Εκτύπωση αποτελέσματος
 print("O μέγιστος βαθμός είναι:", meg_vathmos)

@@ -25,6 +25,7 @@ while i < 5:
   list.append(number)
   i += 1
 
+# Εισαγωγή δεδομένων
 key = int(input("Δώσε στοιχείο που αναζητάς: "))
 
 # Αρχικοποίηση μεταβλητών
@@ -37,6 +38,7 @@ while (j < len(list) and not found):
     found = True
   j += 1
 
+# Εκτύπωση αποτελεσμάτων
 if found is True:
   print("Το στοιχείο βρίσκεται στη θέση", thesi)
 else:
@@ -67,6 +69,7 @@ while number != 0:
 counter = 0
 i = 0
 
+# Εισαγωγή δεδομένων
 number = int(input("Δώσε αριθμό για μέτρηση: "))
 
 while i < len(ls):
@@ -74,6 +77,7 @@ while i < len(ls):
     counter += 1
   i += 1
 
+# Εκτύπωση αποτελεσμάτων
 print("O αριθμός", number, "είσηχθη", counter, "φορές")
 ```
 
@@ -88,6 +92,7 @@ print("O αριθμός", number, "είσηχθη", counter, "φορές")
 megisto = 0
 ls = []
 
+# Εισαγωγή δεδομένων
 number = int(input("Δώσε αριθμό: "))
 
 while number != 0:

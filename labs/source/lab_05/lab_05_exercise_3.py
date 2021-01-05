@@ -1,12 +1,12 @@
-lexi = input("Δώσε λέξη: ")
-
+# Αρχικοποίηση μεταβλητών
 vowels = 'aehiouy'
 consonants = 'bcdfgjklmnpqrstvwxz'
-
-# Αρχικοποίηση μεταβλητών
 v_counter = 0
 c_counter = 0
 i = 0
+
+# Εισαγωγή δεδομένων
+lexi = input("Δώσε λέξη: ")
 
 while i < len(lexi):
     if lexi[i] in vowels:
@@ -20,5 +20,6 @@ while i < len(lexi):
         """  # noqa: E501
         pass
 
+# Εκτύπωση αποτελεσμάτων
 print("Φωνήεντα: ", v_counter)
 print("Σύμφωνα: ", c_counter)
