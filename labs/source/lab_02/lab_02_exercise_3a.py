@@ -10,7 +10,7 @@ my_name = input("Δώσε το όνομα σου: ").strip()
 
 try:
     my_age = int(input("Δώσε την ηλικία σου: ").strip())
-except:
+except ValueError:
     print("Παρακαλώ δώσε ακέραιο αριθμό!")
 else:
     end_year = calc_year(my_age)

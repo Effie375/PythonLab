@@ -31,7 +31,8 @@ while k < 10:
         perittos += 1
     k += 1
 
-print("To πλήθος των άρτιων είναι: ", artios, " Tο πλήθος των περιττών είναι: ", perittos)
+print("To πλήθος των άρτιων είναι: ", artios)
+print("Tο πλήθος των περιττών είναι: ", perittos)
 
 while ls < 10:
     if megistos < lista[ls]:

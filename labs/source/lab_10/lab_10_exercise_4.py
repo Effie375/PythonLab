@@ -4,7 +4,7 @@ athlimata = []
 for i in range(3):
     vathmoi = []
     for j in range(3):
-        vathmos = input("Δώσε βαθμό για άθλημα %d και προσπάθεια %d: " % (i+1, j+1))
+        vathmos = input("Βαθμός αθλήματος %d & προσπάθεια %d: " % (i+1, j+1))
         vathmos = float(vathmos)
         vathmoi.append(vathmos)
     athlimata.append(vathmoi)

@@ -189,6 +189,7 @@ if __name__ == "__main__":
         text.set_text("# of operations: {}".format(iteration[0]))
 
     anim = animation.FuncAnimation(fig, func=update_fig,
-         fargs=(bar_rects, iteration), frames=generator, interval=1,
-         repeat=False)
+                                   fargs=(bar_rects, iteration),
+                                   frames=generator,interval=1,
+                                   repeat=False)
     plt.show()
