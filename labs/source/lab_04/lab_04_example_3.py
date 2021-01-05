@@ -1,8 +1,10 @@
+# Αρχικοποίηση μεταβλητών
 i = 0
 synolo = 0
 
 while i < 10:
     number = input("Δώσε αριθμό: ")
+    # Έλεγχος ορθότητας
     while not number.isdigit():
         number = input("Είπα δώσε αριθμό: ")
     number = int(number)

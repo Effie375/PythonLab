@@ -10,4 +10,4 @@ for i in range(1, 5):
             list[j-1] = list[j]
             list[j] = temp
 
-print(f"H ταξινομημένη λίστα είναι:", list)
+print("H ταξινομημένη λίστα είναι:", list)

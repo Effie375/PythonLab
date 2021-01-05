@@ -12,7 +12,7 @@ else:
     # Οι καθαρές απολαβές ειναι οι μεικτές μείον όλες τις εισφορές
     kathara = round(miktes_apodoxes - asfaleia - foros - loipa, 2)
 
-    # Εκτύπωση
+    # Εκτύπωση αποτελεσμάτων
     print(f"Μεικτές αποδοχές: {miktes_apodoxes}")
     print(f"Ασφάλεια 3%: {asfaleia}")
     print(f"Φόρος 5% {foros}")

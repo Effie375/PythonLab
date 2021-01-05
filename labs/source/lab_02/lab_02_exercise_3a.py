@@ -16,5 +16,5 @@ except ValueError:
     print("Παρακαλώ δώσε ακέραιο αριθμό!")
 else:
     end_year = calc_year(my_age)
-    # Εκτύπωση
+    # Εκτύπωση αποτελέσματος
     print(f"{my_name} το {end_year} θα είναι 100 ετών.")

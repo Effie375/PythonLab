@@ -1,9 +1,11 @@
+# Αρχικοποίηση μεταβλητών
 total = 0
 i = 0
 
 while i < 6:
     vathmos = input("Δώσε βαθμό: ").strip()
     while not vathmos.isdigit():
+        # Εισαγωγή βαθμού
         vathmos = input("Δώσε ξανά βαθμό: ").strip()
     # Μετατροπή από str σε float
     vathmos = float(vathmos)
