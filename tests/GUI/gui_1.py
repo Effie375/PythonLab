@@ -40,12 +40,12 @@ class Example(Frame):
 
 
 def main():
-  
+
     root = Tk()
     root.geometry("250x150+300+300")
-    app = Example(root)
-    root.mainloop()  
+    Example(root)
+    root.mainloop()
 
 
 if __name__ == '__main__':
-    main() 
+    main()
