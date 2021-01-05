@@ -1,5 +1,5 @@
 # Διάβασμα από τον χρήστη
-number = input("Δώσε έναν αριθμό: ")
+number = input("Δώσε έναν αριθμό: ").strip()
 
 if number.isdigit() is True:
     # Μετατροπή από str σε int

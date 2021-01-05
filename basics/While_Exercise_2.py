@@ -11,4 +11,4 @@ if counter != 0:
     average = sum / counter
     print(f"Ο μέσος όρος των ηλικιών είναι {average:.1f}.")
 else:
-    print(f"Δεν έχετε δώσει καμία ηλικία.")
+    print("Δεν έχετε δώσει καμία ηλικία.")

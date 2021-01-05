@@ -1,17 +1,18 @@
 flag = False
-product = 0
+ginomeno = 0
 number = 1
 
 while number != 0:
     number = input("Δώσε αριθμό: ").strip()
     while not number.isdigit():
-        number = input("Δώσε ξανά αριθμό: ").strip()
+        number = input("Δώσε σωστά αριθμό: ").strip()
     number = int(number)
     if (flag is False):
         if number != 0:
-            product = 1
+            ginomeno = 1
         flag = True
     if number != 0:
-        product *= number
+        ginomeno *= number
 
-print(f"Γινόμενο: {product}")
+# Eκτύπωση αποτελέσματος
+print(f"Γινόμενο: {ginomeno}")

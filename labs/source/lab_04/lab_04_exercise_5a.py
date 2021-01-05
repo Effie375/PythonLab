@@ -1,10 +1,12 @@
-sum = 0
+athroisma = 0
 
+# Διάβασμα από τον χρ΄ήστη και μετατροπ΄ή από str σε int
 number = int(input("Δώσε έναν αριθμό: ").strip())
 
 while number:
-    digit = number % 10
+    tel_pshfio = number % 10
     number /= 10
-    sum += digit
+    athroisma += tel_pshfio
 
-print(f"Το άθροισμα των ψηφίων είναι {sum}.")
+# Eκτύπωση αποτελέσματος
+print(f"Το άθροισμα των ψηφίων είναι {athroisma}.")

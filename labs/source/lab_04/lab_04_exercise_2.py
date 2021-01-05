@@ -2,10 +2,11 @@ i = 0
 athroisma = 0
 
 while i < 6:
-    vathmos = int(input("Δώσε βαθμό: "))
+    vathmos = float(input("Δώσε βαθμό: "))
     athroisma = athroisma + vathmos
     i = i + 1
 
+# Υπολογισμός μέσου όρου
 mo = athroisma / 6
 
 if mo > 10:

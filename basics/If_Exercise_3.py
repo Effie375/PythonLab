@@ -7,4 +7,4 @@ average = (first_attempt + second_attempt + third_attempt) / 3
 print(f"Ο μέσος όρος είναι {average:.2f} μέτρα.")
 
 if average > 8:
-    print(f"Προκριθήκατε στον επόμενο αγώνα!")
+    print("Προκριθήκατε στον επόμενο αγώνα!")
