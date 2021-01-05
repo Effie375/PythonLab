@@ -3,17 +3,20 @@ import time
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
+
 def swap(A, i, j):
     """Helper function to swap elements i and j of list A."""
 
     if i != j:
         A[i], A[j] = A[j], A[i]
 
+
 def bubblesort(A):
     """In-place bubble sort."""
 
     if len(A) == 1:
         return
+
 
     swapped = True
     for i in range(len(A) - 1):
@@ -26,6 +29,7 @@ def bubblesort(A):
                 swapped = True
             yield A
 
+
 def insertionsort(A):
     """In-place insertion sort."""
 
@@ -35,6 +39,7 @@ def insertionsort(A):
             swap(A, j, j - 1)
             j -= 1
             yield A
+
 
 def mergesort(A, start, end):
     """Merge sort."""
@@ -47,6 +52,7 @@ def mergesort(A, start, end):
     yield from mergesort(A, mid + 1, end)
     yield from merge(A, start, mid, end)
     yield A
+
 
 def merge(A, start, mid, end):
     """Helper function for merge sort."""
@@ -75,6 +81,7 @@ def merge(A, start, mid, end):
         A[start + i] = sorted_val
         yield A
 
+
 def quicksort(A, start, end):
     """In-place quicksort."""
 
@@ -95,6 +102,7 @@ def quicksort(A, start, end):
     yield from quicksort(A, start, pivotIdx - 1)
     yield from quicksort(A, pivotIdx + 1, end)
 
+
 def selectionsort(A):
     """In-place selection sort."""
     if len(A) == 1:
@@ -111,6 +119,7 @@ def selectionsort(A):
             yield A
         swap(A, i, minIdx)
         yield A
+
 
 if __name__ == "__main__":
     # Get user input to determine range of integers (1 to N) and desired

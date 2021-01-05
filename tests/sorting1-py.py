@@ -31,7 +31,7 @@ class sort(object):
                 s.insert(i, s[j])
                 j += 1
                 s.pop(j)
-                self.draw(s, fun = 'MERGE SORT')
+                self.draw(s, fun='MERGE SORT')
 
     def quick_sort(self, s, a, b):
         if a >= b:
@@ -48,15 +48,15 @@ class sort(object):
                 left, right = left + 1, right - 1
         s[left], s[b] = s[b], s[left]
         if left != b:
-            self.draw(s, fun = 'QUICK SORT')
+            self.draw(s, fun='QUICK SORT')
         self.quick_sort(s, a, left - 1)
         self.quick_sort(s, left + 1, b)
-	
+
     def select_sort(self, s):
-        self.draw(s, fun = 'SELECTION SORT')
+        self.draw(s, fun='SELECTION SORT')
         for i in range(len(s)):
             if self.search(s, i):
-                self.draw(s, fun = 'SELECTION SORT')	
+                self.draw(s, fun='SELECTION SORT')
 
     def search(self, s, i):
         index, value = i, s[i]
@@ -72,12 +72,12 @@ class sort(object):
         if j == length - 1:
             if s[m] < s[j]:
                 s[m], s[j] = s[j], s[m]
-        while j <  length - 1:
+        while j < length - 1:
             if s[j] < s[j + 1]:
                 j += 1
             if s[m] > s[j]:
                 break
-            s[m], s[j], m, j= s[j], s[m], j, 2 * j + 1
+            s[m], s[j], m, j = s[j], s[m], j, 2 * j + 1
 
     def heap_sort(self, s):
         i = len(s) // 2 - 1
@@ -87,14 +87,14 @@ class sort(object):
         i = len(s)
         while i > 0:
             s[0], s[i - 1], i = s[i - 1], s[0], i - 1
-            self.draw(s, fun = 'HEAP SORT')
+            self.draw(s, fun='HEAP SORT')
             self.heap_adjust(s, 0, i)
 
     def insert_sort(self, s):
         i = j = len(s)
         while i > 0:
             if self.insert_next(s, j - i):
-                self.draw(s, fun = 'INSERT SORT')
+                self.draw(s, fun='INSERT SORT')
             i -= 1
 
     def insert_next(self, s, k):
@@ -111,7 +111,7 @@ class sort(object):
             delta = 2 ** (t - count + 1) - 1
             for i in range(0, len(s) - delta):
                 if self.insert_shell(s, i, i + delta):
-                    self.draw(s, fun = 'SHELL SORT')
+                    self.draw(s, fun='SHELL SORT')
             count += 1
 
     def insert_shell(self, s, start, end):
@@ -127,29 +127,29 @@ class sort(object):
             for i in range(len(s) - j - 1):
                 if s[i] > s[i + 1]:
                     s[i], s[i + 1] = s[i + 1], s[i]
-                    self.draw(s, fun = 'BUBBLE SORT')
-				
+                    self.draw(s, fun='BUBBLE SORT')
+
     def draw(self, s, fun):
         if len(s):
             self.count += 1
             plt.clf()
-            plt.bar(range(len(s)), s, width = 0.3, color = 'purple')
+            plt.bar(range(len(s)), s, width=0.3, color='purple')
             plt.title(fun)
             plt.savefig('sp/' + str(self.count))
             plt.pause(0.0001)
 
     def get_gif(self):
         name = os.listdir(self.path)
-        name.sort(key=lambda x:int(x[:-4]))
+        name.sort(key=lambda x: int(x[:-4]))
         for ele in name:
             path = self.path + ele
             self.img.append(imageio.imread(path))
-        imageio.mimsave('sort.gif', self.img, fps = 8)
+        imageio.mimsave('sort.gif', self.img, fps=8)
 
 
 if __name__ == '__main__':
     import random
-    s = list(random.randint(1,100) for x in range(100))
+    s = list(random.randint(1, 100) for x in range(100))
     p = sort()
     p.bubble_sort(s)
 

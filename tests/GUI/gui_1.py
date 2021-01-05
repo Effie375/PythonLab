@@ -6,17 +6,17 @@ from tkinter.ttk import Frame, Button
 
 
 class Example(Frame):
-  
-   def __init__(self, parent):
-        Frame.__init__(self, parent)   
-         
+
+    def __init__(self, parent):
+        Frame.__init__(self, parent)
+
         self.parent = parent
-        
+
         self.initUI()
-        
-        
-   def initUI(self):
-      
+
+
+    def initUI(self):
+
         self.parent.title("Buttons")
 
         self.pack(fill=BOTH, expand=1)
@@ -24,19 +24,18 @@ class Example(Frame):
         btn1 = Button(self, text="Button 1",
             command=lambda: self.onClick("Button 1"))
         btn1.pack(padx=5, pady=5)
-        
+
         btn2 = Button(self, text="Button 2",
             command=lambda: self.onClick("Button 2"))
         btn2.pack(padx=5, pady=5)
-        
+
         btn2 = Button(self, text="Button 3",
             command=lambda: self.onClick("Button 3"))
-        btn2.pack(padx=5, pady=5)   
-        
-        
-   def onClick(self, text):
-        
-        messagebox.showinfo("Button label", text);
+        btn2.pack(padx=5, pady=5)
+
+
+    def onClick(self, text):
+        messagebox.showinfo("Button label", text)
 
 
 def main():
