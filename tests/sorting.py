@@ -129,7 +129,7 @@ if __name__ == "__main__":
         \n(q)uick\n(s)election\n"
     method = input(method_msg)
 
-    # Build and randomly shuffle list of integers. 
+    # Build and randomly shuffle list of integers.
     A = [x + 1 for x in range(N)]
     random.seed(time.time())
     random.shuffle(A)
@@ -190,6 +190,7 @@ if __name__ == "__main__":
 
     anim = animation.FuncAnimation(fig, func=update_fig,
                                    fargs=(bar_rects, iteration),
-                                   frames=generator,interval=1,
+                                   frames=generator,
+                                   interval=1,
                                    repeat=False)
     plt.show()

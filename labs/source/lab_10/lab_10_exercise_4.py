@@ -20,7 +20,7 @@ for vathmoi in athlimata:
             maxsum = sum
             maxathlima = vathmoi
 
-print("To άθλημα με τους μεγαλύτερους βαθμούς είναι:", maxathlima, "και το άθροισμα είναι:", maxsum)
+print("Ο max βαθμός είναι:", maxathlima, "και το άθροισμα είναι:", maxsum)
 
 # Υπολογισμός μέγιστου βαθμού σε κάθε άθλημα
 meg_vathmos = athlimata[0][0]
