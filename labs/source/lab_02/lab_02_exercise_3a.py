@@ -1,11 +1,13 @@
 import datetime
 
 
+# Υπολογισμός χρονιάς που θα γίνει 100
 def calc_year(age):
     now_year = datetime.datetime.today().year
     return now_year + 100 - age
 
 
+# Διάβασμα από τον χρήστη
 my_name = input("Δώσε το όνομα σου: ").strip()
 
 try:
@@ -14,4 +16,5 @@ except ValueError:
     print("Παρακαλώ δώσε ακέραιο αριθμό!")
 else:
     end_year = calc_year(my_age)
+    # Εκτύπωση αποτελέσματος
     print(f"{my_name} το {end_year} θα είναι 100 ετών.")

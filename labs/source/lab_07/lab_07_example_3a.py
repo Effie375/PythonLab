@@ -2,7 +2,7 @@
 counter = 0
 
 # Εισαγωγή δεδομένων
-leksi = input("Δώσε λέξη: ")
+leksi = input("Δώσε λέξη: ").strip()
 
 for gramma in leksi:
     if gramma == 'e':

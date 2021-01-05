@@ -106,7 +106,7 @@ loipa = miktes * 0.09
 # Οι καθαρές απολαβές ειναι οι μεικτές μείον όλες τις εισφορές
 kathara = miktes - asfaleia - foros - loipa
 
-# Εκτύπωση
+# Εκτύπωση αποτελεσμάτων
 print("Μικτές αποδοχές: %.2f" % miktes)
 print("Ασφάλεια: %.2f" % asfaleia)
 print("Φόρος: %.2f" % foros)
@@ -138,6 +138,7 @@ etosGennhshs = twrinoEtos - hlikia
 # Υπολογισμός χρονιάς που θα γίνει 100
 ekatoXronwn = etosGennhshs + 100
 
+# Εκτύπωση αποτελέσματος
 print("O/H", onoma, "θα γίνει 100 το έτος", ekatoXronwn)
 ```
 

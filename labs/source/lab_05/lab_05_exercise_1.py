@@ -1,3 +1,4 @@
+# Αρχικοποίηση μεταβλητών
 lista = []
 i = 0
 
@@ -22,6 +23,7 @@ while j < 10:
     athroisma += lista[j]
     j = j + 1
 
+# Εκτύπωση αποτελέσματος
 print("Το άθροισμα είναι: ", athroisma)
 
 while k < 10:
@@ -31,6 +33,7 @@ while k < 10:
         perittos += 1
     k += 1
 
+# Εκτύπωση αποτελεσμάτων
 print("To πλήθος των άρτιων είναι: ", artios)
 print("Tο πλήθος των περιττών είναι: ", perittos)
 
@@ -43,4 +46,5 @@ while ls < 10:
 
     ls += 1
 
-print("Η διαφορά είναι: ", megistos-elaxistos)
+# Εκτύπωση αποτελέσματος
+print("Η διαφορά είναι: ", megistos - elaxistos)

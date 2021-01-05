@@ -15,7 +15,7 @@ if etos % 4 == 0:
 else:
     disekto = False
 
-# Eκτύπωση αποτελεσμάτων
+# Eκτύπωση αποτελέσματος
 if disekto:
     print("Είναι δίσκετο")
 else:

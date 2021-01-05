@@ -1,11 +1,14 @@
+# Αρχικοποίηση μεταβλητών
 i = 0
 athroisma = 0
 
 while i < 6:
-    vathmos = int(input("Δώσε βαθμό: "))
+    # Εισαγωγή βαθμού και μετατροπ΄ή από str σε float
+    vathmos = float(input("Δώσε βαθμό: "))
     athroisma = athroisma + vathmos
     i = i + 1
 
+# Υπολογισμός μέσου όρου
 mo = athroisma / 6
 
 if mo > 10:

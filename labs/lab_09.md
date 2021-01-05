@@ -16,10 +16,13 @@
 ---
 
 ```python
+# Δημιουργία λίστας
 list = [1, 6, 3, 5, 4, 6]
 
+# Εισαγωγή δεδομένων
 key = int(input("Δώσε στοιχείο που αναζητάς: "))
 
+# Αρχικοποίηση μεταβλητών
 done = True
 thesi = 0
 
@@ -29,7 +32,8 @@ for arithmos in list:
     done = False
   thesi += 1
 
-if done == True:
+# Εκτύπωση αποτελέσματος
+if done is True:
   print("Το στοιχείο που αναζητάς δεν είναι στη λίστα.")
 ```
 
@@ -45,15 +49,17 @@ if done == True:
 # Δημιουργία λίστας
 list = [4, 8, 3, 1, 7]
 
-for i in range(1,5):
+print("H μη ταξινομημένη λίστα είναι:", list)
+
+for i in range(1, 5):
   for j in range(4, i-1, -1):
     if list[j-1] > list[j]:
       temp = list[j-1]
       list[j-1] = list[j]
       list[j] = temp
 
-# Εκτύπωση ταξινομημένης λίστας
-print("Η ταξινομημένη λίστα μας είναι:", list)
+# Εκτύπωση αποτελέσματος
+print(f"H ταξινομημένη λίστα είναι:", list)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_example_2.py).
@@ -65,22 +71,24 @@ print("Η ταξινομημένη λίστα μας είναι:", list)
 Να γραφεί ένα πρόγραμμα το οποίο θα δέχεται πέντε αριθμούς, θα τους ταξινομεί σε αύξουσα σειρά και θα τους εμφανίζει.
 
 ```python
+# Αρχικοποίηση μεταβλητών
 list = []
 
 for i in range(5):
   num = int(input("Δώσε στοιχείο: "))
   list.append(num)
 
-print(list)
+print("H μη ταξινομημένη λίστα είναι:", list)
 
-for i in range(1,5):
+for i in range(1, 5):
   for j in range(4, i-1, -1):
     if list[j-1] > list[j]:
       temp = list[j-1]
       list[j-1] = list[j]
       list[j] = temp
-      
-print(list)
+
+# Εκτύπωση αποτελέσματος
+print("H ταξινομημένη λίστα είναι:", list)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_example_3.py).
@@ -96,24 +104,29 @@ print(list)
 Οι αριθμοί είναι μοναδικοί στον πίνακα.
 
 ```python
+# Αρχικοποίηση μεταβλητών
 list = []
 
 for i in range(10):
+  # Εισαγωγή στοιχείων
   num = int(input("Δώσε στοιχεία: "))
   list.append(num)
 
+# Εισαγωγή στοιχείων
 key = int(input("Δώσε στοιχείο που αναζητάς: "))
 
+# Αρχικοποίηση μεταβλητών
 done = True
 thesi = 0
 
 for i in list:
   if i == key:
+    # Εκτύπωση θέσης
     print(thesi)
     done = False
   thesi += 1
 
-if done == True:
+if done is True:
   print("To στοιχείο που αναζητάς δεν είναι στη λίστα.")
 ```
 
@@ -128,19 +141,22 @@ if done == True:
 Να δημιουργηθεί πίνακας players στον οποίο θα αποθηκεύονται τα ονόματα των 7 παικτών. Θα ταξινομεί τα ονόματα σε φθίνουσα σειρά και θα εμφανίζει τα ονόματα των παικτών ταξινομημένα.
 
 ```python
+# Αρχικοποίηση μεταβλητών
 players = []
 
 for i in range(7):
+  # Διάβασμα από τον χρήστη
   name = input("Δώσε όνομα παίκτη: ")
   players.append(name)
 
-for i in range(1,7):
+for i in range(1, 7):
   for j in range(6, i-1, -1):
-    if players [j-1] < players [j]:
+    if players[j-1] < players[j]:
       temp = players[j-1]
       players[j-1] = players[j]
       players[j] = temp
 
+# Εκτύπωση αποτελεσμάτων
 print("Παίκτες:", players)
 ```
 

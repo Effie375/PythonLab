@@ -3,13 +3,13 @@ i = 0
 synolo = 0
 
 while i < 10:
-    number = input("Δώσε αριθμό: ")
+    number = input("Δώσε αριθμό: ").strip()
     # Έλεγχος ορθότητας
     while not number.isdigit():
-        number = input("Είπα δώσε αριθμό: ")
+        number = input("Είπα δώσε αριθμό: ").strip()
     number = int(number)
     synolo = synolo + number
     i = i + 1
 
 # Εκτύπωση αποτελέσματος
-print("Το σύνολο είναι:", synolo)
+print(f"Το σύνολο είναι: {synolo}")

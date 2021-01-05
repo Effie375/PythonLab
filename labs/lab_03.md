@@ -32,14 +32,16 @@
 ---
 
 ```python
+# Διάβασμα από τον χρήστη
 number = input("Δώσε έναν αριθμό: ")
 
-if number.isdigit() == True:
+if number.isdigit() is True:
+  # Μετατροπή από str σε int
   number = int(number)
-    if number == 0:
-      print("Μηδέν")
-    else:
-      print("Άλλος αριθμός")
+  if number == 0:
+    print("Μηδέν!")
+  else:
+    print("Άλλος αριθμός.")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_03/lab_03_example_1.py)
@@ -69,9 +71,9 @@ telikosVathmos = proodos * 0.2 + grapta * 0.8
 
 # Έλεγχος εαν είναι πάνω από 5
 if telikosVathmos >= 5:
-  print(onoma, "Πέρασες")
+  print(onoma, "Πέρασες!")
 else:
-  print(onoma, "Απέτυχες")
+  print(onoma, "Απέτυχες!")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_03/lab_03_exercise_1.py)
@@ -123,13 +125,13 @@ else:
 ```python
 # Διάβασμα αποτελεσμάτων
 omada1 = input("Δώσε τους πόντους της ομάδας 1: ")
-omada2 = input ("Δώσε τους πόντους της ομάδας 2: ")
+omada2 = input("Δώσε τους πόντους της ομάδας 2: ")
 
 # Έλεγχος αν είναι αριθμός
 if not(omada1.isdigit() and omada2.isdigit()):
   # Ζήτα ξανά να διαβάσουμε αριθμό
-  omada1 = input("Είπα δώσε πόντους για ομάδα 1: ")
-  omada2 = input ("Είπα δώσε πόντους για ομάδα 2: ")
+  omada1 = input("Δώσε σωστά τους πόντους της ομάδας 1: ")
+  omada2 = input("Δώσε σωστά τους πόντους της ομάδας 2: ")
 
 # Αφού ξέρουμε ότι είναι αριθμός
 omada1 = int(omada1)

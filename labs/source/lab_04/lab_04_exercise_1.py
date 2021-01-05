@@ -4,7 +4,7 @@ zaria2 = input("Δώσε 2η ζαριά: ")
 
 # Ελέγχουμε αν αυτό που έγραψε o χρήστης είναι νούμερα.
 if zaria1.isdigit() and zaria2.isdigit():
-    # Μετατροπή από str σε intf
+    # Μετατροπή από str σε int
     zaria1 = int(zaria1)
     zaria2 = int(zaria2)
     # Ελέγχουμε αν τα νούμερα των ζαριών ήταν μεταξύ 1 - 6.
@@ -18,6 +18,6 @@ if zaria1.isdigit() and zaria2.isdigit():
         else:
             print(zaria1 + zaria2)
     else:
-        print("Error! Γιατί οι ζαριές είναι εκτός ορίων 1 και 6;")
+        print("Γιατί οι ζαριές είναι εκτός ορίων 1 και 6;")
 else:
-    print("Error! Γιατί έγραψες λέξη;")
+    print("Γιατί έγραψες λέξη;")

@@ -12,7 +12,7 @@ loipa = miktes * 0.09
 # Οι καθαρές απολαβές ειναι οι μεικτές μείον όλες τις εισφορές
 kathara = miktes - asfaleia - foros - loipa
 
-# Εκτύπωση
+# Εκτύπωση αποτελεσμάτων
 print("Μικτές αποδοχές: %.2f" % miktes)
 print("Ασφάλεια: %.2f" % asfaleia)
 print("Φόρος: %.2f" % foros)

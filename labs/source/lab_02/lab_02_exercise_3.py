@@ -2,7 +2,7 @@
 onoma = input("Ποιο είναι το όνομα σου: ")
 hlikia = input("Ποια είναι η ηλικία σου: ")
 
-# Μετατορπή της ηλικίας σε int από str
+# # Μετατροπή από str σε int
 hlikia = int(hlikia)
 
 twrinoEtos = 2020
@@ -13,4 +13,5 @@ etosGennhshs = twrinoEtos - hlikia
 # Υπολογισμός χρονιάς που θα γίνει 100
 ekatoXronwn = etosGennhshs + 100
 
+# Εκτύπωση αποτελέσματος
 print("O/H", onoma, "θα γίνει 100 το έτος", ekatoXronwn)

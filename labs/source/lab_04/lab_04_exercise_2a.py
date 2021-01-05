@@ -1,20 +1,27 @@
-total = i = 0
+# Αρχικοποίηση μεταβλητών
+total = 0
+i = 0
 
 while i < 6:
-    degree = input("Δώσε βαθμό: ").strip()
-    while not degree.isdigit():
-        degree = input("Δώσε ξανά βαθμό: ").strip()
-    degree = float(degree)
-    total += degree
+    vathmos = input("Δώσε βαθμό: ").strip()
+    while not vathmos.isdigit():
+        # Εισαγωγή βαθμού
+        vathmos = input("Δώσε ξανά βαθμό: ").strip()
+    # Μετατροπή από str σε float
+    vathmos = float(vathmos)
+    total += vathmos
     i += 1
 
-average = (total/6)
+# Υπολογισμός μέσου όρου
+mo = total / 6
 
-if (average >= 8.5 and average <= 10):
-    print("Άριστα με μέσο όρο: %.1f" % average)
-elif (average >= 6.5 and average <= 8.49):
-    print("Λιαν καλός με μέσο όρο: %.1f" % average)
-elif (average >= 5 and average <= 6.49):
-    print("Κάλος με μέσο όρο: %.1f" % average)
+if mo > 10:
+    print("Κάτι δεν πάει καλά...")
+elif mo >= 8.5:
+    print(f"Άριστα με μέσο όρο {mo:.1f}!")
+elif mo >= 6.5:
+    print(f"Λίαν Καλώς με μέσο όρο {mo:.1f}")
+elif mo >= 5:
+    print(f"Καλώς με μέσο όρο {mo:.1f}")
 else:
-    print("Κόπηκες!")
+    print("Kόπηκες")
