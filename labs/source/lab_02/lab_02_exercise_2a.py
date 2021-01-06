@@ -1,19 +1,19 @@
 try:
-    # Διάβασμα μεικτών απολαβών
-    miktes_apodoxes = float(input("Δώσε τις μεικτές αποδοχές: ").strip())
+    # Ζητάμε από τον χρήστη να δώσει τις μικτές αποδοχές
+    miktes = float(input("Δώσε τις μεικτές αποδοχές: ").strip())
 except ValueError:
     print("Μη έγκυρες αποδοχές!")
 else:
-    # Υπολογισμός επί μέρους εισφορών
-    asfaleia = round(miktes_apodoxes * 0.03, 2)
-    foros = round(miktes_apodoxes * 0.05, 2)
-    loipa = round(miktes_apodoxes * 0.09, 2)
+    # Υπολογίζουμε τις επί μέρους εισφορές
+    asfaleia = round(miktes * 0.03, 2)
+    foros = round(miktes * 0.05, 2)
+    loipa = round(miktes * 0.09, 2)
 
-    # Οι καθαρές απολαβές ειναι οι μεικτές μείον όλες τις εισφορές
-    kathara = round(miktes_apodoxes - asfaleia - foros - loipa, 2)
+    # Υπολογίζουμε τις καθαρές αποδοχές που είναι οι μικτές μείον τις εισφορές
+    kathara = round(miktes - asfaleia - foros - loipa, 2)
 
     # Εκτύπωση αποτελεσμάτων
-    print(f"Μεικτές αποδοχές: {miktes_apodoxes}")
+    print(f"Μεικτές αποδοχές: {miktes}")
     print(f"Ασφάλεια 3%: {asfaleia}")
     print(f"Φόρος 5% {foros}")
     print(f"Λοιπές κρατήσεις 9%: {loipa}")
