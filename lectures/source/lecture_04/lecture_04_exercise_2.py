@@ -11,4 +11,4 @@ while tameio <= aksia:
 print(weeks)
 
 if tameio > aksia:
-    print("Περίσσεψαν ", tameio - aksia,  "Ευρώ.")
+    print("Περίσσεψαν", tameio - aksia,  "Ευρώ.")
