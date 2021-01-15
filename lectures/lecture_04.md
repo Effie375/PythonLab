@@ -208,7 +208,7 @@ while tameio <= aksia:
 print(weeks)
 
 if tameio > aksia:
-  print("Περίσσεψαν ", tameio - aksia,  "Ευρώ.")
+  print("Περίσσεψαν", tameio - aksia,  "Ευρώ.")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_04/lecture_04_exercise_2.py).
