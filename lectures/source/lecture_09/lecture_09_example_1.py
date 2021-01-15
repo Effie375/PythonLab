@@ -1,9 +1,13 @@
-ls = []
+def sunolo(x,y):
+    athroisma = x + y
+    return athroisma
 
-for i in range(5):
-    ypolista = []
-    for j in range(4):
-        new_num = int(input("Δώσε αριθμό: "))
-        ypolista.append(new_num)
-    ls.append(ypolista)
-print(ls)
+
+def sayHello():
+    print("Hello")
+# Δεν επιστρέφει κάτι άρα δε χρειάζεται return
+
+
+#-------main--------
+athroisma = sunolo(x,y)
+sayHello()

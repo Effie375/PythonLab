@@ -82,8 +82,6 @@ print(onoma, telikosVathmos)
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_02/lab_02_exercise_1.py).
 
-[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=vFFMY9CbKhE&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=4)
-
 ### [Άσκηση 2](source/lab_02/lab_02_exercise_2.py)
 
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει τις μικτές αποδοχές ενός υπαλλήλου και θα υπολογίζει και θα εμφανίζει τις καθαρές αποδοχές του. Ο υπάλληλος πληρώνει 3% προς ασφαλιστικά ταμεία, 5% φόρο και 9% λοιπές κρατήσεις. Το πρόγραμμα θα εμφανίζει τα αποτελέσματα ως εξής:
@@ -119,8 +117,6 @@ print("Καθαρές αποδοχές: %.2f" % kathara)
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_02/lab_02_exercise_2.py)
 
-[![Video 2](../images/Video_1.PNG)](https://www.youtube.com/watch?v=R2IlsE4mM6A&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=5)
-
 ### [Άσκηση 3](source/lab_02/lab_02_exercise_3.py)
 
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει το όνομα και την ηλικία του χρήστη και θα εμφανίζει το έτος στο οποίο θα είναι 100 ετών (Να θεωρηθεί ότι το τωρινό έτος είναι το 2020).
@@ -147,7 +143,5 @@ print("O/H", onoma, "θα γίνει 100 το έτος", ekatoXronwn)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_02/lab_02_exercise_3.py)
-
-[![Video 3](../images/Video_1.PNG)](https://www.youtube.com/watch?v=q6Nk4IFGyWA&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=6)
 
 [Home](../README.md) | [Lab 1](lab_01.md) | [Lab 2](lab_02.md) | [Lab 3](lab_03.md) | [Lab 4](lab_04.md) | [Lab 5](lab_05.md) | [Lab 6](lab_06.md) | [Lab 7](lab_07.md) | [Lab 8](lab_08.md) | [Lab 9](lab_09.md) | [Lab 10](lab_10.md)

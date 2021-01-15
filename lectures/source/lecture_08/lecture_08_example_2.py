@@ -1,11 +1,9 @@
-list = [5, 7, 8, 9, 3]
+ls = [[2, 3, 4, 1], [7, 3, 3, 9], [6, 5, 5, 8], [1, 9, 4, 1], [0, 4, 7, 4]]
 
-key = int(input("Δώσε στοιχείο που αναζητάς: "))
+sum = 0
 
-counter = 0
+for ypolista in ls:
+    for i in ypolista:
+        sum += i
 
-for i in list:
-    if i == key:
-        counter += 1
-
-print("Το %d έχει εισαχθεί %d φορές." % (key, counter))
+print(sum)

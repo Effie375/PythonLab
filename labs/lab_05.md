@@ -65,8 +65,6 @@ print("Η νέα λίστα είναι:", new_list)
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_05/lab_05_example_1.py)
 
-[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=CpFO-bNoKh0&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=14)
-
 ## 5.3 Ασκήσεις
 
 ---

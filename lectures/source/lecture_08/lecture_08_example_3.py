@@ -1,17 +1,10 @@
-list = [5, 7, 8, 9, 3]
+ls = [[2, 3, 4, 1], [7, 3, 3, 9], [6, 5, 5, 8], [1, 9, 4, 1], [0, 4, 7, 4]]
 
-key = int(input("Δώσε στοιχείο που αναζητάς: "))
+megisto = ls[0][0]
 
-found = False
-i = 0
+for ypolista in ls:
+    for item in ypolista:
+        if item > megisto:
+            megisto = item
 
-while (i < 5) and (found is False):
-    if list[i] == key:
-        thesi = i
-        found = True
-    i += 1
-
-if found is True:
-    print("Το %d βρίσκεται στη %d θέση." % (key, thesi))
-else:
-    print("Το %d δε βρίσκεται στη λίστα %s." % (key, list))
+print(megisto)

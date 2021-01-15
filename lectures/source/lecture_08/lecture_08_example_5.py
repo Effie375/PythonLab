@@ -1,15 +1,8 @@
-Names = ["Γεωργίου", "Πέτρου", "Παπαδόπουλος", "Αθανασίου", "Τσακογιάννης"]
-Grades = [1, 2, 5, 7, 9]
+ls = [[2, 3, 4, 1], [7, 3, 3, 9], [6, 5, 5, 8], [1, 9, 4, 1], [0, 4, 7, 4]]
 
-for i in range(1, 5):
-    for j in range(4, i-1, -1):
-        if Grades[j-1] > Grades[j]:
-            temp = Grades[j-1]
-            Grades[j-1] = Grades[j]
-            Grades[j] = temp
-            temp2 = Names[j-1]
-            Names[j-1] = Names[j]
-            Names[j] = temp2
+for ypolista in ls:
+    sumGrammhs = 0
+    for item in ypolista:
+        sumGrammhs += item
 
-print(Names)
-print(Grades)
+    print("Άθροισμα γραμμής:", sumGrammhs)

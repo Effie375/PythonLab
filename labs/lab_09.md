@@ -39,8 +39,6 @@ if done is True:
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_example_1.py).
 
-[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=wPpjbmPlCIk&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=13)
-
 ## [9.2 Ταξινόμηση](source/lab_09/lab_09_example_2.py)
 
 ---
@@ -131,8 +129,6 @@ if done is True:
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_exercise_1.py).
-
-[![Video 1](../images/Video_1.PNG)](https://www.youtube.com/watch?v=R5txHdGj8M0&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=13)
 
 ### [Άσκηση 2](source/lab_09/lab_09_exercise_2.py)
 

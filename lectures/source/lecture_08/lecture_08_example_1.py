@@ -1,10 +1,9 @@
-list = [9, 7, 8, 9, 3]
+ls = []
 
-key = int(input("Δώσε στοιχείο που αναζητάς: "))
-
-thesi = 0
-
-for i in list:
-    if i == key:
-        print(thesi)
-    thesi += 1
+for i in range(5):
+    ypolista = []
+    for j in range(4):
+        new_num = int(input("Δώσε αριθμό: "))
+        ypolista.append(new_num)
+    ls.append(ypolista)
+print(ls)

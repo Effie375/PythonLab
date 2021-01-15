@@ -183,8 +183,6 @@ print("Το τετράδιο κοστίζει %.2f Ευρώ" % (timi))
 print("%d + %d = %d" % (arithmos_1, arithmos_2, athroisma))
 ```
 
-[![Video 2](../images/Video_1.PNG)](https://www.youtube.com/watch?v=4mzJ3WGUdb0&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=2&t=2s)
-
 ## 2.8 input
 
 ---
@@ -198,8 +196,6 @@ print("%d + %d = %d" % (arithmos_1, arithmos_2, athroisma))
 ---
 
 ### [2.9.1 Παράδειγµα 1](source/lecture_02/lecture_02_example_1.py)
-
-[![Video 2](../images/Video_1.PNG)](https://www.youtube.com/watch?v=pPwgrQ6ZbIA&list=PLlRCU8UBnRzRipr_LhWiF3YCoEkHUleLK&index=2&t=43s)
 
 ```python
 x = input("Δώσε έναν αριθμό: ")
@@ -232,4 +228,4 @@ print('Μισθός:', telikos_misthos)
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_02/lecture_02_example_2.py).
 
-[Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 7](lecture_07.md) | [Lect 8](lecture_08.md) | [Lect 9](lecture_09.md)
+[Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 7](lecture_07.md) | [Lect 8](lecture_08.md)

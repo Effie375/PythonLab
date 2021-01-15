@@ -1,12 +1,13 @@
-A = [5, 7, 8, 9, 3]
+ls = [[2, 3, 4, 1], [7, 3, 3, 9], [6, 5, 5, 8], [1, 9, 4, 1], [0, 4, 7, 4]]
 
-print("Η λίστα μας πριν τη ταξινόμηση είναι: %s" % A)
+megistoX = 0
+megistoY = 0
 
-for i in range(len(A)):
-    for j in range(len(A)-1, i, -1):
-        if A[j-1] > A[j]:
-            temp = A[j-1]
-            A[j-1] = A[j]
-            A[j] = temp
+for x in range(len(ls)):
+    for y in range(len(ls[x])):
+        if ls[x][y] > ls[megistoX][megistoY]:
+            megistoX = x
+            megistoY = y
 
-print("Η λίστα μας μετά τη ταξινόμηση είναι: %s" % A)
+print(megistoX)
+print(megistoY)
