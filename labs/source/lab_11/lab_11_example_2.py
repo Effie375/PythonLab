@@ -6,3 +6,8 @@ def sort(A):
                 A[j-1] = A[j]
                 A[j] = temp
     return A
+
+list = [5, 7, 8, 9, 3]
+
+x = sort(list[:])
+print(x)

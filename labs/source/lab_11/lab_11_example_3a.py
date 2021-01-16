@@ -8,7 +8,6 @@ def readAndCheck():
         num = int(num)
         if 0 <= num <= 10:
             goon = False
-        
         return num
 
 
@@ -23,7 +22,7 @@ def sort(A):
 
 
 def readMarks():
-    vathmoi=[]
+    vathmoi = []
     for i in range(10):
         vathmoi.append(readAndCheck())
     return vathmoi

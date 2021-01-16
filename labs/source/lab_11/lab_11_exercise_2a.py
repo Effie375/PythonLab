@@ -3,8 +3,7 @@ def readMarks(N):
     for i in range(N):
         mark = int(input("Δώσε βαθμό: ").strip())
         marks.append(mark)
-
- return marks
+    return marks
 
 
 def getMax(A):
@@ -12,15 +11,13 @@ def getMax(A):
     for i in A:
         if i > megisto:
             megisto = i
-
- return megisto
+    return megisto
 
 
 def getMO(A):
     souma = 0
     for i in A:
         souma += i
-
     return souma / len(A)
 
 
