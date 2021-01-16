@@ -9,5 +9,18 @@
 εµφανίζει αναλυτικά τα στοιχεία του πίνακα για όλους τους
 µαθητές.
 """
+list = []
 
-# Το πρόγραμμα δεν έχει τελειώσει ακόμα!
+for i in range(20):
+    upoloista = []
+    for x in range(1):
+        proto = int(input("Δώσε βαθμό πρώτoυ τριμήνου: "))
+        deutero = int(input("Δώσε βαθμό δευτέρου τριμήνου: "))
+        trito = int(input("Δώσε βαθμό τρίτου τριμήνου: "))
+        upoloista.append(proto)
+        upoloista.append(deutero)
+        upoloista.append(trito)
+    list.append(upoloista)
+
+print(list)
+    
