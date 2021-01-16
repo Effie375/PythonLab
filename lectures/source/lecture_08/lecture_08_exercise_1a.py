@@ -1,16 +1,15 @@
-TRIMINA = 3
+MATHITES = 20
+TRIMHNA = 3
 list = []
-upoloista = []
-sum = 0
 
-for i in range(2):
-    upoloista = []
-    for x in range(TRIMINA):
-        vathmos = int(input(f"Δώσε βαθμό {x+1}oυ τριμήνου: "))
+for i in range(MATHITES):
+    list.append([])
+    sum = 0
+    for j in range(TRIMHNA):
+        vathmos = int(input(f"Δώσε βαθμό {j+1}oυ τριμήνου: "))
         sum += vathmos
-        upoloista.append(vathmos)
-    upoloista.append(sum // TRIMINA)
-    list.append(upoloista)
+        list[i].append(vathmos)
+    list[i].append(sum // TRIMHNA)    
 
-for mo in range(2):
-    print(f"O μέσος όρος του {mo+1}ου μαθητή είναι {list[mo][TRIMINA]}.")
+for vathmos in range(MATHITES):
+    print(f"O μέσος όρος του {vathmos+1}ου μαθητή είναι {list[vathmos][TRIMHNA]}.")
