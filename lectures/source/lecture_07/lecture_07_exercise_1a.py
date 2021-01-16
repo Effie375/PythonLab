@@ -6,9 +6,11 @@ def sort_function(plist):
                     temp = plist[j-1]
                     plist[j-1] = plist[j]
                     plist[j] = temp
-        return 0
-    except:
+    except TypeError:
+        print("Κάτι πήγε στραβά!")
         return 1
+    else:
+        return 0
 
 
 # Αρχικοποίηση μεταβλητών
@@ -29,5 +31,3 @@ for i in range(MAX_NUMBERS):
 if not sort_function(list):
     print(f"\nΟ μεγαλύτερος αριθμός είναι το {list[len(list)-1]}.")
     print(f"Ο μικρότερος αριθμός είναι το {list[0]}.")
-else:
-    print("Κάτι πήγε στραβά!")

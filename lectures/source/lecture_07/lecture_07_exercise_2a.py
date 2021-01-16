@@ -11,9 +11,11 @@ def sort_function(pnames, pvathmoi):
                     temp2 = pnames[j-1]
                     pnames[j-1] = pnames[j]
                     pnames[j] = temp2
-        return 0
-    except:
+    except TypeError:
+        print("Κάτι πήγε στραβά!")
         return 1
+    else:
+        return 0
 
 
 # Αρχικοποίηση μεταβλητών
@@ -38,7 +40,8 @@ while counter < MAX_ELEMENTS:
 
 
 if not sort_function(names, vathmoi):
-    for i in range(BEST_FOITITES):
-        print(f"Ο {i+1}ος καλύτερος είναι ο/η {names[i]}.")
-else:
-    print("Κάτι πήγε στραβά!")
+    try:
+        for i in range(BEST_FOITITES):
+            print(f"Ο {i+1}ος καλύτερος είναι ο/η {names[i]}.")
+    except IndexError:
+        print("Δεν υπάρχει άλλος φοιτητής στη λίστα!")
