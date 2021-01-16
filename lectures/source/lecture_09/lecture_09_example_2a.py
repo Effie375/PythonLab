@@ -1,14 +1,14 @@
-def sayHello(onoma = "Human"):
+def sayHello(onoma="Human"):
     print(f"Hello {onoma}")
 
 
-def modDiv(x,y):
+def modDiv(x, y):
     mod = x % y
     div = x // y
     return mod, div
 
 
-#-------main--------
+# -------main--------
 sayHello()
 sayHello("Chris")
 a, b = modDiv(10, 3)

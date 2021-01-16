@@ -301,6 +301,8 @@ A.append(sum)
 ### [Παράδειγμα 2](source/lecture_08/lecture_08_example_15.py)
 
 ```python
+ls = [[1, 2, 3], [1, 1, 1], [2, 3, 4]]
+A = [1, 2, 5]
 B = []
 
 for key in A:
@@ -310,6 +312,8 @@ for key in A:
       if i == key:
         counter += 1
   B.append(counter)
+
+print(B)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_15.py).
@@ -336,4 +340,4 @@ for key in A:
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_exercise_2.py).
 
-[Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 7](lecture_07.md) | [Lect 8](lecture_08.md)
+[Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 7](lecture_07.md) | [Lect 8](lecture_08.md) | [Lect 9](lecture_09.md) | [Lect 10](lecture_10.md)

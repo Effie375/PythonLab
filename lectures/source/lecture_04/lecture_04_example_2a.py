@@ -15,4 +15,4 @@ else:
     x -= 3
     y += 1
 
-print(f"x: {x} , y: %.1f" % y)
+print(f"x: {x} , y: {y:.1f}")

@@ -15,7 +15,7 @@ while counter < MAX_ELEMENTS:
 
 
 for i in range(len(vathmoi)-1):
-    for j in range(len(vathmoi)-1, i,-1):
+    for j in range(len(vathmoi)-1, i, -1):
         if vathmoi[j-1] < vathmoi[j]:
             # Swap vathmous
             temp1 = vathmoi[j-1]

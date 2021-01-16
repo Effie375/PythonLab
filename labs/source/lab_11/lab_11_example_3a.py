@@ -2,9 +2,9 @@
 def readAndCheck():
     goon = True
     while goon:
-        num = input("Δώσε αριθμό: ")
+        num = input("Δώσε αριθμό: ").strip()
         while not num.isdigit():
-            num = input("Δώσε αριθμό: ")
+            num = input("Δώσε αριθμό: ").strip()
         num = int(num)
         if 0 <= num <= 10:
             goon = False

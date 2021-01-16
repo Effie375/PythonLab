@@ -6,7 +6,7 @@ sum = num_1 + num_2 + num_3
 
 if sum > 100:
     mul = num_1 * num_2
-    print("Το γινόμενο ισούται με %.2f." % mul)
+    print(f"Το γινόμενο ισούται με {mul:.2f}.")
 else:
     sub = num_2 - num_3
-    print("Η διαφορά των αριθμών σε απόλυτη τιμή είναι %d." % abs(sub))
+    print(f"Η διαφορά των αριθμών σε απόλυτη τιμή είναι {abs(sub)}.")

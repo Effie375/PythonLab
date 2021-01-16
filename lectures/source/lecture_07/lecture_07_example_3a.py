@@ -1,12 +1,17 @@
-A = [5, 7, 8, 9, 3]
+list = [5, 7, 8, 9, 3]
 
-print(f"Η λίστα μας πριν τη ταξινόμηση είναι:{A}")
+key = int(input("Δώσε στοιχείο που αναζητάς: ").strip())
 
-for i in range(len(A)):
-    for j in range(len(A)-1, i, -1):
-        if A[j-1] > A[j]:
-            temp = A[j-1]
-            A[j-1] = A[j]
-            A[j] = temp
+found = False
+i = 0
 
-print(f"Η λίστα μας μετά τη ταξινόμηση είναι:{A}")
+while (i < 5) and (found is False):
+    if list[i] == key:
+        thesi = i
+        found = True
+    i += 1
+
+if found is True:
+    print(f"Το {key} βρίσκεται στη {thesi} θέση.")
+else:
+    print(f"Το {key} δε βρίσκεται στη λίστα {list}.")

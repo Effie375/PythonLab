@@ -1,6 +1,11 @@
 # Δεχόμαστε [plithos] ονόματα και τα τοποθετούμε σε λίστα την οποία επιστρέφει
 def readNames(plithos):
-# TODO
+    onomata = []
+    for i in range(plithos):
+        onoma = input("Δώσε όνομα:")
+        onomata.append(onoma)
+    return onomata
+
 
 
 def longestName(list):
@@ -11,5 +16,8 @@ def longestName(list):
     return maxLength
 
 
-# TODO
+plithos = int(input("Δώσε πλήθος: "))
+onomata = readNames(plithos)
+x = longestName(onomata)
+
 print("Το μακρύτερο όνομα έχει μήκος:", x)

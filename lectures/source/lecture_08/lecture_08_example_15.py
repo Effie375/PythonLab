@@ -1,4 +1,5 @@
-"""
+ls = [[1, 2, 3], [1, 1, 1], [2, 3, 4]]
+A = [1, 2, 5]
 B = []
 
 for key in A:
@@ -8,4 +9,5 @@ for key in A:
             if i == key:
                 counter += 1
     B.append(counter)
-"""  # noqa: E501
+
+print(B)

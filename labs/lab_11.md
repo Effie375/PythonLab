@@ -1,4 +1,4 @@
-# 11 Συναρτήσεις
+# 11 Συναρτήσεις I
 
 ---
 
@@ -57,6 +57,20 @@ def sort(A):
 εκτυπώνει, για κάθε μάθημα τους βαθμούς ταξινομημένους.
 
 ```python
+# Διαβάζουμε έναν αριθμό και ελέγχουμε αν είναι 0 - 10
+def readAndCheck():
+  goon = True
+  while goon:
+    num = input("Δώσε αριθμό: ")
+    while not num.isdigit():
+      num = input("Δώσε αριθμό: ")
+    num = int(num)
+    if 0 <= num <= 10:
+      goon = False
+        
+  return num
+
+
 def sort(A):
   for i in range(1, len(A)):
     for j in range(len(A)-1, 0, -1):
@@ -72,6 +86,7 @@ def readMarks():
   for i in range(10):
     vathmoi.append(readAndCheck())
   return vathmoi
+
 
 # MAIN
 for i in range(10):
@@ -96,39 +111,33 @@ for i in range(10):
 ```python
 # Δεχόμαστε [plithos] ονόματα και τα τοποθετούμε σε λίστα την οποία επιστρέφει
 def readNames(plithos):
-# TODO
+  onomata = []
+  def readNames(plithos):
+    onomata = []
+  for i in range(plithos):
+    onoma = input("Δώσε όνομα:")
+    onomata.append(onoma)
+  return onomata
 
 
 def longestName(list):
-  maxLength = 0
-  for onoma in list:
-    if len(onoma) > maxLength:
-      maxLength = len(onoma)
-    return maxLength
+    maxLength = 0
+    for onoma in list:
+      if len(onoma) > maxLength:
+        maxLength = len(onoma)
+  return maxLength
 
 
-# TODO
+plithos = int(input("Δώσε πλήθος: "))
+onomata = readNames(plithos)
+x = longestName(onomata)
+
 print("Το μακρύτερο όνομα έχει μήκος:", x)
-
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_11/lab_11_exercise_1.py).
 
 ### [Άσκηση 2](source/lab_11/lab_11_exercise_2.py)
-
-Να γραφεί πρόγραμμα το οποίο:
-
-- Θα έχει μια συνάρτηση η οποία θα παίρνει έναν αριθμό και θα
-επιστρέφει το τετράγωνό του.
-- Η συνάρτηση θα χρησιμοποιείτε σε ένα for loop για να υπολογίσει το άθροισμα των τετράγωνων όλων των αριθμών μέχρι και αυτόν που δώσατε.
-
-```python
-
-```
-
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_11/lab_11_exercise_2.py).
-
-### [Άσκηση 3](source/lab_11/lab_11_exercise_3.py)
 
 Να γραφεί πρόγραμμα το οποίο:
 
@@ -144,9 +153,37 @@ print("Το μακρύτερο όνομα έχει μήκος:", x)
 μέγιστο βαθμό και τον μέσο όρο.
 
 ```python
+def readMarks(N):
+  marks = []
+  for i in range(N):
+    mark = int(input("Δώσε βαθμό: "))
+    marks.append(mark)
+  return marks
 
+
+def getMax(A):
+  megisto = 0
+  for i in A:
+    if i > megisto:
+      megisto = i
+  return megisto
+
+
+def getMO(A):
+  souma = 0
+  for i in A:
+    souma += i
+  return souma / len(A)
+
+
+plithos = int(input("Πόσοι δώσανε το μάθημα:"))
+
+vathmoi = readMarks(plithos)
+
+print("Μέγιστος: ", getMax(vathmoi))
+print("Mέσος όρος: ", getMO(vathmoi))
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_11/lab_11_exercise_3.py).
 
-[Home](../README.md) | [Lab 1](lab_01.md) | [Lab 2](lab_02.md) | [Lab 3](lab_03.md) | [Lab 4](lab_04.md) | [Lab 5](lab_05.md) | [Lab 6](lab_06.md) | [Lab 7](lab_07.md) | [Lab 8](lab_08.md) | [Lab 9](lab_09.md) | [Lab 10](lab_10.md)| [Lab 11](lab_11.md)
+[Home](../README.md) | [Lab 1](lab_01.md) | [Lab 2](lab_02.md) | [Lab 3](lab_03.md) | [Lab 4](lab_04.md) | [Lab 5](lab_05.md) | [Lab 6](lab_06.md) | [Lab 7](lab_07.md) | [Lab 8](lab_08.md) | [Lab 9](lab_09.md) | [Lab 10](lab_10.md)| [Lab 11](lab_11.md)| [Lab 12](lab_12.md)

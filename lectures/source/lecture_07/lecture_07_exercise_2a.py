@@ -1,7 +1,7 @@
 def sort_function(pnames, pvathmoi):
     try:
         for i in range(len(pvathmoi)-1):
-            for j in range(len(pvathmoi)-1, i,-1):
+            for j in range(len(pvathmoi)-1, i, -1):
                 if pvathmoi[j-1] < pvathmoi[j]:
                     # Swap vathmous
                     temp1 = pvathmoi[j-1]

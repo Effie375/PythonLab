@@ -5,7 +5,8 @@ def apot(x):
 def foo(n):
     apot1 = n * 2
     n = apot1 * 2
-return n, apot1
+    return n, apot1
+
 
 a = int(input("Δώσε αριθμό: ").strip())
 
