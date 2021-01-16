@@ -7,8 +7,7 @@ def readAndCheck():
             num = input("Δώσε αριθμό: ")
         num = int(num)
         if 0 <= num <= 10:
-            goon = False
-        
+            goon = False     
         return num
 
 

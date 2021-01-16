@@ -5,6 +5,7 @@ def search_function(lista_s, key):
             counter += 1
     return counter
 
+
 lista = [[1, 2, 3, 1], [6, 6, 7, 8], [9, 10, 11, 12], [9, 3, 3, 16]]
 search_key = [1, 3, 6, 9]
 results = []

@@ -1,5 +1,4 @@
 def athroisma(lista_new):
-    A = []
     for item in lista_new:
         item.sort(reverse=True)
 

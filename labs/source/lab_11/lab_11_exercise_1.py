@@ -7,7 +7,6 @@ def readNames(plithos):
     return onomata
 
 
-
 def longestName(list):
     maxLength = 0
     for onoma in list:

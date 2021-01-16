@@ -1,6 +1,6 @@
 def eisagogiStoixeion():
     onomata = []
-    for i in range (10):
+    for i in range(10):
         name = input("Δώσε όνομα: ")
         onomata.append(name)
 
@@ -11,9 +11,9 @@ def monadikiLista(lista):
     neaLista = []
     for i in lista:
         if i not in neaLista:
-        neaLista.append(i)
+            neaLista.append(i)
 
-     return neaLista
+    return neaLista
 
 
 def anazitisi(key, lista):
@@ -21,11 +21,10 @@ def anazitisi(key, lista):
     for i in lista:
         if i == key:
             done = False
-
     return done
 
-onomata = eisagogiStoixeion()
 
+onomata = eisagogiStoixeion()
 print(monadikiLista(onomata))
 
 stoixeio = input("Δώσε όνομα που αναζητάς: ")

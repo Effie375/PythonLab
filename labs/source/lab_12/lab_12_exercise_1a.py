@@ -2,6 +2,7 @@ def dinami(var):
     var *= var
     return var
 
+
 key = int(input("Δώσε αριθμό: ").strip())
 sum = 0
 
