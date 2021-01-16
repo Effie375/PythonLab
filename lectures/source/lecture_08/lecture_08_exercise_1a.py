@@ -1,26 +1,16 @@
-"""
-Για την διαχείριση των βαθµών στο µάθηµα της Πληροφορικής
-χρησιµοποιείται ένας δισδιάστατος πίνακας µε 20 γραµµές και 4
-στήλες. Οι πρώτες τρεις στήλες αντιστοιχούν στους βαθµούς του
-1ου, 2ου και 3ου τριµήνου αντίστοιχα και η τέταρτη στήλη στον
-µέσο όρο. Να γράψετε πρόγραµµα το οποίο να διαβάζει για κάθε
-ένα από τους 20 µαθητές µιας τάξης τους βαθµούς των τριών
-τριµήνων. Στη συνέχεια να υπολογίζει τον µέσο όρο. Τέλος, να
-εµφανίζει αναλυτικά τα στοιχεία του πίνακα για όλους τους
-µαθητές.
-"""
+TRIMINA = 3
 list = []
+upoloista = []
+sum = 0
 
-for i in range(20):
+for i in range(2):
     upoloista = []
-    for x in range(1):
-        proto = int(input("Δώσε βαθμό πρώτoυ τριμήνου: "))
-        deutero = int(input("Δώσε βαθμό δευτέρου τριμήνου: "))
-        trito = int(input("Δώσε βαθμό τρίτου τριμήνου: "))
-        upoloista.append(proto)
-        upoloista.append(deutero)
-        upoloista.append(trito)
+    for x in range(TRIMINA):
+        vathmos = int(input(f"Δώσε βαθμό {x+1}oυ τριμήνου: "))
+        sum += vathmos
+        upoloista.append(vathmos)
+    upoloista.append(sum // TRIMINA)
     list.append(upoloista)
 
-print(list)
-    
+for mo in range(2):
+    print(f"O μέσος όρος του {mo+1}ου μαθητή είναι {list[mo][TRIMINA]}.")
