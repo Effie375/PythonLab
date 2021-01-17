@@ -1,10 +1,37 @@
-"""
-Μια οµάδα µπάσκετ που αποτελείται από δέκα παίκτες έχει δώσει
-15 αγώνες. Να γίνει πρόγραµµα το οποίο θα δέχεται τα ονόµατα
-των παικτών καθώς και τους πόντους που σηµείωσε κάθε παίκτης
-σε κάθε αγώνα, θα εµφανίζει τον παίκτη που σηµείωσε τους
-περισσότερους πόντους καθώς και το σύνολο των πόντων πέτυχε η
-οµάδα σε κάθε αγώνα.
-"""
+def athroisma(plist):
+    sum = 0
+    for item in plist:
+        sum += item
+    return sum
 
-# Το πρόγραμμα δεν έχει τελειώσει ακόμα!
+
+PAIKTES = 10
+AGWNES = 15
+pontoi = []
+names = []
+
+for i in range(PAIKTES):
+    name = input(f"\nΔώσε το όνομα του {i+1}ου παίκτη: ").strip()
+    names.append(name)
+    for j in range(AGWNES):
+        pontos = int(input(f"Δώσε πόντους για τον {j+1}o αγώνα: ").strip())
+        if (i == 0):
+            pontoi.append([])
+        pontoi[j].append(pontos)
+
+# Τρέχει για κάθε αγώνα
+for agwnas in range(AGWNES):
+    # Καλούμε τη συνάρτηση και παίρνουμε το άθροισμα των πόντων ανα αγώνα
+    synolo_ponton = athroisma(pontoi[agwnas])
+    print(f"\n-------- Αγώνας {agwnas+1} --------")
+    print(f"Σύνολο πόντων: {synolo_ponton}")
+    # Μηδενίζουμε τη θέση του καλύτερου παίκτη
+    best_thesi = 0
+    # Έστω ο καλύτερος παίκτης με τους περισσότερους πόντους είναι ο πρώτος
+    best = pontoi[agwnas][best_thesi]
+    # Τρέχει για κάθε παίκτη
+    for paiktis in range(PAIKTES):
+        if pontoi[agwnas][paiktis] > best:
+            best_thesi = paiktis
+    print(f"Καλύτερος παίκτης: {names[best_thesi]}")
+    print(f"Πόντοι καλύτερου παίκτη: {pontoi[agwnas][best_thesi]}")

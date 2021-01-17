@@ -15,4 +15,4 @@ for i in range(MATHITES):
 print('\n', end='')
 
 for g in range(MATHITES):
-    print("O μέσος όρος του %dου μαθητή είναι %s." % (g+1, list[g][TRIMHNA]))
+    print("O μέσος όρος του %dου μαθητή είναι %d." % (g+1, list[g][TRIMHNA]))

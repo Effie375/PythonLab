@@ -27,4 +27,4 @@ for i in range(len(vathmoi)-1):
             names[j] = temp2
 
 for i in range(BEST_FOITITES):
-    print("Ο %dος καλύτερος είναι ο/η %s." % (i+1, names[i]))
+    print("Ο %dος καλύτερος είναι ο/η %d." % (i+1, names[i]))
