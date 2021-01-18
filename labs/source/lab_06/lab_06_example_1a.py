@@ -1,28 +1,11 @@
 # Αρχικοποίηση μεταβλητών
-max_elements = 5
-numbers = []
-i = 0
-
-while i < max_elements:
-    num = int(input("Δώσε έναν αριθμό: ").strip())
-    numbers.append(num)
-    i += 1
+athroisma = 0
 
 # Εισαγωγή δεδομένων
-key = int(input("Δώσε τον αριθμό που αναζητάτε: ").strip())
+number = int(input("Δώσε αριθμό: ").strip())
 
-# Αρχικοποίηση μεταβλητών
-flag = False
-i = 0
+for i in range(number + 1):
+    athroisma = athroisma + i
 
-while ((i < len(numbers)) and not flag):
-    if key == numbers[i]:
-        index = i
-        flag = True
-    i += 1
-
-# Εκτύπωση αποτελεσμάτων
-if flag:
-    print(f"Ο αριθμός που αναζητάς {key} βρίσκεται στη θέση {index}.")
-else:
-    print(f"Ο αριθμός που αναζητάς {key} δεν βρίσκεται στη λίστα.")
+# Εκτύπωση αποτελέσματος
+print(athroisma)

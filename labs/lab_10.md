@@ -1,59 +1,105 @@
-# 10 Πολυδιάστατες λίστες
+# 10 Συναρτήσεις
 
 ---
 
 ## Περιεχόμενα
 
----
-
-- 10.1 Εντολές για λίστες
-- 10.2 Παράδειγμα
+- 10.1 Συναρτήσεις
+- 10.2 Παραδείγματα
 - 10.3 Ασκήσεις
 
-## 10.1 Εντολές για λίστες
+## [10.1 Συναρτήσεις](source/lab_10/lab_10_example_1.py)
 
 ---
-
-- Προσπέλαση Πολυδιάστατης Λίστας
-  - `a = my_list[x][y][z]...`
-  - `my_list[x][y] = var1`
-- Πρόσθεση στοιχείων
-  - `my_list[x].append(a)`. Εισάγει την τιμή της μεταβλητής a στο τέλοςτης λίστας που βρίσκεται στη θέση «x» της λίστας my_list.
-
-## [10.2 Παράδειγμα](source/lab_10/lab_10_example_1.py)
-
----
-
-Να γραφεί ένα πρόγραμμα, το οποίο θα διαβάζει 5 λίστες από 10 θετικούς ακεραίους αριθμούς και θα τυπώνει τη λίστα με το μεγαλύτερο άθροισμα.
 
 ```python
-# Αρχικοποίηση μεταβλητών
-lista = []
-
-for i in range(5):
-  ypolista = []
-  for j in range(10):
-    # Εισαγωγή δεδομένων
-    n = int(input("Δώσε αριθμό: "))
-    ypolista.append(n)
-  lista.append(ypolista)
-
-# Αρχικοποίηση μεταβλητών
-meg_athroisma = 0
-
-for ypolista in lista:
-  athroisma = 0
-  for i in ypolista:
-    athroisma += i
-  if athroisma > meg_athroisma:
-    meg_athroisma = athroisma
-    meg_lista = ypolista
-
-# Εκτύπωση αποτελέσματος
-print(meg_lista)
+# Διαβάζουμε έναν αριθμό και ελέγχουμε αν είναι 0 - 10
+def readAndCheck():
+  goon = True
+  while goon:
+    num = input("Δώσε αριθμό: ")
+    while not num.isdigit():
+      num = input("Δώσε αριθμό: ")
+    num = int(num)
+    if 0 <= num <= 10:
+      goon = false
+  return num
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_example_1.py).
+
+## 10.2 Παραδείγματα
+
+---
+
+### 10.2.1 [Παράδειγμα 1(Ταξινόμηση)](source/lab_10/lab_10_example_2.py)
+
+Να γραφεί μια συνάρτηση η οποία θα δέχεται μια λίστα Α με
+αριθμούς και θα την ταξινομεί.
+
+```python
+def sort(A):
+  for i in range(1, len(A)):
+    for j in range(len(A)-1, 0, -1):
+      if A[j-1] > A[j]:
+        temp = A[j-1]
+        A[j-1] = A[j]
+        A[j] = temp
+  return A
+
+list = [5, 7, 8, 9, 3]
+
+x = sort(list[:])
+print(x)
+```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_example_2.py).
+
+### [Παράδειγμα 2](source/lab_10/lab_10_example_3.py)
+
+Να γραφεί ένα πρόγραμμα το οποίο θα διαβάζει (με έλεγχο
+ορθότητας) τους βαθμούς 10 μαθητών για δέκα μαθήματα και θα
+εκτυπώνει, για κάθε μάθημα τους βαθμούς ταξινομημένους.
+
+```python
+# Διαβάζουμε έναν αριθμό και ελέγχουμε αν είναι 0 - 10
+def readAndCheck():
+  goon = True
+  while goon:
+    num = input("Δώσε αριθμό: ")
+    while not num.isdigit():
+      num = input("Δώσε αριθμό: ")
+    num = int(num)
+    if 0 <= num <= 10:
+      goon = False
+        
+  return num
+
+
+def sort(A):
+  for i in range(1, len(A)):
+    for j in range(len(A)-1, 0, -1):
+      if A[j-1] > A[j]:
+        temp = A[j-1]
+        A[j-1] = A[j]
+        A[j] = temp
+  return A
+
+
+def readMarks():
+  vathmoi=[]
+  for i in range(10):
+    vathmoi.append(readAndCheck())
+  return vathmoi
+
+
+# MAIN
+for i in range(10):
+  vathmoi = readMarks()
+  print(sort(vathmoi))
+```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_example_3.py).
 
 ## 10.3 Ασκήσεις
 
@@ -61,204 +107,166 @@ print(meg_lista)
 
 ### [Άσκηση 1](source/lab_10/lab_10_exercise_1.py)
 
-Ένας φοιτητής για να φοιτήσει στο Τ.Π.Τ.Ε. πρέπει να ολοκληρώσει 8 εξάμηνα. Κάθε εξάμηνο αποτελείται από 6 μαθήματα.
+Να συμπληρωθεί το παρακάτω πρόγραμμα, ώστε:
 
-Να γραφεί πρόγραμμα, το οποίο:
-
-- Για κάθε εξάμηνο φοίτησης, διαβάζει τους βαθμούς ενός φοιτητή και για κάθε εξάμηνο τους τοποθετεί σε νέα λίστα.
-- Διαβάζει από το χρήστη τον αριθμό ενός εξαμήνου.
-- Υπολογίζει και εμφανίζει πόσα μαθήματα πέρασε και τι μέσο όρο είχε σε αυτό το εξάμηνο.
+- να ζητάει από τον χρήστη το πλήθος των ονομάτων που θα
+διαβαστούν,
+- να υπολογίζει και να εμφανίζει το μήκος του μακρύτερου ονόματος.
 
 ```python
-# Αρχικοποίηση μεταβλητών
-eksamina = []
+# Δεχόμαστε [plithos] ονόματα και τα τοποθετούμε σε λίστα την οποία επιστρέφει
+def readNames(plithos):
+  onomata = []
+  def readNames(plithos):
+    onomata = []
+  for i in range(plithos):
+    onoma = input("Δώσε όνομα:")
+    onomata.append(onoma)
+  return onomata
 
-for i in range(8):
-  vathmoi = []
-  for j in range(6):
-    # Εισαγωγή δεδομένων
-    vathmos = float(input("Δώσε βαθμό: "))
-    vathmoi.append(vathmos)
-eksamina.append(vathmoi)
 
-# Εισαγωγή δεδομένων
-ar_eksaminou = int(input("Ποιο εξάμηνο θες να δείς;"))
+def longestName(list):
+    maxLength = 0
+    for onoma in list:
+      if len(onoma) > maxLength:
+        maxLength = len(onoma)
+  return maxLength
 
-# Aφαιρούμε 1 γιατί ο χρήστης θα δώσει π.χ. 1 για το πρώτο εξάμηνο
-# ενώ αυτό είναι στη θέση 0.
-eksamino = eksamina[ar_eksaminou-1]
 
-# Αρχικοποίηση μεταβλητών
-souma = 0
-perasmena = 0
+plithos = int(input("Δώσε πλήθος: "))
+onomata = readNames(plithos)
+x = longestName(onomata)
 
-for mathima in eksamino:
-  souma += mathima
-  if mathima >= 5:
-    perasmena += 1
-
-# Εκτύπωση αποτελεσμάτων
-print("Ο μέσος όρος είναι: ", souma/len(eksamino))
-print("Πέρασες: ", perasmena)
+print("Το μακρύτερο όνομα έχει μήκος:", x)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_exercise_1.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_1/lab_10_exercise_1.py).
 
 ### [Άσκηση 2](source/lab_10/lab_10_exercise_2.py)
 
 Να γραφεί πρόγραμμα το οποίο:
 
-- θα διαβάζει τον αριθμό κύκλων και επεισοδίων ανά κύκλο μιας τηλεοπτικής σειράς,
-- θα διαβάζει την τηλεθέαση κάθε επεισοδίου,
-- θα εμφανίζει το επεισοδίο με την μικρότερη και μεγαλύτερη τηλεθέαση,
-- θα εμφανίζει τον κύκλο με την μεγαλύτερη μέση τηλεθέαση.
+- Θα έχει μια συνάρτηση η οποία θα παίρνει έναν αριθμό και θα
+επιστρέφει το τετράγωνό του.
+- Η συνάρτηση θα χρησιμοποιείτε σε ένα for loop για να υπολογίσει το άθροισμα των τετράγωνων όλων των αριθμών μέχρι και αυτόν που δώσατε.
 
 ```python
-# Εισαγωγή δεδομένων
-seasons = int(input("Δώσε κύκλους: "))
-episodes = int(input("Δώσε επεισόδια άνα κύκλο: "))
+def square(n):
+  n = n*n
 
-# Αρχικοποίηση μεταβλητών
-thle8eash = []
+ return n
 
-for i in range(seasons):
-  thl_season = []
-  for j in range(episodes):
-    # Εισαγωγή δεδομένων
-    thl = float(input("Δώσε τηλεθέαση %dx%d: " % (i+1, j+1)))
-    thl_season.append(thl)
-  thle8eash.append(thl_season)
 
-# Αρχικοποίηση μεταβλητών
-maxThlSeason = 0
-maxThlEpi = 0
-minThlSeason = 0
-minThlEpi = 0
-maxMO = 0
+athroisma = 0
+number = int(input("Δώσε αριθμό: "))
 
-for i in range(seasons):
-  soumaSeason = 0
-  for j in range(episodes):
-    if thle8eash[i][j] > thle8eash[maxThlSeason][maxThlEpi]:
-      maxThlSeason = i
-      maxThlEpi = j
-      if thle8eash[i][j] < thle8eash[minThlSeason][maxThlEpi]:
-        minThlSeason = i
-        minThlEpi = j
-  soumaSeason += thle8eash[i][j]
-
-if maxMO < soumaSeason:
-  maxMO = soumaSeason
-  maxMOSeason = i
-
-# Εκτύπωση αποτελεσμάτων
-print("Eπεισόδιο με μέγιστη τηλεθέαση: %dx%d" % (maxThlSeason+1, maxThlEpi+1))
-print("Eπεισόδιο με ελάχιστη τηλεθέαση: %dx%d" % (minThlSeason+1, minThlEpi+1))
-print("Σεζόν με μεγαλύτερο μέσο όρο τηλεθέασης:", maxMOSeason+1)
+for i in range (number + 1):
+  athroisma += square(i)
+print("Το άθροισμα των αριθμών είναι:", athroisma)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_exercise_2.py).
 
 ### [Άσκηση 3](source/lab_10/lab_10_exercise_3.py)
 
-Ένας φοιτητής πρέπει να παρακολουθήσει 2 εξάμηνα για ένα σεμινάριο. Σε κάθε εξάμηνο θα πρέπει να εξεταστεί σε δυο μαθήματα. (Οι βαθμοί μπορούν να είναι από 0-10)
+Να γραφεί πρόγραμμα το οποίο:
 
-Να γραφεί πρόγραμμα, το οποίο:
-
-- Για κάθε εξάμηνο να διαβάζει και να τυπώνει τους βαθμούς των μαθημάτων του φοιτητή.
-- Να υπολογίζει και να εμφανίζει το μεγαλύτερο βαθμό που συγκέντρωσε ο φοιτητής από όλα τα μαθήματα.
+- Θα έχει μια συνάρτηση η οποία θα διαβάζει σε λίστα, Ν βαθμούς
+φοιτητών και θα την επιστρεφεί.
+- Θα έχει μια συνάρτηση η οποία θα δέχεται μία λίστα και θα
+επιστρέφει το μέγιστο στοιχείο της.
+- Θα έχει μια συνάρτηση η οποία θα δέχεται μια λίστα και θα
+επιστρεφεί τον μέσο όρο των στοιχείων της.
+- Θα διαβάζει πόσοι φοιτητές έγραψαν εξετάσεις σε ένα μάθημα.
+- Με τη χρήση συνάρτησης θα διαβάζει τους βαθμούς τους.
+- Με τη χρήση συνάρτησης θα υπολογιζεί και θα εκτυπώνει τον
+μέγιστο βαθμό και τον μέσο όρο.
 
 ```python
-# Διάβασμα βαθμών
-eksamino = []
+def readMarks(N):
+  marks = []
+  for i in range(N):
+    mark = int(input("Δώσε βαθμό: "))
+    marks.append(mark)
+  return marks
 
-for i in range(2):
-  mathima = []
-  for j in range(2):
-    # Εισαγωγή δεδομένων
-    vathmos = input("Βαθμός εξαμήνου %d και %d μάθημα: " % (i + 1, j + 1))
-    vathmos = float(vathmos)
-    mathima.append(vathmos)
-    eksamino.append(mathima)
 
-# Εμφάνιση βαθμών ανά εξάμηνο
-print("Οι βαθμοί του φοιτητή είναι:", eksamino)
+def getMax(A):
+  megisto = 0
+  for i in A:
+    if i > megisto:
+      megisto = i
+  return megisto
 
-# Υπολογισμός μέγιστου με βάση το κάθε μάθημα
-meg_vathmos = mathima[0]
 
-for mathima in eksamino:
-  for i in mathima:
-    if meg_vathmos < i:
-      meg_vathmos = i
+def getMO(A):
+  souma = 0
+  for i in A:
+    souma += i
+  return souma / len(A)
 
-# Εκτύπωση αποτελέσματος
-print("O μέγιστος βαθμός είναι:", meg_vathmos)
+
+plithos = int(input("Πόσοι δώσανε το μάθημα:"))
+
+vathmoi = readMarks(plithos)
+
+print("Μέγιστος: ", getMax(vathmoi))
+print("Mέσος όρος: ", getMO(vathmoi))
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_exercise_3.py).
 
 ### [Άσκηση 4](source/lab_10/lab_10_exercise_4.py)
 
-Ένας αθλητής πρέπει να αγωνιστεί σε 4 αθλήματα επιτυχώς για να κερδίσει ένα μετάλλιο. Κάθε άθλημα έχει 3 προσπάθειες. (Οι βαθμοί μπορούν να είναι από 0-10)
+Να γραφεί πρόγραμμα το οποίο:
 
-Να γραφεί πρόγραμμα, το οποίο:
-
-- Να διαβάζει τις προσπάθειες του αθλητή σε κάθε άθλημα.
-- Να υπολογίζει και εμφανίζει το άθλημα με τους μεγαλύτερους βαθμούς καθώς και το άθροισμά των βαθμών στο συγκεκριμένο άθλημα.
-- Να βρίσκει και να εμφανίζει το μέγιστο βαθμό από όλες τις προσπάθειες και να αναζητά πόσες φορές συγκεντρώθηκε αυτός ο βαθμός στο σύνολο των βαθμών.
+- Με τη χρήση συνάρτησης θα διαβάζει και αποθηκεύει τα ονόματα δέκα
+μαθητριών (ένα όνομα μπορεί να επαναλαμβάνεται πολλές φορές).
+- Στη συνέχεια με μία νέα συνάρτηση θα δέχεται τη λίστα των ονομάτων και θα επιστρέφει μία νέα λίστα η οποία θα περιέχει μοναδικά στοιχεία (το κάθε όνομα μία μόνο φορά).
+- Στο κυρίως πρόγραμμα θα εμφανίζεται η λίστα με τα μοναδικά στοιχεία και στη συνέχεια ο χρήστης θα διαβάζει ένα τυχαίο όνομα.
+- Με τη χρήση νέας συνάρτησης θα αναζητά αν το τυχαίο όνομα που δόθηκε περιλαμβάνεται μέσα στη λίστα. Στην περίπτωση που δεν υπάρχει θα εκτυπώνει μήνυμα «Το όνομα που αναζητάς δεν είναι στη λίστα», σε οποιαδήποτε άλλη περίπτωση το μήνυμα θα είναι «Το όνομα ??? είναι στη λίστα».
 
 ```python
-# Διάβασμα προσπαθειών
-athlimata = []
+def eisagogiStoixeion():
+  onomata = []
+  for i in range (10):
+    name = input("Δώσε όνομα: ")
+    onomata.append(name)
 
-for i in range(3):
-  vathmoi = []
-  for j in range(3):
-    # Εισαγωγή δεδομένων
-    vathmos = input("Βαθμός αθλήματος %d & προσπάθεια %d: " % (i+1, j+1))
-    # Μετατροπή από str σε float
-    vathmos = float(vathmos)
-    vathmoi.append(vathmos)
-  athlimata.append(vathmoi)
+  return onomata
 
-# Υπολογισμός και εμφάνιση αθλήματος με μεγαλύτερους βαθμούς
-maxsum = 0
 
-for vathmoi in athlimata:
-  sum = 0
-  for i in vathmoi:
-    sum += i
-    if sum > maxsum:
-      maxsum = sum
-      maxathlima = vathmoi
+def monadikiLista(lista):
+  neaLista = []
+  for i in lista:
+    if i not in neaLista:
+      neaLista.append(i)
 
-# Εκτύπωση αποτελέσματος
-print("Ο max βαθμός είναι:", maxathlima, "και το άθροισμα είναι:", maxsum)
+  return neaLista
 
-# Υπολογισμός μέγιστου βαθμού σε κάθε άθλημα
-meg_vathmos = athlimata[0][0]
 
-for vathmoi in athlimata:
-  for i in vathmoi:
-    if i > meg_vathmos:
-      meg_vathmos = i
+def anazitisi(key, lista):
+  done = True
+  for i in lista:
+    if i == key:
+      done = False
 
-# Εκτύπωση αποτελέσματος
-print("Ο μέγιστος βαθμός του αθλητή είναι:", meg_vathmos)
+  return done
 
-# Αναζήτηση φορών μέγιστου βαθμού σε κάθε άθλημα
-vathmos_counter = 0
+onomata = eisagogiStoixeion()
 
-for vathmoi in athlimata:
-  for i in vathmoi:
-    if i == meg_vathmos:
-      vathmos_counter += 1
+print(monadikiLista(onomata))
 
-# Εκτύπωση αποτελέσματος
-print("O μέγιστος βαθμός βρέθηκε %d φορές." % (vathmos_counter))
+stoixeio = input("Δώσε όνομα που αναζητάς: ")
+
+done = anazitisi(stoixeio, onomata)
+
+if done == True:
+  print("Το όνομα που αναζητάς δεν είναι στη λίστα.")
+else:
+  print("Το όνομα", stoixeio, "είναι στη λίστα.")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_exercise_4.py).
 
-[Home](../README.md) | [Lab 1](lab_01.md) | [Lab 2](lab_02.md) | [Lab 3](lab_03.md) | [Lab 4](lab_04.md) | [Lab 5](lab_05.md) | [Lab 6](lab_06.md) | [Lab 7](lab_07.md) | [Lab 8](lab_08.md) | [Lab 9](lab_09.md) | [Lab 10](lab_10.md)| [Lab 11](lab_11.md)| [Lab 12](lab_12.md)
+[Home](../README.md) | [Lab 1](lab_01.md) | [Lab 2](lab_02.md) | [Lab 3](lab_03.md) | [Lab 4](lab_04.md) | [Lab 5](lab_05.md) | [Lab 6](lab_06.md) | [Lab 7](lab_07.md) | [Lab 8](lab_08.md) | [Lab 9](lab_09.md) | [Lab 10](lab_10.md)

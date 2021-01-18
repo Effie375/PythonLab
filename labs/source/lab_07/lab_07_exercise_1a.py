@@ -1,23 +1,32 @@
-# Αρχικοποίηση μεταβλητών
-sum = 0
-ls = []
-max_elements = 7
+# Εισαγωγή δεδομένων
+record = float(input("Δώσε ρεκόρ αγώνων: ").strip())
 
-for i in range(max_elements):
-    # Εισαγωγή δεδομένων
-    vathmos = int(input("Δώσε βαθμό: ").strip())
-    ls.append(vathmos)
+while record < 0 or record > 10:
+    record = float(input("Δώσε το σωστό ρεκόρ αγώνων: ").strip())
 
 # Αρχικοποίηση μεταβλητών
-k = 1
+jumps = []
 
-for i in ls:
-    i = i * 5 * k
-    k = k + 1
-    um = sum + i
+for i in range(6):
+    prospatheia = float(input("Δώσε προσπάθεια αθλητή: ").strip())
+    jumps.append(prospatheia)
 
-# Υπολογισμός μέσου όρου
-mo = sum / 7
+# Αρχικοποίηση μεταβλητών
+elaxisto = jumps[0]
+megisto = jumps[0]
 
-# Εκτύπωση αποτελέσματος
-print(f"Ο μέσος όρος είναι {mo}")
+for i in jumps:
+    if i < elaxisto:
+        elaxisto = i
+    if i > megisto:
+        megisto = i
+
+# Εκτύπωση αποτελεσμάτων
+print(f"H χειρότερη προσπάθεια είναι: {elaxisto}")
+
+if megisto > record:
+    print(f"Το νέο ρεκόρ είναι {megisto}")
+elif record - megisto < 0.5:
+    print(f"H καλύτερη προσπάθεια είναι: {megisto}")
+else:
+    print("Oι προσπάθειες του αθλητή δεν ήταν ικανοποιητικές.")

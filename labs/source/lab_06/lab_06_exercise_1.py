@@ -1,23 +1,22 @@
 # Αρχικοποίηση μεταβλητών
+sum = 0
 ls = []
 
-number = int(input("Δώσε αριθμό: "))
-
-while number != 0:
-    ls.append(number)
-    number = int(input("Δώσε αριθμό: "))
+for i in range(7):
+    # Εισαγωγή δεδομένων
+    vathmos = int(input("Δώσε βαθμό: "))
+    ls.append(vathmos)
 
 # Αρχικοποίηση μεταβλητών
-counter = 0
-i = 0
+k = 1
 
-# Εισαγωγή δεδομένων
-number = int(input("Δώσε αριθμό για μέτρηση: "))
+for i in ls:
+    i = i * 5 * k
+    k = k + 1
+    um = sum + i
 
-while i < len(ls):
-    if ls[i] == number:
-        counter += 1
-    i += 1
+# Υπολογισμός μέσου όρου
+mo = sum / 7
 
-# Εκτύπωση αποτελεσμάτων
-print("O αριθμός", number, "είσηχθη", counter, "φορές")
+# Εκτύπωση αποτελέσματος
+print("Ο μέσος όρος είναι", mo)

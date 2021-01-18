@@ -1,4 +1,4 @@
-# 9 Αναζήτηση - Ταξινόμηση
+# 9 Πολυδιάστατες λίστες
 
 ---
 
@@ -6,156 +6,259 @@
 
 ---
 
-- 9.1 Αναζήτηση στοιχείων
-- 9.2 Ταξινόμηση
-- 9.3 Παράδειγμα ταξινόμησης
-- 9.4 Ασκήσεις
+- 9.1 Εντολές για λίστες
+- 9.2 Παράδειγμα
+- 9.3 Ασκήσεις
 
-## [9.1 Αναζήτηση στοιχείων](source/lab_09/lab_09_example_1.py)
+## 9.1 Εντολές για λίστες
 
 ---
 
-```python
-# Δημιουργία λίστας
-list = [1, 6, 3, 5, 4, 6]
+- Προσπέλαση Πολυδιάστατης Λίστας
+  - `a = my_list[x][y][z]...`
+  - `my_list[x][y] = var1`
+- Πρόσθεση στοιχείων
+  - `my_list[x].append(a)`. Εισάγει την τιμή της μεταβλητής a στο τέλοςτης λίστας που βρίσκεται στη θέση «x» της λίστας my_list.
 
-# Εισαγωγή δεδομένων
-key = int(input("Δώσε στοιχείο που αναζητάς: "))
+## [9.2 Παράδειγμα](source/lab_09/lab_09_example_1.py)
+
+---
+
+Να γραφεί ένα πρόγραμμα, το οποίο θα διαβάζει 5 λίστες από 10 θετικούς ακεραίους αριθμούς και θα τυπώνει τη λίστα με το μεγαλύτερο άθροισμα.
+
+```python
+# Αρχικοποίηση μεταβλητών
+lista = []
+
+for i in range(5):
+  ypolista = []
+  for j in range(10):
+    # Εισαγωγή δεδομένων
+    n = int(input("Δώσε αριθμό: "))
+    ypolista.append(n)
+  lista.append(ypolista)
 
 # Αρχικοποίηση μεταβλητών
-done = True
-thesi = 0
+meg_athroisma = 0
 
-for arithmos in list:
-  if arithmos == key:
-    print(thesi)
-    done = False
-  thesi += 1
+for ypolista in lista:
+  athroisma = 0
+  for i in ypolista:
+    athroisma += i
+  if athroisma > meg_athroisma:
+    meg_athroisma = athroisma
+    meg_lista = ypolista
 
 # Εκτύπωση αποτελέσματος
-if done is True:
-  print("Το στοιχείο που αναζητάς δεν είναι στη λίστα.")
+print(meg_lista)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_example_1.py).
 
-## [9.2 Ταξινόμηση](source/lab_09/lab_09_example_2.py)
-
----
-
-```python
-# Δημιουργία λίστας
-list = [4, 8, 3, 1, 7]
-
-print("H μη ταξινομημένη λίστα είναι:", list)
-
-for i in range(1, 5):
-  for j in range(4, i-1, -1):
-    if list[j-1] > list[j]:
-      temp = list[j-1]
-      list[j-1] = list[j]
-      list[j] = temp
-
-# Εκτύπωση αποτελέσματος
-print(f"H ταξινομημένη λίστα είναι:", list)
-```
-
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_example_2.py).
-
-## [9.3 Παράδειγμα ταξινόμησης](source/lab_09/lab_09_example_3.py)
-
----
-
-Να γραφεί ένα πρόγραμμα το οποίο θα δέχεται πέντε αριθμούς, θα τους ταξινομεί σε αύξουσα σειρά και θα τους εμφανίζει.
-
-```python
-# Αρχικοποίηση μεταβλητών
-list = []
-
-for i in range(5):
-  num = int(input("Δώσε στοιχείο: "))
-  list.append(num)
-
-print("H μη ταξινομημένη λίστα είναι:", list)
-
-for i in range(1, 5):
-  for j in range(4, i-1, -1):
-    if list[j-1] > list[j]:
-      temp = list[j-1]
-      list[j-1] = list[j]
-      list[j] = temp
-
-# Εκτύπωση αποτελέσματος
-print("H ταξινομημένη λίστα είναι:", list)
-```
-
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_example_3.py).
-
-## 9.4 Ασκήσεις
+## 9.3 Ασκήσεις
 
 ---
 
 ### [Άσκηση 1](source/lab_09/lab_09_exercise_1.py)
 
-Να γραφεί πρόγραμμα το οποίο θα διαβάζει 10 ακεραίους αριθμούς και έπειτα θα ζητά έναν ακέραιο τον οποίο θα αναζητά και αν υπάρχει θα εμφανίζει τη θέση του αλλιώς θα εμφανίζει μήνυμα ότι δεν υπάρχει το στοιχείο στον πίνακα.
+Ένας φοιτητής για να φοιτήσει στο Τ.Π.Τ.Ε. πρέπει να ολοκληρώσει 8 εξάμηνα. Κάθε εξάμηνο αποτελείται από 6 μαθήματα.
 
-Οι αριθμοί είναι μοναδικοί στον πίνακα.
+Να γραφεί πρόγραμμα, το οποίο:
+
+- Για κάθε εξάμηνο φοίτησης, διαβάζει τους βαθμούς ενός φοιτητή και για κάθε εξάμηνο τους τοποθετεί σε νέα λίστα.
+- Διαβάζει από το χρήστη τον αριθμό ενός εξαμήνου.
+- Υπολογίζει και εμφανίζει πόσα μαθήματα πέρασε και τι μέσο όρο είχε σε αυτό το εξάμηνο.
 
 ```python
 # Αρχικοποίηση μεταβλητών
-list = []
+eksamina = []
 
-for i in range(10):
-  # Εισαγωγή στοιχείων
-  num = int(input("Δώσε στοιχεία: "))
-  list.append(num)
+for i in range(8):
+  vathmoi = []
+  for j in range(6):
+    # Εισαγωγή δεδομένων
+    vathmos = float(input("Δώσε βαθμό: "))
+    vathmoi.append(vathmos)
+eksamina.append(vathmoi)
 
-# Εισαγωγή στοιχείων
-key = int(input("Δώσε στοιχείο που αναζητάς: "))
+# Εισαγωγή δεδομένων
+ar_eksaminou = int(input("Ποιο εξάμηνο θες να δείς;"))
+
+# Aφαιρούμε 1 γιατί ο χρήστης θα δώσει π.χ. 1 για το πρώτο εξάμηνο
+# ενώ αυτό είναι στη θέση 0.
+eksamino = eksamina[ar_eksaminou-1]
 
 # Αρχικοποίηση μεταβλητών
-done = True
-thesi = 0
+souma = 0
+perasmena = 0
 
-for i in list:
-  if i == key:
-    # Εκτύπωση θέσης
-    print(thesi)
-    done = False
-  thesi += 1
+for mathima in eksamino:
+  souma += mathima
+  if mathima >= 5:
+    perasmena += 1
 
-if done is True:
-  print("To στοιχείο που αναζητάς δεν είναι στη λίστα.")
+# Εκτύπωση αποτελεσμάτων
+print("Ο μέσος όρος είναι: ", souma/len(eksamino))
+print("Πέρασες: ", perasmena)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_exercise_1.py).
 
 ### [Άσκηση 2](source/lab_09/lab_09_exercise_2.py)
 
-Έστω ότι δημιουργείτε ένα πρόγραμμα το οποίο κρατά το όνομα επτά παικτών.
+Να γραφεί πρόγραμμα το οποίο:
 
-Να δημιουργηθεί πίνακας players στον οποίο θα αποθηκεύονται τα ονόματα των 7 παικτών. Θα ταξινομεί τα ονόματα σε φθίνουσα σειρά και θα εμφανίζει τα ονόματα των παικτών ταξινομημένα.
+- θα διαβάζει τον αριθμό κύκλων και επεισοδίων ανά κύκλο μιας τηλεοπτικής σειράς,
+- θα διαβάζει την τηλεθέαση κάθε επεισοδίου,
+- θα εμφανίζει το επεισοδίο με την μικρότερη και μεγαλύτερη τηλεθέαση,
+- θα εμφανίζει τον κύκλο με την μεγαλύτερη μέση τηλεθέαση.
 
 ```python
+# Εισαγωγή δεδομένων
+seasons = int(input("Δώσε κύκλους: "))
+episodes = int(input("Δώσε επεισόδια άνα κύκλο: "))
+
 # Αρχικοποίηση μεταβλητών
-players = []
+thle8eash = []
 
-for i in range(7):
-  # Διάβασμα από τον χρήστη
-  name = input("Δώσε όνομα παίκτη: ")
-  players.append(name)
+for i in range(seasons):
+  thl_season = []
+  for j in range(episodes):
+    # Εισαγωγή δεδομένων
+    thl = float(input("Δώσε τηλεθέαση %dx%d: " % (i+1, j+1)))
+    thl_season.append(thl)
+  thle8eash.append(thl_season)
 
-for i in range(1, 7):
-  for j in range(6, i-1, -1):
-    if players[j-1] < players[j]:
-      temp = players[j-1]
-      players[j-1] = players[j]
-      players[j] = temp
+# Αρχικοποίηση μεταβλητών
+maxThlSeason = 0
+maxThlEpi = 0
+minThlSeason = 0
+minThlEpi = 0
+maxMO = 0
+
+for i in range(seasons):
+  soumaSeason = 0
+  for j in range(episodes):
+    if thle8eash[i][j] > thle8eash[maxThlSeason][maxThlEpi]:
+      maxThlSeason = i
+      maxThlEpi = j
+      if thle8eash[i][j] < thle8eash[minThlSeason][maxThlEpi]:
+        minThlSeason = i
+        minThlEpi = j
+  soumaSeason += thle8eash[i][j]
+
+if maxMO < soumaSeason:
+  maxMO = soumaSeason
+  maxMOSeason = i
 
 # Εκτύπωση αποτελεσμάτων
-print("Παίκτες:", players)
+print("Eπεισόδιο με μέγιστη τηλεθέαση: %dx%d" % (maxThlSeason+1, maxThlEpi+1))
+print("Eπεισόδιο με ελάχιστη τηλεθέαση: %dx%d" % (minThlSeason+1, minThlEpi+1))
+print("Σεζόν με μεγαλύτερο μέσο όρο τηλεθέασης:", maxMOSeason+1)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_exercise_2.py).
 
-[Home](../README.md) | [Lab 1](lab_01.md) | [Lab 2](lab_02.md) | [Lab 3](lab_03.md) | [Lab 4](lab_04.md) | [Lab 5](lab_05.md) | [Lab 6](lab_06.md) | [Lab 7](lab_07.md) | [Lab 8](lab_08.md) | [Lab 9](lab_09.md) | [Lab 10](lab_10.md)| [Lab 11](lab_11.md)| [Lab 12](lab_12.md)
+### [Άσκηση 3](source/lab_09/lab_09_exercise_3.py)
+
+Ένας φοιτητής πρέπει να παρακολουθήσει 2 εξάμηνα για ένα σεμινάριο. Σε κάθε εξάμηνο θα πρέπει να εξεταστεί σε δυο μαθήματα. (Οι βαθμοί μπορούν να είναι από 0-10)
+
+Να γραφεί πρόγραμμα, το οποίο:
+
+- Για κάθε εξάμηνο να διαβάζει και να τυπώνει τους βαθμούς των μαθημάτων του φοιτητή.
+- Να υπολογίζει και να εμφανίζει το μεγαλύτερο βαθμό που συγκέντρωσε ο φοιτητής από όλα τα μαθήματα.
+
+```python
+# Διάβασμα βαθμών
+eksamino = []
+
+for i in range(2):
+  mathima = []
+  for j in range(2):
+    # Εισαγωγή δεδομένων
+    vathmos = input("Βαθμός εξαμήνου %d και %d μάθημα: " % (i + 1, j + 1))
+    vathmos = float(vathmos)
+    mathima.append(vathmos)
+    eksamino.append(mathima)
+
+# Εμφάνιση βαθμών ανά εξάμηνο
+print("Οι βαθμοί του φοιτητή είναι:", eksamino)
+
+# Υπολογισμός μέγιστου με βάση το κάθε μάθημα
+meg_vathmos = mathima[0]
+
+for mathima in eksamino:
+  for i in mathima:
+    if meg_vathmos < i:
+      meg_vathmos = i
+
+# Εκτύπωση αποτελέσματος
+print("O μέγιστος βαθμός είναι:", meg_vathmos)
+```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_exercise_3.py).
+
+### [Άσκηση 4](source/lab_09/lab_09_exercise_4.py)
+
+Ένας αθλητής πρέπει να αγωνιστεί σε 4 αθλήματα επιτυχώς για να κερδίσει ένα μετάλλιο. Κάθε άθλημα έχει 3 προσπάθειες. (Οι βαθμοί μπορούν να είναι από 0-10)
+
+Να γραφεί πρόγραμμα, το οποίο:
+
+- Να διαβάζει τις προσπάθειες του αθλητή σε κάθε άθλημα.
+- Να υπολογίζει και εμφανίζει το άθλημα με τους μεγαλύτερους βαθμούς καθώς και το άθροισμά των βαθμών στο συγκεκριμένο άθλημα.
+- Να βρίσκει και να εμφανίζει το μέγιστο βαθμό από όλες τις προσπάθειες και να αναζητά πόσες φορές συγκεντρώθηκε αυτός ο βαθμός στο σύνολο των βαθμών.
+
+```python
+# Διάβασμα προσπαθειών
+athlimata = []
+
+for i in range(3):
+  vathmoi = []
+  for j in range(3):
+    # Εισαγωγή δεδομένων
+    vathmos = input("Βαθμός αθλήματος %d & προσπάθεια %d: " % (i+1, j+1))
+    # Μετατροπή από str σε float
+    vathmos = float(vathmos)
+    vathmoi.append(vathmos)
+  athlimata.append(vathmoi)
+
+# Υπολογισμός και εμφάνιση αθλήματος με μεγαλύτερους βαθμούς
+maxsum = 0
+
+for vathmoi in athlimata:
+  sum = 0
+  for i in vathmoi:
+    sum += i
+    if sum > maxsum:
+      maxsum = sum
+      maxathlima = vathmoi
+
+# Εκτύπωση αποτελέσματος
+print("Ο max βαθμός είναι:", maxathlima, "και το άθροισμα είναι:", maxsum)
+
+# Υπολογισμός μέγιστου βαθμού σε κάθε άθλημα
+meg_vathmos = athlimata[0][0]
+
+for vathmoi in athlimata:
+  for i in vathmoi:
+    if i > meg_vathmos:
+      meg_vathmos = i
+
+# Εκτύπωση αποτελέσματος
+print("Ο μέγιστος βαθμός του αθλητή είναι:", meg_vathmos)
+
+# Αναζήτηση φορών μέγιστου βαθμού σε κάθε άθλημα
+vathmos_counter = 0
+
+for vathmoi in athlimata:
+  for i in vathmoi:
+    if i == meg_vathmos:
+      vathmos_counter += 1
+
+# Εκτύπωση αποτελέσματος
+print("O μέγιστος βαθμός βρέθηκε %d φορές." % (vathmos_counter))
+```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_exercise_4.py).
+
+[Home](../README.md) | [Lab 1](lab_01.md) | [Lab 2](lab_02.md) | [Lab 3](lab_03.md) | [Lab 4](lab_04.md) | [Lab 5](lab_05.md) | [Lab 6](lab_06.md) | [Lab 7](lab_07.md) | [Lab 8](lab_08.md) | [Lab 9](lab_09.md) | [Lab 10](lab_10.md)

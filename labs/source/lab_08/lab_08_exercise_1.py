@@ -1,32 +1,24 @@
-# Εισαγωγή δεδομένων
-record = float(input("Δώσε ρεκόρ αγώνων: "))
+# Αρχικοποίηση μεταβλητών
+list = []
 
-while record < 0 or record > 10:
-    record = float(input("Δώσε το σωστό ρεκόρ αγώνων: "))
+for i in range(10):
+    # Εισαγωγή στοιχείων
+    num = int(input("Δώσε στοιχεία: "))
+    list.append(num)
+
+# Εισαγωγή στοιχείων
+key = int(input("Δώσε στοιχείο που αναζητάς: "))
 
 # Αρχικοποίηση μεταβλητών
-jumps = []
+done = True
+thesi = 0
 
-for i in range(6):
-    prospatheia = float(input("Δώσε προσπάθεια αθλητή: "))
-    jumps.append(prospatheia)
+for i in list:
+    if i == key:
+        # Εκτύπωση θέσης
+        print(thesi)
+        done = False
+    thesi += 1
 
-# Αρχικοποίηση μεταβλητών
-elaxisto = jumps[0]
-megisto = jumps[0]
-
-for i in jumps:
-    if i < elaxisto:
-        elaxisto = i
-    if i > megisto:
-        megisto = i
-
-# Εκτύπωση αποτελεσμάτων
-print("H χειρότερη προσπάθεια είναι:", elaxisto)
-
-if megisto > record:
-    print("Το νέο ρεκόρ είναι ", megisto)
-elif record - megisto < 0.5:
-    print("H καλύτερη προσπάθεια είναι:", megisto)
-else:
-    print("Oι προσπάθειες του αθλητή δεν ήταν ικανοποιητικές.")
+if done is True:
+    print("To στοιχείο που αναζητάς δεν είναι στη λίστα.")

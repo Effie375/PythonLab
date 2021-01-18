@@ -1,19 +1,24 @@
-# Δημιουργία λίστας
-list = [1, 6, 3, 5, 4, 6]
+# Αρχικοποίηση μεταβλητών
+lista = []
 
-# Εισαγωγή δεδομένων
-key = int(input("Δώσε στοιχείο που αναζητάς: "))
+for i in range(5):
+    ypolista = []
+    for j in range(10):
+        # Εισαγωγή δεδομένων
+        n = int(input("Δώσε αριθμό: "))
+        ypolista.append(n)
+    lista.append(ypolista)
 
 # Αρχικοποίηση μεταβλητών
-done = True
-thesi = 0
+meg_athroisma = 0
 
-for arithmos in list:
-    if arithmos == key:
-        print(thesi)
-        done = False
-    thesi += 1
+for ypolista in lista:
+    athroisma = 0
+    for i in ypolista:
+        athroisma += i
+    if athroisma > meg_athroisma:
+        meg_athroisma = athroisma
+        meg_lista = ypolista
 
 # Εκτύπωση αποτελέσματος
-if done is True:
-    print("Το στοιχείο που αναζητάς δεν είναι στη λίστα.")
+print(meg_lista)

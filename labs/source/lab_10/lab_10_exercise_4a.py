@@ -1,49 +1,35 @@
-# Διάβασμα προσπαθειών
-athlimata = []
+def eisagogiStoixeion():
+    onomata = []
+    for i in range(10):
+        name = input("Δώσε όνομα: ").strip()
+        onomata.append(name)
+    return onomata
 
-for i in range(3):
-    vathmoi = []
-    for j in range(3):
-        text = "Βαθμός αθλήματος %d και προσπάθεια %d: " % (i+1, j+1)
-        # Εισαγωγή δεδομένων
-        vathmos = input(text).strip()
-        # Μετατροπή από str σε float
-        vathmos = float(vathmos)
-        vathmoi.append(vathmos)
-    athlimata.append(vathmoi)
 
-# Υπολογισμός και εμφάνιση αθλήματος με μεγαλύτερους βαθμούς
-maxsum = 0
+def monadikiLista(lista):
+    neaLista = []
+    for i in lista:
+        if i not in neaLista:
+            neaLista.append(i)
+    return neaLista
 
-for vathmoi in athlimata:
-    sum = 0
-    for i in vathmoi:
-        sum += i
-        if sum > maxsum:
-            maxsum = sum
-            maxathlima = vathmoi
 
-# Εκτύπωση αποτελέσματος
-print(f"Ο max βαθμός είναι: {maxathlima} και το άθροισμα είναι: {maxsum}")
+def anazitisi(key, lista):
+    done = True
+    for i in lista:
+        if i == key:
+            done = False
+    return done
 
-# Υπολογισμός μέγιστου βαθμού σε κάθε άθλημα
-meg_vathmos = athlimata[0][0]
 
-for vathmoi in athlimata:
-    for i in vathmoi:
-        if i > meg_vathmos:
-            meg_vathmos = i
+onomata = eisagogiStoixeion()
+print(monadikiLista(onomata))
 
-# Εκτύπωση αποτελέσματος
-print(f"Ο μέγιστος βαθμός του αθλητή είναι: {meg_vathmos}")
+stoixeio = input("Δώσε όνομα που αναζητάς: ").strip()
 
-# Αναζήτηση φορών μέγιστου βαθμού σε κάθε άθλημα
-vathmos_counter = 0
+done = anazitisi(stoixeio, onomata)
 
-for vathmoi in athlimata:
-    for i in vathmoi:
-        if i == meg_vathmos:
-            vathmos_counter += 1
-
-# Εκτύπωση αποτελέσματος
-print(f"O μέγιστος βαθμός βρέθηκε {vathmos_counter} φορές.")
+if done is True:
+    print("Το όνομα που αναζητάς δεν είναι στη λίστα.")
+else:
+    print(f"Το όνομα {stoixeio}είναι στη λίστα.")

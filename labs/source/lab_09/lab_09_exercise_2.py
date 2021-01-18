@@ -1,17 +1,41 @@
+# Εισαγωγή δεδομένων
+seasons = int(input("Δώσε κύκλους: "))
+episodes = int(input("Δώσε επεισόδια άνα κύκλο: "))
+
 # Αρχικοποίηση μεταβλητών
-players = []
+thle8eash = []
 
-for i in range(7):
-    # Διάβασμα από τον χρήστη
-    name = input("Δώσε όνομα παίκτη: ")
-    players.append(name)
+for i in range(seasons):
+    thl_season = []
+    for j in range(episodes):
+        # Εισαγωγή δεδομένων
+        thl = float(input("Δώσε τηλεθέαση %dx%d: " % (i+1, j+1)))
+        thl_season.append(thl)
+    thle8eash.append(thl_season)
 
-for i in range(1, 7):
-    for j in range(6, i-1, -1):
-        if players[j-1] < players[j]:
-            temp = players[j-1]
-            players[j-1] = players[j]
-            players[j] = temp
+# Αρχικοποίηση μεταβλητών
+maxThlSeason = 0
+maxThlEpi = 0
+minThlSeason = 0
+minThlEpi = 0
+maxMO = 0
+
+for i in range(seasons):
+    soumaSeason = 0
+    for j in range(episodes):
+        if thle8eash[i][j] > thle8eash[maxThlSeason][maxThlEpi]:
+            maxThlSeason = i
+            maxThlEpi = j
+            if thle8eash[i][j] < thle8eash[minThlSeason][maxThlEpi]:
+                minThlSeason = i
+                minThlEpi = j
+    soumaSeason += thle8eash[i][j]
+
+if maxMO < soumaSeason:
+    maxMO = soumaSeason
+    maxMOSeason = i
 
 # Εκτύπωση αποτελεσμάτων
-print("Παίκτες:", players)
+print("Eπεισόδιο με μέγιστη τηλεθέαση: %dx%d" % (maxThlSeason+1, maxThlEpi+1))
+print("Eπεισόδιο με ελάχιστη τηλεθέαση: %dx%d" % (minThlSeason+1, minThlEpi+1))
+print("Σεζόν με μεγαλύτερο μέσο όρο τηλεθέασης:", maxMOSeason+1)

@@ -1,24 +1,14 @@
 # Αρχικοποίηση μεταβλητών
-megisto = 0
-ls = []
+list = []
+
+for i in range(10):
+    # Εισαγωγή δεδομένων
+    list.append(int(input("Δώσε αριθμό: ")))
 
 # Εισαγωγή δεδομένων
-number = int(input("Δώσε αριθμό: "))
+num = int(input("Δώσε αριθμό για έλεγχο διαιρετέων: "))
 
-while number != 0:
-    ls.append(number)
-    if number > megisto:
-        megisto = number
-    number = int(input("Δώσε αριθμό: "))
-    i = 1
-
-while i <= megisto:
-    j = 0
-    counter = 0
-    while j < len(ls):
-        if ls[j] == i:
-            counter += 1
-        j += 1
-    if counter != 0:
-        print("Ο αριθμός", i, "εισήχθη", counter, "φορές.")
-    i += 1
+for arithmos in list:
+    if arithmos % num == 0:
+        # Εκτύπωση αριθμού
+        print(arithmos)

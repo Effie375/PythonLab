@@ -1,22 +1,23 @@
 # Αρχικοποίηση μεταβλητών
-numbers = []
+sum = 0
+ls = []
+max_elements = 7
 
-num = int(input("Δώσε έναν αριθμό: ").strip())
-
-while num != 0:
-    numbers.append(num)
-    num = int(input("Δώσε έναν αριθμό: ").strip())
+for i in range(max_elements):
+    # Εισαγωγή δεδομένων
+    vathmos = int(input("Δώσε βαθμό: ").strip())
+    ls.append(vathmos)
 
 # Αρχικοποίηση μεταβλητών
-counter = i = 0
+k = 1
 
-# Εισαγωγή δεδομένων
-key = int(input("Δώσε έναν αριθμό που αναζητάς: ").strip())
+for i in ls:
+    i = i * 5 * k
+    k = k + 1
+    um = sum + i
 
-while i < len(numbers):
-    if key == numbers[i]:
-        counter += 1
-    i += 1
+# Υπολογισμός μέσου όρου
+mo = sum / 7
 
-# Εκτύπωση αποτελεσμάτων
-print(f"Ο αριθμός {key} έχει εισαχθεί {counter} φορές.")
+# Εκτύπωση αποτελέσματος
+print(f"Ο μέσος όρος είναι {mo}")

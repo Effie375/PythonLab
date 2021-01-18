@@ -1,27 +1,11 @@
 # Αρχικοποίηση μεταβλητών
-i = 0
-list = []
-
-while i < 5:
-    number = int(input("Δώσε αριθμό: "))
-    list.append(number)
-    i += 1
+athroisma = 0
 
 # Εισαγωγή δεδομένων
-key = int(input("Δώσε στοιχείο που αναζητάς: "))
+number = int(input("Δώσε αριθμό: "))
 
-# Αρχικοποίηση μεταβλητών
-found = False
-j = 0
+for i in range(number + 1):
+    athroisma = athroisma + i
 
-while (j < len(list) and not found):
-    if list[j] == key:
-        thesi = j
-        found = True
-    j += 1
-
-# Εκτύπωση αποτελεσμάτων
-if found is True:
-    print("Το στοιχείο βρίσκεται στη θέση", thesi)
-else:
-    print("Το στοιχείο που αναζητάς δεν υπάρχει.")
+# Εκτύπωση αποτελέσματος
+print(athroisma)

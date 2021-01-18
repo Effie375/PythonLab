@@ -1,30 +1,22 @@
-# Αρχικοποίηση μεταβλητών
-eksamina = []
+# Δεχόμαστε [plithos] ονόματα και τα τοποθετούμε σε λίστα την οποία επιστρέφει
+def readNames(plithos):
+    onomata = []
+    for i in range(plithos):
+        onoma = input("Δώσε όνομα:")
+        onomata.append(onoma)
+    return onomata
 
-for i in range(8):
-    vathmoi = []
-    for j in range(6):
-        # Εισαγωγή δεδομένων
-        vathmos = float(input("Δώσε βαθμό: "))
-        vathmoi.append(vathmos)
-eksamina.append(vathmoi)
 
-# Εισαγωγή δεδομένων
-ar_eksaminou = int(input("Ποιο εξάμηνο θες να δείς;"))
+def longestName(list):
+    maxLength = 0
+    for onoma in list:
+        if len(onoma) > maxLength:
+            maxLength = len(onoma)
+    return maxLength
 
-# Aφαιρούμε 1 γιατί ο χρήστης θα δώσει π.χ. 1 για το πρώτο εξάμηνο
-# ενώ αυτό είναι στη θέση 0.
-eksamino = eksamina[ar_eksaminou-1]
 
-# Αρχικοποίηση μεταβλητών
-souma = 0
-perasmena = 0
+plithos = int(input("Δώσε πλήθος: "))
+onomata = readNames(plithos)
+x = longestName(onomata)
 
-for mathima in eksamino:
-    souma += mathima
-    if mathima >= 5:
-        perasmena += 1
-
-# Εκτύπωση αποτελεσμάτων
-print("Ο μέσος όρος είναι: ", souma/len(eksamino))
-print("Πέρασες: ", perasmena)
+print("Το μακρύτερο όνομα έχει μήκος:", x)

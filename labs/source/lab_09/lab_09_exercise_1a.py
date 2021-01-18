@@ -1,24 +1,30 @@
 # Αρχικοποίηση μεταβλητών
-list = []
+eksamina = []
 
-for i in range(10):
-    # Εισαγωγή στοιχείων
-    num = int(input("Δώσε στοιχεία: ").strip())
-    list.append(num)
+for i in range(8):
+    vathmoi = []
+    for j in range(6):
+        # Εισαγωγή δεδομένων
+        vathmos = float(input("Δώσε βαθμό: ").strip())
+        vathmoi.append(vathmos)
+eksamina.append(vathmoi)
 
-# Εισαγωγή στοιχείων
-key = int(input("Δώσε στοιχείο που αναζητάς: ").strip())
+# Εισαγωγή δεδομένων
+ar_eksaminou = int(input("Ποιο εξάμηνο θες να δείς;").strip())
+
+# Aφαιρούμε 1 γιατί ο χρήστης θα δώσει π.χ. 1 για το πρώτο εξάμηνο
+# ενώ αυτό είναι στη θέση 0.
+eksamino = eksamina[ar_eksaminou-1]
 
 # Αρχικοποίηση μεταβλητών
-done = True
-thesi = 0
+souma = 0
+perasmena = 0
 
-for i in list:
-    if i == key:
-        # Εκτύπωση θέσης
-        print(thesi)
-        done = False
-    thesi += 1
+for mathima in eksamino:
+    souma += mathima
+    if mathima >= 5:
+        perasmena += 1
 
-if done is True:
-    print("To στοιχείο που αναζητάς δεν είναι στη λίστα.")
+# Εκτύπωση αποτελεσμάτων
+print(f"Ο μέσος όρος είναι: {souma/len(eksamino)}")
+print(f"Πέρασες: {perasmena}")

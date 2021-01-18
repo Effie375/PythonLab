@@ -1,26 +1,29 @@
-# Διάβασμα βαθμών
-eksamino = []
+def readMarks(N):
+    marks = []
+    for i in range(N):
+        mark = int(input("Δώσε βαθμό: ").strip())
+        marks.append(mark)
+    return marks
 
-for i in range(2):
-    mathima = []
-    for j in range(2):
-        # Εισαγωγή δεδομένων
-        text = "Βαθμός εξαμήνου %d και %d μάθημα: " % (i + 1, j + 1)
-        vathmos = input(text).strip()
-        vathmos = float(vathmos)
-        mathima.append(vathmos)
-        eksamino.append(mathima)
 
-# Εμφάνιση βαθμών ανά εξάμηνο
-print(f"Οι βαθμοί του φοιτητή είναι: {eksamino}")
+def getMax(A):
+    megisto = 0
+    for i in A:
+        if i > megisto:
+            megisto = i
+    return megisto
 
-# Υπολογισμός μέγιστου με βάση το κάθε μάθημα
-meg_vathmos = mathima[0]
 
-for mathima in eksamino:
-    for i in mathima:
-        if meg_vathmos < i:
-            meg_vathmos = i
+def getMO(A):
+    souma = 0
+    for i in A:
+        souma += i
+    return souma / len(A)
 
-# Εκτύπωση αποτελέσματος
-print(f"O μέγιστος βαθμός είναι: {meg_vathmos}")
+
+plithos = int(input("Πόσοι δώσανε το μάθημα:").strip())
+
+vathmoi = readMarks(plithos)
+
+print(f"Μέγιστος: {getMax(vathmoi)}")
+print(f"Mέσος όρος: {getMO(vathmoi)}")
