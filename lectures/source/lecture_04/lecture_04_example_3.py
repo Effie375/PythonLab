@@ -1,5 +1,8 @@
-i = 1
+vathmos = int(input("Βάλε βαθμό: "))
 
-while i <= 10:
-    print(i)
-    i += 1
+if(vathmos > 7):
+    print("Άριστα")
+elif(vathmos > 4):
+    print("Καλά")
+else:
+    print("Κόβεται")

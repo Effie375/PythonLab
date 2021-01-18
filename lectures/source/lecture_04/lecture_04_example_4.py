@@ -1,5 +1,5 @@
-num = int(input("Δώσε αριθμό: "))
+i = 1
 
-while num > 0:
-    print(num)
-    num = int(input("Δώσε αριθμό: "))
+while i <= 10:
+    print(i)
+    i += 1

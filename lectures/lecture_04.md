@@ -89,6 +89,23 @@ print (x, y)
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_04/lecture_04_example_2.py).
 
+### [Παράδειγμα 3](source/lecture_04/lecture_04_example_3.py)
+
+Το παρακάτω πρόγραμμα χρησιμοποιεί την δομή της επιλογής if, για τις τρεις επιλογές βαθμού.
+
+```python
+vathmos = int(input("Βάλε βαθμό: "))
+
+if(vathmos > 7):
+  print("Άριστα")
+elif(vathmos > 4):
+  print("Καλά")
+else:
+  print("Κόβεται")
+```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_04/lecture_04_example_3.py).
+
 ## 4.3 Η εντολή While
 
 ---
@@ -119,7 +136,7 @@ while x != 3:
 
 ---
 
-### [Παράδειγμα 3](source/lecture_04/lecture_04_example_3.py)
+### [Παράδειγμα 4](source/lecture_04/lecture_04_example_4.py)
 
 Να γραφεί πρόγραμμα που να εμφανίζει τους ακεραίους αριθμούς από το 1 μέχρι το 10.
 
@@ -131,9 +148,9 @@ while i <= 10:
   i += 1
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_04/lecture_04_example_3.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_04/lecture_04_example_4.py).
 
-### [Παράδειγμα 4](source/lecture_04/lecture_04_example_4.py)
+### [Παράδειγμα 5](source/lecture_04/lecture_04_example_5.py)
 
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει ένα άγνωστο πλήθος αριθμών και θα τους εμφανίζει. Η επανάληψη θα σταματά όταν διαβαστεί αριθμός μικρότερος ή ίσος του μηδενός.
 
@@ -145,9 +162,9 @@ while num > 0:
   num = int(input("Δώσε αριθμό: "))
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_04/lecture_04_example_4.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_04/lecture_04_example_5.py).
 
-### [Παράδειγμα 5](source/lecture_04/lecture_04_example_5.py)
+### [Παράδειγμα 6](source/lecture_04/lecture_04_example_6.py)
 
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει ένα άγνωστο πλήθος αριθμών και θα υπολογίζει το άθροισμά τους. Η επανάληψη θα σταματά όταν διαβαστεί ο αριθμός 55555.
 
@@ -161,7 +178,55 @@ while num != 55555:
   num = int(input("Δώσε αριθμό: "))
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_04/lecture_04_example_5.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_04/lecture_04_example_6.py).
+
+### [Παράδειγμα 7](source/lecture_04/lecture_04_example_7.py)
+
+Το παρακάτω πρόγραμμα χρησιμοποιεί την δομή της επιλογής if, σε συνδυασμό με την επανάληψη έτσι ώστε να μπορεί να δεχτεί πολλούς βαθμούς. Σταματάει βάζοντας 999.
+
+```python
+vathmos = int(input("Βάλε βαθμό (999 τέλος): "))
+
+while(vathmos != 999):
+  if(vathmos > 7):
+    print("Άριστα")
+  elif(vathmos > 4):
+    print("Καλά")
+  else:
+    print("Κόβεται")
+  vathmos = int(input("Βάλε βαθμό (999 τέλος): "))
+
+print("Τέλος")
+```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_04/lecture_04_example_7.py).
+
+### [Παράδειγμα 8](source/lecture_04/lecture_04_example_8.py)
+
+Στην εκδοχή αυτή αντί για την δομή do-while που θα χρησιμοποιούσαμε στην γλώσσα C, αλλά δεν υφίσταται στην Python, χρησιμοποιούμε την δομή while(True , την οποία τερματίζουμε με break για νε πετύχουμε τον έλεγχο ορθότητας των εισαγομένων βαθμών. Το πρόγραμμα συνεχίζει να ζητάει βαθμό μέχρι να εισαχθεί βαθμός από 0 έως 10 για να αξιολογήσει, ή 999 για να σταματήσει η λειτουργία του.
+
+```python
+while(True):
+  vathmos = int(input("Βάλε βαθμό (999 τέλος): "))
+  if((vathmos >= 0 and vathmos <= 10) or (vathmos == 999)):
+    break;
+
+while(vathmos != 999):
+  if(vathmos > 7):
+    print("Άριστα")
+  elif(vathmos > 4):
+    print("Καλά")
+  else:
+    print("Κόβεται")
+  while(True):
+    vathmos = int(input("Βάλε βαθμό (999 τέλος): "))
+    if((vathmos >= 0 and vathmos <= 10) or (vathmos == 999)):
+      break;
+
+print("Τέλος!")
+```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_04/lecture_04_example_8.py).
 
 ## 4.6 Ασκήσεις
 

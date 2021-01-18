@@ -1,8 +1,5 @@
-sum = num = 0
-key = 55555
+num = int(input("Δώσε έναν αριθμό: ").strip())
 
-while num != key:
-    sum += num
+while num > 0:
+    print(num)
     num = int(input("Δώσε έναν αριθμό: ").strip())
-
-print(f"Το άθροισμα είναι {sum}")
