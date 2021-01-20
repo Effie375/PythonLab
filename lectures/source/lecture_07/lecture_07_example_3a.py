@@ -11,7 +11,7 @@ while (i < 5) and (found is False):
         found = True
     i += 1
 
-if found is True:
+if found == True:
     print(f"Το {key} βρίσκεται στη {thesi} θέση.")
 else:
     print(f"Το {key} δε βρίσκεται στη λίστα {list}.")

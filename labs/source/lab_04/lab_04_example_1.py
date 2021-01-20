@@ -2,7 +2,7 @@
 number = input("Δώσε έναν αριθμό: ")
 
 # Ελέγχουμε αν είναι αριθμός
-if number.isdigit() is True:
+if number.isdigit():
     # Μετατρέπουμε την αλφαριθμητική τιμή σε ακέραια
     number = int(number)
     if number == 0:

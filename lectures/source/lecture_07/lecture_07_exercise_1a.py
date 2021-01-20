@@ -6,7 +6,7 @@ def sort_function(plist):
                     temp = plist[j-1]
                     plist[j-1] = plist[j]
                     plist[j] = temp
-    except TypeError:
+    except:
         print("Κάτι πήγε στραβά!")
         return 1
     else:

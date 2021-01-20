@@ -11,7 +11,7 @@ while (i < 5) and (found is False):
         found = True
     i += 1
 
-if found is True:
+if found == True:
     print("Το %d βρίσκεται στη %d θέση." % (key, thesi))
 else:
     print("Το %d δε βρίσκεται στη λίστα %s." % (key, list))

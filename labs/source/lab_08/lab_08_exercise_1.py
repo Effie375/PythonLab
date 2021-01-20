@@ -20,5 +20,5 @@ for i in list:
         done = False
     thesi += 1
 
-if done is True:
+if done == True:
     print("To στοιχείο που αναζητάς δεν είναι στη λίστα.")

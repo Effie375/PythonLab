@@ -1,0 +1,11 @@
+[flake8]
+# ignore these flake8 rules
+ignore =
+    # Line too long (82 > 79 characters)
+    E501,
+    # Comparison to none should be 'if cond is none:'
+    E711,
+    # Comparison to true should be 'if cond is true:' or 'if cond:'
+    E712,
+    # Do not use bare except, specify exception instead
+    E722

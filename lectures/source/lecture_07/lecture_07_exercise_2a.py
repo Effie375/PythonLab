@@ -11,7 +11,7 @@ def sort_function(pnames, pvathmoi):
                     temp2 = pnames[j-1]
                     pnames[j-1] = pnames[j]
                     pnames[j] = temp2
-    except TypeError:
+    except:
         print("Κάτι πήγε στραβά!")
         return 1
     else:
@@ -43,5 +43,5 @@ if not sort_function(names, vathmoi):
     try:
         for i in range(BEST_FOITITES):
             print(f"Ο {i+1}ος καλύτερος είναι ο/η {names[i]}.")
-    except IndexError:
+    except:
         print("Δεν υπάρχει άλλος φοιτητής στη λίστα!")

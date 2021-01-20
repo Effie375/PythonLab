@@ -29,7 +29,7 @@ stoixeio = input("Δώσε όνομα που αναζητάς: ").strip()
 
 done = anazitisi(stoixeio, onomata)
 
-if done is True:
+if done == True:
     print("Το όνομα που αναζητάς δεν είναι στη λίστα.")
 else:
     print(f"Το όνομα {stoixeio}είναι στη λίστα.")

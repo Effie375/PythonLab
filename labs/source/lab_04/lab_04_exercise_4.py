@@ -11,7 +11,7 @@ while arithmos != 0:
         arithmos = input("Δώσε σωστά αριθμό: ")
     # Μετατροπή από str σε int
     arithmos = int(arithmos)
-    if flag is False and arithmos != 0:
+    if flag == False and arithmos != 0:
         ginomeno = 1
         flag = True
     if arithmos != 0:

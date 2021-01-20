@@ -35,7 +35,7 @@
 # Διάβασμα από τον χρήστη
 number = input("Δώσε έναν αριθμό: ")
 
-if number.isdigit() is True:
+if number.isdigit():
   # Μετατροπή από str σε int
   number = int(number)
   if number == 0:

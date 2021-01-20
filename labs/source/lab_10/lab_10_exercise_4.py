@@ -31,7 +31,7 @@ stoixeio = input("Δώσε όνομα που αναζητάς: ")
 
 done = anazitisi(stoixeio, onomata)
 
-if done is True:
+if done == True:
     print("Το όνομα που αναζητάς δεν είναι στη λίστα.")
 else:
     print("Το όνομα", stoixeio, "είναι στη λίστα.")

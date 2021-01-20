@@ -22,7 +22,7 @@ while ((i < len(numbers)) and not flag):
     i += 1
 
 # Εκτύπωση αποτελεσμάτων
-if flag:
+if flag == True:
     print(f"Ο αριθμός που αναζητάς {key} βρίσκεται στη θέση {index}.")
 else:
     print(f"Ο αριθμός που αναζητάς {key} δεν βρίσκεται στη λίστα.")

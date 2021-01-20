@@ -15,5 +15,5 @@ for arithmos in list:
     thesi += 1
 
 # Εκτύπωση αποτελέσματος
-if done is True:
+if done == True:
     print("Το στοιχείο που αναζητάς δεν είναι στη λίστα.")
