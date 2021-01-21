@@ -6,12 +6,12 @@ episodes = int(input("Δώσε επεισόδια άνα κύκλο: "))
 thle8eash = []
 
 for i in range(seasons):
-    thl_season = []
+    thlSeason = []
     for j in range(episodes):
         # Εισαγωγή δεδομένων
         thl = float(input("Δώσε τηλεθέαση %dx%d: " % (i+1, j+1)))
-        thl_season.append(thl)
-    thle8eash.append(thl_season)
+        thlSeason.append(thl)
+    thle8eash.append(thlSeason)
 
 # Αρχικοποίηση μεταβλητών
 maxThlSeason = 0

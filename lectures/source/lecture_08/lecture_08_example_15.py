@@ -1,13 +1,13 @@
 ls = [[1, 2, 3], [1, 1, 1], [2, 3, 4]]
-A = [1, 2, 5]
-B = []
+lista1 = [1, 2, 5]
+lista2 = []
 
-for key in A:
+for key in lista1:
     counter = 0
     for ypolista in ls:
         for i in ypolista:
             if i == key:
                 counter += 1
-    B.append(counter)
+    lista2.append(counter)
 
-print(B)
+print(lista2)

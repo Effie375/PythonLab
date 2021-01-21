@@ -90,18 +90,18 @@ else:
 ---
 
 ```python
-A = [5, 7, 8, 9, 3]
+lista = [5, 7, 8, 9, 3]
 
-print("Η λίστα μας πριν τη ταξινόμηση είναι: %s" % A)
+print("Η λίστα μας πριν τη ταξινόμηση είναι: %s" % lista)
 
-for i in range(len(A)):
-  for j in range(len(A)-1, i, -1):
-    if A[j-1] > A[j]:
-      temp = A[j-1]
-      A[j-1] = A[j]
-      A[j] = temp
+for i in range(len(lista)):
+  for j in range(len(lista)-1, i, -1):
+    if lista[j-1] > lista[j]:
+      temp = lista[j-1]
+      lista[j-1] = lista[j]
+      lista[j] = temp
 
-print("Η λίστα μας μετά τη ταξινόμηση είναι: %s" %A)
+print("Η λίστα μας μετά τη ταξινόμηση είναι: %s" % lista)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_4.py).
@@ -111,22 +111,22 @@ print("Η λίστα μας μετά τη ταξινόμηση είναι: %s" %
 ---
 
 ```python
-Names = ["Γεωργίου", "Πέτρου", "Παπαδόπουλος", "Αθανασίου", "Τσακογιάννης"]
-Grades = [1, 2, 5, 7, 9]
+names = ["Γεωργίου", "Πέτρου", "Παπαδόπουλος", "Αθανασίου", "Τσακογιάννης"]
+grades = [1, 2, 5, 7, 9]
 
 
 for i in range(1, 5):
   for j in range(4, i-1, -1):
-    if Grades[j-1] > Grades[j]:
-      temp = Grades[j-1]
-      Grades[j-1] = Grades[j]
-      Grades[j] = temp
-      temp2 = Names[j-1]
-      Names[j-1] = Names[j]
-      Names[j] = temp2
+    if grades[j-1] > grades[j]:
+      temp = grades[j-1]
+      grades[j-1] = grades[j]
+      grades[j] = temp
+      temp2 = names[j-1]
+      names[j-1] = names[j]
+      names[j] = temp2
 
-print(Names)
-print(Grades)
+print(names)
+print(grades)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_5.py).
@@ -138,21 +138,21 @@ print(Grades)
 ```python
 for i in range(1, 5):
   for j in range(4, i-1, -1):
-    if Grades[j-1] > Grades[j]:
-      temp=Grades[j-1]
-      Grades[j-1]=Grades[j]
-      Grades[j]=temp
-      temp2=Names[j-1]
-      Names[j-1]=Names[j]
-      Names[j]=temp2
-    if Grades[j-1] == Grades[j]:
-      if Names[j-1] > Names[j]:
-        temp3=Names[j-1]
-        Names[j-1]=Names[j]
-        Names[j]=temp3
+    if grades[j-1] > grades[j]:
+      temp = grades[j-1]
+      grades[j-1] = grades[j]
+      grades[j] = temp
+      temp2 = names[j-1]
+      names[j-1] = names[j]
+      names[j] = temp2
+    if grades[j-1] == grades[j]:
+      if names[j-1] > names[j]:
+        temp3 = names[j-1]
+        names[j-1] = names[j]
+        names[j] = temp3
 
-print(Names)
-print(Grades)
+print(names)
+print(grades)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_6.py).

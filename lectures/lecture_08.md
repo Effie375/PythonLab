@@ -117,7 +117,7 @@ for ypolista in ls:
   for item in ypolista:
     sumGrammhs += item
 
-  print("Άθροισμα γραμμής:",sumGrammhs)
+  print("Άθροισμα γραμμής:", sumGrammhs)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_5.py).
@@ -181,14 +181,14 @@ ls = [[2, 3, 4, 1], [7, 3, 3, 9], [6, 5, 5, 8], [1, 9, 4, 1], [0, 4, 7, 4]]
 
 key = int(input("Δώσε στοιχείο που αναζητάς: "))
 
-key_counter = 0
+keyCounter = 0
 
 for i in range(5):
   for j in range(4):
     if key == ls[i][j]:
       print(i, j)
-      key_counter += 1
-print("Βρέθηκε %d φορές." % (key_counter))
+      keyCounter += 1
+print("Βρέθηκε %d φορές." % (keyCounter))
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_9.py).
@@ -198,11 +198,14 @@ print("Βρέθηκε %d φορές." % (key_counter))
 ---
 
 ```python
-ls = [[2, 3, 4, 1], [7, 3, 3, 9], [6, 5, 5, 8], [1, 9, 4, 1], [0, 4, 7, 4]]
+ls = [[2, 3, 4, 1], 
+  [7, 3, 3, 9], 
+  [6, 5, 5, 8], 
+  [1, 9, 4, 1], 
+  [0, 4, 7, 4]]
 
 key = int(input("Δώσε στοιχείο που αναζητάς: "))
 
-key_counter = 0
 found = False
 i = 0
 j = 0
@@ -223,19 +226,23 @@ while i < 5 and not found:
 ---
 
 ```python
-A = [[2, 3, 4, 1], [7, 8, 19, 12], [6, 15, 10, 18], [11, 21, 24, 23], [0, -4, -7, 35]]
+lista = [[2, 3, 4, 1], 
+    [7, 8, 19, 12], 
+    [6, 15, 10, 18], 
+    [11, 21, 24, 23], 
+    [0, 4, 7, 35]]
 
-print("Η μη ταξινομημένη λίστα είναι:", A)
+print("Η μη ταξινομημένη λίστα είναι:", lista)
 
 for k in range(5):
-  for i in range(1, 4):
-    for j in range(3, i-1, -1):
-      if A[k][j-1] > A[k][j]:
-        temp = A[k][j-1]
-        A[k][j-1] = A[k][j]
-        A[k][j] = temp
-                
-print("Η ταξινομημένη λίστα:", A)
+    for i in range(1, 4):
+        for j in range(3, i-1, -1):
+            if lista[k][j-1] > lista[k][j]:
+                temp = lista[k][j-1]
+                lista[k][j-1] = lista[k][j]
+                lista[k][j] = temp
+
+print("Η ταξινομημένη λίστα:", lista)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_11.py).
@@ -245,15 +252,23 @@ print("Η ταξινομημένη λίστα:", A)
 ---
 
 ```python
-for k in range(4):
-  for i in range(1, 5):
-    for j in range(4, i-1, -1):
-      if A[j-1][k] > A[j][k]:
-        temp = A[j-1][k]
-        A[j-1][k] = A[j][k]
-        A[j][k] = temp
+lista = [[2, 3, 4, 1],
+    [7, 8, 9, 2],
+    [6, 5, 1, 8],
+    [1, 2, 4, 3],
+    [0, 4, 7, 5]]
 
-print("Η ταξινομημένη λίστα:", A)
+print("Η μη ταξινομημένη λίστα είναι:", lista)
+
+for k in range(4):
+    for i in range(1, 5):
+        for j in range(4, i-1, -1):
+            if lista[j-1][k] > lista[j][k]:
+                temp = lista[j-1][k]
+                lista[j-1][k] = lista[j][k]
+                lista[j][k] = temp
+
+print("Η ταξινομημένη λίστα:", lista)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_12.py).
@@ -266,15 +281,21 @@ print("Η ταξινομημένη λίστα:", A)
 # Ίδιο πλήθος γραµµών και στηλών
 # Άθροισµα Διαγωνίων
 
+lista = [[2, 3, 4, 1],
+  [7, 8, 9, 2],
+  [6, 5, 1, 8],
+  [1, 2, 4, 3],
+  [0, 4, 7, 5]]
+   
 sum1 = 0
 sum2 = 0
 
 for i in range(4):
   for j in range(4):
     if i == j:
-      sum1 += A[i][j]
+      sum1 += lista[i][j]
     if i + j == 3:
-      sum2 += A[i][j]
+      sum2 += lista[i][j]
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_13.py).
@@ -286,14 +307,14 @@ for i in range(4):
 ### [Παράδειγμα 1](source/lecture_08/lecture_08_example_14.py)
 
 ```python
-A = []
+lista = []
 
-for ypolista in A:
+for ypolista in lista:
   sum = 0
   for i in ypolista:
     sum += i
 
-A.append(sum)
+lista.append(sum)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_14.py).
@@ -302,18 +323,18 @@ A.append(sum)
 
 ```python
 ls = [[1, 2, 3], [1, 1, 1], [2, 3, 4]]
-A = [1, 2, 5]
-B = []
+lista1 = [1, 2, 5]
+lista2 = []
 
-for key in A:
+for key in lista1:
   counter = 0
   for ypolista in ls:
     for i in ypolista:
       if i == key:
         counter += 1
-  B.append(counter)
+  lista2.append(counter)
 
-print(B)
+print(lista2)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_15.py).
@@ -378,19 +399,19 @@ for i in range(PAIKTES):
 # Τρέχει για κάθε αγώνα
 for agwnas in range(AGWNES):
   # Καλούμε τη συνάρτηση και παίρνουμε το άθροισμα των πόντων ανα αγώνα
-  synolo_ponton = athroisma(pontoi[agwnas])
+  synoloPonton = athroisma(pontoi[agwnas])
   print("\n-------- Αγώνας %d --------" % (agwnas+1))
-  print("Σύνολο πόντων: %d" % (synolo_ponton))
+  print("Σύνολο πόντων: %d" % (synoloPonton))
   # Μηδενίζουμε τη θέση του καλύτερου παίκτη
-  best_thesi = 0
+  bestThesi = 0
   # Έστω ο καλύτερος παίκτης με τους περισσότερους πόντους είναι ο πρώτος
-  best = pontoi[agwnas][best_thesi]
+  best = pontoi[agwnas][bestThesi]
   # Τρέχει για κάθε παίκτη
   for paiktis in range(PAIKTES):
     if pontoi[agwnas][paiktis] > best:
-      best_thesi = paiktis
-  print("Καλύτερος παίκτης: %s" % (names[best_thesi]))
-  print("Πόντοι καλύτερου παίκτη: %d" % (pontoi[agwnas][best_thesi]))
+      bestThesi = paiktis
+  print("Καλύτερος παίκτης: %s" % (names[bestThesi]))
+  print("Πόντοι καλύτερου παίκτη: %d" % (pontoi[agwnas][bestThesi]))
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_exercise_2.py).

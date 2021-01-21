@@ -1,4 +1,4 @@
-# 9 Συναρτήσεις 
+# 9 Συναρτήσεις
 
 ---
 
@@ -26,7 +26,7 @@ def sayHello():
 # Δεν επιστρέφει κάτι άρα δε χρειάζεται return
 
 
-#-------main--------
+# -------main--------
 x = 3
 y = 4
 
@@ -61,21 +61,24 @@ a, b = modDiv(10, 3)
 ### [Παράδειγμα 3](source/lecture_09/lecture_09_example_3.py)
 
 ```python
-def search_function(lista_s, key):
+def searchFunction(listaS, key):
   counter = 0
-  for i in lista_s:
+  for i in listaS:
     if i == key:
       counter += 1
   return counter
 
-lista = [[1, 2, 3, 1], [6, 6, 7, 8], [9, 10, 11, 12], [9, 3, 3, 16]]
-search_key = [1, 3, 6, 9]
+lista = [[1, 2, 3, 1], 
+  [6, 6, 7, 8], 
+  [9, 10, 11, 12], 
+  [9, 3, 3, 16]]
+searchKey = [1, 3, 6, 9]
 results = []
 
-for key in search_key:
+for key in searchKey:
   s = 0
   for ypolista in lista:
-    k = search_function(ypolista, key)
+    k = searchFunction(ypolista, key)
     s = s + k
   results.append(s)
 
@@ -87,13 +90,16 @@ print(results)
 ### [Παράδειγμα 4](source/lecture_09/lecture_09_example_4.py)
 
 ```python
-def athroisma(lista_new):
+def athroisma(listaNew):
   A = []
-  for item in lista_new:
+  for item in listaNew:
     item.sort(reverse=True)
 
 
-lista = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
+lista = [[1, 2, 3, 4], 
+  [5, 6, 7, 8], 
+  [9, 10, 11, 12], 
+  [13, 14, 15, 16]]
 
 for item in lista:
   print(item)
@@ -111,14 +117,14 @@ for item in lista:
 ### [Παράδειγμα 5](source/lecture_09/lecture_09_example_5.py)
 
 ```python
-def showlist(lista_2):
-  for i in range(len(lista_2)):
-    lista_2[i] = lista_2[i] * 2
+def showList(lista2):
+  for i in range(len(lista2)):
+    lista2[i] = lista2[i] * 2
 
 
 lista = [1, 4, 3, 5, 6]
 
-showlist(lista[:])
+showList(lista[:])
 
 print(lista)
 ```
@@ -172,18 +178,18 @@ else:
 
 ### [Άσκηση 3](source/lecture_09/lecture_09_exercise_3.py)
 
-Να γραφεί µια συνάρτηση η οποία θα δέχεται µια λίστα Α µε
+Να γραφεί µια συνάρτηση η οποία θα δέχεται µια λίστα µε
 αριθµούς και θα την ταξινοµεί.
 
 ```python
-def sort(A):
-  for i in range(1, len(A)):
-    for j in range(len(A)-1, i-1, -1):
-      if A[j-1] > A[j]:
-        temp = A[j-1]
-        A[j-1] = A[j]
-        A[j] = temp
-  return A
+def sort(listaP):
+  for i in range(1, len(listaP)):
+    for j in range(len(listaP)-1, i-1, -1):
+      if listaP[j-1] > listaP[j]:
+        temp = listaP[j-1]
+        listaP[j-1] = listaP[j]
+        listaP[j] = temp
+  return listaP
 
 
 list = [1, 6, 2, 5, 3, 7, 4]

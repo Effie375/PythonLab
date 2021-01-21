@@ -22,16 +22,16 @@ for i in range(PAIKTES):
 # Τρέχει για κάθε αγώνα
 for agwnas in range(AGWNES):
     # Καλούμε τη συνάρτηση και παίρνουμε το άθροισμα των πόντων ανα αγώνα
-    synolo_ponton = athroisma(pontoi[agwnas])
+    synoloPonton = athroisma(pontoi[agwnas])
     print("\n-------- Αγώνας %d --------" % (agwnas+1))
-    print("Σύνολο πόντων: %d" % (synolo_ponton))
+    print("Σύνολο πόντων: %d" % (synoloPonton))
     # Μηδενίζουμε τη θέση του καλύτερου παίκτη
-    best_thesi = 0
+    bestThesi = 0
     # Έστω ο καλύτερος παίκτης με τους περισσότερους πόντους είναι ο πρώτος
-    best = pontoi[agwnas][best_thesi]
+    best = pontoi[agwnas][bestThesi]
     # Τρέχει για κάθε παίκτη
     for paiktis in range(PAIKTES):
         if pontoi[agwnas][paiktis] > best:
-            best_thesi = paiktis
-    print("Καλύτερος παίκτης: %s" % (names[best_thesi]))
-    print("Πόντοι καλύτερου παίκτη: %d" % (pontoi[agwnas][best_thesi]))
+            bestThesi = paiktis
+    print("Καλύτερος παίκτης: %s" % (names[bestThesi]))
+    print("Πόντοι καλύτερου παίκτη: %d" % (pontoi[agwnas][bestThesi]))

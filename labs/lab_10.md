@@ -34,18 +34,18 @@ def readAndCheck():
 
 ### 10.2.1 [Παράδειγμα 1(Ταξινόμηση)](source/lab_10/lab_10_example_2.py)
 
-Να γραφεί μια συνάρτηση η οποία θα δέχεται μια λίστα Α με
+Να γραφεί μια συνάρτηση η οποία θα δέχεται μια λίστα με
 αριθμούς και θα την ταξινομεί.
 
 ```python
-def sort(A):
-  for i in range(1, len(A)):
-    for j in range(len(A)-1, 0, -1):
-      if A[j-1] > A[j]:
-        temp = A[j-1]
-        A[j-1] = A[j]
-        A[j] = temp
-  return A
+def sort(listaP):
+  for i in range(1, len(listaP)):
+    for j in range(len(listaP)-1, 0, -1):
+      if listaP[j-1] > listaP[j]:
+        temp = listaP[j-1]
+        listaP[j-1] = listaP[j]
+        listaP[j] = temp
+  return listaP
 
 list = [5, 7, 8, 9, 3]
 
@@ -76,14 +76,14 @@ def readAndCheck():
   return num
 
 
-def sort(A):
-  for i in range(1, len(A)):
-    for j in range(len(A)-1, 0, -1):
-      if A[j-1] > A[j]:
-        temp = A[j-1]
-        A[j-1] = A[j]
-        A[j] = temp
-  return A
+def sort(listaP):
+  for i in range(1, len(listaP)):
+    for j in range(len(listaP)-1, 0, -1):
+      if listaP[j-1] > listaP[j]:
+        temp = listaP[j-1]
+        listaP[j-1] = listaP[j]
+        listaP[j] = temp
+  return listaP
 
 
 def readMarks():

@@ -15,10 +15,10 @@
 ---
 
 - Προσπέλαση Πολυδιάστατης Λίστας
-  - `a = my_list[x][y][z]...`
-  - `my_list[x][y] = var1`
+  - `a = myList[x][y][z]...`
+  - `myList[x][y] = var1`
 - Πρόσθεση στοιχείων
-  - `my_list[x].append(a)`. Εισάγει την τιμή της μεταβλητής a στο τέλοςτης λίστας που βρίσκεται στη θέση «x» της λίστας my_list.
+  - `myList[x].append(a)`. Εισάγει την τιμή της μεταβλητής a στο τέλοςτης λίστας που βρίσκεται στη θέση «x» της λίστας my_list.
 
 ## [9.2 Παράδειγμα](source/lab_09/lab_09_example_1.py)
 
@@ -39,18 +39,18 @@ for i in range(5):
   lista.append(ypolista)
 
 # Αρχικοποίηση μεταβλητών
-meg_athroisma = 0
+megAthroisma = 0
 
 for ypolista in lista:
   athroisma = 0
   for i in ypolista:
     athroisma += i
-  if athroisma > meg_athroisma:
-    meg_athroisma = athroisma
-    meg_lista = ypolista
+  if athroisma > megAthroisma:
+    megAthroisma = athroisma
+    megLista = ypolista
 
 # Εκτύπωση αποτελέσματος
-print(meg_lista)
+print(megLista)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_example_1.py).
@@ -84,11 +84,11 @@ for i in range(8):
 eksamina.append(vathmoi)
 
 # Εισαγωγή δεδομένων
-ar_eksaminou = int(input("Ποιο εξάμηνο θες να δείς;"))
+arEksaminou = int(input("Ποιο εξάμηνο θες να δείς;"))
 
 # Aφαιρούμε 1 γιατί ο χρήστης θα δώσει π.χ. 1 για το πρώτο εξάμηνο
 # ενώ αυτό είναι στη θέση 0.
-eksamino = eksamina[ar_eksaminou-1]
+eksamino = eksamina[arEksaminou-1]
 
 # Αρχικοποίηση μεταβλητών
 souma = 0
@@ -124,12 +124,12 @@ episodes = int(input("Δώσε επεισόδια άνα κύκλο: "))
 thle8eash = []
 
 for i in range(seasons):
-  thl_season = []
+  thlSeason = []
   for j in range(episodes):
     # Εισαγωγή δεδομένων
     thl = float(input("Δώσε τηλεθέαση %dx%d: " % (i+1, j+1)))
-    thl_season.append(thl)
-  thle8eash.append(thl_season)
+    thlSeason.append(thl)
+  thle8eash.append(thlSeason)
 
 # Αρχικοποίηση μεταβλητών
 maxThlSeason = 0
@@ -187,15 +187,15 @@ for i in range(2):
 print("Οι βαθμοί του φοιτητή είναι:", eksamino)
 
 # Υπολογισμός μέγιστου με βάση το κάθε μάθημα
-meg_vathmos = mathima[0]
+megVathmos = mathima[0]
 
 for mathima in eksamino:
   for i in mathima:
-    if meg_vathmos < i:
-      meg_vathmos = i
+    if megVathmos < i:
+      megVathmos = i
 
 # Εκτύπωση αποτελέσματος
-print("O μέγιστος βαθμός είναι:", meg_vathmos)
+print("O μέγιστος βαθμός είναι:", megVathmos)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_exercise_3.py).
@@ -225,40 +225,40 @@ for i in range(3):
   athlimata.append(vathmoi)
 
 # Υπολογισμός και εμφάνιση αθλήματος με μεγαλύτερους βαθμούς
-maxsum = 0
+maxSum = 0
 
 for vathmoi in athlimata:
   sum = 0
   for i in vathmoi:
     sum += i
-    if sum > maxsum:
-      maxsum = sum
-      maxathlima = vathmoi
+    if sum > maxSum:
+      maxSum = sum
+      maxAthlima = vathmoi
 
 # Εκτύπωση αποτελέσματος
-print("Ο max βαθμός είναι:", maxathlima, "και το άθροισμα είναι:", maxsum)
+print("Ο max βαθμός είναι:", maxAthlima, "και το άθροισμα είναι:", maxSum)
 
 # Υπολογισμός μέγιστου βαθμού σε κάθε άθλημα
-meg_vathmos = athlimata[0][0]
+megVathmos = athlimata[0][0]
 
 for vathmoi in athlimata:
   for i in vathmoi:
-    if i > meg_vathmos:
-      meg_vathmos = i
+    if i > megVathmos:
+      megVathmos = i
 
 # Εκτύπωση αποτελέσματος
-print("Ο μέγιστος βαθμός του αθλητή είναι:", meg_vathmos)
+print("Ο μέγιστος βαθμός του αθλητή είναι:", megVathmos)
 
 # Αναζήτηση φορών μέγιστου βαθμού σε κάθε άθλημα
-vathmos_counter = 0
+vathmosCounter = 0
 
 for vathmoi in athlimata:
   for i in vathmoi:
-    if i == meg_vathmos:
-      vathmos_counter += 1
+    if i == megVathmos:
+      vathmosCounter += 1
 
 # Εκτύπωση αποτελέσματος
-print("O μέγιστος βαθμός βρέθηκε %d φορές." % (vathmos_counter))
+print("O μέγιστος βαθμός βρέθηκε %d φορές." % (vathmosCounter))
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_exercise_4.py).

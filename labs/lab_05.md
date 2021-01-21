@@ -15,25 +15,25 @@
 ---
 
 - Δημιουργία λίστας
-  - `new_list = []`
-  - `new_list = [1, 2, "skylos"]`
+  - `newList = []`
+  - `newList = [1, 2, "skylos"]`
 - Προσπέλαση
-  - `a = my_list[n]`
-  - `my_list[n] = var1`
+  - `a = myList[n]`
+  - `myList[n] = var1`
 - Πρόσθεση στοιχείων
-  - `my_list.append(a)`. *Εισάγει την τιμή της μεταβλητής a στο τέλος.*
-  - `my_list.extend(new_list)`. *Εισάγει ένα-ένα τα στοιχεία της λίστας new_list στο τέλος.*
-    - `my_list.insert(n, var1)`. *Εισάγει την τιμή της μεταβλητής var1 στη θέση n.*
+  - `myList.append(a)`. *Εισάγει την τιμή της μεταβλητής a στο τέλος.*
+  - `myList.extend(new_list)`. *Εισάγει ένα-ένα τα στοιχεία της λίστας new_list στο τέλος.*
+    - `myList.insert(n, var1)`. *Εισάγει την τιμή της μεταβλητής var1 στη θέση n.*
 - Αφαίρεση στοιχείων
-  - `my_list.remove(x)`. *Αφαιρεί το πρώτο στοιχείο με τιμή x της λίστας.*
+  - `myList.remove(x)`. *Αφαιρεί το πρώτο στοιχείο με τιμή x της λίστας.*
 - Έλεγχος για στοιχεία
-  - `a in my_list`. *Επιστρέφει True αν το στοιχείο a υπάρχει στην λίστα.*
-  - `my_list.index(a)`. *Επιστρέφει τη θέση της πρώτης εμφάνισης του a στη λίστα.*
-  - `my_list.count(a)`. *Επιστρέφει το πλήθος των στοιχείων με τιμή a στη λίστα.*
+  - `a in myList`. *Επιστρέφει True αν το στοιχείο a υπάρχει στην λίστα.*
+  - `myList.index(a)`. *Επιστρέφει τη θέση της πρώτης εμφάνισης του a στη λίστα.*
+  - `myList.count(a)`. *Επιστρέφει το πλήθος των στοιχείων με τιμή a στη λίστα.*
 - Λοιπές
-  - `len(my_list)`. *Επιστρέφει το πλήθος των στοιχείωντης λίστας.*
-  - `max(my_list)`. *Επιστρέφει το μέγιστο στοιχείο της λίστας.*
-  - `min(my_list)`. *Επιστρέφει το ελάχιστο στοιχείο της λίστας.*
+  - `len(myList)`. *Επιστρέφει το πλήθος των στοιχείωντης λίστας.*
+  - `max(myList)`. *Επιστρέφει το μέγιστο στοιχείο της λίστας.*
+  - `min(myList)`. *Επιστρέφει το ελάχιστο στοιχείο της λίστας.*
 
 ## 5.2 Παραδείγματα
 
@@ -54,15 +54,15 @@ while i < 10:
   i += 1
 
 # Αρχικοποίηση μεταβλητών
-new_list = []
+newList = []
 j = 9
 
 while j >= 0:
-  new_list.append(list[j])
+  newList.append(list[j])
   j -= 1
 
 # Εκτύπωση αποτελεσμάτων
-print("Η νέα λίστα είναι:", new_list)
+print("Η νέα λίστα είναι:", newList)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_05/lab_05_example_1.py)
@@ -206,8 +206,8 @@ print(ls)
 # Αρχικοποίηση μεταβλητών
 vowels = 'aehiouy'
 consonants = 'bcdfgjklmnpqrstvwxz'
-v_counter = 0
-c_counter = 0
+voCounter = 0
+coCounter = 0
 i = 0
 
 # Εισαγωγή δεδομένων
@@ -215,16 +215,16 @@ lexi = input("Δώσε λέξη: ")
 
 while i < len(lexi):
   if lexi[i] in vowels:
-    v_counter += 1
+    voCounter += 1
   elif lexi[i] in consonants:
-    c_counter += 1
+    coCounter += 1
     i += 1
   else:
     pass
 
 # Εκτύπωση αποτελεσμάτων
-print("Φωνήεντα: ", v_counter)
-print("Σύμφωνα: ", c_counter)
+print("Φωνήεντα: ", voCounter)
+print("Σύμφωνα: ", coCounter)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_05/lab_05_exercise_3.py)

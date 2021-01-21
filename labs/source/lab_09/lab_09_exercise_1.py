@@ -10,11 +10,11 @@ for i in range(8):
 eksamina.append(vathmoi)
 
 # Εισαγωγή δεδομένων
-ar_eksaminou = int(input("Ποιο εξάμηνο θες να δείς;"))
+arEksaminou = int(input("Ποιο εξάμηνο θες να δείς;"))
 
 # Aφαιρούμε 1 γιατί ο χρήστης θα δώσει π.χ. 1 για το πρώτο εξάμηνο
 # ενώ αυτό είναι στη θέση 0.
-eksamino = eksamina[ar_eksaminou-1]
+eksamino = eksamina[arEksaminou-1]
 
 # Αρχικοποίηση μεταβλητών
 souma = 0

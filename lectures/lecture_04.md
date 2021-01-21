@@ -209,7 +209,7 @@ print("Τέλος")
 while(True):
   vathmos = int(input("Βάλε βαθμό (999 τέλος): "))
   if((vathmos >= 0 and vathmos <= 10) or (vathmos == 999)):
-    break;
+    break
 
 while(vathmos != 999):
   if(vathmos > 7):
@@ -221,7 +221,7 @@ while(vathmos != 999):
   while(True):
     vathmos = int(input("Βάλε βαθμό (999 τέλος): "))
     if((vathmos >= 0 and vathmos <= 10) or (vathmos == 999)):
-      break;
+      break
 
 print("Τέλος!")
 ```

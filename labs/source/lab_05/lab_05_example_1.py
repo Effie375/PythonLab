@@ -8,12 +8,12 @@ while i < 10:
     i += 1
 
 # Αρχικοποίηση μεταβλητών
-new_list = []
+newList = []
 j = 9
 
 while j >= 0:
-    new_list.append(list[j])
+    newList.append(list[j])
     j -= 1
 
 # Εκτύπωση αποτελεσμάτων
-print("Η νέα λίστα είναι:", new_list)
+print("Η νέα λίστα είναι:", newList)

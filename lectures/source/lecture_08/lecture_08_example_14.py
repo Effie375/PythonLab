@@ -1,8 +1,8 @@
-A = []
+lista = []
 
-for ypolista in A:
+for ypolista in lista:
     sum = 0
     for i in ypolista:
         sum += i
 
-A.append(sum)
+lista.append(sum)

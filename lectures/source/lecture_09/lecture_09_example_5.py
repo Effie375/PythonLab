@@ -1,10 +1,10 @@
-def showlist(lista_2):
-    for i in range(len(lista_2)):
-        lista_2[i] = lista_2[i] * 2
+def showList(lista2):
+    for i in range(len(lista2)):
+        lista2[i] = lista2[i] * 2
 
 
 lista = [1, 4, 3, 5, 6]
 
-showlist(lista[:])
+showList(lista[:])
 
 print(lista)

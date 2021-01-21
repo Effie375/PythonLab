@@ -149,32 +149,32 @@ z = "abc123"
 print(19)
 print("Γεια σου Μαρία")
 
-onoma_1 = "Μαρία"
+onoma1 = "Μαρία"
 
-print("Γεια σου", onoma_1)
+print("Γεια σου", onoma1)
 
-onoma_2 = "Ελένη"
+onoma2 = "Ελένη"
 
-print("Γεια σου", onoma_1, "και", onoma_2)
-print(onoma_1, onoma_2)
+print("Γεια σου", onoma1, "και", onoma2)
+print(onoma1, onoma2)
 
 ilikia = 19
 
-print("Η", onoma_1, "είναι", ilikia, "χρονών")
+print("Η", onoma1, "είναι", ilikia, "χρονών")
 print(ilikia)
 
-arithmos_1 = 10
-arithmos_2 = 5
-athroisma = arithmos_1 + arithmos_2
+arithmos1 = 10
+arithmos2 = 5
+athroisma = arithmos1 + arithmos2
 
 print(athroisma)
-print("Η %s είναι %d χρονών" % (onoma_1, ilikia))
-print("Γεια σου %s" % (onoma_2))
+print("Η %s είναι %d χρονών" % (onoma1, ilikia))
+print("Γεια σου %s" % (onoma2))
 
 timi = 1.50
 
 print("Το τετράδιο κοστίζει %.2f Ευρώ" % (timi))
-print("%d + %d = %d" % (arithmos_1, arithmos_2, athroisma))
+print("%d + %d = %d" % (arithmos1, arithmos2, athroisma))
 ```
 
 ## 2.8 input
@@ -211,13 +211,13 @@ print ("Το άθροισμα των αριθμών", x, "και", y, "είνα�
 
 ```python
 onoma = input('Δώσε όνομα υπαλλήλου: ')
-arxikos_misthos = int(input('Δώσε μισθό: '))
+arxikosMisthos = int(input('Δώσε μισθό: '))
 foros = int(input('Δώσε ποσοστό φόρου: '))
 
-telikos_misthos = arxikos_misthos - arxikos_misthos * (foros / 100)
+telikosMisthos = arxikosMisthos - arxikosMisthos * (foros / 100)
 
 print('Όνομα:', onoma)
-print('Μισθός:', telikos_misthos)
+print('Μισθός:', telikosMisthos)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_02/lecture_02_example_2.py).

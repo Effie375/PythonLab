@@ -1,26 +1,26 @@
 # Εισαγωγή δεδομένων
-fib_no = input("Δώσε αριθμό Fibonacci:")
+fibNo = input("Δώσε αριθμό Fibonacci:")
 
-while not fib_no.isdigit():
+while not fibNo.isdigit():
     # Εισαγωγή δεδομένων
-    fib_no = input("Δώσε σωστό αριθμό Fibonacci:")
+    fibNo = input("Δώσε σωστό αριθμό Fibonacci:")
 
 # Μετατροπή από str σε int
-fib_no = int(fib_no)
+fibNo = int(fibNo)
 
 # Αρχικοποίηση μεταβλητών
-fib_minus_2 = 0
-fib_minus_1 = 1
+fibMinus2 = 0
+fibMinus1 = 1
 
-if fib_no == 1:
+if fibNo == 1:
     fib = 1
-elif fib_no == 0:
+elif fibNo == 0:
     fib = 0
 else:
-    for i in range(fib_no-1):
-        fib = fib_minus_1 + fib_minus_2
-        fib_minus_2 = fib_minus_1
-        fib_minus_1 = fib
+    for i in range(fibNo-1):
+        fib = fibMinus1 + fibMinus2
+        fibMinus2 = fibMinus1
+        fibMinus1 = fib
 
 # Εκτύπωση αποτελέσματος
 print(fib)

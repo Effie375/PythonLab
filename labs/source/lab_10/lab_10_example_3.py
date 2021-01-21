@@ -11,14 +11,14 @@ def readAndCheck():
         return num
 
 
-def sort(A):
-    for i in range(1, len(A)):
-        for j in range(len(A)-1, 0, -1):
-            if A[j-1] > A[j]:
-                temp = A[j-1]
-                A[j-1] = A[j]
-                A[j] = temp
-    return A
+def sort(listaP):
+    for i in range(1, len(listaP)):
+        for j in range(len(listaP)-1, 0, -1):
+            if listaP[j-1] > listaP[j]:
+                temp = listaP[j-1]
+                listaP[j-1] = listaP[j]
+                listaP[j] = temp
+    return listaP
 
 
 def readMarks():

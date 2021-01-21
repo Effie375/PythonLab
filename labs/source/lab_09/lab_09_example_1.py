@@ -10,15 +10,15 @@ for i in range(5):
     lista.append(ypolista)
 
 # Αρχικοποίηση μεταβλητών
-meg_athroisma = 0
+megAthroisma = 0
 
 for ypolista in lista:
     athroisma = 0
     for i in ypolista:
         athroisma += i
-    if athroisma > meg_athroisma:
-        meg_athroisma = athroisma
-        meg_lista = ypolista
+    if athroisma > megAthroisma:
+        megAthroisma = athroisma
+        megLista = ypolista
 
 # Εκτύπωση αποτελέσματος
-print(meg_lista)
+print(megLista)

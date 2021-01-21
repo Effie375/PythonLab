@@ -12,37 +12,37 @@ for i in range(3):
     athlimata.append(vathmoi)
 
 # Υπολογισμός και εμφάνιση αθλήματος με μεγαλύτερους βαθμούς
-maxsum = 0
+maxSum = 0
 
 for vathmoi in athlimata:
     sum = 0
     for i in vathmoi:
         sum += i
-        if sum > maxsum:
-            maxsum = sum
-            maxathlima = vathmoi
+        if sum > maxSum:
+            maxSum = sum
+            maxAthlima = vathmoi
 
 # Εκτύπωση αποτελέσματος
-print("Ο max βαθμός είναι:", maxathlima, "και το άθροισμα είναι:", maxsum)
+print("Ο max βαθμός είναι:", maxAthlima, "και το άθροισμα είναι:", maxsum)
 
 # Υπολογισμός μέγιστου βαθμού σε κάθε άθλημα
-meg_vathmos = athlimata[0][0]
+megVathmos = athlimata[0][0]
 
 for vathmoi in athlimata:
     for i in vathmoi:
-        if i > meg_vathmos:
-            meg_vathmos = i
+        if i > megVathmos:
+            megVathmos = i
 
 # Εκτύπωση αποτελέσματος
-print("Ο μέγιστος βαθμός του αθλητή είναι:", meg_vathmos)
+print("Ο μέγιστος βαθμός του αθλητή είναι:", megVathmos)
 
 # Αναζήτηση φορών μέγιστου βαθμού σε κάθε άθλημα
-vathmos_counter = 0
+vathmosCounter = 0
 
 for vathmoi in athlimata:
     for i in vathmoi:
-        if i == meg_vathmos:
-            vathmos_counter += 1
+        if i == megVathmos:
+            vathmosCounter += 1
 
 # Εκτύπωση αποτελέσματος
-print("O μέγιστος βαθμός βρέθηκε %d φορές." % (vathmos_counter))
+print("O μέγιστος βαθμός βρέθηκε %d φορές." % (vathmosCounter))
