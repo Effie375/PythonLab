@@ -5,7 +5,7 @@ for i in range(3):
     vathmoi = []
     for j in range(3):
         # Εισαγωγή δεδομένων
-        vathmos = input("Βαθμός αθλήματος %d & προσπάθεια %d: " % (i+1, j+1))
+        vathmos = input("Βαθμός αθλήματος %d & προσπάθεια %d: " % (i + 1, j + 1))
         # Μετατροπή από str σε float
         vathmos = float(vathmos)
         vathmoi.append(vathmos)
@@ -23,7 +23,7 @@ for vathmoi in athlimata:
             maxAthlima = vathmoi
 
 # Εκτύπωση αποτελέσματος
-print("Ο max βαθμός είναι:", maxAthlima, "και το άθροισμα είναι:", maxsum)
+print("Ο max βαθμός είναι:", maxAthlima, "και το άθροισμα είναι:", maxSum)
 
 # Υπολογισμός μέγιστου βαθμού σε κάθε άθλημα
 megVathmos = athlimata[0][0]

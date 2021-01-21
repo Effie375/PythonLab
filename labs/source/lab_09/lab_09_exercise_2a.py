@@ -9,7 +9,7 @@ for i in range(seasons):
     thl_season = []
     for j in range(episodes):
         # Εισαγωγή δεδομένων
-        thl = float(input("Δώσε τηλεθέαση %dx%d: " % (i+1, j+1)).strip())
+        thl = float(input("Δώσε τηλεθέαση %dx%d: " % (i + 1, j + 1)).strip())
         thl_season.append(thl)
     thle8eash.append(thl_season)
 

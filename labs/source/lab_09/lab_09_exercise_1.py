@@ -14,7 +14,7 @@ arEksaminou = int(input("Ποιο εξάμηνο θες να δείς;"))
 
 # Aφαιρούμε 1 γιατί ο χρήστης θα δώσει π.χ. 1 για το πρώτο εξάμηνο
 # ενώ αυτό είναι στη θέση 0.
-eksamino = eksamina[arEksaminou-1]
+eksamino = eksamina[arEksaminou - 1]
 
 # Αρχικοποίηση μεταβλητών
 souma = 0
@@ -26,5 +26,5 @@ for mathima in eksamino:
         perasmena += 1
 
 # Εκτύπωση αποτελεσμάτων
-print("Ο μέσος όρος είναι: ", souma/len(eksamino))
+print("Ο μέσος όρος είναι: ", souma / len(eksamino))
 print("Πέρασες: ", perasmena)

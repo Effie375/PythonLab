@@ -17,7 +17,7 @@ if fibNo == 1:
 elif fibNo == 0:
     fib = 0
 else:
-    for i in range(fibNo-1):
+    for i in range(fibNo - 1):
         fib = fibMinus1 + fibMinus2
         fibMinus2 = fibMinus1
         fibMinus1 = fib
