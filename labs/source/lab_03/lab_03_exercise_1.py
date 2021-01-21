@@ -14,7 +14,7 @@ telikosVathmos = round(0.2 * proodos + 0.8 * graptο, 1)
 if (onoma[-1] == 's') or (onoma[-1] == 'ς'):
     # Σβήσε το τελευταίο γράμμα
     onoma = onoma[:-1]
-    
+
 # Κάνε το πρώτο γράμμα κεφαλαίο
 onoma = onoma[0].upper() + onoma[1:]
 

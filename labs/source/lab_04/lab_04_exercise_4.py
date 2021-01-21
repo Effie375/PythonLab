@@ -1,21 +1,29 @@
 # Αρχικοποίηση μεταβλητών
-ginomeno = 0
-arithmos = 1
 flag = False
+ginomeno = 0
+number = 1
 
-while arithmos != 0:
-    # Διάβασμα από τον χρήστη
-    arithmos = input("Δώσε αριθμό: ")
-    # Έλεγχος ορθότητας
-    while not arithmos.isdigit():
-        arithmos = input("Δώσε σωστά αριθμό: ")
-    # Μετατροπή από str σε int
-    arithmos = int(arithmos)
-    if flag == False and arithmos != 0:
-        ginomeno = 1
+# Όσο ο αριθμός είναι διάφορος του μηδενός
+while number != 0:
+    # Ζητάμε από τον χρήστη να δώσει έναν αριθμό
+    number = input("Δώσε αριθμό (int): ").strip()
+    # Κάνουμε έλεγχο ορθότητας
+    while not number.isdigit():
+        # Ζητάμε από τον χρήστη να δώσει σωστά τον αριθμό
+        number = input("Δώσε σωστά ακέραιο αριθμό: ").strip()
+    # Μετατρέπουμε τον αριθμό σε ακέραιο
+    number = int(number)
+    # Μόνο τη πρώτη φορά είναι η συνθήκη true
+    if (flag is False):
+        # Εαν ο αριθμός είναι διάφορος του μηδενός
+        if number != 0:
+            ginomeno = 1
+        # Αλλαγή του flag από False σε True
         flag = True
-    if arithmos != 0:
-        ginomeno = ginomeno * arithmos
+    # Εαν ο αριθμός είναι διάφορος του μηδενός
+    if number != 0:
+        # Υπολογίζει κάθε φορά το γίνομενο
+        ginomeno *= number
 
 # Eκτύπωση αποτελέσματος
-print("Γινόμενο:", ginomeno)
+print(f"Γινόμενο: {ginomeno}")
