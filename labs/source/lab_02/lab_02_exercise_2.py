@@ -1,20 +1,20 @@
 # Ζητάμε από το χρήστη να δώσει τις μικτές αποδοχές
-miktes = input("Μικτές αποδοχές: ")
+miktes = input("Δώσε μικτές αποδοχές: ").strip()
 
 # Μετρατρέπουμε τις μικτές αποδοχές από αλφαριθμητική τιμή σε πραγματική
 miktes = float(miktes)
 
 # Υπολογίζουμε τις επί μέρους εισφορές
-asfaleia = miktes * 0.03
-foros = miktes * 0.05
-loipa = miktes * 0.09
+asfaleia = round(miktes * 0.03, 2)
+foros = round(miktes * 0.05, 2)
+loipa = round(miktes * 0.09, 2)
 
 # Υπολογίζουμε τις καθαρές αποδοχές που είναι οι μικτές μείον τις εισφορές
-kathara = miktes - asfaleia - foros - loipa
+kathara = round(miktes - asfaleia - foros - loipa)
 
 # Εκτύπωση αποτελεσμάτων
-print("Μικτές αποδοχές: %.2f" % miktes)
-print("Ασφάλεια: %.2f" % asfaleia)
-print("Φόρος: %.2f" % foros)
-print("Λοιπές κρατήσεις: %.2f" % loipa)
-print("Καθαρές αποδοχές: %.2f" % kathara)
+print(f"\nΜεικτές αποδοχές:  {miktes:.1f}")
+print(f"Ασφάλεια 3%:         {asfaleia:.1f}")
+print(f"Φόρος 5%             {foros:.1f}")
+print(f"Λοιπές κρατήσεις 9%: {loipa:.1f}")
+print(f"Καθαρές αποδοχές:    {kathara:.1f}")

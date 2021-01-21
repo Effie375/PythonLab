@@ -1,9 +1,9 @@
-list = [3, 4, 1, 9, 4, 2]
+lista = [3, 4, 1, 9, 4, 2]
 maxThesi = 0
 i = 0
 
-while i < len(list):
-    if list[i] > list[maxThesi]:
+while i < len(lista):
+    if lista[i] > lista[maxThesi]:
         maxThesi = i
     i += 1
 

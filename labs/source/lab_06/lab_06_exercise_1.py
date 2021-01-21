@@ -1,16 +1,16 @@
 # Αρχικοποίηση μεταβλητών
 sum = 0
-ls = []
+lista = []
 
 for i in range(7):
     # Εισαγωγή δεδομένων
     vathmos = int(input("Δώσε βαθμό: "))
-    ls.append(vathmos)
+    lista.append(vathmos)
 
 # Αρχικοποίηση μεταβλητών
 k = 1
 
-for i in ls:
+for i in lista:
     i = i * 5 * k
     k = k + 1
     um = sum + i

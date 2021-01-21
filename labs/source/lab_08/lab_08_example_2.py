@@ -1,14 +1,14 @@
 # Δημιουργία λίστας
-list = [4, 8, 3, 1, 7]
+lista = [4, 8, 3, 1, 7]
 
-print("H μη ταξινομημένη λίστα είναι:", list)
+print("H μη ταξινομημένη λίστα είναι:", lista)
 
 for i in range(1, 5):
     for j in range(4, i - 1, -1):
-        if list[j - 1] > list[j]:
-            temp = list[j - 1]
-            list[j - 1] = list[j]
-            list[j] = temp
+        if lista[j - 1] > lista[j]:
+            temp = lista[j - 1]
+            lista[j - 1] = lista[j]
+            lista[j] = temp
 
 # Εκτύπωση αποτελέσματος
-print("H ταξινομημένη λίστα είναι:", list)
+print("H ταξινομημένη λίστα είναι:", lista)

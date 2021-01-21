@@ -1,9 +1,9 @@
-list = [3, 4, 1, 9, 4, 2]
+lista = [3, 4, 1, 9, 4, 2]
 key = int(input("Δώσε στοιχείο που αναζητάς: "))
 i = 0
 
-while i < len(list):
-    if key == list[i]:
+while i < len(lista):
+    if key == lista[i]:
         thesi = i
     i += 1
 

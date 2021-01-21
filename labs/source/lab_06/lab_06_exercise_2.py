@@ -1,14 +1,14 @@
 # Αρχικοποίηση μεταβλητών
-list = []
+lista = []
 
 for i in range(10):
     # Εισαγωγή δεδομένων
-    list.append(int(input("Δώσε αριθμό: ")))
+    lista.append(int(input("Δώσε αριθμό: ")))
 
 # Εισαγωγή δεδομένων
 num = int(input("Δώσε αριθμό για έλεγχο διαιρετέων: "))
 
-for arithmos in list:
+for arithmos in lista:
     if arithmos % num == 0:
         # Εκτύπωση αριθμού
         print(arithmos)

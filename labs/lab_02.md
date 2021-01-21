@@ -64,22 +64,25 @@
 
 ```python
 # Ζητάμε από το φοιτητή να δώσει το όνομα του
-onoma = input("Δώσε όνομα φοιτητή: ")
-# Ζητάμε από το φοιτη΄τη να δώσει το βαθμό προόδου
-proodos = input("Δώσε βαθμό προόδου: ")
-# Ζητάμε από το φοιτη΄τη να δώσει το βαθμό γραπτού
-grapto = input("Δώσε βαθμό γραπτού: ")
+onoma = input("Δώσε όνομα φοιτητή: ").strip()
 
-# Μετρατρέπουμε την πρόοδο από αλφαριθμητική τιμή σε ακέραια
-proodos = int(proodos)
-# Μετρατρέπουμε το γραπτό από αλφαριθμητική τιμή σε ακέραια
-grapto = int(grapto)
+# Ζητάμε από το φοιτητ΄τη να δώσει το βαθμό προόδου
+proodos = input("Δώσε βαθμό προόδου: ").strip()
+
+# Ζητάμε από το φοιτητ΄τη να δώσει το βαθμό γραπτού
+grapto = input("Δώσε βαθμό γραπτού: ").strip()
+
+# Μετρατρέπουμε την πρόοδο από αλφαριθμητική τιμή σε float
+proodos = float(proodos)
+
+# Μετρατρέπουμε το γραπτό από αλφαριθμητική τιμή σε float
+grapto = float(grapto)
 
 # Υπολογίζουμε τον τελικό βαθμό του φοιτητή
 telikosVathmos = proodos * 0.2 + grapto * 0.8
 
 # Εμφανίζουμε το όνομα του φοιτητή και τον τελικό βαθμό του
-print(onoma, telikosVathmos)
+print(f"\nΌνομα: {onoma}, Βαθμός: {telikosVathmos:.1f}")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_02/lab_02_exercise_1.py).
@@ -96,25 +99,25 @@ print(onoma, telikosVathmos)
 
 ```python
 # Ζητάμε από το χρήστη να δώσει τις μικτές αποδοχές
-miktes = input("Μικτές αποδοχές: ")
+miktes = input("Δώσε μικτές αποδοχές: ").strip()
 
 # Μετρατρέπουμε τις μικτές αποδοχές από αλφαριθμητική τιμή σε πραγματική
 miktes = float(miktes)
 
 # Υπολογίζουμε τις επί μέρους εισφορές
-asfaleia = miktes * 0.03
-foros = miktes * 0.05
-loipa = miktes * 0.09
+asfaleia = round(miktes * 0.03, 2)
+foros = round(miktes * 0.05, 2)
+loipa = round(miktes * 0.09, 2)
 
 # Υπολογίζουμε τις καθαρές αποδοχές που είναι οι μικτές μείον τις εισφορές
-kathara = miktes - asfaleia - foros - loipa
+kathara = round(miktes - asfaleia - foros - loipa)
 
 # Εκτύπωση αποτελεσμάτων
-print("Μικτές αποδοχές: %.2f" % miktes)
-print("Ασφάλεια: %.2f" % asfaleia)
-print("Φόρος: %.2f" % foros)
-print("Λοιπές κρατήσεις: %.2f" % loipa)
-print("Καθαρές αποδοχές: %.2f" % kathara)
+print(f"\nΜεικτές αποδοχές:  {miktes:.1f}")
+print(f"Ασφάλεια 3%:         {asfaleia:.1f}")
+print(f"Φόρος 5%             {foros:.1f}")
+print(f"Λοιπές κρατήσεις 9%: {loipa:.1f}")
+print(f"Καθαρές αποδοχές:    {kathara:.1f}")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_02/lab_02_exercise_2.py)
@@ -124,15 +127,19 @@ print("Καθαρές αποδοχές: %.2f" % kathara)
 Να γραφεί πρόγραμμα το οποίο θα διαβάζει το όνομα και την ηλικία του χρήστη και θα εμφανίζει το έτος στο οποίο θα είναι 100 ετών (Να θεωρηθεί ότι το τωρινό έτος είναι το 2020).
 
 ```python
-# Ζητάμε από το χρήστη να δώσει το όνομα του
-onoma = input("Ποιο είναι το όνομα σου: ")
+import datetime
 
-ilikia = input("Ποια είναι η ηλικία σου: ")
+# Ζητάμε από το χρήστη να δώσει το όνομα του
+onoma = input("Ποιο είναι το όνομα σου: ").strip()
+
+# Ζητάμε από το χρήστη να δώσει την ηλικία του
+ilikia = input("Ποια είναι η ηλικία σου: ").strip()
 
 # Μετατροπή από str σε int
 ilikia = int(ilikia)
 
-twrinoEtos = 2020
+# Η βιβλιοθήκη datetime βρίσκει το τωρινό έτος
+twrinoEtos = datetime.datetime.today().year
 
 # Υπολογισμός έτους γέννησης
 etosGennhshs = twrinoEtos - ilikia
@@ -140,8 +147,16 @@ etosGennhshs = twrinoEtos - ilikia
 # Υπολογισμός χρονιάς που θα γίνει 100
 ekatoXronwn = etosGennhshs + 100
 
+# Εαν το όνομα τελειώνει σε 'ς' ή 's'
+if (onoma[-1] == 's') or (onoma[-1] == 'ς'):
+    # Σβήσε το τελευταίο γράμμα
+    onoma = onoma[:-1]
+    
+# Κάνε το πρώτο γράμμα κεφαλαίο
+onoma = onoma[0].upper() + onoma[1:]
+
 # Εκτύπωση αποτελέσματος
-print("O/H", onoma, "θα γίνει 100 το έτος", ekatoXronwn)
+print(f"{onoma} θα γίνεις 100 το έτος {ekatoXronwn}.")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_02/lab_02_exercise_3.py)

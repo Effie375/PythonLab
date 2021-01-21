@@ -1,10 +1,10 @@
 # Αρχικοποίηση μεταβλητών
-list = []
+lista = []
 
 for i in range(10):
     # Εισαγωγή στοιχείων
     num = int(input("Δώσε στοιχεία: "))
-    list.append(num)
+    lista.append(num)
 
 # Εισαγωγή στοιχείων
 key = int(input("Δώσε στοιχείο που αναζητάς: "))
@@ -13,7 +13,7 @@ key = int(input("Δώσε στοιχείο που αναζητάς: "))
 done = True
 thesi = 0
 
-for i in list:
+for i in lista:
     if i == key:
         # Εκτύπωση θέσης
         print(thesi)

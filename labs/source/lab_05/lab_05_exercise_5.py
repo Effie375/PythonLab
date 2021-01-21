@@ -1,12 +1,12 @@
 # Αρχικοποίηση μεταβλητών
 megisto = 0
-ls = []
+lista = []
 
 # Εισαγωγή δεδομένων
 number = int(input("Δώσε αριθμό: "))
 
 while number != 0:
-    ls.append(number)
+    lista.append(number)
     if number > megisto:
         megisto = number
     number = int(input("Δώσε αριθμό: "))
@@ -15,8 +15,8 @@ while number != 0:
 while i <= megisto:
     j = 0
     counter = 0
-    while j < len(ls):
-        if ls[j] == i:
+    while j < len(lista):
+        if lista[j] == i:
             counter += 1
         j += 1
     if counter != 0:

@@ -1,7 +1,7 @@
-list = [1, 4, 6, 9, 7, 2]
-elaxisto = list[0]
+lista = [1, 4, 6, 9, 7, 2]
+elaxisto = lista[0]
 
-for item in list:
+for item in lista:
     if item < elaxisto:
         elaxisto = item
 

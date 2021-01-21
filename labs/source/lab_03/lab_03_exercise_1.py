@@ -1,15 +1,25 @@
 # Διάβασμα από το φοιτητή το όνομα του
-onoma = input("Δώσε όνομα φοιτητή: ")
+onoma = input("Δώσε όνομα φοιτητή: ").strip()
+
 # Διαβάζουμε από το φοιτητή το βαθμό του
-proodos = int(input("Δώσε βαθμό προόδου: "))
+proodos = float(input("Δώσε βαθμό προόδου: ").strip())
+
 # Διαβάζουμε από το φοιτητή το βαθμό γραπτού του
-grapta = int(input("Δώσε βαθμό γραπτών: "))
+graptο = float(input("Δώσε βαθμό γραπτών: ").strip())
 
 # Υπολογίζουμε τον τελικό βαθμό
-telikosVathmos = proodos * 0.2 + grapta * 0.8
+telikosVathmos = round(0.2 * proodos + 0.8 * graptο, 1)
 
-# Ελέγχουμε εαν είναι πάνω από 5
+# Εαν το όνομα τελειώνει σε 'ς' ή 's'
+if (onoma[-1] == 's') or (onoma[-1] == 'ς'):
+    # Σβήσε το τελευταίο γράμμα
+    onoma = onoma[:-1]
+    
+# Κάνε το πρώτο γράμμα κεφαλαίο
+onoma = onoma[0].upper() + onoma[1:]
+
+# Ελέγχουμε εαν ο τελικός βαθμός είναι πάνω από 5
 if telikosVathmos >= 5:
-    print(onoma, "Πέρασες!")
+    print(onoma, "πέρασες!")
 else:
-    print(onoma, "Απέτυχες!")
+    print(onoma, "απέτυχες!")

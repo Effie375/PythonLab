@@ -1,7 +1,7 @@
-list = []
+lista = []
 i = 0
 
 while i < 5:
     num = int(input("Δώσε στοιχείο για την θέση %d: " % i))
-    list.append(num)
+    lista.append(num)
     i += 1

@@ -1,6 +1,6 @@
-def searchFunction(listaS, key):
+def searchFunction(pLista, key):
     counter = 0
-    for i in listaS:
+    for i in pLista:
         if i == key:
             counter += 1
     return counter
