@@ -45,24 +45,32 @@
 
 ```python
 # Αρχικοποίηση μεταβλητών
-list = []
+MAX_ELEMENTS = 10
+new_lista = []
+lista = []
 i = 0
 
-while i < 10:
-  number = int(input("Δώσε έναν αριθμό: "))
-  list.append(number)
+# Όσο το i είναι μικρότερο του MAX_ELEMENTS
+while i < MAX_ELEMENTS:
+  # Ζητάμε από τον χρήστη να δώσει έναν αριθμό
+  number = int(input("Δώσε έναν αριθμό: ").strip())
+  # Αποθηκεύουμε τον αριθμό στη λίστα
+  lista.append(number)
+  # Αυξάνουμε την μεταβλητή i κατά 1
   i += 1
 
-# Αρχικοποίηση μεταβλητών
-newList = []
-j = 9
+# Αρχικοποίηση
+j = len(lista)
 
-while j >= 0:
-  newList.append(list[j])
+# Όσο το j είναι μεγαλύτερο του μηδενός
+while j > 0:
+  # Αποθηκεύουμε στη καινούργια λίστα τη παλιά λίστα με ανάποδη σειρά
+  new_lista.append(lista[j - 1])
+  # Μειώνουμε την μεταβλητή j κατά 1
   j -= 1
 
 # Εκτύπωση αποτελεσμάτων
-print("Η νέα λίστα είναι:", newList)
+print(f"Η νέα λίστα είναι: {new_lista}")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_05/lab_05_example_1.py)
@@ -73,32 +81,41 @@ print("Η νέα λίστα είναι:", newList)
 
 ```python
 # Αρχικοποίηση μεταβλητών
+MAX_ELEMENTS = 5
+numbers = []
 i = 0
-list = []
 
-while i < 5:
-  number = int(input("Δώσε αριθμό: "))
-  list.append(number)
+# Όσο το i είναι μικρότερο του MAX_ELEMENTS
+while i < MAX_ELEMENTS:
+  # Ζητάμε από τον χρήστη να δώσει έναν αριθμό
+  num = int(input("Δώσε έναν αριθμό: ").strip())
+  # Αποθηκεύουμε τον αριθμό στη λίστα
+  numbers.append(num)
+  # Αυξάνουμε την μεταβλητή i κατά 1
   i += 1
 
-# Εισαγωγή δεδομένων
-key = int(input("Δώσε στοιχείο που αναζητάς: "))
+# Ζητάμε απο το χρήστη να δώσει αριθμό που αναζητά
+key = int(input("Δώσε τον αριθμό που αναζητάτε: ").strip())
 
 # Αρχικοποίηση μεταβλητών
 found = False
-j = 0
+i = 0
 
-while (j < len(list) and not found):
-  if list[j] == key:
-    thesi = j
+# Όσο το i είναι μικρότερο του 5 και το στοιχείο δεν έχει βρεθεί
+while ((i < len(numbers)) and not found):
+  # Εαν βρεθεί το στοιχείο που αναζητά ο χρήστης
+  if key == numbers[i]:
+    # Κράτα την θέση στη μεταβλητή index
+    index = i
     found = True
-  j += 1
+  # Αυξάνουμε την μεταβλητή i κατά 1
+  i += 1
 
 # Εκτύπωση αποτελεσμάτων
 if found == True:
-  print("Το στοιχείο βρίσκεται στη θέση", thesi)
+  print(f"Ο αριθμός που αναζητάς {key} βρίσκεται στη θέση {index}.")
 else:
-  print("Το στοιχείο που αναζητάς δεν υπάρχει.")
+  print(f"Ο αριθμός που αναζητάς {key} δεν βρίσκεται στη λίστα.")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_05/lab_05_example_2.py)
@@ -120,80 +137,92 @@ else:
 
 ```python
 # Αρχικοποίηση μεταβλητών
+MAX_ELEMENTS = 10
 lista = []
+athroisma = 0
+even = 0
+odd = 0
 i = 0
 
-# Δίαβασμα πίνακα
-while i < 10:
-    number = int(input("Δώσε αριθμό: "))
-    lista.append(number)
-    i += 1
-
-# Αρχικοποίηση μεταβλητών
-j = 0
-k = 0
-ls = 0
-athroisma = 0
-artios = 0
-perittos = 0
-megistos = lista[0]
-elaxistos = lista[0]
-
-# Yπολογισμός ζητούμενων
-while j < 10:
-  athroisma += lista[j]
-  j = j + 1
-
-# Εκτύπωση αποτελέσματος
-print("Το άθροισμα είναι: ", athroisma)
-
-while k < 10:
-  if lista[k] % 2 == 0:
-    artios += 1
+# Όσο το i είναι μικρότερο του MAX_ELEMENTS
+while i < MAX_ELEMENTS:
+  # Ζητάμε από τον χρήστη να δώσει έναν αριθμό
+  number = int(input("Δώσε αριθμό: ").strip())
+  # Αποθηκεύουμε τον αριθμό στη λίστα
+  lista.append(number)
+  # Προσθέτουμε κάθε φορά στο athroisma τον αριθμό
+  athroisma += number
+  # Εαν ο αριθμός είναι ζυγός
+  if number % 2 == 0:
+    # Κάθε φορά προσθέτουμε στη μεταβλητη even 1
+    even += 1
+  # Αλλι΄ως είναι μονός
   else:
-    perittos += 1
-  k += 1
+    # Κάθε φορά προσθέτουμε στη μεταβλητη odd 1
+    odd += 1
+  # Αυξάνουμε την μεταβλητή i κατά 1
+  i += 1
 
 # Εκτύπωση αποτελεσμάτων
-print("To πλήθος των άρτιων είναι: ", artios)
-print("Tο πλήθος των περιττών είναι: ", perittos)
+print(f"\nTο άθροισμα των αριθμών είναι {athroisma}.")
+print(f"Tο πλήθος των περιττών είναι {odd}. ")
+print(f"Το πλήθος των άρτιων είναι {even}.")
 
-while ls < 10:
-  if megistos < lista[ls]:
-    megistos = lista[ls]
+# Αρχικοποίηση μεταβλητών
+megisto = 0
+elaxistos = 0
+i = 0
 
-  if elaxistos > lista[ls]:
-    elaxistos = lista[ls]
+# Όσο το i είναι μικρότερο του MAX_ELEMENTS
+while i < MAX_ELEMENTS:
+  # Εαν βρούμε στοιχείο μεγαλύτερο απο αυτό που έχουμε μέχρι στιγμής
+  if lista[i] > lista[megisto]:
+    # Αποθηκεύουμε το στοιχείο που βρήκαμε στο megisto
+    megisto = i
+  # Αλλιώς εαν βρούμε στοιχείο μικρότερο απο αυτό που έχουμε μέχρι στιγμής
+  elif lista[i] < lista[elaxistos]:
+    # Αποθηκεύουμε το μικρότερο στοιχείο στο elaxistos
+    elaxistos = i
+  # Αυξάνουμε την μεταβλητή i κατά 1
+  i += 1
 
-  ls += 1
+# Υπολογίζουμε την διαφορά του max με του min
+diafora = lista[megisto] - lista[elaxistos]
 
 # Εκτύπωση αποτελέσματος
-print("Η διαφορά είναι: ", megistos - elaxistos)
+print(f"H διαφορά max και min είναι {diafora}.")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_05/lab_05_exercise_1.py)
 
 ### [Άσκηση 2](source/lab_05/lab_05_exercise_2.py)
 
-Να γραφεί πρόγραμμα το οποίο θα διαβάζει μία λέξη και έναν αριθμό χ. Θα τοποθετεί την λέξη στη θέση χ της λίστας, αν η θέση είναι εσφαλμένη να εμφανίζει κατάλληλο μήνυμα. Θα τερματίζει άμα δωθεί ως χ αρνητικός αριθμός. Στο τέλος θα τυπώνει την λίστα.
+Να γραφεί πρόγραμμα το οποίο θα διαβάζει μία λέξη και έναν αριθμό x. Θα τοποθετεί την λέξη στη θέση x της λίστας, αν η θέση είναι εσφαλμένη να εμφανίζει κατάλληλο μήνυμα. Θα τερματίζει άμα δωθεί ως x αρνητικός αριθμός. Στο τέλος θα τυπώνει την λίστα.
 Να μην γίνει χρήση της μεθόδου count().
 
 ```python
 # Αρχικοποίηση μεταβλητών
 cont = True
-ls = []
+lista = []
 
+# Όσο η μεταβλητή cont είναι True
 while cont:
-  leksi = (input("Δώσε λέξη: "))
-  thesi = int(input("Δώσε θέση: "))
-  if thesi >= 0 and thesi <= len(ls):
-    ls.insert(thesi, leksi)
+  # Ζητάμε από τον χρήστη να δώσει μια λέξη
+  leksi = input("Δώσε λέξη: ").strip()
+  # Ζητάμε από τον χρήστη να δώσει θέση
+  thesi = int(input("Δώσε θέση: ").strip())
+  # Εαν η θέση είναι μεγαλύτερη του 0 και μικρότερη του μήκους της λίστας
+  if thesi >= 0 and thesi <= len(lista):
+    # Αποθηκε΄ύουμε τη λέξη που έδωσε ο χρήστης στην αντίστοιχη θέση
+    lista.insert(thesi, leksi)
   else:
+    # Βγαίνουμε απο τη while
     cont = False
-    print("Τέλος εισαγωγής δεδομένων.")
 
-# Εκτύπωση αποτελέσματος
-print(ls)
+
+print("\nΤέλος εισαγωγής δεδομένων.")
+# Εκτυπ΄ώνουμε τα δεδομένα της λίστας
+print(f"Στοιχεία της λίστας: {lista}")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_05/lab_05_exercise_2.py)
@@ -204,27 +233,37 @@ print(ls)
 
 ```python
 # Αρχικοποίηση μεταβλητών
-vowels = 'aehiouy'
-consonants = 'bcdfgjklmnpqrstvwxz'
-voCounter = 0
-coCounter = 0
-i = 0
+consonantsCounter = 0
+vowelCounter = 0
+otherCounter = 0
+letter = 0
+consonants = "bcdfgjklmnpqrstvwxz"
+vowels = "aehyuio"
 
-# Εισαγωγή δεδομένων
-lexi = input("Δώσε λέξη: ")
+# Ζητάμε από τον χρήστη να δώσει μια λέξη
+word = input("Δώσε μια αγγλική λέξη: ").lower().strip()
 
-while i < len(lexi):
-  if lexi[i] in vowels:
-    voCounter += 1
-  elif lexi[i] in consonants:
-    coCounter += 1
-    i += 1
+# Για κάθε γράμμα της λέξης
+while letter < len(word):
+  # Εαν το γράμμα είναι φωνήεν
+  if word[letter] in vowels:
+    # Κάθε φορά προσθέτουμε στη μεταβλητη vowelCounter 1
+    vowelCounter += 1
+  # Αλλιώς εαν το γράμμα είναι σύμφωνο
+  elif word[letter] in consonants:
+    # Κάθε φορά προσθέτουμε στη μεταβλητη consonantsCounter 1
+    consonantsCounter += 1
+  # Αλλιώς είναι κάποιο σύμβολο
   else:
-    pass
+    # Κάθε φορά προσθέτουμε στη μεταβλητη otherCounter 1
+    otherCounter += 1
+  # Αυξάνουμε την μεταβλητή letter κατά 1
+  letter += 1
 
 # Εκτύπωση αποτελεσμάτων
-print("Φωνήεντα: ", voCounter)
-print("Σύμφωνα: ", coCounter)
+print(f"Τα φωνήεντα είναι {vowelCounter}.")
+print(f"Τα σύμφωνα είναι {consonantsCounter}.")
+print(f"Τα σύμβολα είναι {otherCounter}.")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_05/lab_05_exercise_3.py)
@@ -235,28 +274,36 @@ print("Σύμφωνα: ", coCounter)
 
 ```python
 # Αρχικοποίηση μεταβλητών
-ls = []
+numbers = []
 
-number = int(input("Δώσε αριθμό: "))
+# Ζητάμε από τον χρήστη να δώσει έναν αριθμό
+num = int(input("Δώσε έναν αριθμό: ").strip())
 
-while number != 0:
-  ls.append(number)
-  number = int(input("Δώσε αριθμό: "))
+# Όσο ο αριθμός είναι διάφορος του μηδενός
+while num != 0:
+  # Αποθηκεύουμε τον αριθμό στη λίστα
+  numbers.append(num)
+  # Ζητάμε από τον χρήστη να ξαναδώσει αριθμό
+  num = int(input("Δώσε έναν αριθμό: ").strip())
 
 # Αρχικοποίηση μεταβλητών
 counter = 0
 i = 0
 
-# Εισαγωγή δεδομένων
-number = int(input("Δώσε αριθμό για μέτρηση: "))
+# Ζητάμε απο το χρήστη να δώσει αριθμό που αναζητά
+key = int(input("Δώσε έναν αριθμό που αναζητάς: ").strip())
 
-while i < len(ls):
-  if ls[i] == number:
+# Όσο το i είναι μικρότερο του μήκους της λίστας numbers
+while i < len(numbers):
+  # Εαν βρεθεί το στοιχείο που αναζητά ο χρήστης
+  if key == numbers[i]:
+    # Κάθε φορά προσθέτουμε στη μεταβλητη counter 1
     counter += 1
+  # Αυξάνουμε την μεταβλητή i κατά 1
   i += 1
 
 # Εκτύπωση αποτελεσμάτων
-print("O αριθμός", number, "είσηχθη", counter, "φορές")
+print(f"Ο αριθμός {key} έχει εισαχθεί {counter} φορές.")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_05/lab_05_exercise_4.py)
@@ -268,27 +315,44 @@ print("O αριθμός", number, "είσηχθη", counter, "φορές")
 ```python
 # Αρχικοποίηση μεταβλητών
 megisto = 0
-ls = []
+lista = []
 
-# Εισαγωγή δεδομένων
-number = int(input("Δώσε αριθμό: "))
+# Ζητάμε από τον χρήστη να δώσει έναν αριθμό
+number = int(input("Δώσε αριθμό: ").strip())
 
+# Όσο ο αριθμός είναι διάφορος του μηδενός
 while number != 0:
-  ls.append(number)
+  # Αποθηκεύουμε τον αριθμό στη λίστα
+  lista.append(number)
+  # Εαν βρούμε αριθμ΄ό μεγαλύτερο απο αυτό που έχουμε μέχρι στιγμής
   if number > megisto:
+    # Αποθηκεύουμε τον αριθμό σαν megisto
     megisto = number
-  number = int(input("Δώσε αριθμό: "))
+  # Ζητάμε από τον χρήστη να ξαναδώσει αριθμό
+  number = int(input("Δώσε αριθμό: ").strip())
   i = 1
 
+
+# Όσο το i είναι μικρότερο ή ίσο του μέγιστου αριθμού
 while i <= megisto:
+  # Αρχικοποίηση μεταβλητών
   j = 0
   counter = 0
-  while j < len(ls):
-    if ls[j] == i:
+  # Όσο το j είναι μικρότερο του μήκους της λίστας
+  while j < len(lista):
+    # Εαν το στοιχείο της λίστας είναι ίσο με i
+    if lista[j] == i:
+      # Κάθε φορά αυξάνουμε τον μετρητή κατά 1
       counter += 1
+    # Αυξάνουμε την μεταβλητή j κατά 1
     j += 1
-  if counter != 0:
-    print("Ο αριθμός", i, "εισήχθη", counter, "φορές.")
+  # Εαν ο counter είναι 1
+  if counter == 1:
+    print(f"Ο αριθμός {i} εισήχθη {counter} φορά.")
+  # Αλλι΄ώς εαν ο counter είναι διάφορος του μηδενός
+  elif counter != 0:
+    print(f"Ο αριθμός {i} εισήχθη {counter} φορές.")
+  # Αυξάνουμε την μεταβλητή i κατά 1
   i += 1
 ```
 

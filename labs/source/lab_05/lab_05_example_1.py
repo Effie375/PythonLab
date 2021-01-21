@@ -1,19 +1,27 @@
 # Αρχικοποίηση μεταβλητών
-list = []
+MAX_ELEMENTS = 10
+new_lista = []
+lista = []
 i = 0
 
-while i < 10:
-    number = int(input("Δώσε έναν αριθμό: "))
-    list.append(number)
+# Όσο το i είναι μικρότερο του MAX_ELEMENTS
+while i < MAX_ELEMENTS:
+    # Ζητάμε από τον χρήστη να δώσει έναν αριθμό
+    number = int(input("Δώσε έναν αριθμό: ").strip())
+    # Αποθηκεύουμε τον αριθμό στη λίστα
+    lista.append(number)
+    # Αυξάνουμε την μεταβλητή i κατά 1
     i += 1
 
-# Αρχικοποίηση μεταβλητών
-newList = []
-j = 9
+# Αρχικοποίηση
+j = len(lista)
 
-while j >= 0:
-    newList.append(list[j])
+# Όσο το j είναι μεγαλύτερο του μηδενός
+while j > 0:
+    # Αποθηκεύουμε στη καινούργια λίστα τη παλιά λίστα με ανάποδη σειρά
+    new_lista.append(lista[j - 1])
+    # Μειώνουμε την μεταβλητή j κατά 1
     j -= 1
 
 # Εκτύπωση αποτελεσμάτων
-print("Η νέα λίστα είναι:", newList)
+print(f"Η νέα λίστα είναι: {new_lista}")

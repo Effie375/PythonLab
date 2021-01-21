@@ -1,50 +1,55 @@
 # Αρχικοποίηση μεταβλητών
+MAX_ELEMENTS = 10
 lista = []
+athroisma = 0
+even = 0
+odd = 0
 i = 0
 
-# Δίαβασμα πίνακα
-while i < 10:
-    number = int(input("Δώσε αριθμό: "))
+# Όσο το i είναι μικρότερο του MAX_ELEMENTS
+while i < MAX_ELEMENTS:
+    # Ζητάμε από τον χρήστη να δώσει έναν αριθμό
+    number = int(input("Δώσε αριθμό: ").strip())
+    # Αποθηκεύουμε τον αριθμό στη λίστα
     lista.append(number)
+    # Προσθέτουμε κάθε φορά στο athroisma τον αριθμό
+    athroisma += number
+    # Εαν ο αριθμός είναι ζυγός
+    if number % 2 == 0:
+        # Κάθε φορά προσθέτουμε στη μεταβλητη even 1
+        even += 1
+    # Αλλι΄ως είναι μονός
+    else:
+        # Κάθε φορά προσθέτουμε στη μεταβλητη odd 1
+        odd += 1
+    # Αυξάνουμε την μεταβλητή i κατά 1
     i += 1
 
-# Αρχικοποίηση μεταβλητών
-j = 0
-k = 0
-ls = 0
-athroisma = 0
-artios = 0
-perittos = 0
-megistos = lista[0]
-elaxistos = lista[0]
-
-# Yπολογισμός ζητούμενων
-while j < 10:
-    athroisma += lista[j]
-    j = j + 1
-
-# Εκτύπωση αποτελέσματος
-print("Το άθροισμα είναι: ", athroisma)
-
-while k < 10:
-    if lista[k] % 2 == 0:
-        artios += 1
-    else:
-        perittos += 1
-    k += 1
-
 # Εκτύπωση αποτελεσμάτων
-print("To πλήθος των άρτιων είναι: ", artios)
-print("Tο πλήθος των περιττών είναι: ", perittos)
+print(f"\nTο άθροισμα των αριθμών είναι {athroisma}.")
+print(f"Tο πλήθος των περιττών είναι {odd}. ")
+print(f"Το πλήθος των άρτιων είναι {even}.")
 
-while ls < 10:
-    if megistos < lista[ls]:
-        megistos = lista[ls]
+# Αρχικοποίηση μεταβλητών
+megisto = 0
+elaxistos = 0
+i = 0
 
-    if elaxistos > lista[ls]:
-        elaxistos = lista[ls]
+# Όσο το i είναι μικρότερο του MAX_ELEMENTS
+while i < MAX_ELEMENTS:
+    # Εαν βρούμε στοιχείο μεγαλύτερο απο αυτό που έχουμε μέχρι στιγμής
+    if lista[i] > lista[megisto]:
+        # Αποθηκεύουμε το στοιχείο που βρήκαμε στο megisto
+        megisto = i
+    # Αλλιώς εαν βρούμε στοιχείο μικρότερο απο αυτό που έχουμε μέχρι στιγμής
+    elif lista[i] < lista[elaxistos]:
+        # Αποθηκεύουμε το μικρότερο στοιχείο στο elaxistos
+        elaxistos = i
+    # Αυξάνουμε την μεταβλητή i κατά 1
+    i += 1
 
-    ls += 1
+# Υπολογίζουμε την διαφορά του max με του min
+diafora = lista[megisto] - lista[elaxistos]
 
 # Εκτύπωση αποτελέσματος
-print("Η διαφορά είναι: ", megistos - elaxistos)
+print(f"H διαφορά max και min είναι {diafora}.")
