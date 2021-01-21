@@ -3,7 +3,7 @@ max_players = 7
 players = []
 
 for i in range(max_players):
-    # Διάβασμα από τον χρήστη
+    # Διάβασμα από το χρήστη
     player = input("Δώσε όνομα παίκτη: ").strip()
     players.append(player)
 

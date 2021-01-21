@@ -1,22 +1,29 @@
 # Αρχικοποίηση μεταβλητών
-sum = 0
+MAX_ELEMENTS = 7
 lista = []
 
-for i in range(7):
-    # Εισαγωγή δεδομένων
-    vathmos = int(input("Δώσε βαθμό: "))
+# Για κάθε MAX_ELEMENTS
+for i in range(MAX_ELEMENTS):
+    # Διαβάζουμε από το χρήστη το βαθμό του και το μετατ΄ρεπουμε σε ακέραιο
+    vathmos = int(input("Δώσε βαθμό: ").strip())
+    # Αποθηκεύουμε το βαθμό στη λίστα
     lista.append(vathmos)
 
 # Αρχικοποίηση μεταβλητών
+athroisma = 0
 k = 1
 
-for i in lista:
-    i = i * 5 * k
-    k = k + 1
-    um = sum + i
+# Για κάθε στοιχείο της λίστας
+for agwnisma in lista:
+    # Κάθε φορά πενταπλασιάζουμε το κάθε αγώνισμα
+    agwnisma *= 5 * k
+    # Αυξάνουμε τη μεταβλητή k κατά 1
+    k += 1
+    # Αυξάνουμε το άθροισμα κατα agwnisma
+    athroisma += agwnisma
 
-# Υπολογισμός μέσου όρου
-mo = sum / 7
+# Υπολογισμός του μέσου όρου
+mo = athroisma / MAX_ELEMENTS
 
-# Εκτύπωση αποτελέσματος
-print("Ο μέσος όρος είναι", mo)
+# Εκτύπωση μέσου όρου
+print(f"Ο μέσος όρος είναι {mo:.1f}.")

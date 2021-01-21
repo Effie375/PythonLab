@@ -18,7 +18,7 @@ etosGennhshs = twrinoEtos - ilikia
 # Υπολογισμός χρονιάς που θα γίνει 100
 ekatoXronwn = etosGennhshs + 100
 
-# Εαν το όνομα τελειώνει σε 'ς' ή 's'
+# εάν το όνομα τελειώνει σε 'ς' ή 's'
 if (onoma[-1] == 's') or (onoma[-1] == 'ς'):
     # Σβήσε το τελευταίο γράμμα
     onoma = onoma[:-1]

@@ -2,7 +2,7 @@
 players = []
 
 for i in range(7):
-    # Διάβασμα από τον χρήστη
+    # Διάβασμα από το χρήστη
     name = input("Δώσε όνομα παίκτη: ")
     players.append(name)
 

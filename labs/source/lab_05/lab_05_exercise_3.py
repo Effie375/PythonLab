@@ -6,16 +6,16 @@ letter = 0
 consonants = "bcdfgjklmnpqrstvwxz"
 vowels = "aehyuio"
 
-# Ζητάμε από τον χρήστη να δώσει μια λέξη
-word = input("Δώσε μια αγγλική λέξη: ").lower().strip()
+# Ζητάμε από το χρήστη να δώσει μια λέξη
+word = input("Δώσε λέξη με λατινικούς χαρακτήρες: ").lower().strip()
 
 # Για κάθε γράμμα της λέξης
 while letter < len(word):
-    # Εαν το γράμμα είναι φωνήεν
+    # εάν το γράμμα είναι φωνήεν
     if word[letter] in vowels:
         # Κάθε φορά προσθέτουμε στη μεταβλητη vowelCounter 1
         vowelCounter += 1
-    # Αλλιώς εαν το γράμμα είναι σύμφωνο
+    # Αλλιώς εάν το γράμμα είναι σύμφωνο
     elif word[letter] in consonants:
         # Κάθε φορά προσθέτουμε στη μεταβλητη consonantsCounter 1
         consonantsCounter += 1

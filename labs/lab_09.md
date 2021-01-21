@@ -27,30 +27,7 @@
 Να γραφεί ένα πρόγραμμα, το οποίο θα διαβάζει 5 λίστες από 10 θετικούς ακεραίους αριθμούς και θα τυπώνει τη λίστα με το μεγαλύτερο άθροισμα.
 
 ```python
-# Αρχικοποίηση μεταβλητών
-lista = []
 
-for i in range(5):
-  ypolista = []
-  for j in range(10):
-    # Εισαγωγή δεδομένων
-    n = int(input("Δώσε αριθμό: "))
-    ypolista.append(n)
-  lista.append(ypolista)
-
-# Αρχικοποίηση μεταβλητών
-megAthroisma = 0
-
-for ypolista in lista:
-  athroisma = 0
-  for i in ypolista:
-    athroisma += i
-  if athroisma > megAthroisma:
-    megAthroisma = athroisma
-    megLista = ypolista
-
-# Εκτύπωση αποτελέσματος
-print(megLista)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_example_1.py).
@@ -72,36 +49,7 @@ print(megLista)
 - Υπολογίζει και εμφανίζει πόσα μαθήματα πέρασε και τι μέσο όρο είχε σε αυτό το εξάμηνο.
 
 ```python
-# Αρχικοποίηση μεταβλητών
-eksamina = []
 
-for i in range(8):
-  vathmoi = []
-  for j in range(6):
-    # Εισαγωγή δεδομένων
-    vathmos = float(input("Δώσε βαθμό: "))
-    vathmoi.append(vathmos)
-eksamina.append(vathmoi)
-
-# Εισαγωγή δεδομένων
-arEksaminou = int(input("Ποιο εξάμηνο θες να δείς;"))
-
-# Aφαιρούμε 1 γιατί ο χρήστης θα δώσει π.χ. 1 για το πρώτο εξάμηνο
-# ενώ αυτό είναι στη θέση 0.
-eksamino = eksamina[arEksaminou-1]
-
-# Αρχικοποίηση μεταβλητών
-souma = 0
-perasmena = 0
-
-for mathima in eksamino:
-  souma += mathima
-  if mathima >= 5:
-    perasmena += 1
-
-# Εκτύπωση αποτελεσμάτων
-print("Ο μέσος όρος είναι: ", souma/len(eksamino))
-print("Πέρασες: ", perasmena)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_exercise_1.py).
@@ -116,47 +64,7 @@ print("Πέρασες: ", perasmena)
 - θα εμφανίζει τον κύκλο με την μεγαλύτερη μέση τηλεθέαση.
 
 ```python
-# Εισαγωγή δεδομένων
-seasons = int(input("Δώσε κύκλους: "))
-episodes = int(input("Δώσε επεισόδια άνα κύκλο: "))
 
-# Αρχικοποίηση μεταβλητών
-thle8eash = []
-
-for i in range(seasons):
-  thlSeason = []
-  for j in range(episodes):
-    # Εισαγωγή δεδομένων
-    thl = float(input("Δώσε τηλεθέαση %dx%d: " % (i+1, j+1)))
-    thlSeason.append(thl)
-  thle8eash.append(thlSeason)
-
-# Αρχικοποίηση μεταβλητών
-maxThlSeason = 0
-maxThlEpi = 0
-minThlSeason = 0
-minThlEpi = 0
-maxMO = 0
-
-for i in range(seasons):
-  soumaSeason = 0
-  for j in range(episodes):
-    if thle8eash[i][j] > thle8eash[maxThlSeason][maxThlEpi]:
-      maxThlSeason = i
-      maxThlEpi = j
-      if thle8eash[i][j] < thle8eash[minThlSeason][maxThlEpi]:
-        minThlSeason = i
-        minThlEpi = j
-  soumaSeason += thle8eash[i][j]
-
-if maxMO < soumaSeason:
-  maxMO = soumaSeason
-  maxMOSeason = i
-
-# Εκτύπωση αποτελεσμάτων
-print("Eπεισόδιο με μέγιστη τηλεθέαση: %dx%d" % (maxThlSeason+1, maxThlEpi+1))
-print("Eπεισόδιο με ελάχιστη τηλεθέαση: %dx%d" % (minThlSeason+1, minThlEpi+1))
-print("Σεζόν με μεγαλύτερο μέσο όρο τηλεθέασης:", maxMOSeason+1)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_exercise_2.py).
@@ -171,31 +79,7 @@ print("Σεζόν με μεγαλύτερο μέσο όρο τηλεθέασης
 - Να υπολογίζει και να εμφανίζει το μεγαλύτερο βαθμό που συγκέντρωσε ο φοιτητής από όλα τα μαθήματα.
 
 ```python
-# Διάβασμα βαθμών
-eksamino = []
 
-for i in range(2):
-  mathima = []
-  for j in range(2):
-    # Εισαγωγή δεδομένων
-    vathmos = input("Βαθμός εξαμήνου %d και %d μάθημα: " % (i + 1, j + 1))
-    vathmos = float(vathmos)
-    mathima.append(vathmos)
-    eksamino.append(mathima)
-
-# Εμφάνιση βαθμών ανά εξάμηνο
-print("Οι βαθμοί του φοιτητή είναι:", eksamino)
-
-# Υπολογισμός μέγιστου με βάση το κάθε μάθημα
-megVathmos = mathima[0]
-
-for mathima in eksamino:
-  for i in mathima:
-    if megVathmos < i:
-      megVathmos = i
-
-# Εκτύπωση αποτελέσματος
-print("O μέγιστος βαθμός είναι:", megVathmos)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_exercise_3.py).
@@ -211,54 +95,7 @@ print("O μέγιστος βαθμός είναι:", megVathmos)
 - Να βρίσκει και να εμφανίζει το μέγιστο βαθμό από όλες τις προσπάθειες και να αναζητά πόσες φορές συγκεντρώθηκε αυτός ο βαθμός στο σύνολο των βαθμών.
 
 ```python
-# Διάβασμα προσπαθειών
-athlimata = []
 
-for i in range(3):
-  vathmoi = []
-  for j in range(3):
-    # Εισαγωγή δεδομένων
-    vathmos = input("Βαθμός αθλήματος %d & προσπάθεια %d: " % (i+1, j+1))
-    # Μετατροπή από str σε float
-    vathmos = float(vathmos)
-    vathmoi.append(vathmos)
-  athlimata.append(vathmoi)
-
-# Υπολογισμός και εμφάνιση αθλήματος με μεγαλύτερους βαθμούς
-maxSum = 0
-
-for vathmoi in athlimata:
-  sum = 0
-  for i in vathmoi:
-    sum += i
-    if sum > maxSum:
-      maxSum = sum
-      maxAthlima = vathmoi
-
-# Εκτύπωση αποτελέσματος
-print("Ο max βαθμός είναι:", maxAthlima, "και το άθροισμα είναι:", maxSum)
-
-# Υπολογισμός μέγιστου βαθμού σε κάθε άθλημα
-megVathmos = athlimata[0][0]
-
-for vathmoi in athlimata:
-  for i in vathmoi:
-    if i > megVathmos:
-      megVathmos = i
-
-# Εκτύπωση αποτελέσματος
-print("Ο μέγιστος βαθμός του αθλητή είναι:", megVathmos)
-
-# Αναζήτηση φορών μέγιστου βαθμού σε κάθε άθλημα
-vathmosCounter = 0
-
-for vathmoi in athlimata:
-  for i in vathmoi:
-    if i == megVathmos:
-      vathmosCounter += 1
-
-# Εκτύπωση αποτελέσματος
-print("O μέγιστος βαθμός βρέθηκε %d φορές." % (vathmosCounter))
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_exercise_4.py).

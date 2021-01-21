@@ -13,17 +13,7 @@
 ---
 
 ```python
-# Διαβάζουμε έναν αριθμό και ελέγχουμε αν είναι 0 - 10
-def readAndCheck():
-  goon = True
-  while goon:
-    num = input("Δώσε αριθμό: ")
-    while not num.isdigit():
-      num = input("Δώσε αριθμό: ")
-    num = int(num)
-    if 0 <= num <= 10:
-      goon = false
-  return num
+
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_example_1.py).
@@ -38,19 +28,7 @@ def readAndCheck():
 αριθμούς και θα την ταξινομεί.
 
 ```python
-def sort(listaP):
-  for i in range(1, len(listaP)):
-    for j in range(len(listaP)-1, 0, -1):
-      if listaP[j-1] > listaP[j]:
-        temp = listaP[j-1]
-        listaP[j-1] = listaP[j]
-        listaP[j] = temp
-  return listaP
 
-list = [5, 7, 8, 9, 3]
-
-x = sort(list[:])
-print(x)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_example_2.py).
@@ -62,41 +40,7 @@ print(x)
 εκτυπώνει, για κάθε μάθημα τους βαθμούς ταξινομημένους.
 
 ```python
-# Διαβάζουμε έναν αριθμό και ελέγχουμε αν είναι 0 - 10
-def readAndCheck():
-  goon = True
-  while goon:
-    num = input("Δώσε αριθμό: ")
-    while not num.isdigit():
-      num = input("Δώσε αριθμό: ")
-    num = int(num)
-    if 0 <= num <= 10:
-      goon = False
-        
-  return num
 
-
-def sort(listaP):
-  for i in range(1, len(listaP)):
-    for j in range(len(listaP)-1, 0, -1):
-      if listaP[j-1] > listaP[j]:
-        temp = listaP[j-1]
-        listaP[j-1] = listaP[j]
-        listaP[j] = temp
-  return listaP
-
-
-def readMarks():
-  vathmoi=[]
-  for i in range(10):
-    vathmoi.append(readAndCheck())
-  return vathmoi
-
-
-# MAIN
-for i in range(10):
-  vathmoi = readMarks()
-  print(sort(vathmoi))
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_example_3.py).
@@ -111,35 +55,12 @@ for i in range(10):
 
 Να συμπληρωθεί το παρακάτω πρόγραμμα, ώστε:
 
-- να ζητάει από τον χρήστη το πλήθος των ονομάτων που θα
+- να ζητάει από το χρήστη το πλήθος των ονομάτων που θα
 διαβαστούν,
 - να υπολογίζει και να εμφανίζει το μήκος του μακρύτερου ονόματος.
 
 ```python
-# Δεχόμαστε [plithos] ονόματα και τα τοποθετούμε σε λίστα την οποία επιστρέφει
-def readNames(plithos):
-  onomata = []
-  def readNames(plithos):
-    onomata = []
-  for i in range(plithos):
-    onoma = input("Δώσε όνομα:")
-    onomata.append(onoma)
-  return onomata
 
-
-def longestName(list):
-    maxLength = 0
-    for onoma in list:
-      if len(onoma) > maxLength:
-        maxLength = len(onoma)
-  return maxLength
-
-
-plithos = int(input("Δώσε πλήθος: "))
-onomata = readNames(plithos)
-x = longestName(onomata)
-
-print("Το μακρύτερο όνομα έχει μήκος:", x)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_1/lab_10_exercise_1.py).
@@ -153,18 +74,7 @@ print("Το μακρύτερο όνομα έχει μήκος:", x)
 - Η συνάρτηση θα χρησιμοποιείτε σε ένα for loop για να υπολογίσει το άθροισμα των τετράγωνων όλων των αριθμών μέχρι και αυτόν που δώσατε.
 
 ```python
-def square(n):
-  n = n*n
 
- return n
-
-
-athroisma = 0
-number = int(input("Δώσε αριθμό: "))
-
-for i in range (number + 1):
-  athroisma += square(i)
-print("Το άθροισμα των αριθμών είναι:", athroisma)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_exercise_2.py).
@@ -185,35 +95,7 @@ print("Το άθροισμα των αριθμών είναι:", athroisma)
 μέγιστο βαθμό και τον μέσο όρο.
 
 ```python
-def readMarks(N):
-  marks = []
-  for i in range(N):
-    mark = int(input("Δώσε βαθμό: "))
-    marks.append(mark)
-  return marks
 
-
-def getMax(A):
-  megisto = 0
-  for i in A:
-    if i > megisto:
-      megisto = i
-  return megisto
-
-
-def getMO(A):
-  souma = 0
-  for i in A:
-    souma += i
-  return souma / len(A)
-
-
-plithos = int(input("Πόσοι δώσανε το μάθημα:"))
-
-vathmoi = readMarks(plithos)
-
-print("Μέγιστος: ", getMax(vathmoi))
-print("Mέσος όρος: ", getMO(vathmoi))
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_exercise_3.py).
@@ -229,44 +111,7 @@ print("Mέσος όρος: ", getMO(vathmoi))
 - Με τη χρήση νέας συνάρτησης θα αναζητά αν το τυχαίο όνομα που δόθηκε περιλαμβάνεται μέσα στη λίστα. Στην περίπτωση που δεν υπάρχει θα εκτυπώνει μήνυμα «Το όνομα που αναζητάς δεν είναι στη λίστα», σε οποιαδήποτε άλλη περίπτωση το μήνυμα θα είναι «Το όνομα ??? είναι στη λίστα».
 
 ```python
-def eisagogiStoixeion():
-  onomata = []
-  for i in range (10):
-    name = input("Δώσε όνομα: ")
-    onomata.append(name)
 
-  return onomata
-
-
-def monadikiLista(lista):
-  neaLista = []
-  for i in lista:
-    if i not in neaLista:
-      neaLista.append(i)
-
-  return neaLista
-
-
-def anazitisi(key, lista):
-  done = True
-  for i in lista:
-    if i == key:
-      done = False
-
-  return done
-
-onomata = eisagogiStoixeion()
-
-print(monadikiLista(onomata))
-
-stoixeio = input("Δώσε όνομα που αναζητάς: ")
-
-done = anazitisi(stoixeio, onomata)
-
-if done == True:
-  print("Το όνομα που αναζητάς δεν είναι στη λίστα.")
-else:
-  print("Το όνομα", stoixeio, "είναι στη λίστα.")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_10/lab_10_exercise_4.py).

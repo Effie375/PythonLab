@@ -1,12 +1,21 @@
 # Αρχικοποίηση μεταβλητών
 prime = True
 
-# Εισαγωγή δεδομένων
-number = int(input("Δώσε αριθμό: "))
+# Ζητάμε από το χρήστη να δώσει έναν φυσικό αριθμό
+number = int(input("Δώσε έναν φυσικό αριθμό: ").strip())
 
-for i in range(2, number // 2 + 1):
-    if number % i == 0:
-        prime = False
+if number == 1:
+    prime = False
+else:
+    # Για κάθε αριθμό απο το 2 εως και τον αριθμό αυτόν
+    for i in range(2, number // 2 + 1):
+        # Εάν βρεθεί διαιρέτης που να διαιρεί τον αριθμό
+        if number % i == 0:
+            # Τότε ο αριθμός δεν είναι πρώτος
+            prime = False
 
 # Εκτύπωση αποτελέσματος
-print(prime)
+if prime == True:
+    print(f"\nO αριθμός {number} είναι πρώτος αριθμός.")
+else:
+    print(f"\nO αριθμός {number} δεν είναι πρώτος αριθμός.")
