@@ -16,5 +16,5 @@ for i in range(1, 5):
                 names[j - 1] = names[j]
                 names[j] = temp3
 
-print(games)
+print(names)
 print(grades)

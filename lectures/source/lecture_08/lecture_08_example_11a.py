@@ -9,7 +9,7 @@ print(f"Η μη ταξινομημένη λίστα είναι: {A}")
 for k in range(5):
     for i in range(1, 4):
         for j in range(3, i - 1, -1):
-            if A[k][j-1] > A[k][j]:
+            if A[k][j - 1] > A[k][j]:
                 temp = A[k][j - 1]
                 A[k][j - 1] = A[k][j]
                 A[k][j] = temp
