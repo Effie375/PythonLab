@@ -6,9 +6,9 @@ def searchFunction(listaS, key):
     return counter
 
 
-lista = [[1, 2, 3, 1], 
-         [6, 6, 7, 8], 
-         [9, 1, 1, 2], 
+lista = [[1, 2, 3, 1],
+         [6, 6, 7, 8],
+         [9, 1, 1, 2],
          [9, 3, 3, 6]]
 searchKey = [1, 3, 6, 9]
 results = []
