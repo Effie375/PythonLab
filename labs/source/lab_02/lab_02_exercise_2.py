@@ -13,7 +13,7 @@ loipa = round(miktes * 0.09, 2)
 kathara = round(miktes - asfaleia - foros - loipa)
 
 # Εκτύπωση αποτελεσμάτων
-print(f"\nΜεικτές αποδοχές:  {miktes:.1f}")
+print(f"\nΜεικτές αποδοχές:    {miktes:.1f}")
 print(f"Ασφάλεια 3%:         {asfaleia:.1f}")
 print(f"Φόρος 5%             {foros:.1f}")
 print(f"Λοιπές κρατήσεις 9%: {loipa:.1f}")
