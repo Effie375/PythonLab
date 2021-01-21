@@ -13,4 +13,5 @@ while i < 5 and not found:
             print(i, j)
             found = True
         j += 1
+    j = 0
     i += 1
