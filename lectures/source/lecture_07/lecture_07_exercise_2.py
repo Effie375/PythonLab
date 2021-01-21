@@ -14,17 +14,17 @@ while counter < MAX_ELEMENTS:
     counter += 1
 
 
-for i in range(len(vathmoi)-1):
-    for j in range(len(vathmoi)-1, i, -1):
-        if vathmoi[j-1] < vathmoi[j]:
+for i in range(len(vathmoi) - 1):
+    for j in range(len(vathmoi) - 1, i, -1):
+        if vathmoi[j - 1] < vathmoi[j]:
             # Swap vathmous
-            temp1 = vathmoi[j-1]
-            vathmoi[j-1] = vathmoi[j]
+            temp1 = vathmoi[j - 1]
+            vathmoi[j - 1] = vathmoi[j]
             vathmoi[j] = temp1
             # Swap names
-            temp2 = names[j-1]
-            names[j-1] = names[j]
+            temp2 = names[j - 1]
+            names[j - 1] = names[j]
             names[j] = temp2
 
 for i in range(BEST_FOITITES):
-    print("Ο %dος καλύτερος είναι ο/η %d." % (i+1, names[i]))
+    print("Ο %dος καλύτερος είναι ο/η %d." % (i + 1, names[i]))

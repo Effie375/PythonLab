@@ -11,10 +11,10 @@ pontoi = []
 names = []
 
 for i in range(PAIKTES):
-    name = input("\nΔώσε το όνομα του %dου παίκτη: " % (i+1))
+    name = input("\nΔώσε το όνομα του %dου παίκτη: " % (i + 1))
     names.append(name)
     for j in range(AGWNES):
-        pontos = int(input("Δώσε πόντους για τον %do αγώνα: " % (j+1)))
+        pontos = int(input("Δώσε πόντους για τον %do αγώνα: " % (j + 1)))
         if (i == 0):
             pontoi.append([])
         pontoi[j].append(pontos)
@@ -23,7 +23,7 @@ for i in range(PAIKTES):
 for agwnas in range(AGWNES):
     # Καλούμε τη συνάρτηση και παίρνουμε το άθροισμα των πόντων ανα αγώνα
     synoloPonton = athroisma(pontoi[agwnas])
-    print("\n-------- Αγώνας %d --------" % (agwnas+1))
+    print("\n-------- Αγώνας %d --------" % (agwnas + 1))
     print("Σύνολο πόντων: %d" % (synoloPonton))
     # Μηδενίζουμε τη θέση του καλύτερου παίκτη
     bestThesi = 0

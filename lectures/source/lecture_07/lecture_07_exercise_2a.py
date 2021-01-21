@@ -1,15 +1,15 @@
 def sort_function(pnames, pvathmoi):
     try:
-        for i in range(len(pvathmoi)-1):
-            for j in range(len(pvathmoi)-1, i, -1):
-                if pvathmoi[j-1] < pvathmoi[j]:
+        for i in range(len(pvathmoi) - 1):
+            for j in range(len(pvathmoi) - 1, i, -1):
+                if pvathmoi[j - 1] < pvathmoi[j]:
                     # Swap vathmous
-                    temp1 = pvathmoi[j-1]
-                    pvathmoi[j-1] = pvathmoi[j]
+                    temp1 = pvathmoi[j - 1]
+                    pvathmoi[j - 1] = pvathmoi[j]
                     pvathmoi[j] = temp1
                     # Swap names
-                    temp2 = pnames[j-1]
-                    pnames[j-1] = pnames[j]
+                    temp2 = pnames[j - 1]
+                    pnames[j - 1] = pnames[j]
                     pnames[j] = temp2
     except:
         print("Κάτι πήγε στραβά!")
@@ -42,6 +42,6 @@ while counter < MAX_ELEMENTS:
 if not sort_function(names, vathmoi):
     try:
         for i in range(BEST_FOITITES):
-            print(f"Ο {i+1}ος καλύτερος είναι ο/η {names[i]}.")
+            print(f"Ο {i + 1}ος καλύτερος είναι ο/η {names[i]}.")
     except:
         print("Δεν υπάρχει άλλος φοιτητής στη λίστα!")

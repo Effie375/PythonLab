@@ -8,10 +8,10 @@ print("Η μη ταξινομημένη λίστα είναι:", lista)
 
 for k in range(4):
     for i in range(1, 5):
-        for j in range(4, i-1, -1):
-            if lista[j-1][k] > lista[j][k]:
-                temp = lista[j-1][k]
-                lista[j-1][k] = lista[j][k]
+        for j in range(4, i - 1, -1):
+            if lista[j - 1][k] > lista[j][k]:
+                temp = lista[j - 1][k]
+                lista[j - 1][k] = lista[j][k]
                 lista[j][k] = temp
 
 print("Η ταξινομημένη λίστα:", lista)
