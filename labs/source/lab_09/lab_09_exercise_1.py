@@ -1,30 +1,39 @@
 # Αρχικοποίηση μεταβλητών
+ΜAX_EXAMINA = 8
+MAX_MATHIMATA = 6
 eksamina = []
 
-for i in range(8):
+# Για ΜAX_EXAMINA
+for i in range(ΜAX_EXAMINA):
+    # Δημιουργία κενής λίστας
     vathmoi = []
-    for j in range(6):
-        # Εισαγωγή δεδομένων
-        vathmos = float(input("Δώσε βαθμό: "))
+    # Για MAX_MATHIMATA
+    for j in range(MAX_MATHIMATA):
+        # Ζητάμε από το χρήστη να δώσει ένα βαθμό και το μετατρεπουμε σε πραγματικό
+        vathmos = float(input(f"Δώσε βαθμό για το {i+1}ο εξάμηνο: ").strip())
+        # Αποθηκεύουμε το βαθμό στη υπολίστα vathmoi
         vathmoi.append(vathmos)
-eksamina.append(vathmoi)
+    # Αποθηκεύουμε τις υπολίστες στη λίστα eksamina
+    eksamina.append(vathmoi)
 
-# Εισαγωγή δεδομένων
-arEksaminou = int(input("Ποιο εξάμηνο θες να δείς;"))
-
-# Aφαιρούμε 1 γιατί ο χρήστης θα δώσει π.χ. 1 για το πρώτο εξάμηνο
-# ενώ αυτό είναι στη θέση 0.
-eksamino = eksamina[arEksaminou - 1]
+# Ζητάμε από το χρήστη να δώσει ένα εξάμηνο και το μετατρεπουμε σε ακέραιο
+arEksaminou = int(input("Ποιο εξάμηνο θες να δείς; ").strip())
 
 # Αρχικοποίηση μεταβλητών
+eksamino = eksamina[arEksaminou - 1]
 souma = 0
 perasmena = 0
 
+# Για κάθε μάθημα του εξαμήνου
 for mathima in eksamino:
+    # Αυξάνουμε τη σούμα κατα μάθημα
     souma += mathima
+    # Εάν ο βαθμός του μαθήματος είναι μεγαλύτερος ή ίσος με το 5
     if mathima >= 5:
+        # Αυξάνουμε τη μεταβλητή perasmena κατά 1
         perasmena += 1
 
-# Εκτύπωση αποτελεσμάτων
-print("Ο μέσος όρος είναι: ", souma / len(eksamino))
-print("Πέρασες: ", perasmena)
+# Εκτύπωση του μέσου όρου
+print(f"Ο μέσος όρος είναι: {souma / len(eksamino)}")
+# Εκτύπωση των περασμένων μαθημάτων
+print(f"Πέρασες: {perasmena}")

@@ -20,7 +20,7 @@ while number != 0:
             ginomeno = 1
         # Αλλαγή του flag από False σε True
         flag = True
-    # εάν ο αριθμός είναι διάφορος του μηδενός
+    # Εάν ο αριθμός είναι διάφορος του μηδενός
     if number != 0:
         # Υπολογίζει κάθε φορά το γίνομενο
         ginomeno *= number

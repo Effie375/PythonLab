@@ -27,7 +27,44 @@
 Να γραφεί ένα πρόγραμμα, το οποίο θα διαβάζει 5 λίστες από 10 θετικούς ακεραίους αριθμούς και θα τυπώνει τη λίστα με το μεγαλύτερο άθροισμα.
 
 ```python
+# Αρχικοποίηση μεταβλητών
+MAX_ELEMENTS = 10
+MAX_LISTES = 5
+lista = []
 
+# MAX_LISTES
+for i in range(MAX_LISTES):
+  # Δημιουργία κενής λίστας
+  ypolista = []
+  # Για MAX_ELEMENTS
+  for j in range(MAX_ELEMENTS):
+    # Ζητάμε από το χρήστη να δώσει έναν αριθμό και το μετατρεπουμε σε ακέραιο
+    n = int(input("Δώσε αριθμό: ").strip())
+    # Αποθηκεύουμε τον αριθμό στην υπολίστα
+    ypolista.append(n)
+  # Αποθηκεύουμε την υπολίστα στη λίστα
+  lista.append(ypolista)
+
+# Έστω ότι το μέγιστο άθροισμα το έχει η υπολίστα στη θέση 0
+megAthroisma = 0
+
+# Για κάθε υπολίστα της λίστας
+for ypolista in lista:
+  # Αρχικοποίηση του μετρητή
+  athroisma = 0
+  # Για κάθε στοιχείο της υπολίστας
+  for i in ypolista:
+    # Αυξάνουμε τη μεταβλητή athroisma κατά 1
+    athroisma += i
+  # Εάν το άθροισμα είναι μεγαλύτερο από αυτό που ορίσαμε
+  if athroisma > megAthroisma:
+    # Το αντικαθηστούμε με το πλεόν μεγαλύτερο
+    megAthroisma = athroisma
+    # Εκχωρούμε στη μεταβλητή megLista τη μεγαλύτερη υπολίστα
+    megLista = ypolista
+
+# Εκτύπωση της υπολίστας με το μεγαλύτερο άθροισμα
+print(f"Η υπολίστα με το μεγαλύτερο άθροισμα είναι {megLista}")
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lab_09/lab_09_example_1.py).
@@ -49,6 +86,45 @@
 - Υπολογίζει και εμφανίζει πόσα μαθήματα πέρασε και τι μέσο όρο είχε σε αυτό το εξάμηνο.
 
 ```python
+# Αρχικοποίηση μεταβλητών
+ΜAX_EXAMINA = 8
+MAX_MATHIMATA = 6
+eksamina = []
+
+# Για ΜAX_EXAMINA
+for i in range(ΜAX_EXAMINA):
+    # Δημιουργία κενής λίστας
+    vathmoi = []
+    # Για MAX_MATHIMATA
+    for j in range(MAX_MATHIMATA):
+        # Ζητάμε από το χρήστη να δώσει ένα βαθμό και το μετατρεπουμε σε πραγματικό
+        vathmos = float(input(f"Δώσε βαθμό για το {i+1}ο εξάμηνο: ").strip())
+        # Αποθηκεύουμε το βαθμό στη υπολίστα vathmoi
+        vathmoi.append(vathmos)
+    # Αποθηκεύουμε τις υπολίστες στη λίστα eksamina
+    eksamina.append(vathmoi)
+
+# Ζητάμε από το χρήστη να δώσει ένα εξάμηνο και το μετατρεπουμε σε ακέραιο
+arEksaminou = int(input("Ποιο εξάμηνο θες να δείς; ").strip())
+
+# Αρχικοποίηση μεταβλητών
+eksamino = eksamina[arEksaminou - 1]
+souma = 0
+perasmena = 0
+
+# Για κάθε μάθημα του εξαμήνου
+for mathima in eksamino:
+  # Αυξάνουμε τη σούμα κατα μάθημα
+  souma += mathima
+  # Εάν ο βαθμός του μαθήματος είναι μεγαλύτερος ή ίσος με το 5
+  if mathima >= 5:
+      # Αυξάνουμε τη μεταβλητή perasmena κατά 1
+      perasmena += 1
+
+# Εκτύπωση του μέσου όρου
+print(f"Ο μέσος όρος είναι: {souma / len(eksamino)}")
+# Εκτύπωση των περασμένων μαθημάτων
+print(f"Πέρασες: {perasmena}")
 
 ```
 
@@ -64,6 +140,60 @@
 - θα εμφανίζει τον κύκλο με την μεγαλύτερη μέση τηλεθέαση.
 
 ```python
+# Ζητάμε από το χρήστη να δώσει κύκλους και το μετατρεπουμε σε ακέραιο
+seasons = int(input("Δώσε κύκλους: ").strip())
+# Ζητάμε από το χρήστη να δώσει κύκλους ανα επεισόδια και το μετατρεπουμε σε ακέραιο
+episodes = int(input("Δώσε επεισόδια άνα κύκλο: ").strip())
+
+# Δημιουργία κενής λίστας
+thle8eash = []
+
+# Για κάθε seasons
+for i in range(seasons):
+  # Δημιουργία κενής λίστας
+  thlSeason = []
+  # Για κάθε episodes
+  for j in range(episodes):
+    # Ζητάμε από το χρήστη να δώσει τηλεθέαση και το μετατρεπουμε σε πραγματικό
+    thl = float(input(f"Δώσε τηλεθέαση {i + 1}x{j + 1}: ").strip())
+    # Αποθηκεύουμε την τηλεθέαση στην υπολίστα thlSeason
+    thlSeason.append(thl)
+  # Αποθηκεύουμε στη λίστα thle8eash την υπολίστα thlSeason
+  thle8eash.append(thlSeason)
+
+# Έστω ότι το max και το min τηλεθέασης των season και επεισοδίων είναι η θέση 0
+maxThlSeason = 0
+maxThlEpi = 0
+minThlSeason = 0
+minThlEpi = 0
+
+# Έστω ότι ο max μέσος όρος είναι 0
+maxMO = 0
+
+# Για κάθε seasons
+for i in range(seasons):
+  # Αρχικοποίηση μεταβλητής
+  soumaSeason = 0
+  # Για κάθε episodes
+  for j in range(episodes):
+      if thle8eash[i][j] > thle8eash[maxThlSeason][maxThlEpi]:
+        maxThlSeason = i
+        maxThlEpi = j
+      if thle8eash[i][j] < thle8eash[minThlSeason][maxThlEpi]:
+        minThlSeason = i
+        minThlEpi = j
+      soumaSeason += thle8eash[i][j]
+
+  if maxMO < soumaSeason:
+    maxMO = soumaSeason
+    maxMOSeason = i
+
+# Εκτύπωση επεισοδίων με μέγιστη τηλεθέαση
+print(f"Eπεισόδιο με μέγιστη τηλεθέαση: {maxThlSeason+1}x{maxThlEpi+1}")
+# Εκτύπωση επεισοδίων με ελάχιστη τηλεθέαση
+print(f"Eπεισόδιο με ελάχιστη τηλεθέαση: {minThlSeason+1}x{minThlEpi+1}")
+# Εκτύπωση σεζόν με μεγαλύτερο μέσο όρο τηλεθέασης
+print(f"Σεζόν με μεγαλύτερο μέσο όρο τηλεθέασης: {maxMOSeason+1}")
 
 ```
 

@@ -11,7 +11,7 @@ word = input("Δώσε λέξη με λατινικούς χαρακτήρες: 
 
 # Για κάθε γράμμα της λέξης
 while letter < len(word):
-    # εάν το γράμμα είναι φωνήεν
+    # Εάν το γράμμα είναι φωνήεν
     if word[letter] in vowels:
         # Κάθε φορά προσθέτουμε στη μεταβλητη vowelCounter 1
         vowelCounter += 1
