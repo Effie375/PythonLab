@@ -1,17 +1,22 @@
-vath = []
-i = 0
-sum = 0
+max_students = 200
+sum = i = 0
+grades = []
+stund = []
 
-while i < 200:
-    num = int(input("Δώσε βαθμό: "))
-    vath.append(num)
-    sum += vath[i]
+while i < max_students:
+    name = input("Δώσε το όνομά σου: ").strip()
+    grad = int(input("Δώσε τον βαθμό σου: ").strip())
+    stund.append(name)
+    grades.append(grad)
+    sum += grad
     i += 1
 
-mo = sum / 200
+# Να ελέγξετε τη διαίρεση με μηδέν!
+average = sum / i
+
 i = 0
 
-while i < 200:
-    if vath[i] > mo:
-        print(i)
+while i < len(grades):
+    if grades[i] > average:
+        print(f"Οι μαθητές που έχουν υψηλές βαθμολογίες είνα: {stund[i]}")
     i += 1

@@ -1,3 +1,23 @@
+def sort_function(pnames, pvathmoi):
+    try:
+        for i in range(len(pvathmoi) - 1):
+            for j in range(len(pvathmoi) - 1, i, -1):
+                if pvathmoi[j - 1] < pvathmoi[j]:
+                    # Swap vathmous
+                    temp1 = pvathmoi[j - 1]
+                    pvathmoi[j - 1] = pvathmoi[j]
+                    pvathmoi[j] = temp1
+                    # Swap names
+                    temp2 = pnames[j - 1]
+                    pnames[j - 1] = pnames[j]
+                    pnames[j] = temp2
+    except:
+        print("Κάτι πήγε στραβά!")
+        return 1
+    else:
+        return 0
+
+
 # Αρχικοποίηση μεταβλητών
 MAX_ELEMENTS = 200
 BEST_FOITITES = 3
@@ -6,25 +26,22 @@ vathmoi = []
 names = []
 
 while counter < MAX_ELEMENTS:
-    name = input("Δώσε όνομα μαθητή: ")
-    vathmos = int(input("Δώσε βαθμό: "))
+    name = input("Δώσε όνομα μαθητή: ").strip()
+    vathmos = input("Δώσε βαθμό: ").strip()
+    # Έλεγχος ορθότητας
+    while not vathmos.isdigit():
+        vathmos = input("Είπα δώσε βαθμό: ").strip()
+    # Μετατροπή αλφαριθμητικής τιμής σε ακέραια
+    vathmos = int(vathmos)
     # Εισαγωγή στοιχείων στη λίστα των φοιτητών και των βαθμών
     names.append(name)
     vathmoi.append(vathmos)
     counter += 1
 
 
-for i in range(len(vathmoi) - 1):
-    for j in range(len(vathmoi) - 1, i, -1):
-        if vathmoi[j - 1] < vathmoi[j]:
-            # Swap vathmous
-            temp1 = vathmoi[j - 1]
-            vathmoi[j - 1] = vathmoi[j]
-            vathmoi[j] = temp1
-            # Swap names
-            temp2 = names[j - 1]
-            names[j - 1] = names[j]
-            names[j] = temp2
-
-for i in range(BEST_FOITITES):
-    print("Ο %dος καλύτερος είναι ο/η %d." % (i + 1, names[i]))
+if not sort_function(names, vathmoi):
+    try:
+        for i in range(BEST_FOITITES):
+            print(f"Ο {i + 1}ος καλύτερος είναι ο/η {names[i]}.")
+    except:
+        print("Δεν υπάρχει άλλος φοιτητής στη λίστα!")

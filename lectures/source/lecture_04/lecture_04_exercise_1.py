@@ -1,13 +1,12 @@
-plithos = 0
-
-num = float(input("Δώσε αριθμό: "))
+counter = 0
+num = 1
 
 while num != 0:
+    num = float(input("Δώσε έναν αριθμό: ").strip())
     if num > 0:
-        plithos += 1
-        num = float(input("Δώσε αριθμό: "))
+        counter += 1
 
-if plithos > 0:
-    print("Θετικοί:", plithos)
+if counter > 0:
+    print(f"Οι θετικοί αριθμοί είναι {counter}")
 else:
-    print("Δεν υπάρχουν θετικοί :(")
+    print("Δεν δώσατε θετικούς αριθμούς.")

@@ -1,6 +1,6 @@
-a = int(input("Δώσε 1ο αριθμό: "))
-x = int(input("Δώσε 2ο αριθμό: "))
-y = float(input("Δώσε 3ο αριθμό: "))
+a = int(input("Δώσε 1ο αριθμό: ").strip())
+x = int(input("Δώσε 2ο αριθμό: ").strip())
+y = float(input("Δώσε 3ο αριθμό: ").strip())
 
 if a == 10:
     x = x % 2
@@ -15,4 +15,4 @@ else:
     x -= 3
     y += 1
 
-print(x, y)
+print(f"x: {x} , y: {y:.1f}")

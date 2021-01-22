@@ -1,20 +1,21 @@
-names = []
-marks = []
+max_students = 20
+student_list = []
+grades_list = []
+maxIndex = 0
 i = 0
 
-while i < 20:
-    onoma = input("Δώσε όνομα: ")
-    vathmos = int(input("Δώσε βαθμό: "))
-    names.append(onoma)
-    marks.append(vathmos)
+while i < max_students:
+    student = input("Δώσε το όνομά σου: ").strip()
+    student_list.append(student)
+    grad = int(input("Δώσε τον βαθμό σου: ").strip())
+    grades_list.append(grad)
     i += 1
 
-maxThesi = 0
 i = 0
 
-while i < len(names):
-    if marks[i] > marks[maxThesi]:
-        maxThesi = i
+while i < len(grades_list):
+    if grades_list[i] > grades_list[maxIndex]:
+        maxIndex = i
     i += 1
 
-print(names[maxThesi])
+print(f"{student_list[maxIndex]} κέρδισε με βαθμό {grades_list[maxIndex]}.")

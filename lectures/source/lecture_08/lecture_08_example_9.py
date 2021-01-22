@@ -4,13 +4,13 @@ ls = [[2, 3, 4, 1],
       [1, 9, 4, 1],
       [0, 4, 7, 4]]
 
-key = int(input("Δώσε στοιχείο που αναζητάς: "))
+key = int(input("Δώσε στοιχείο που αναζητάς: ").strip())
 
-keyCounter = 0
+key_counter = 0
 
 for i in range(5):
     for j in range(4):
         if key == ls[i][j]:
             print(i, j)
-            keyCounter += 1
-print("Βρέθηκε %d φορές." % (keyCounter))
+            key_counter += 1
+print(f"Βρέθηκε {key_counter} φορές.")

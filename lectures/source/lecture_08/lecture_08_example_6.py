@@ -8,4 +8,4 @@ for j in range(4):
     sumSthlhs = 0
     for i in range(5):
         sumSthlhs += ls[i][j]
-    print("Άθροισμα στήλης:", sumSthlhs)
+    print(f"Άθροισμα στήλης: {sumSthlhs}")

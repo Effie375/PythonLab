@@ -1,8 +1,15 @@
-lista = [3, 4, 1, 9, 4, 2]
-maxThesi = 0
+list = [5, 7, 8, 9, 3]
 
-for i in range(len(lista)):
-    if lista[i] > lista[maxThesi]:
-        maxThesi = i
+found = False
+i = 0
 
-print("Μέγιστη θέση:", maxThesi)
+key = int(input("Δώσε στοιχείο που αναζητάς: ").strip())
+
+while (i < len(list)) and (not found):
+    if list[i] == key:
+        thesi = i
+        found = True
+    else:
+        i += 1
+
+print(f"Το {key} βρίσκεται στη {thesi} θέση.")

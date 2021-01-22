@@ -1,7 +1,7 @@
-lista = []
+list = []
 
 for i in range(100):
-    lista.append(int(input("Δώσε αριθμό: ")))
+    list.append(int(input("Δώσε αριθμό: ").strip()))
 
 for i in range(99, -1, -1):
-    print(lista[i])
+    print(list[i])

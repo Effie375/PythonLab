@@ -1,9 +1,11 @@
-lista = [3, 4, 1, 9, 4, 2]
+list = [5, 7, 8, 9, 3]
 
-key = int(input("Δώσε στοιχείο που αναζητάς: "))
+counter = 0
 
-for i in range(len(lista)):
-    if lista[i] == key:
-        thesi = i
+key = int(input("Δώσε στοιχείο που αναζητάς: ").strip())
 
-print("Το στοιχείο που αναζητάς βρίσκεται στη θέση:", thesi)
+for k in list:
+    if k == key:
+        counter += 1
+
+print(f"Ο αριθμός {key} έχει εισαχθεί {counter} φορές.")

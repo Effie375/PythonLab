@@ -1,6 +1,6 @@
 list = [5, 7, 8, 9, 3]
 
-key = int(input("Δώσε στοιχείο που αναζητάς: "))
+key = int(input("Δώσε στοιχείο που αναζητάς: ").strip())
 
 found = False
 i = 0
@@ -12,6 +12,6 @@ while (i < 5) and (found is False):
     i += 1
 
 if found == True:
-    print("Το %d βρίσκεται στη %d θέση." % (key, thesi))
+    print(f"Το {key} βρίσκεται στη {thesi} θέση.")
 else:
-    print("Το %d δε βρίσκεται στη λίστα %s." % (key, list))
+    print(f"Το {key} δε βρίσκεται στη λίστα {list}.")

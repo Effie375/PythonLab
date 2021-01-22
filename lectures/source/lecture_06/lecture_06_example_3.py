@@ -1,8 +1,15 @@
-lista = [1, 4, 6, 9, 7, 2]
-megisto = lista[0]
+list = [5, 7, 8, 9, 3]
 
-for item in lista:
+megisto = list[0]
+elaxisto = list[0]
+
+for item in list:
     if item > megisto:
         megisto = item
 
-print("Μέγιστο:", megisto)
+for item in list:
+    if item < elaxisto:
+        elaxisto = item
+
+print(f"Μέγιστο: {megisto}")
+print(f"Ελάχιστο: {elaxisto}")

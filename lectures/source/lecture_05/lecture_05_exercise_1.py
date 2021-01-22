@@ -1,12 +1,17 @@
+max_elements = 100
+neaLista = []
 lista = []
 i = 0
 
-while i < 100:
-    lista.append(int(input("Δώσε αριθμό: ")))
+while i < max_elements:
+    num = int(input("Δώσε έναν αριθμό: ").strip())
+    lista.append(num)
     i += 1
 
-i = 100
+j = len(lista)
 
-while i > 0:
-    print(lista[i - 1])
-    i -= 1
+while j > 0:
+    neaLista.append(lista[j - 1])
+    j -= 1
+
+print(f"Η νέα λίστα είναι {neaLista}.")

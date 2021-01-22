@@ -9,4 +9,4 @@ for ypolista in ls:
     for i in ypolista:
         if megistoGrammhs < i:
             megistoGrammhs = i
-    print("Μέγιστο γραμμής:", megistoGrammhs)
+    print(f"Μέγιστο γραμμής: {megistoGrammhs}")

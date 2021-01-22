@@ -1,7 +1,8 @@
-athroisma = 0
+sum = num = 0
+key = 55555
 
-num = int(input("Δώσε αριθμό: "))
+while num != key:
+    sum += num
+    num = int(input("Δώσε έναν αριθμό: ").strip())
 
-while num != 55555:
-    athroisma += num
-    num = int(input("Δώσε αριθμό: "))
+print(f"Το άθροισμα είναι {sum}")

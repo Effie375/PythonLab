@@ -1,11 +1,18 @@
 list = [5, 7, 8, 9, 3]
 
-key = int(input("Δώσε στοιχείο που αναζητάς: "))
+key = int(input("Δώσε στοιχείο που αναζητάς: ").strip())
 
-counter = 0
+found = False
+i = 0
 
-for i in list:
-    if i == key:
-        counter += 1
+while (i < 5) and (found is False):
+    if list[i] == key:
+        thesi = i
+        found = True
+    else:
+        i += 1
 
-print("Το %d έχει εισαχθεί %d φορές." % (key, counter))
+if found == True:
+    print(f"Το {key} βρίσκεται στη {thesi} θέση.")
+else:
+    print(f"Το {key} δε βρίσκεται στη λίστα {list}.")
