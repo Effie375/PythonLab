@@ -4,7 +4,7 @@ lista = [[2, 3, 4, 1],
          [1, 2, 4, 3],
          [0, 4, 7, 5]]
 
-print(f"Η μη ταξινομημένη λίστα είναι: {lista}")
+print("Η μη ταξινομημένη λίστα είναι: %s" % lista)
 
 for k in range(5):
     for i in range(1, 4):
@@ -14,4 +14,4 @@ for k in range(5):
                 lista[k][j - 1] = lista[k][j]
                 lista[k][j] = temp
 
-print(f"Η ταξινομημένη λίστα: {lista}")
+print("Η ταξινομημένη λίστα: %s" % lista)

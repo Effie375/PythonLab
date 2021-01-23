@@ -4,9 +4,10 @@ lista = [[2, 3, 4, 1],
          [1, 9, 4, 1],
          [0, 4, 7, 4]]
 
+athroisma = 0
+
 for ypolista in lista:
-    megistoGrammhs = ypolista[0]
     for i in ypolista:
-        if megistoGrammhs < i:
-            megistoGrammhs = i
-    print(f"Μέγιστο γραμμής: {megistoGrammhs}")
+        athroisma += i
+
+print(athroisma)
