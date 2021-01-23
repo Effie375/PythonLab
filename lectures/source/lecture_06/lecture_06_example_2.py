@@ -1,7 +1,7 @@
 lista = [1, 5, 6, 3]
-sum = 0
+athroisma = 0
 
 for item in lista:
-    sum += item
+    athroisma += item
 
-print("Άθροισμα:", sum)
+print(f"Άθροισμα: {athroisma}")

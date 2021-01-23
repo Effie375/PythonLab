@@ -7,4 +7,4 @@ while i < len(lista):
         maxThesi = i
     i += 1
 
-print("Μέγιστη θέση:", maxThesi)
+print(f"Μέγιστη θέση: {maxThesi}")

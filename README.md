@@ -55,11 +55,16 @@
 - [08 Αναζήτηση - Ταξινόμηση](labs/lab_08.md)
 - [09 Πολυδιάστατες λίστες](labs/lab_09.md)
 - [10 Συναρτήσεις](labs/lab_10.md)
+
+## Ανακεφαλαίωση για την Εξεταστική
+
+- [Βασικές εντολές](https://forms.gle/TqDFVySuzqSDEap98)
+- [QUIZ για λίστες I](https://forms.gle/phQpYDs7RT8fp7ex5)
+- [QUIZ για λίστες II](https://forms.gle/Dre38J3y7Se6pj7o8)
+- [QUIZ εντολές επανάληψης και ταξινόμησης](https://forms.gle/1ktXakBbkxw1FVc8A)
   
 ## 🔨 Συνεισφορά (Contributing)
 
 Το PythonLab είναι ένα προσωπικό Repository.
 
 Μη διστάσετε να κάνετε fork αυτό το Repository. Διαβάστε τις [Οδηγίες](CONTRIBUTING.md) προτού θελήσετε να συνεισφέρετε.
-
-

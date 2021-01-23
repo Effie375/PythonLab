@@ -1,5 +1,5 @@
 lista = [3, 4, 1, 9, 7, 2]
-key = int(input("Δώσε στοιχείο που αναζητάς: "))
+key = int(input("Δώσε στοιχείο που αναζητάς: ").strip())
 found = False
 i = 0
 
@@ -9,4 +9,4 @@ while (i < len(lista)) and (not found):
         found = True
     i += 1
 
-print("Το στοιχείο που αναζητάς βρίσκεται στη θέση:", thesi)
+print(f"Το στοιχείο που αναζητάς βρίσκεται στη θέση: {thesi}")

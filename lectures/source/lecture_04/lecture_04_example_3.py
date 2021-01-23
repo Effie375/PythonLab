@@ -1,4 +1,4 @@
-vathmos = int(input("Βάλε βαθμό: "))
+vathmos = int(input("Βάλε βαθμό: ").strip())
 
 if(vathmos > 7):
     print("Άριστα")

@@ -1,10 +1,10 @@
-max_students = 20
+MAX_STUDENTS = 20
 student_list = []
 grades_list = []
 maxIndex = 0
 i = 0
 
-while i < max_students:
+while i < MAX_STUDENTS:
     student = input("Δώσε το όνομά σου: ").strip()
     student_list.append(student)
     grad = int(input("Δώσε τον βαθμό σου: ").strip())

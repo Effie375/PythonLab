@@ -1,9 +1,9 @@
-max_students = 200
+MAX_STUDENTS = 200
 sum = i = 0
 grades = []
 stund = []
 
-while i < max_students:
+while i < MAX_STUDENTS:
     name = input("Δώσε το όνομά σου: ").strip()
     grad = int(input("Δώσε τον βαθμό σου: ").strip())
     stund.append(name)

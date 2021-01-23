@@ -7,4 +7,4 @@ while i < len(lista):
         elaxisto = lista[i]
     i += 1
 
-print("Ελάχιστο:", elaxisto)
+print(f"Ελάχιστο: {elaxisto}")

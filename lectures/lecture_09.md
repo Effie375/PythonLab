@@ -20,7 +20,24 @@
 ### [Παράδειγμα 1](source/lecture_09/lecture_09_example_1x.py)
 
 ```python
+def sunolo(x, y):
+    athroisma = x + y
+    return athroisma
 
+
+def sayHello():
+    print("Hello")
+# Δεν επιστρέφει κάτι άρα δε χρειάζεται return
+
+
+# -------main--------
+x = 3
+y = 4
+
+athroisma = sunolo(x, y)
+print(athroisma)
+
+sayHello()
 ```
 
 <!--
@@ -36,7 +53,20 @@
 ### [Παράδειγμα 2](source/lecture_09/lecture_09_example_2x.py)
 
 ```python
+def sayHello(onoma="Human"):
+    print("Hello %s" % onoma)
 
+
+def modDiv(x, y):
+    mod = x % y
+    div = x // y
+    return mod, div
+
+
+# -------main--------
+sayHello()
+sayHello("Chris")
+a, b = modDiv(10, 3)
 ```
 
 <!--
@@ -52,7 +82,29 @@
 ### [Παράδειγμα 3](source/lecture_09/lecture_09_example_3x.py)
 
 ```python
+def searchFunction(pLista, key):
+    counter = 0
+    for i in pLista:
+        if i == key:
+            counter += 1
+    return counter
 
+
+lista = [[1, 2, 3, 1],
+         [6, 6, 7, 8],
+         [9, 1, 1, 2],
+         [9, 3, 3, 6]]
+searchKey = [1, 3, 6, 9]
+results = []
+
+for key in searchKey:
+    s = 0
+    for ypolista in lista:
+        k = searchFunction(ypolista, key)
+        s = s + k
+    results.append(s)
+
+print(results)
 ```
 
 <!--
@@ -68,7 +120,25 @@
 ### [Παράδειγμα 4](source/lecture_09/lecture_09_example_4x.py)
 
 ```python
+def athroisma(listaNew):
+    for item in listaNew:
+        item.sort(reverse=True)
 
+
+lista = [[1, 2, 3, 4],
+         [5, 6, 7, 8],
+         [9, 1, 1, 2],
+         [3, 4, 5, 6]]
+
+for item in lista:
+    print(item)
+
+athroisma(lista)
+
+print("...........")
+
+for item in lista:
+    print(item)
 ```
 
 <!--
@@ -84,7 +154,16 @@
 ### [Παράδειγμα 5](source/lecture_09/lecture_09_example_5x.py)
 
 ```python
+def showList(lista2):
+    for i in range(len(lista2)):
+        lista2[i] = lista2[i] * 2
 
+
+lista = [1, 4, 3, 5, 6]
+
+showList(lista[:])
+
+print(lista)
 ```
 
 <!--
@@ -104,7 +183,12 @@
 ### [Άσκηση 1](source/lecture_09/lecture_09_exercise_1x.py)
 
 ```python
+def foo(x):
+    return x / 5
 
+
+x = int(input("Δώσε αριθμό για διαίρεση με το 5: "))
+print(foo(x))
 ```
 
 <!--
@@ -122,7 +206,23 @@
 Τι θα εµφανιστεί αν δώσουµε ως τιµή εισόδου στο πρόγραµµα την τιµή 5 και τι την τιµή 10.
 
 ```python
+def apot(x):
+    return x % 2
 
+
+def foo(n):
+    apot1 = n * 2
+    n = apot1 * 2
+    return n, apot1
+
+
+a = int(input("Δώσε αριθμό: "))
+
+if apot(a) == 0:
+    a, n = foo(a)
+    print(a, n)
+else:
+    print(apot(a))
 ```
 
 Για α = 5 θα εµφανιστεί στην οθόνη η τιµή 1 και για α = 10 θα εµφανιστούν οι τιµές 40, 20.
@@ -139,11 +239,22 @@
 
 ### [Άσκηση 3](source/lecture_09/lecture_09_exercise_3x.py)
 
-Να γραφεί µια συνάρτηση η οποία θα δέχεται µια λίστα µε
-αριθµούς και θα την ταξινοµεί.
+Να γραφεί µια συνάρτηση η οποία θα δέχεται µια λίστα µε αριθµούς και θα την ταξινοµεί.
 
 ```python
+def sort(listaP):
+    for i in range(1, len(listaP)):
+        for j in range(len(listaP) - 1, i - 1, -1):
+            if listaP[j - 1] > listaP[j]:
+                temp = listaP[j - 1]
+                listaP[j - 1] = listaP[j]
+                listaP[j] = temp
+    return listaP
 
+
+list = [1, 6, 2, 5, 3, 7, 4]
+
+print(sort(list[:]))
 ```
 
 <!--

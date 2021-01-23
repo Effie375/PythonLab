@@ -124,12 +124,17 @@
 
 ```python
 day = 'Δευτέρα'
+
 print(day)
 print(type(day))
+
 i = 10
+
 print(i)
 print(type(i))
+
 pi = 3.14
+
 print(pi)
 print(type(pi))
 ```

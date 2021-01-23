@@ -27,13 +27,13 @@
 
 ```python
 for (Επαναλήπτης) in (Λίστα):
-  Εντολές
+    Εντολές
 
 for item in list:
-  print(item)
+    print(item)
 
 for i in range(10):
-  print(i)
+    print(i)
 ```
 
 ## 6.2 Η συνάρτηση range
@@ -59,7 +59,13 @@ range([start], stop, [step])
 ---
 
 ```python
+lista = []
 
+for n in range(5):
+    num = int(input("Δώσε στοιχείο για την θέση %d: " % n))
+    lista.append(num)
+
+print(lista)
 ```
 
 <!--
@@ -77,7 +83,13 @@ range([start], stop, [step])
 ---
 
 ```python
+lista = [1, 5, 6, 3]
+athroisma = 0
 
+for item in lista:
+    athroisma += item
+
+print("Άθροισμα:", athroisma)
 ```
 
 <!--
@@ -95,7 +107,21 @@ range([start], stop, [step])
 ---
 
 ```python
+lista = [5, 7, 8, 9, 3]
 
+megisto = lista[0]
+elaxisto = lista[0]
+
+for item in lista:
+    if item > megisto:
+        megisto = item
+
+for item in lista:
+    if item < elaxisto:
+        elaxisto = item
+
+print("Μέγιστο: %d" % megisto)
+print("Ελάχιστο: %d" % elaxisto)
 ```
 
 <!--
@@ -113,7 +139,23 @@ range([start], stop, [step])
 ---
 
 ```python
+maxThesi = 0
+thesi = 0
 
+lista = [5, 7, 8, 9, 3]
+
+for item in lista:
+    if item > lista[maxThesi]:
+        maxThesi = thesi
+    thesi += 1
+
+print("H maxThesi με τον 1ο τρόπο: %d" % maxThesi)
+
+for i in range(len(lista)):
+    if lista[i] > lista[maxThesi]:
+        maxThesi = i
+
+print("H maxThesi με τον 2ο τρόπο: %d" % maxThesi)
 ```
 
 <!--
@@ -131,7 +173,15 @@ range([start], stop, [step])
 ---
 
 ```python
+lista = [5, 7, 8, 9, 3]
 
+key = int(input("Δώσε στοιχείο που αναζητάς: "))
+
+for i in range(len(lista)):
+    if lista[i] == key:
+        thesi = i
+
+print("Το %d βρίσκεται στη θέση %d." % (key, thesi))
 ```
 
 <!--
@@ -149,7 +199,21 @@ range([start], stop, [step])
 ---
 
 ```python
+lista = [5, 7, 8, 9, 3]
 
+found = False
+i = 0
+
+key = int(input("Δώσε στοιχείο που αναζητάς: "))
+
+while (i < len(lista)) and (not found):
+    if lista[i] == key:
+        thesi = i
+        found = True
+    else:
+        i += 1
+
+print("Το %d βρίσκεται στη θέση %d." % (key, thesi))
 ```
 
 <!--
@@ -167,7 +231,17 @@ range([start], stop, [step])
 ---
 
 ```python
+lista = [8, 7, 8, 9, 3]
 
+counter = 0
+
+key = int(input("Δώσε στοιχείο που αναζητάς: "))
+
+for k in lista:
+    if k == key:
+        counter += 1
+
+print("Ο αριθμός %d έχει εισαχθεί %d φορές." % (key, counter))
 ```
 
 <!--
@@ -185,7 +259,20 @@ range([start], stop, [step])
 ---
 
 ```python
+lista = [3, 4, 1, 9, 4, 2]
 
+key = int(input("Δώσε στοιχείο που αναζητάς: "))
+
+found = False
+i = 0
+
+while (i < len(lista)) and (not found):
+    if lista[i] == key:
+        thesi = i
+        found = True
+    i += 1
+
+print("Το στοιχείο που αναζητάς βρίσκεται στη θέση: %d" % thesi)
 ```
 
 <!--
@@ -203,7 +290,17 @@ range([start], stop, [step])
 ---
 
 ```python
+lista = [3, 4, 1, 9, 7, 2, 1, 4, 5, 1]
 
+key = int(input("Δώσε στοιχείο που αναζητάς: "))
+
+counter = 0
+
+for k in lista:
+    if k == key:
+        counter += 1
+
+print("Το στοιχείο που αναζητάς εμφανίζεται %d φορές στη λίστα." % counter)
 ```
 
 <!--
@@ -225,7 +322,13 @@ range([start], stop, [step])
 Να γραφεί πρόγραµµα που να διαβάζει 100 ακεραίους αριθμούς και να τους εμφανίζει ανάποδα από τη σειρά που διαβάστηκαν.
 
 ```python
+lista = []
 
+for i in range(100):
+    lista.append(int(input("Δώσε αριθμό: ")))
+
+for i in range(99, -1, -1):
+    print(lista[i])
 ```
 
 <!--
@@ -243,7 +346,19 @@ range([start], stop, [step])
 Ένα σχολείο έχει 200 μαθητές στην Γ’ τάξη λυκείου. Να γίνει πρόγραµµα το οποίο θα διαβάζει τους βαθμούς απολυτηρίου των μαθητών και θα εμφανίζει τους μαθητές που ο βαθμός τους είναι µεγαλύτερος από το µέσο όρο των αποφοίτων.
 
 ```python
+vath = []
+sum = 0
 
+for i in range(200):
+    num = int(input("Δώσε βαθμό: "))
+    vath.append(num)
+    sum += num
+
+mo = sum / 200
+
+for i in range(200):
+    if vath[i] > mo:
+        print(i)
 ```
 
 <!--
@@ -261,7 +376,23 @@ range([start], stop, [step])
 Ένας µετεωρολόγος καταγράφει τις θερμοκρασίες των ημερών ενός μήνα 30 ημερών που σημειώθηκαν στο κέντρο µιας πόλης στις 12 το μεσημέρι. Να γίνει πρόγραµµα που θα διαβάζει τις θερμοκρασίες αυτές, θα τις καταχωρεί σε µία λίστα και θα υπολογίζει και να εκτυπώνει την ελάχιστη θερμοκρασία και την ημέρα που σημειώθηκε καθώς και τη µέγιστη θερμοκρασία και την ημέρα που σημειώθηκε.
 
 ```python
+temp = []
 
+for i in range(30):
+    num = int(input("Δώσε θερμοκρασία: "))
+    temp.append(num)
+
+maxThesi = 0
+minThesi = 0
+
+for i in range(len(temp)):
+    if temp[i] < temp[minThesi]:
+        minThesi = i
+    if temp[i] > temp[maxThesi]:
+        maxThesi = i
+
+print("Η max θερμοκρασία είναι %d την ημέρα %d" % (temp[maxThesi], (maxThesi + 1)))
+print("Η min θερμοκρασία είναι %d την ημέρα %d" % (temp[minThesi], (minThesi + 1)))
 ```
 
 <!--
@@ -279,7 +410,22 @@ range([start], stop, [step])
 Σε ένα διαγωνισμό πληροφορικής συµµετέχουν 20 µαθητές. Να γραφεί πρόγραµµα το οποίο θα αποθηκεύει σε µία λίστα τα ονόματα των µαθητών και σε µία λίστα τους βαθμούς που έλαβε ο κάθε µαθητής στο διαγωνισμό. Το πρόγραµµα θα εμφανίζει το όνομα του µαθητή που κέρδισε το διαγωνισμό.
 
 ```python
+names = []
+marks = []
 
+for i in range(20):
+    onoma = input("Δώσε όνομα: ")
+    vathmos = int(input("Δώσε βαθμό: "))
+    names.append(onoma)
+    marks.append(vathmos)
+
+maxThesi = 0
+
+for i in range(len(names)):
+    if marks[i] > marks[maxThesi]:
+        maxThesi = i
+
+print(names[maxThesi])
 ```
 
 <!--

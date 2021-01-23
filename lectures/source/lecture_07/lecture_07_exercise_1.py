@@ -15,7 +15,7 @@ def sort_function(plist):
 
 # Αρχικοποίηση μεταβλητών
 MAX_NUMBERS = 100
-list = []
+lista = []
 
 for i in range(MAX_NUMBERS):
     num = input("Δώσε αριθμό: ").strip()
@@ -25,9 +25,9 @@ for i in range(MAX_NUMBERS):
     # Μετατροπή αλφαριθμητικής τιμής σε ακέραια
     num = int(num)
     # Προσθήκη στοιχείου στη λίστα
-    list.append(num)
+    lista.append(num)
 
 
-if not sort_function(list):
-    print(f"\nΟ μεγαλύτερος αριθμός είναι το {list[len(list) - 1]}.")
-    print(f"Ο μικρότερος αριθμός είναι το {list[0]}.")
+if not sort_function(lista):
+    print(f"\nΟ μεγαλύτερος αριθμός είναι το {lista[len(lista) - 1]}.")
+    print(f"Ο μικρότερος αριθμός είναι το {lista[0]}.")

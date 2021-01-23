@@ -2,5 +2,5 @@ def foo(x):
     return x / 5
 
 
-x = int(input("Δώσε αριθμό για διαίρεση: ").strip())
+x = int(input("Δώσε αριθμό για διαίρεση με το 5: ").strip())
 print(foo(x))
