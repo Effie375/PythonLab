@@ -58,6 +58,16 @@ range([start], stop, [step])
 
 ---
 
+<!--
+lista = []
+
+for n in range(5):
+  num = int(input(f"Δώσε στοιχείο για την {n} θέση: ").strip())
+  lista.append(num)
+
+print(lista)
+-->
+
 ```python
 lista = []
 
@@ -82,6 +92,16 @@ print(lista)
 
 ---
 
+<!--
+lista = [1, 5, 6, 3]
+athroisma = 0
+
+for item in lista:
+  athroisma += item
+
+print(f"Άθροισμα: {athroisma}")
+-->
+
 ```python
 lista = [1, 5, 6, 3]
 athroisma = 0
@@ -105,6 +125,24 @@ print("Άθροισμα:", athroisma)
 ## [6.5 Έυρεση MAX](source/lecture_06/lecture_06_example_3x.py)
 
 ---
+
+<!--
+lista = [5, 7, 8, 9, 3]
+
+megisto = lista[0]
+elaxisto = lista[0]
+
+for item in lista:
+  if item > megisto:
+    megisto = item
+
+for item in lista:
+  if item < elaxisto:
+    elaxisto = item
+
+print(f"Μέγιστο: {megisto}")
+print(f"Ελάχιστο: {elaxisto}")
+-->
 
 ```python
 lista = [5, 7, 8, 9, 3]
@@ -137,6 +175,26 @@ print("Ελάχιστο: %d" % elaxisto)
 ## [6.6 Έυρεση MIN](source/lecture_06/lecture_06_example_4x.py)
 
 ---
+
+<!--
+maxThesi = 0
+thesi = 0
+
+lista = [5, 7, 8, 9, 3]
+
+for item in lista:
+  if item > lista[maxThesi]:
+    maxThesi = thesi
+  thesi += 1
+
+print(f"H maxThesi με τον 1ο τρόπο: {maxThesi}")
+
+for i in range(len(lista)):
+  if lista[i] > lista[maxThesi]:
+    maxThesi = i
+
+print(f"H maxThesi με τον 2ο τρόπο: {maxThesi}")
+-->
 
 ```python
 maxThesi = 0
@@ -172,6 +230,18 @@ print("H maxThesi με τον 2ο τρόπο: %d" % maxThesi)
 
 ---
 
+<!--
+lista = [5, 7, 8, 9, 3]
+
+key = int(input("Δώσε στοιχείο που αναζητάς: ").strip())
+
+for i in range(len(lista)):
+  if lista[i] == key:
+    thesi = i
+
+print(f"Το {key} βρίσκεται στη {thesi} θέση.")
+-->
+
 ```python
 lista = [5, 7, 8, 9, 3]
 
@@ -197,6 +267,24 @@ print("Το %d βρίσκεται στη θέση %d." % (key, thesi))
 ## [6.8 Έυρεση MAX με θέση II](source/lecture_06/lecture_06_example_6x.py)
 
 ---
+
+<!--
+lista = [5, 7, 8, 9, 3]
+
+found = False
+i = 0
+
+key = int(input("Δώσε στοιχείο που αναζητάς: ").strip())
+
+while (i < len(lista)) and (not found):
+  if lista[i] == key:
+    thesi = i
+    found = True
+  else:
+    i += 1
+
+print(f"Το {key} βρίσκεται στη {thesi} θέση.")
+-->
 
 ```python
 lista = [5, 7, 8, 9, 3]
@@ -230,6 +318,20 @@ print("Το %d βρίσκεται στη θέση %d." % (key, thesi))
 
 ---
 
+<!--
+lista = [8, 7, 8, 9, 3]
+
+counter = 0
+
+key = int(input("Δώσε στοιχείο που αναζητάς: ").strip())
+
+for k in lista:
+  if k == key:
+    counter += 1
+
+print(f"Ο αριθμός {key} έχει εισαχθεί {counter} φορές.")
+-->
+
 ```python
 lista = [8, 7, 8, 9, 3]
 
@@ -257,6 +359,23 @@ print("Ο αριθμός %d έχει εισαχθεί %d φορές." % (key, co
 ## [6.10 Αναζήτηση στοιχείων II](source/lecture_06/lecture_06_example_8x.py)
 
 ---
+
+<!--
+lista = [3, 4, 1, 9, 4, 2]
+
+key = int(input("Δώσε στοιχείο που αναζητάς: ").strip())
+
+found = False
+i = 0
+
+while (i < len(lista)) and (not found):
+  if lista[i] == key:
+    thesi = i
+    found = True
+  i += 1
+
+print(f"Το στοιχείο που αναζητάς βρίσκεται στη θέση: {thesi}")
+-->
 
 ```python
 lista = [3, 4, 1, 9, 4, 2]
@@ -288,6 +407,20 @@ print("Το στοιχείο που αναζητάς βρίσκεται στη �
 ## [6.11 Αναζήτηση αριθμού στοιχείων](source/lecture_06/lecture_06_example_9x.py)
 
 ---
+
+<!--
+lista = [3, 4, 1, 9, 7, 2, 1, 4, 5, 1]
+
+key = int(input("Δώσε στοιχείο που αναζητάς: ").strip())
+
+counter = 0
+
+for k in lista:
+  if k == key:
+    counter += 1
+
+print(f"Το στοιχείο που αναζητάς εμφανίζεται {counter} φορές στη λίστα.")
+-->
 
 ```python
 lista = [3, 4, 1, 9, 7, 2, 1, 4, 5, 1]
@@ -321,6 +454,16 @@ print("Το στοιχείο που αναζητάς εμφανίζεται %d �
 
 Να γραφεί πρόγραµµα που να διαβάζει 100 ακεραίους αριθμούς και να τους εμφανίζει ανάποδα από τη σειρά που διαβάστηκαν.
 
+<!--
+lista = []
+
+for i in range(100):
+  lista.append(int(input("Δώσε αριθμό: ").strip()))
+
+for i in range(99, -1, -1):
+  print(lista[i])
+-->
+
 ```python
 lista = []
 
@@ -344,6 +487,22 @@ for i in range(99, -1, -1):
 ### [Άσκηση 2](source/lecture_06/lecture_06_exercise_2x.py)
 
 Ένα σχολείο έχει 200 μαθητές στην Γ’ τάξη λυκείου. Να γίνει πρόγραµµα το οποίο θα διαβάζει τους βαθμούς απολυτηρίου των μαθητών και θα εμφανίζει τους μαθητές που ο βαθμός τους είναι µεγαλύτερος από το µέσο όρο των αποφοίτων.
+
+<!--
+vath = []
+sum = 0
+
+for i in range(200):
+  num = int(input("Δώσε βαθμό: ").strip())
+  vath.append(num)
+  sum += num
+
+mo = sum / 200
+
+for i in range(200):
+  if vath[i] > mo:
+    print(i)
+-->
 
 ```python
 vath = []
@@ -374,6 +533,26 @@ for i in range(200):
 ### [Άσκηση 3](source/lecture_06/lecture_06_exercise_3x.py)
 
 Ένας µετεωρολόγος καταγράφει τις θερμοκρασίες των ημερών ενός μήνα 30 ημερών που σημειώθηκαν στο κέντρο µιας πόλης στις 12 το μεσημέρι. Να γίνει πρόγραµµα που θα διαβάζει τις θερμοκρασίες αυτές, θα τις καταχωρεί σε µία λίστα και θα υπολογίζει και να εκτυπώνει την ελάχιστη θερμοκρασία και την ημέρα που σημειώθηκε καθώς και τη µέγιστη θερμοκρασία και την ημέρα που σημειώθηκε.
+
+<!--
+temp = []
+
+for i in range(30):
+  num = int(input("Δώσε θερμοκρασία: ").strip())
+  temp.append(num)
+
+maxThesi = 0
+minThesi = 0
+
+for i in range(len(temp)):
+  if temp[i] < temp[minThesi]:
+    minThesi = i
+  if temp[i] > temp[maxThesi]:
+    maxThesi = i
+
+print(f"Η max θερμοκρασία είναι {temp[maxThesi]} την ημέρα {maxThesi + 1}")
+print(f"Η min θερμοκρασία είναι {temp[minThesi]} την ημέρα {minThesi + 1}")
+-->
 
 ```python
 temp = []
@@ -408,6 +587,25 @@ print("Η min θερμοκρασία είναι %d την ημέρα %d" % (temp
 ### [Άσκηση 4](source/lecture_06/lecture_06_exercise_4x.py)
 
 Σε ένα διαγωνισμό πληροφορικής συµµετέχουν 20 µαθητές. Να γραφεί πρόγραµµα το οποίο θα αποθηκεύει σε µία λίστα τα ονόματα των µαθητών και σε µία λίστα τους βαθμούς που έλαβε ο κάθε µαθητής στο διαγωνισμό. Το πρόγραµµα θα εμφανίζει το όνομα του µαθητή που κέρδισε το διαγωνισμό.
+
+<!--
+names = []
+marks = []
+
+for i in range(20):
+  onoma = input("Δώσε όνομα: ").strip()
+  vathmos = int(input("Δώσε βαθμό: ").strip())
+  names.append(onoma)
+  marks.append(vathmos)
+
+maxThesi = 0
+
+for i in range(len(names)):
+  if marks[i] > marks[maxThesi]:
+    maxThesi = i
+
+print(names[maxThesi])
+-->
 
 ```python
 names = []
