@@ -27,13 +27,13 @@
 
 ```python
 for (Επαναλήπτης) in (Λίστα):
-    Εντολές
+  Εντολές
 
 for item in list:
-    print(item)
+  print(item)
 
 for i in range(10):
-    print(i)
+  print(i)
 ```
 
 ## 6.2 Η συνάρτηση range
@@ -62,8 +62,8 @@ range([start], stop, [step])
 lista = []
 
 for n in range(5):
-    num = int(input("Δώσε στοιχείο για την θέση %d: " % n))
-    lista.append(num)
+  num = int(input("Δώσε στοιχείο για την θέση %d: " % n))
+  lista.append(num)
 
 print(lista)
 ```
@@ -87,7 +87,7 @@ lista = [1, 5, 6, 3]
 athroisma = 0
 
 for item in lista:
-    athroisma += item
+  athroisma += item
 
 print("Άθροισμα:", athroisma)
 ```
@@ -113,12 +113,12 @@ megisto = lista[0]
 elaxisto = lista[0]
 
 for item in lista:
-    if item > megisto:
-        megisto = item
+  if item > megisto:
+    megisto = item
 
 for item in lista:
-    if item < elaxisto:
-        elaxisto = item
+  if item < elaxisto:
+    elaxisto = item
 
 print("Μέγιστο: %d" % megisto)
 print("Ελάχιστο: %d" % elaxisto)
@@ -145,15 +145,15 @@ thesi = 0
 lista = [5, 7, 8, 9, 3]
 
 for item in lista:
-    if item > lista[maxThesi]:
-        maxThesi = thesi
-    thesi += 1
+  if item > lista[maxThesi]:
+    maxThesi = thesi
+  thesi += 1
 
 print("H maxThesi με τον 1ο τρόπο: %d" % maxThesi)
 
 for i in range(len(lista)):
-    if lista[i] > lista[maxThesi]:
-        maxThesi = i
+  if lista[i] > lista[maxThesi]:
+    maxThesi = i
 
 print("H maxThesi με τον 2ο τρόπο: %d" % maxThesi)
 ```
@@ -178,8 +178,8 @@ lista = [5, 7, 8, 9, 3]
 key = int(input("Δώσε στοιχείο που αναζητάς: "))
 
 for i in range(len(lista)):
-    if lista[i] == key:
-        thesi = i
+  if lista[i] == key:
+    thesi = i
 
 print("Το %d βρίσκεται στη θέση %d." % (key, thesi))
 ```
@@ -207,11 +207,11 @@ i = 0
 key = int(input("Δώσε στοιχείο που αναζητάς: "))
 
 while (i < len(lista)) and (not found):
-    if lista[i] == key:
-        thesi = i
-        found = True
-    else:
-        i += 1
+  if lista[i] == key:
+    thesi = i
+    found = True
+  else:
+    i += 1
 
 print("Το %d βρίσκεται στη θέση %d." % (key, thesi))
 ```
@@ -238,8 +238,8 @@ counter = 0
 key = int(input("Δώσε στοιχείο που αναζητάς: "))
 
 for k in lista:
-    if k == key:
-        counter += 1
+  if k == key:
+    counter += 1
 
 print("Ο αριθμός %d έχει εισαχθεί %d φορές." % (key, counter))
 ```
@@ -267,10 +267,10 @@ found = False
 i = 0
 
 while (i < len(lista)) and (not found):
-    if lista[i] == key:
-        thesi = i
-        found = True
-    i += 1
+  if lista[i] == key:
+    thesi = i
+    found = True
+  i += 1
 
 print("Το στοιχείο που αναζητάς βρίσκεται στη θέση: %d" % thesi)
 ```
@@ -297,8 +297,8 @@ key = int(input("Δώσε στοιχείο που αναζητάς: "))
 counter = 0
 
 for k in lista:
-    if k == key:
-        counter += 1
+  if k == key:
+    counter += 1
 
 print("Το στοιχείο που αναζητάς εμφανίζεται %d φορές στη λίστα." % counter)
 ```
@@ -325,10 +325,10 @@ print("Το στοιχείο που αναζητάς εμφανίζεται %d �
 lista = []
 
 for i in range(100):
-    lista.append(int(input("Δώσε αριθμό: ")))
+  lista.append(int(input("Δώσε αριθμό: ")))
 
 for i in range(99, -1, -1):
-    print(lista[i])
+  print(lista[i])
 ```
 
 <!--
@@ -350,15 +350,15 @@ vath = []
 sum = 0
 
 for i in range(200):
-    num = int(input("Δώσε βαθμό: "))
-    vath.append(num)
-    sum += num
+  num = int(input("Δώσε βαθμό: "))
+  vath.append(num)
+  sum += num
 
 mo = sum / 200
 
 for i in range(200):
-    if vath[i] > mo:
-        print(i)
+  if vath[i] > mo:
+    print(i)
 ```
 
 <!--
@@ -379,17 +379,17 @@ for i in range(200):
 temp = []
 
 for i in range(30):
-    num = int(input("Δώσε θερμοκρασία: "))
-    temp.append(num)
+  num = int(input("Δώσε θερμοκρασία: "))
+  temp.append(num)
 
 maxThesi = 0
 minThesi = 0
 
 for i in range(len(temp)):
-    if temp[i] < temp[minThesi]:
-        minThesi = i
-    if temp[i] > temp[maxThesi]:
-        maxThesi = i
+  if temp[i] < temp[minThesi]:
+    minThesi = i
+  if temp[i] > temp[maxThesi]:
+    maxThesi = i
 
 print("Η max θερμοκρασία είναι %d την ημέρα %d" % (temp[maxThesi], (maxThesi + 1)))
 print("Η min θερμοκρασία είναι %d την ημέρα %d" % (temp[minThesi], (minThesi + 1)))
@@ -414,16 +414,16 @@ names = []
 marks = []
 
 for i in range(20):
-    onoma = input("Δώσε όνομα: ")
-    vathmos = int(input("Δώσε βαθμό: "))
-    names.append(onoma)
-    marks.append(vathmos)
+  onoma = input("Δώσε όνομα: ")
+  vathmos = int(input("Δώσε βαθμό: "))
+  names.append(onoma)
+  marks.append(vathmos)
 
 maxThesi = 0
 
 for i in range(len(names)):
-    if marks[i] > marks[maxThesi]:
-        maxThesi = i
+  if marks[i] > marks[maxThesi]:
+    maxThesi = i
 
 print(names[maxThesi])
 ```

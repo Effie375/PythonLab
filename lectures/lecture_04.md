@@ -19,14 +19,14 @@
 
 ```python
 if (συνθήκη ή συνθήκες):
-    E1
+  E1
 elif (συνθήκη ή συνθήκες):
-    E2
+  E2
 ...
 elif (συνθήκη ή συνθήκες):
-    En-1
+  En-1
 else:
-    En
+  En
 ```
 
 ## 4.2 Παραδείγματα
@@ -43,21 +43,21 @@ else:
 day = input("Δώσε έναν αριθμό από 1-7: ")
 
 if day == "1":
-    print("Κυριακή")
+  print("Κυριακή")
 elif day == "2":
-    print("Δευτέρα")
+  print("Δευτέρα")
 elif day == "3":
-    print("Τρίτη")
+  print("Τρίτη")
 elif day == "4":
-    print("Τετάρτη")
+  print("Τετάρτη")
 elif day == "5":
-    print("Πέμπτη")
+  print("Πέμπτη")
 elif day == "6":
-    print("Παρασκευή")
+  print("Παρασκευή")
 elif day == "7":
-    print("Σάββατο")
+  print("Σάββατο")
 else:
-    print("Λάθος αριθμός")
+  print("Λάθος αριθμός")
 ```
 
 <!--
@@ -84,17 +84,17 @@ x = int(input("Δώσε 2ο αριθμό: "))
 y = float(input("Δώσε 3ο αριθμό: "))
 
 if a == 10:
-    x = x % 2
-    y = y ** 2
+  x = x % 2
+  y = y ** 2
 elif a == 3:
-    x = x * 2
-    y -= 1
+  x = x * 2
+  y -= 1
 elif a == 5:
-    x = x + 4
-    y += 7
+  x = x + 4
+  y += 7
 else:
-    x -= 3
-    y += 1
+  x -= 3
+  y += 1
 
 print("x: %d , y: %.1f" % (x, y))
 ```
@@ -117,11 +117,11 @@ print("x: %d , y: %.1f" % (x, y))
 vathmos = int(input("Βάλε βαθμό: "))
 
 if(vathmos > 7):
-    print("Άριστα")
+  print("Άριστα")
 elif(vathmos > 4):
-    print("Καλά")
+  print("Καλά")
 else:
-    print("Κόβεται")
+  print("Κόβεται")
 ```
 
 <!--
@@ -138,7 +138,7 @@ Mη-Προκαθορισμένος Αριθμός Επαναλήψεων.
 
 ```python
 while (συνθήκη):
-    commands
+  commands
 ```
 
 **Παράδειγμα:**
@@ -146,8 +146,8 @@ while (συνθήκη):
 ```python
 x = 0
 while x != 3:
-    print("Hello")
-    x += 3
+  print("Hello")
+  x += 3
 ```
 
 ## 4.4 Η εντολή While - Flow Chart
@@ -172,8 +172,8 @@ while x != 3:
 i = 1
 
 while i <= 10:
-    print(i)
-    i += 1
+  print(i)
+  i += 1
 ```
 
 <!--
@@ -194,8 +194,8 @@ while i <= 10:
 num = int(input("Δώσε έναν αριθμό: "))
 
 while num > 0:
-    print(num)
-    num = int(input("Δώσε έναν αριθμό: "))
+  print(num)
+  num = int(input("Δώσε έναν αριθμό: "))
 ```
 
 <!--
@@ -217,8 +217,8 @@ sum = num = 0
 key = 55555
 
 while num != key:
-    sum += num
-    num = int(input("Δώσε έναν αριθμό: "))
+  sum += num
+  num = int(input("Δώσε έναν αριθμό: "))
 
 print("Το άθροισμα είναι %d" % sum)
 ```
@@ -241,13 +241,13 @@ print("Το άθροισμα είναι %d" % sum)
 vathmos = int(input("Βάλε βαθμό (999 τέλος): "))
 
 while(vathmos != 999):
-    if(vathmos > 7):
-        print("Άριστα")
-    elif(vathmos > 4):
-        print("Καλά")
-    else:
-        print("Κόβεται")
-    vathmos = int(input("Βάλε βαθμό (999 τέλος): "))
+  if(vathmos > 7):
+    print("Άριστα")
+  elif(vathmos > 4):
+    print("Καλά")
+  else:
+    print("Κόβεται")
+  vathmos = int(input("Βάλε βαθμό (999 τέλος): "))
 
 print("Τέλος")
 ```
@@ -268,21 +268,21 @@ print("Τέλος")
 
 ```python
 while(True):
-    vathmos = int(input("Βάλε βαθμό (999 τέλος): "))
-    if((vathmos >= 0 and vathmos <= 10) or (vathmos == 999)):
-        break
+  vathmos = int(input("Βάλε βαθμό (999 τέλος): "))
+  if((vathmos >= 0 and vathmos <= 10) or (vathmos == 999)):
+    break
 
 while(vathmos != 999):
-    if(vathmos > 7):
-        print("Άριστα")
-    elif(vathmos > 4):
-        print("Καλά")
-    else:
-        print("Κόβεται")
-    while(True):
-        vathmos = int(input("Βάλε βαθμό (999 τέλος): "))
-        if((vathmos >= 0 and vathmos <= 10) or (vathmos == 999)):
-        break
+  if(vathmos > 7):
+    print("Άριστα")
+  elif(vathmos > 4):
+    print("Καλά")
+  else:
+    print("Κόβεται")
+  while(True):
+    vathmos = int(input("Βάλε βαθμό (999 τέλος): "))
+    if((vathmos >= 0 and vathmos <= 10) or (vathmos == 999)):
+      break
 
 print("Τέλος!")
 ```
@@ -310,14 +310,14 @@ counter = 0
 num = 1
 
 while num != 0:
-    num = float(input("Δώσε έναν αριθμό: "))
-    if num > 0:
-        counter += 1
+  num = float(input("Δώσε έναν αριθμό: "))
+  if num > 0:
+    counter += 1
 
 if counter > 0:
-    print("Οι θετικοί αριθμοί είναι %d" % counter)
+  print("Οι θετικοί αριθμοί είναι %d" % counter)
 else:
-    print("Δεν δώσατε θετικούς αριθμούς.")
+  print("Δεν δώσατε θετικούς αριθμούς.")
 ```
 
 <!--
@@ -342,14 +342,14 @@ dosi = 20
 tameio = 0
 
 while tameio <= aksia:
-    tameio += dosi
-    weeks += 1
-    dosi *= 2
+  tameio += dosi
+  weeks += 1
+  dosi *= 2
 
 print(weeks)
 
 if tameio > aksia:
-    print("Περίσσεψαν %d Ευρώ." % (tameio - aksia))
+  print("Περίσσεψαν %d Ευρώ." % (tameio - aksia))
 ```
 
 <!--

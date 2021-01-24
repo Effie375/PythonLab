@@ -39,11 +39,11 @@
 lista = []
 
 for i in range(5):
-    ypolista = []
-    for j in range(4):
-        new_num = int(input("Δώσε αριθμό: "))
-        ypolista.append(new_num)
-    lista.append(ypolista)
+  ypolista = []
+  for j in range(4):
+    new_num = int(input("Δώσε αριθμό: "))
+    ypolista.append(new_num)
+  lista.append(ypolista)
 
 print(lista)
 ```
@@ -72,8 +72,8 @@ lista = [[2, 3, 4, 1],
 athroisma = 0
 
 for ypolista in lista:
-    for i in ypolista:
-        athroisma += i
+  for i in ypolista:
+    athroisma += i
 
 print(athroisma)
 ```
@@ -102,9 +102,9 @@ lista = [[2, 3, 4, 1],
 megisto = lista[0][0]
 
 for ypolista in lista:
-    for item in ypolista:
-        if item > megisto:
-            megisto = item
+  for item in ypolista:
+    if item > megisto:
+      megisto = item
 
 print(megisto)
 ```
@@ -134,10 +134,10 @@ megistoX = 0
 megistoY = 0
 
 for x in range(len(lista)):
-    for y in range(len(lista[x])):
-        if lista[x][y] > lista[megistoX][megistoY]:
-            megistoX = x
-            megistoY = y
+  for y in range(len(lista[x])):
+    if lista[x][y] > lista[megistoX][megistoY]:
+      megistoX = x
+      megistoY = y
 
 print(megistoX)
 print(megistoY)
@@ -165,9 +165,9 @@ lista = [[2, 3, 4, 1],
          [0, 4, 7, 4]]
 
 for ypolista in lista:
-    sumGrammhs = 0
-    for item in ypolista:
-        sumGrammhs += item
+  sumGrammhs = 0
+  for item in ypolista:
+    sumGrammhs += item
 
     print("Άθροισμα γραμμής: %d" % sumGrammhs)
 ```
@@ -194,10 +194,10 @@ lista = [[2, 3, 4, 1],
          [0, 4, 7, 4]]
 
 for j in range(4):
-    sumSthlhs = 0
-    for i in range(5):
-        sumSthlhs += lista[i][j]
-    print("Άθροισμα στήλης: %d" % sumSthlhs)
+  sumSthlhs = 0
+  for i in range(5):
+    sumSthlhs += lista[i][j]
+  print("Άθροισμα στήλης: %d" % sumSthlhs)
 ```
 
 <!--
@@ -222,11 +222,11 @@ lista = [[2, 3, 4, 1],
          [0, 4, 7, 4]]
 
 for ypolista in lista:
-    megistoGrammhs = ypolista[0]
-    for i in ypolista:
-        if megistoGrammhs < i:
-            megistoGrammhs = i
-    print("Μέγιστο γραμμής: %d" % megistoGrammhs)
+  megistoGrammhs = ypolista[0]
+  for i in ypolista:
+    if megistoGrammhs < i:
+      megistoGrammhs = i
+  print("Μέγιστο γραμμής: %d" % megistoGrammhs)
 ```
 
 <!--
@@ -251,11 +251,11 @@ lista = [[2, 3, 4, 1],
          [0, 4, 7, 4]]
 
 for j in range(4):
-    megistoSthlhs = lista[0][j]
-    for i in range(5):
-        if megistoSthlhs < lista[i][j]:
-            megistoSthlhs = lista[i][j]
-    print("Μέγιστο στήλης: %d" % megistoSthlhs)
+  megistoSthlhs = lista[0][j]
+  for i in range(5):
+    if megistoSthlhs < lista[i][j]:
+      megistoSthlhs = lista[i][j]
+  print("Μέγιστο στήλης: %d" % megistoSthlhs)
 ```
 
 <!--
@@ -284,10 +284,10 @@ key = int(input("Δώσε στοιχείο που αναζητάς: "))
 key_counter = 0
 
 for i in range(5):
-    for j in range(4):
-        if key == lista[i][j]:
-            print(i, j)
-            key_counter += 1
+  for j in range(4):
+    if key == lista[i][j]:
+      print(i, j)
+      key_counter += 1
 print("Βρέθηκε %d φορές." % key_counter)
 ```
 
@@ -319,13 +319,13 @@ i = 0
 j = 0
 
 while i < 5 and not found:
-    while j < 4 and not found:
-        if key == lista[i][j]:
-            print(i, j)
-            found = True
-        j += 1
-    j = 0
-    i += 1
+  while j < 4 and not found:
+    if key == lista[i][j]:
+      print(i, j)
+      found = True
+    j += 1
+  j = 0
+  i += 1
 ```
 
 <!--
@@ -352,12 +352,12 @@ lista = [[2, 3, 4, 1],
 print("Η μη ταξινομημένη λίστα είναι: %s" % lista)
 
 for k in range(5):
-    for i in range(1, 4):
-        for j in range(3, i - 1, -1):
-            if lista[k][j - 1] > lista[k][j]:
-                temp = lista[k][j - 1]
-                lista[k][j - 1] = lista[k][j]
-                lista[k][j] = temp
+  for i in range(1, 4):
+    for j in range(3, i - 1, -1):
+      if lista[k][j - 1] > lista[k][j]:
+        temp = lista[k][j - 1]
+        lista[k][j - 1] = lista[k][j]
+        lista[k][j] = temp
 
 print("Η ταξινομημένη λίστα: %s" % lista)
 ```
@@ -386,12 +386,12 @@ lista = [[2, 3, 4, 1],
 print("Η μη ταξινομημένη λίστα είναι: %s" % lista)
 
 for k in range(4):
-    for i in range(1, 5):
-        for j in range(4, i - 1, -1):
-            if lista[j - 1][k] > lista[j][k]:
-                temp = lista[j - 1][k]
-                lista[j - 1][k] = lista[j][k]
-                lista[j][k] = temp
+  for i in range(1, 5):
+    for j in range(4, i - 1, -1):
+      if lista[j - 1][k] > lista[j][k]:
+        temp = lista[j - 1][k]
+        lista[j - 1][k] = lista[j][k]
+        lista[j][k] = temp
 
 print("Η ταξινομημένη λίστα: %s" & lista)
 ```
@@ -424,11 +424,11 @@ sum1 = 0
 sum2 = 0
 
 for i in range(4):
-    for j in range(4):
-        if i == j:
-            sum1 += lista[i][j]
-        if i + j == 3:
-            sum2 += lista[i][j]
+  for j in range(4):
+    if i == j:
+      sum1 += lista[i][j]
+    if i + j == 3:
+      sum2 += lista[i][j]
 
 print(sum1, sum2)
 ```
@@ -453,9 +453,9 @@ print(sum1, sum2)
 lista = []
 
 for ypolista in lista:
-    sum = 0
-    for i in ypolista:
-        sum += i
+  sum = 0
+  for i in ypolista:
+    sum += i
 
 lista.append(sum)
 ```
@@ -480,12 +480,12 @@ lista2 = [1, 2, 5]
 lista3 = []
 
 for key in lista2:
-    counter = 0
-    for ypolista in lista1:
-        for i in ypolista:
-            if i == key:
-                counter += 1
-    lista3.append(counter)
+  counter = 0
+  for ypolista in lista1:
+    for i in ypolista:
+      if i == key:
+        counter += 1
+  lista3.append(counter)
 
 print(lista3)
 ```
@@ -514,23 +514,23 @@ TRIMHNA = 3
 list = []
 
 for i in range(MATHITES):
-    list.append([])
-    sum = 0
-    print("\n-------- Μαθητής %d --------" % (i + 1))
-    for j in range(TRIMHNA):
-        vathmos = input("Δώσε βαθμό %doυ τριμήνου: " % (j + 1))
-        # Έλεγχος ορθότητας
-        while not vathmos.isdigit():
-            vathmos = input("Είπα δώσε βαθμό: ")
-        vathmos = int(vathmos)
-        sum += vathmos
-        list[i].append(vathmos)
-    list[i].append(sum // TRIMHNA)
+  list.append([])
+  sum = 0
+  print("\n-------- Μαθητής %d --------" % (i + 1))
+  for j in range(TRIMHNA):
+    vathmos = input("Δώσε βαθμό %doυ τριμήνου: " % (j + 1))
+    # Έλεγχος ορθότητας
+    while not vathmos.isdigit():
+      vathmos = input("Είπα δώσε βαθμό: ")
+    vathmos = int(vathmos)
+    sum += vathmos
+    list[i].append(vathmos)
+  list[i].append(sum // TRIMHNA)
 
 print('\n', end='')
 
 for g in range(MATHITES):
-    print("O μέσος όρος του %dου μαθητή είναι %d." % ((g + 1), (list[g][TRIMHNA])))
+  print("O μέσος όρος του %dου μαθητή είναι %d." % ((g + 1), (list[g][TRIMHNA])))
 ```
 
 <!--
@@ -549,10 +549,10 @@ for g in range(MATHITES):
 
 ```python
 def athroisma(plist):
-    sum = 0
-    for item in plist:
-        sum += item
-    return sum
+  sum = 0
+  for item in plist:
+    sum += item
+  return sum
 
 
 PAIKTES = 10
@@ -561,30 +561,30 @@ pontoi = []
 names = []
 
 for i in range(PAIKTES):
-    name = input("\nΔώσε το όνομα του %dου παίκτη: " % (i + 1))
-    names.append(name)
-    for j in range(AGWNES):
-        pontos = int(input("Δώσε πόντους για τον %do αγώνα: " % (j + 1)))
-        if (i == 0):
-            pontoi.append([])
-        pontoi[j].append(pontos)
+  name = input("\nΔώσε το όνομα του %dου παίκτη: " % (i + 1))
+  names.append(name)
+  for j in range(AGWNES):
+    pontos = int(input("Δώσε πόντους για τον %do αγώνα: " % (j + 1)))
+    if (i == 0):
+      pontoi.append([])
+    pontoi[j].append(pontos)
 
 # Τρέχει για κάθε αγώνα
 for agwnas in range(AGWNES):
-    # Καλούμε τη συνάρτηση και παίρνουμε το άθροισμα των πόντων ανα αγώνα
-    synolo_ponton = athroisma(pontoi[agwnas])
-    print("\n-------- Αγώνας %d --------" % (agwnas + 1))
-    print("Σύνολο πόντων: %d" % synolo_ponton)
-    # Μηδενίζουμε τη θέση του καλύτερου παίκτη
-    best_thesi = 0
-    # Έστω ο καλύτερος παίκτης με τους περισσότερους πόντους είναι ο πρώτος
-    best = pontoi[agwnas][best_thesi]
-    # Τρέχει για κάθε παίκτη
-    for paiktis in range(PAIKTES):
-        if pontoi[agwnas][paiktis] > best:
-            best_thesi = paiktis
-    print("Καλύτερος παίκτης: %s" % names[best_thesi])
-    print("Πόντοι καλύτερου παίκτη: %d" % pontoi[agwnas][best_thesi])
+  # Καλούμε τη συνάρτηση και παίρνουμε το άθροισμα των πόντων ανα αγώνα
+  synolo_ponton = athroisma(pontoi[agwnas])
+  print("\n-------- Αγώνας %d --------" % (agwnas + 1))
+  print("Σύνολο πόντων: %d" % synolo_ponton)
+  # Μηδενίζουμε τη θέση του καλύτερου παίκτη
+  best_thesi = 0
+  # Έστω ο καλύτερος παίκτης με τους περισσότερους πόντους είναι ο πρώτος
+  best = pontoi[agwnas][best_thesi]
+  # Τρέχει για κάθε παίκτη
+  for paiktis in range(PAIKTES):
+    if pontoi[agwnas][paiktis] > best:
+      best_thesi = paiktis
+  print("Καλύτερος παίκτης: %s" % names[best_thesi])
+  print("Πόντοι καλύτερου παίκτη: %d" % pontoi[agwnas][best_thesi])
 ```
 
 <!--

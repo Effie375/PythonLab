@@ -53,9 +53,9 @@ lista = []
 i = 0
 
 while i < MAX_ELEMENTS:
-    num = int(input("Δώσε στοιχείο για την θέση %d: " % i))
-    lista.append(num)
-    i += 1
+  num = int(input("Δώσε στοιχείο για την θέση %d: " % i))
+  lista.append(num)
+  i += 1
 
 print("Η λίστα μας είναι: %s" % lista)
 ```
@@ -79,8 +79,8 @@ lista = [5, 7, 8, 9, 3]
 athroisma = i = 0
 
 while i < len(lista):
-    athroisma += lista[i]
-    i += 1
+  athroisma += lista[i]
+  i += 1
 
 print("Άθροισμα: %d" % athroisma)
 ```
@@ -106,18 +106,18 @@ megisto = lista[0]
 i = 0
 
 while i < len(lista):
-    if lista[i] > megisto:
-        megisto = lista[i]
-    i += 1
+  if lista[i] > megisto:
+    megisto = lista[i]
+  i += 1
 
 print("Ο μέγιστος αριθμός είναι το: %d" % megisto)
 
 i = 0
 
 while i < len(lista):
-    if lista[i] < elaxisto:
-        elaxisto = lista[i]
-    i += 1
+  if lista[i] < elaxisto:
+    elaxisto = lista[i]
+  i += 1
 
 print("Ο ελάχιστος αριθμός είναι το: %d" % elaxisto)
 ```
@@ -142,9 +142,9 @@ elaxisto = lista[0]
 i = 0
 
 while i < len(lista):
-    if lista[i] < elaxisto:
-        elaxisto = lista[i]
-    i += 1
+  if lista[i] < elaxisto:
+    elaxisto = lista[i]
+  i += 1
 
 print("Ελάχιστο:", elaxisto)
 ```
@@ -169,9 +169,9 @@ maxThesi = 0
 i = 0
 
 while i < len(lista):
-    if lista[i] > lista[maxThesi]:
-        maxThesi = i
-    i += 1
+  if lista[i] > lista[maxThesi]:
+    maxThesi = i
+  i += 1
 
 print("Μέγιστη θέση:", maxThesi)
 ```
@@ -197,9 +197,9 @@ key = int(input("Δώσε στοιχείο που αναζητάς: "))
 i = 0
 
 while i < len(list):
-    if key == list[i]:
-        thesi = i
-    i += 1
+  if key == list[i]:
+    thesi = i
+  i += 1
 
 print("Το στοιχείο που αναζητάς βρίσκεται στη θέση:", thesi)
 ```
@@ -225,10 +225,10 @@ found = False
 i = 0
 
 while (i < len(lista)) and (not found):
-    if lista[i] == key:
-        thesi = i
-        found = True
-    i += 1
+  if lista[i] == key:
+    thesi = i
+    found = True
+  i += 1
 
 print("Το στοιχείο που αναζητάς βρίσκεται στη θέση:", thesi)
 ```
@@ -254,9 +254,9 @@ counter = 0
 i = 0
 
 while i < len(list):
-    if list[i] == key:
-        counter += 1
-    i += 1
+  if list[i] == key:
+    counter += 1
+  i += 1
 
 print("Το στοιχείο που αναζητάς εμφανίζεται %d φορές στη λίστα." % counter)
 ```
@@ -286,15 +286,15 @@ lista = []
 i = 0
 
 while i < max_elements:
-    num = int(input("Δώσε έναν αριθμό: "))
-    lista.append(num)
-    i += 1
+  num = int(input("Δώσε έναν αριθμό: "))
+  lista.append(num)
+  i += 1
 
 j = len(lista)
 
 while j > 0:
-    neaLista.append(lista[j - 1])
-    j -= 1
+  neaLista.append(lista[j - 1])
+  j -= 1
 
 print("Η νέα λίστα είναι %s." % neaLista)
 ```
@@ -320,12 +320,12 @@ grades = []
 stund = []
 
 while i < MAX_STUDENTS:
-    name = input("Δώσε το όνομά σου: ")
-    grad = int(input("Δώσε τον βαθμό σου: "))
-    stund.append(name)
-    grades.append(grad)
-    sum += grad
-    i += 1
+  name = input("Δώσε το όνομά σου: ")
+  grad = int(input("Δώσε τον βαθμό σου: "))
+  stund.append(name)
+  grades.append(grad)
+  sum += grad
+  i += 1
 
 # Να ελέγξετε τη διαίρεση με μηδέν!
 average = sum / i
@@ -333,9 +333,9 @@ average = sum / i
 i = 0
 
 while i < len(grades):
-    if grades[i] > average:
-        print("Οι μαθητές που έχουν υψηλές βαθμολογίες είνα: %s" % stund[i])
-    i += 1
+  if grades[i] > average:
+    print("Οι μαθητές που έχουν υψηλές βαθμολογίες είνα: %s" % stund[i])
+  i += 1
 ```
 
 <!--
@@ -360,18 +360,18 @@ i = 0
 temps = []
 
 while i < MAX_TEMP:
-    tem = int(input("Δώσε μια θερμοκρασία: "))
-    temps.append(tem)
-    i += 1
+  tem = int(input("Δώσε μια θερμοκρασία: "))
+  temps.append(tem)
+  i += 1
 
 i = 0
 
 while i < len(temps):
-    if temps[i] > temps[max]:
-        max = i
-    elif temps[i] < temps[min]:
-        min = i
-    i += 1
+  if temps[i] > temps[max]:
+    max = i
+  elif temps[i] < temps[min]:
+    min = i
+  i += 1
 
 print("Η χαμηλότερη θερμοκρασία ήταν %d βαθμούς την %d μέρα." % (temps[min], (min + 1)))
 print("Η υψηλότερη θερμοκρασία ήταν %d βαθμούς την  %d μέρα." % (temps[max], (max + 1)))
@@ -399,18 +399,18 @@ maxIndex = 0
 i = 0
 
 while i < MAX_STUDENTS:
-    student = input("Δώσε το όνομά σου: ")
-    student_list.append(student)
-    grad = int(input("Δώσε τον βαθμό σου: "))
-    grades_list.append(grad)
-    i += 1
+  student = input("Δώσε το όνομά σου: ")
+  student_list.append(student)
+  grad = int(input("Δώσε τον βαθμό σου: "))
+  grades_list.append(grad)
+  i += 1
 
 i = 0
 
 while i < len(grades_list):
-    if grades_list[i] > grades_list[maxIndex]:
-        maxIndex = i
-    i += 1
+  if grades_list[i] > grades_list[maxIndex]:
+    maxIndex = i
+  i += 1
 
 print("%s κέρδισε με βαθμό %d." % (student_list[maxIndex], grades_list[maxIndex]))
 ```

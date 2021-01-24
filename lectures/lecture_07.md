@@ -32,9 +32,9 @@ key = int(input("Δώσε στοιχείο που αναζητάς: "))
 thesi = 0
 
 for i in lista:
-    if i == key:
-        print("Το %d βρίσκεται στη θέση %d." % (key, thesi))
-    thesi += 1
+  if i == key:
+    print("Το %d βρίσκεται στη θέση %d." % (key, thesi))
+  thesi += 1
 ```
 
 <!--
@@ -53,8 +53,8 @@ key = int(input("Δώσε στοιχείο που αναζητάς: "))
 k = 0
 
 for i in lista:
-    if i == key:
-        k += 1
+  if i == key:
+    k += 1
 
 print("Το %d έχει εισαχθεί %d φορές." % (key, k))
 ```
@@ -82,16 +82,16 @@ found = False
 i = 0
 
 while (i < 5) and (found is False):
-    if lista[i] == key:
-        thesi = i
-        found = True
-    else:
-        i += 1
+  if lista[i] == key:
+    thesi = i
+    found = True
+  else:
+    i += 1
 
 if found == True:
-    print("Το %d βρίσκεται στη θέση %d." % (key, thesi))
+  print("Το %d βρίσκεται στη θέση %d." % (key, thesi))
 else:
-    print("Το %d δε βρίσκεται στη λίστα %d." % (key, thesi))
+  print("Το %d δε βρίσκεται στη λίστα %d." % (key, thesi))
 ```
 
 <!--
@@ -117,15 +117,15 @@ found = False
 i = 0
 
 while (i < 5) and (found is False):
-    if lista[i] == key:
-        thesi = i
-        found = True
-    i += 1
+  if lista[i] == key:
+    thesi = i
+    found = True
+  i += 1
 
 if found == True:
-    print("Το %d βρίσκεται στη θέση %d." % (key, thesi))
+  print("Το %d βρίσκεται στη θέση %d." % (key, thesi))
 else:
-    print("Το %d δε βρίσκεται στη λίστα %s." % (key, lista))
+  print("Το %d δε βρίσκεται στη λίστα %s." % (key, lista))
 ```
 
 <!--
@@ -148,11 +148,11 @@ lista = [5, 7, 8, 9, 3]
 print("Η λίστα μας πριν τη ταξινόμηση είναι: %s" % lista)
 
 for i in range(len(lista)):
-    for j in range(len(lista) - 1, i, -1):
-        if lista[j - 1] > lista[j]:
-            temp = lista[j - 1]
-            lista[j - 1] = lista[j]
-            lista[j] = temp
+  for j in range(len(lista) - 1, i, -1):
+    if lista[j - 1] > lista[j]:
+      temp = lista[j - 1]
+      lista[j - 1] = lista[j]
+      lista[j] = temp
 
 print("Η λίστα μας μετά τη ταξινόμηση είναι: %s" % lista)
 ```
@@ -176,14 +176,14 @@ names = ["Γεωργίου", "Πέτρου", "Παπαδόπουλος", "Αθα
 grades = [1, 2, 5, 7, 9]
 
 for i in range(1, 5):
-    for j in range(4, i - 1, -1):
-        if grades[j - 1] > grades[j]:
-            temp = grades[j - 1]
-            grades[j - 1] = grades[j]
-            grades[j] = temp
-            temp2 = names[j - 1]
-            names[j - 1] = names[j]
-            names[j] = temp2
+  for j in range(4, i - 1, -1):
+    if grades[j - 1] > grades[j]:
+      temp = grades[j - 1]
+      grades[j - 1] = grades[j]
+      grades[j] = temp
+      temp2 = names[j - 1]
+      names[j - 1] = names[j]
+      names[j] = temp2
 
 print(names)
 print(grades)
@@ -208,19 +208,19 @@ names = ["Γεωργίου", "Πέτρου", "Παπαδόπουλος", "Αθα
 grades = [1, 2, 5, 7, 9]
 
 for i in range(1, 5):
-    for j in range(4, i - 1, -1):
-        if grades[j - 1] > grades[j]:
-            temp = grades[j - 1]
-            grades[j - 1] = grades[j]
-            grades[j] = temp
-            temp2 = names[j - 1]
-            names[j - 1] = names[j]
-            names[j] = temp2
-        if grades[j - 1] == grades[j]:
-            if names[j - 1] > names[j]:
-                temp3 = names[j - 1]
-                names[j - 1] = names[j]
-                names[j] = temp3
+  for j in range(4, i - 1, -1):
+    if grades[j - 1] > grades[j]:
+      temp = grades[j - 1]
+      grades[j - 1] = grades[j]
+      grades[j] = temp
+      temp2 = names[j - 1]
+      names[j - 1] = names[j]
+      names[j] = temp2
+    if grades[j - 1] == grades[j]:
+      if names[j - 1] > names[j]:
+        temp3 = names[j - 1]
+        names[j - 1] = names[j]
+        names[j] = temp3
 
 print(names)
 print(grades)
@@ -246,18 +246,18 @@ print(grades)
 
 ```python
 def sort_function(plist):
-    try:
-        for index in range(len(plist) - 1):
-            for j in range(len(plist) - 1, index, -1):
-                if plist[j - 1] > plist[j]:
-                    temp = plist[j - 1]
-                    plist[j - 1] = plist[j]
-                    plist[j] = temp
-    except:
-        print("Κάτι πήγε στραβά!")
-        return 1
-    else:
-        return 0
+  try:
+    for index in range(len(plist) - 1):
+      for j in range(len(plist) - 1, index, -1):
+        if plist[j - 1] > plist[j]:
+          temp = plist[j - 1]
+          plist[j - 1] = plist[j]
+          plist[j] = temp
+  except:
+    print("Κάτι πήγε στραβά!")
+    return 1
+  else:
+    return 0
 
 
 # Αρχικοποίηση μεταβλητών
@@ -265,19 +265,19 @@ MAX_NUMBERS = 100
 lista = []
 
 for i in range(MAX_NUMBERS):
-    num = input("Δώσε αριθμό: ")
-    # Έλεγχος ορθότητας
-    while not num.isdigit():
-        num = input("Είπα δώσε αριθμό: ")
-    # Μετατροπή αλφαριθμητικής τιμής σε ακέραια
-    num = int(num)
-    # Προσθήκη στοιχείου στη λίστα
-    lista.append(num)
+  num = input("Δώσε αριθμό: ")
+  # Έλεγχος ορθότητας
+  while not num.isdigit():
+    num = input("Είπα δώσε αριθμό: ")
+  # Μετατροπή αλφαριθμητικής τιμής σε ακέραια
+  num = int(num)
+  # Προσθήκη στοιχείου στη λίστα
+  lista.append(num)
 
 
 if not sort_function(lista):
-    print("\nΟ μεγαλύτερος αριθμός είναι το %d." % (lista[len(lista) - 1]))
-    print("Ο μικρότερος αριθμός είναι το %d." % lista[0])
+  print("\nΟ μεγαλύτερος αριθμός είναι το %d." % (lista[len(lista) - 1]))
+  print("Ο μικρότερος αριθμός είναι το %d." % lista[0])
 ```
 
 <!--
@@ -296,23 +296,23 @@ if not sort_function(lista):
 
 ```python
 def sort_function(pnames, pvathmoi):
-    try:
-        for i in range(len(pvathmoi) - 1):
-            for j in range(len(pvathmoi) - 1, i, -1):
-                if pvathmoi[j - 1] < pvathmoi[j]:
-                    # Swap vathmous
-                    temp1 = pvathmoi[j - 1]
-                    pvathmoi[j - 1] = pvathmoi[j]
-                    pvathmoi[j] = temp1
-                    # Swap names
-                    temp2 = pnames[j - 1]
-                    pnames[j - 1] = pnames[j]
-                    pnames[j] = temp2
-    except:
-        print("Κάτι πήγε στραβά!")
-        return 1
-    else:
-        return 0
+  try:
+    for i in range(len(pvathmoi) - 1):
+      for j in range(len(pvathmoi) - 1, i, -1):
+        if pvathmoi[j - 1] < pvathmoi[j]:
+          # Swap vathmous
+          temp1 = pvathmoi[j - 1]
+          pvathmoi[j - 1] = pvathmoi[j]
+          pvathmoi[j] = temp1
+          # Swap names
+          temp2 = pnames[j - 1]
+          pnames[j - 1] = pnames[j]
+          pnames[j] = temp2
+  except:
+    print("Κάτι πήγε στραβά!")
+    return 1
+  else:
+    return 0
 
 
 # Αρχικοποίηση μεταβλητών
@@ -323,25 +323,25 @@ vathmoi = []
 names = []
 
 while counter < MAX_ELEMENTS:
-    name = input("Δώσε όνομα μαθητή: ")
-    vathmos = input("Δώσε βαθμό: ")
-    # Έλεγχος ορθότητας
-    while not vathmos.isdigit():
-        vathmos = input("Είπα δώσε βαθμό: ")
-    # Μετατροπή αλφαριθμητικής τιμής σε ακέραια
-    vathmos = int(vathmos)
-    # Εισαγωγή στοιχείων στη λίστα των φοιτητών και των βαθμών
-    names.append(name)
-    vathmoi.append(vathmos)
-    counter += 1
+  name = input("Δώσε όνομα μαθητή: ")
+  vathmos = input("Δώσε βαθμό: ")
+  # Έλεγχος ορθότητας
+  while not vathmos.isdigit():
+    vathmos = input("Είπα δώσε βαθμό: ")
+  # Μετατροπή αλφαριθμητικής τιμής σε ακέραια
+  vathmos = int(vathmos)
+  # Εισαγωγή στοιχείων στη λίστα των φοιτητών και των βαθμών
+  names.append(name)
+  vathmoi.append(vathmos)
+  counter += 1
 
 
 if not sort_function(names, vathmoi):
-    try:
-        for i in range(BEST_FOITITES):
-            print("Ο %dος καλύτερος είναι ο/η %s." % ((i + 1), names[i]))
-    except:
-        print("Δεν υπάρχει άλλος φοιτητής στη λίστα!")
+  try:
+    for i in range(BEST_FOITITES):
+      print("Ο %dος καλύτερος είναι ο/η %s." % ((i + 1), names[i]))
+  except:
+    print("Δεν υπάρχει άλλος φοιτητής στη λίστα!")
 ```
 
 <!--
