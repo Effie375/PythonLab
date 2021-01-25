@@ -15,7 +15,7 @@ while number != 0:
     number = int(number)
     # Μόνο τη πρώτη φορά είναι η συνθήκη true
     if (flag is False):
-        # εάν ο αριθμός είναι διάφορος του μηδενός
+        # Εάν ο αριθμός είναι διάφορος του μηδενός
         if number != 0:
             ginomeno = 1
         # Αλλαγή του flag από False σε True

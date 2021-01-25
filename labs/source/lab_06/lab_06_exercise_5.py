@@ -27,7 +27,7 @@ else:
         fib = fibMinus1 + fibMinus2
         # Ο ν-2 όρος είναι ο ν-1
         fibMinus2 = fibMinus1
-        # ο ν-1 είναι ο αριθμός Fibonacci
+        # Ο ν-1 είναι ο αριθμός Fibonacci
         fibMinus1 = fib
 
 # Εκτύπωση νιοστού αριθμού Fibonacci
