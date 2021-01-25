@@ -10,6 +10,7 @@ def sort(listaP):
     # Eπιστροφή listaP στη main
     return listaP
 
+
 # Δημιουργία λίστας
 list = [5, 7, 8, 9, 3]
 

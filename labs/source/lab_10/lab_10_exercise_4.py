@@ -48,7 +48,7 @@ print(monadikiLista(onomata))
 # Ζητάμε από το χρήστη να δώσει το όνομα που αναζητά
 stoixeio = input("Δώσε όνομα που αναζητάς: ").strip()
 
-# Καλούμε τη συνάρτηση anazitisi 
+# Καλούμε τη συνάρτηση anazitisi
 done = anazitisi(stoixeio, onomata)
 
 # Εάν το done είναι ίσο με True

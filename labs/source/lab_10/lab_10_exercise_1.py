@@ -23,6 +23,7 @@ def longestName(list):
     # Επιστρέφει το maxLength
     return maxLength
 
+
 # Ζητάμε από το χρήστη να δώσει πλήθος και το μετατρέπουμε σε ακέραιο
 plithos = int(input("Δώσε πλήθος: ").strip())
 # Καλούμε τη συνάρτηση readNames

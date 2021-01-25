@@ -19,6 +19,7 @@ def readAndCheck():
         # Επιστρέφει το num
         return num
 
+
 # Δημιουργία συνάρτησης sort
 def sort(listP):
     for i in range(1, len(listP)):
@@ -30,6 +31,7 @@ def sort(listP):
                 listP[j] = temp
     # Επιστρέφει το listP
     return listP
+
 
 # Δημιουργία συνάρτησης readMarks
 def readMarks():
