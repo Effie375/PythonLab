@@ -1,9 +1,9 @@
-max_elements = 100
+MAX_ELEMENTS = 100
 neaLista = []
 lista = []
 i = 0
 
-while i < max_elements:
+while i < MAX_ELEMENTS:
     num = int(input("Δώσε έναν αριθμό: "))
     lista.append(num)
     i += 1
