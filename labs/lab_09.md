@@ -299,10 +299,10 @@ for vathmoi in athlimata:
     # Εάν η τιμή της μεταβλητής sum είναι μεγαλύτερη από το maxSum που ορίσαμε
     if sum > maxSum:
       maxSum = sum
-      maxathlima = vathmoi
+      maxAthlima = vathmoi
 
 # Εκτύπωση του μέγιστου βαθμού και το άθροισμά της υπολίστας
-print(f"Ο max βαθμός είναι: {maxathlima} και το άθροισμα είναι: {maxSum}")
+print(f"Ο max βαθμός είναι: {maxAthlima} και το άθροισμα είναι: {maxSum}")
 
 # Έστω ότι ο μέγιστος βαθμός βρίσκεται στην υπολίστα με τη θέση 0 και το στοιχείο της στη θέση 0
 megVathmos = athlimata[0][0]

@@ -59,6 +59,7 @@ def sort(listaP):
     # Eπιστροφή listaP στη main
     return listaP
 
+
 # Δημιουργία λίστας
 list = [5, 7, 8, 9, 3]
 
@@ -96,6 +97,7 @@ def readAndCheck():
         # Επιστρέφει το num
         return num
 
+
 # Δημιουργία συνάρτησης sort
 def sort(listP):
     for i in range(1, len(listP)):
@@ -107,6 +109,7 @@ def sort(listP):
                 listP[j] = temp
     # Επιστρέφει το listP
     return listP
+
 
 # Δημιουργία συνάρτησης readMarks
 def readMarks():
@@ -172,6 +175,7 @@ def longestName(list):
             maxLength = len(onoma)
     # Επιστρέφει το maxLength
     return maxLength
+
 
 # Ζητάμε από το χρήστη να δώσει πλήθος και το μετατρέπουμε σε ακέραιο
 plithos = int(input("Δώσε πλήθος: ").strip())
