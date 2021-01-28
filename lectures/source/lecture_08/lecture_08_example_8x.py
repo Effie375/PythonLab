@@ -9,4 +9,4 @@ for j in range(4):
     for i in range(5):
         if megistoSthlhs < lista[i][j]:
             megistoSthlhs = lista[i][j]
-    print("Μέγιστο στήλης: %d" % megistoSthlhs)
+    print(f"Μέγιστο στήλης:{megistoSthlhs}")

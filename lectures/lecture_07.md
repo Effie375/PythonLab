@@ -14,11 +14,7 @@
 - 7.6 Διπλή ταξινόμηση
 - 7.7 Ασκήσεις
 
-<!--
 ## [Αναζήτηση στοιχείων I](source/lecture_07/lecture_07_example_1a.py)
--->
-
-## [Αναζήτηση στοιχείων I](source/lecture_07/lecture_07_example_1ax.py)
 
 ---
 
@@ -37,11 +33,7 @@ for i in lista:
   thesi += 1
 ```
 
-<!--
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_1a.py).
--->
-
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_1ax.py).
 
 **2ος τρόπος:**
 
@@ -59,17 +51,9 @@ for i in lista:
 print("Το %d έχει εισαχθεί %d φορές." % (key, k))
 ```
 
-<!--
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_1b.py).
--->
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_1bx.py).
-
-<!--
 ## [Αναζήτηση στοιχείων II](source/lecture_07/lecture_07_example_2.py)
--->
-
-## [Αναζήτηση στοιχείων II](source/lecture_07/lecture_07_example_2x.py)
 
 ---
 
@@ -94,17 +78,9 @@ else:
   print("Το %d δε βρίσκεται στη λίστα %d." % (key, thesi))
 ```
 
-<!--
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_2.py).
--->
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_2x.py).
-
-<!--
 ## [Αναζήτηση στοιχείων III](source/lecture_07/lecture_07_example_3.py)
--->
-
-## [Αναζήτηση στοιχείων III](source/lecture_07/lecture_07_example_3x.py)
 
 ---
 
@@ -128,17 +104,9 @@ else:
   print("Το %d δε βρίσκεται στη λίστα %s." % (key, lista))
 ```
 
-<!--
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_3.py).
--->
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_3x.py).
-
-<!--
 ## [7.4 Ταξινόμηση - Bubble Sort](source/lecture_07/lecture_07_example_4.py)
--->
-
-## [7.4 Ταξινόμηση - Bubble Sort](source/lecture_07/lecture_07_example_4x.py)
 
 ---
 
@@ -157,17 +125,9 @@ for i in range(len(lista)):
 print("Η λίστα μας μετά τη ταξινόμηση είναι: %s" % lista)
 ```
 
-<!--
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_4.py).
--->
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_4x.py).
-
-<!--
 ## [7.5 Ταξινόμηση - Διπλή αντιμετάθεση](source/lecture_07/lecture_07_example_5.py)
--->
-
-## [7.5 Ταξινόμηση - Διπλή αντιμετάθεση](source/lecture_07/lecture_07_example_5x.py)
 
 ---
 
@@ -189,17 +149,9 @@ print(names)
 print(grades)
 ```
 
-<!--
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_5.py).
--->
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_5x.py).
-
-<!--
 ## [7.6 Διπλή ταξινόμηση](source/lecture_07/lecture_07_example_6.py)
--->
-
-## [7.6 Διπλή ταξινόμηση](source/lecture_07/lecture_07_example_6x.py)
 
 ---
 
@@ -226,21 +178,13 @@ print(names)
 print(grades)
 ```
 
-<!--
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_6.py).
--->
-
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_6x.py).
 
 ## 7.7 Ασκήσεις
 
 ---
 
-<!--
 ## [Άσκηση 1](source/lecture_07/lecture_07_exercise_1.py)
--->
-
-## [Άσκηση 1](source/lecture_07/lecture_07_exercise_1x.py)
 
 Να γραφεί πρόγραµµα που να διαβάζει 100 ακεραίους αριθµούς και να εµφανίζει τον µέγιστο και τον ελάχιστο µε χρήση ταξινόµησης.
 
@@ -280,17 +224,9 @@ if not sort_function(lista):
   print("Ο μικρότερος αριθμός είναι το %d." % lista[0])
 ```
 
-<!--
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_exercise_1.py).
--->
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_exercise_1x.py).
-
-<!--
 ## [Άσκηση 2](source/lecture_07/lecture_07_exercise_2.py)
--->
-
-## [Άσκηση 2](source/lecture_07/lecture_07_exercise_2x.py)
 
 Ένα σχολείο έχει 200 µαθητές στην Γ’ τάξη λυκείου. Να γίνει πρόγραµµα το οποίο θα διαβάζει τα ονόµατα και τους βαθµούς απολυτηρίου των µαθητών και θα εµφανίζει τα ονόµατα των τριών καλύτερων µαθητών.
 
@@ -344,10 +280,6 @@ if not sort_function(names, vathmoi):
     print("Δεν υπάρχει άλλος φοιτητής στη λίστα!")
 ```
 
-<!--
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_exercise_2.py).
--->
-
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_exercise_2x.py).
 
 [Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 7](lecture_07.md) | [Lect 8](lecture_08.md) | [Lect 9](lecture_09.md)

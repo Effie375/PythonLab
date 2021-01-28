@@ -1,5 +1,5 @@
 def sayHello(onoma="Human"):
-    print(f"Hello {onoma}")
+    print("Hello %s" % onoma)
 
 
 def modDiv(x, y):

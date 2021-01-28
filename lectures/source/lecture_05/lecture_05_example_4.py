@@ -13,4 +13,4 @@ while i < len(lista):
     i += 1
 
 # Εκτύπωση του ελάχιστου
-print(f"Ελάχιστο: {elaxisto}")
+print("Ελάχιστο:", elaxisto)

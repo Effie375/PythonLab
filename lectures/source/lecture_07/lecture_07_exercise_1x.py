@@ -18,10 +18,10 @@ MAX_NUMBERS = 100
 lista = []
 
 for i in range(MAX_NUMBERS):
-    num = input("Δώσε αριθμό: ")
+    num = input("Δώσε αριθμό: ").strip()
     # Έλεγχος ορθότητας
     while not num.isdigit():
-        num = input("Είπα δώσε αριθμό: ")
+        num = input("Είπα δώσε αριθμό: ").strip()
     # Μετατροπή αλφαριθμητικής τιμής σε ακέραια
     num = int(num)
     # Προσθήκη στοιχείου στη λίστα
@@ -29,5 +29,5 @@ for i in range(MAX_NUMBERS):
 
 
 if not sort_function(lista):
-    print("\nΟ μεγαλύτερος αριθμός είναι το %d." % (lista[len(lista) - 1]))
-    print("Ο μικρότερος αριθμός είναι το %d." % lista[0])
+    print(f"\nΟ μεγαλύτερος αριθμός είναι το {lista[len(lista) - 1]}.")
+    print(f"Ο μικρότερος αριθμός είναι το {lista[0]}.")

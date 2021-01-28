@@ -4,8 +4,8 @@ grades = []
 stund = []
 
 while i < MAX_STUDENTS:
-    name = input("Δώσε το όνομά σου: ").strip()
-    grad = int(input("Δώσε τον βαθμό σου: ").strip())
+    name = input("Δώσε το όνομά σου: ")
+    grad = int(input("Δώσε τον βαθμό σου: "))
     stund.append(name)
     grades.append(grad)
     sum += grad
@@ -18,5 +18,5 @@ i = 0
 
 while i < len(grades):
     if grades[i] > average:
-        print(f"Οι μαθητές που έχουν υψηλές βαθμολογίες είνα: {stund[i]}")
+        print("Οι μαθητές που έχουν υψηλές βαθμολογίες είνα: %s" % stund[i])
     i += 1

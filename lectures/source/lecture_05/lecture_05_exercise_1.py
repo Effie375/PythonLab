@@ -4,7 +4,7 @@ lista = []
 i = 0
 
 while i < MAX_ELEMENTS:
-    num = int(input("Δώσε έναν αριθμό: ").strip())
+    num = int(input("Δώσε έναν αριθμό: "))
     lista.append(num)
     i += 1
 
@@ -14,4 +14,4 @@ while j > 0:
     neaLista.append(lista[j - 1])
     j -= 1
 
-print(f"Η νέα λίστα είναι {neaLista}.")
+print("Η νέα λίστα είναι %s." % neaLista)

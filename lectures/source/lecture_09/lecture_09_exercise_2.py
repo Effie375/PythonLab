@@ -8,7 +8,7 @@ def foo(n):
     return n, apot1
 
 
-a = int(input("Δώσε αριθμό: ").strip())
+a = int(input("Δώσε αριθμό: "))
 
 if apot(a) == 0:
     a, n = foo(a)

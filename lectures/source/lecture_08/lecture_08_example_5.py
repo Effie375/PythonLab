@@ -9,4 +9,4 @@ for ypolista in lista:
     for item in ypolista:
         sumGrammhs += item
 
-    print(f"Άθροισμα γραμμής: {sumGrammhs}")
+    print("Άθροισμα γραμμής: %d" % sumGrammhs)

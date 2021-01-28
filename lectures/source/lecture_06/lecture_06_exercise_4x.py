@@ -2,8 +2,8 @@ names = []
 marks = []
 
 for i in range(20):
-    onoma = input("Δώσε όνομα: ")
-    vathmos = int(input("Δώσε βαθμό: "))
+    onoma = input("Δώσε όνομα: ").strip()
+    vathmos = int(input("Δώσε βαθμό: ").strip())
     names.append(onoma)
     marks.append(vathmos)
 

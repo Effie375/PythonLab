@@ -1,7 +1,7 @@
 lista = []
 
 for n in range(5):
-    num = int(input(f"Δώσε στοιχείο για την {n} θέση: ").strip())
+    num = int(input("Δώσε στοιχείο για την θέση %d: " % n))
     lista.append(num)
 
 print(lista)

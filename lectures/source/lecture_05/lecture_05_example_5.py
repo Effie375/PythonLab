@@ -12,4 +12,4 @@ while i < len(lista):
     i += 1
 
 # Εκτύπωση της μέγιστης θέσης
-print(f"Μέγιστη θέση: {maxThesi}")
+print("Μέγιστη θέση:", maxThesi)

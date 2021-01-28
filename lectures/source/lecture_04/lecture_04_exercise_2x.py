@@ -19,4 +19,4 @@ print(weeks)
 # Εάν το ταμείο είναι μεγαλύτερη από την AKSIA
 if tameio > AKSIA:
     # Εκτύπωση πόσα ευρώ περίσσεψαν
-    print("Περίσσεψαν %d Ευρώ." % (tameio - AKSIA))
+    print(f"Περίσσεψαν {tameio - AKSIA} Ευρώ.")

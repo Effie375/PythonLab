@@ -189,11 +189,7 @@ print("%d + %d = %d" % (arithmos1, arithmos2, athroisma))
 
 ---
 
-<!--
 ### [2.9.1 Παράδειγµα 1](source/lecture_02/lecture_02_example_1.py)
--->
-
-### [2.9.1 Παράδειγµα 1](source/lecture_02/lecture_02_example_1x.py)
 
 <!--
 ```python
@@ -231,19 +227,11 @@ athroisma = x + y
 print("Το άθροισμα των αριθμών %d και %d είναι %d." % (x, y, athroisma))
 ```
 
-<!--
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_02/lecture_02_example_1.py).
--->
-
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_02/lecture_02_example_1x.py).
 
 Στο παράδειγμα αυτό βλέπουμε ξεκάθαρα ότι η συνάρτηση `input` επιστρέφει  πάντα συμβολοσειρά **string** και έτσι οι μεταβλητές `x` και `y` δεν δείχνουν σε αριθμό. Συνεπώς πρέπει να μετατρέψουμε και τις δύο μεταβλητές σε **integer**.
 
-<!--
 ### [2.9.2 Παράδειγµα 2](source/lecture_02/lecture_02_example_2.py)
--->
-
-### [2.9.2 Παράδειγµα 2](source/lecture_02/lecture_02_example_2x.py)
 
 <!--
 ```python
@@ -285,10 +273,6 @@ print('Όνομα: %s' % onoma)
 print('Μισθός: %.2f' % telikosMisthos)
 ```
 
-<!--
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_02/lecture_02_example_2.py).
--->
-
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_02/lecture_02_example_2x.py).
 
 [Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 7](lecture_07.md) | [Lect 8](lecture_08.md) | [Lect 9](lecture_09.md)

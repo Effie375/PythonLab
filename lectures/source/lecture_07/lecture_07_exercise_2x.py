@@ -26,11 +26,11 @@ vathmoi = []
 names = []
 
 while counter < MAX_ELEMENTS:
-    name = input("Δώσε όνομα μαθητή: ")
-    vathmos = input("Δώσε βαθμό: ")
+    name = input("Δώσε όνομα μαθητή: ").strip()
+    vathmos = input("Δώσε βαθμό: ").strip()
     # Έλεγχος ορθότητας
     while not vathmos.isdigit():
-        vathmos = input("Είπα δώσε βαθμό: ")
+        vathmos = input("Είπα δώσε βαθμό: ").strip()
     # Μετατροπή αλφαριθμητικής τιμής σε ακέραια
     vathmos = int(vathmos)
     # Εισαγωγή στοιχείων στη λίστα των φοιτητών και των βαθμών
@@ -42,6 +42,6 @@ while counter < MAX_ELEMENTS:
 if not sort_function(names, vathmoi):
     try:
         for i in range(BEST_FOITITES):
-            print("Ο %dος καλύτερος είναι ο/η %s." % ((i + 1), names[i]))
+            print(f"Ο {i + 1}ος καλύτερος είναι ο/η {names[i]}.")
     except:
         print("Δεν υπάρχει άλλος φοιτητής στη λίστα!")

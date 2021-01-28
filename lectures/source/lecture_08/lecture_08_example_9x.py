@@ -4,7 +4,7 @@ lista = [[2, 3, 4, 1],
          [1, 9, 4, 1],
          [0, 4, 7, 4]]
 
-key = int(input("Δώσε στοιχείο που αναζητάς: "))
+key = int(input("Δώσε στοιχείο που αναζητάς: ").strip())
 
 key_counter = 0
 
@@ -13,4 +13,4 @@ for i in range(5):
         if key == lista[i][j]:
             print(i, j)
             key_counter += 1
-print("Βρέθηκε %d φορές." % key_counter)
+print(f"Βρέθηκε {key_counter} φορές.")

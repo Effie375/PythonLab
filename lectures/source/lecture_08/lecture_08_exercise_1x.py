@@ -5,12 +5,12 @@ list = []
 for i in range(MATHITES):
     list.append([])
     sum = 0
-    print("\n-------- Μαθητής %d --------" % (i + 1))
+    print(f"\n-------- Μαθητής {i + 1} --------")
     for j in range(TRIMHNA):
-        vathmos = input("Δώσε βαθμό %doυ τριμήνου: " % (j + 1))
+        vathmos = input(f"Δώσε βαθμό {j + 1}oυ τριμήνου: ").strip()
         # Έλεγχος ορθότητας
         while not vathmos.isdigit():
-            vathmos = input("Είπα δώσε βαθμό: ")
+            vathmos = input("Είπα δώσε βαθμό: ").strip()
         vathmos = int(vathmos)
         sum += vathmos
         list[i].append(vathmos)
@@ -19,4 +19,4 @@ for i in range(MATHITES):
 print('\n', end='')
 
 for g in range(MATHITES):
-    print("O μέσος όρος του %dου μαθητή είναι %d." % ((g + 1), (list[g][TRIMHNA])))
+    print(f"O μέσος όρος του {g + 1}ου μαθητή είναι {list[g][TRIMHNA]}.")

@@ -1,6 +1,6 @@
 lista = [5, 7, 8, 9, 3]
 
-print(f"Η λίστα μας πριν τη ταξινόμηση είναι:{lista}")
+print("Η λίστα μας πριν τη ταξινόμηση είναι: %s" % lista)
 
 for i in range(len(lista)):
     for j in range(len(lista) - 1, i, -1):
@@ -9,4 +9,4 @@ for i in range(len(lista)):
             lista[j - 1] = lista[j]
             lista[j] = temp
 
-print(f"Η λίστα μας μετά τη ταξινόμηση είναι:{lista}")
+print("Η λίστα μας μετά τη ταξινόμηση είναι: %s" % lista)

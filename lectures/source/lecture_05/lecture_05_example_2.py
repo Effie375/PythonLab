@@ -11,4 +11,4 @@ while i < len(lista):
     i += 1
 
 # Εκτύπωση αθροίσματος
-print(f"Άθροισμα: {athroisma}")
+print("Άθροισμα: %d" % athroisma)

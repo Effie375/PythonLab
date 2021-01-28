@@ -157,11 +157,7 @@ print("Ο μέγιστος είναι ο", max)
 
 ---
 
-<!--
 ### [Παράδειγμα 1](source/lecture_03/lecture_03_example_1.py)
--->
-
-### [Παράδειγμα 1](source/lecture_03/lecture_03_example_1x.py)
 
 <!--
 ```python
@@ -205,17 +201,9 @@ else:
 print(apotelesma)
 ```
 
-<!--
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_03/lecture_03_example_1.py).
--->
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_03/lecture_03_example_1x.py).
-
-<!--
 ### [Παράδειγμα 2](source/lecture_03/lecture_03_example_2.py)
--->
-
-### [Παράδειγμα 2](source/lecture_03/lecture_03_example_2x.py)
 
 <!--
 ```python
@@ -263,21 +251,13 @@ else:
   print(diafora)
 ```
 
-<!--
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_03/lecture_03_example_2.py).
--->
-
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_03/lecture_03_example_2x.py).
 
 ## 3.9 Ασκήσεις
 
 ---
 
-<!--
 ### [Άσκηση 1](source/lecture_03/lecture_03_exercise_1.py)
--->
-
-### [Άσκηση 1](source/lecture_03/lecture_03_exercise_1x.py)
 
 Να γίνει πρόγραµµα σε Python το οποίο να εκτελεί τα εξής:
 
@@ -341,17 +321,9 @@ else:
   print("Η διαφορά των αριθμών σε απόλυτη τιμή είναι %d ." % abs(diafora))
 ```
 
-<!--
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_03/lecture_03_exercise_1.py).
--->
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_03/lecture_03_exercise_1x.py).
-
-<!--
 ### [Άσκηση 2](source/lecture_03/lecture_03_exercise_2.py)
--->
-
-### [Άσκηση 2](source/lecture_03/lecture_03_exercise_2x.py)
 
 Να γίνει πρόγραµµα σε Python το οποίο να εκτελεί τα εξής:
 
@@ -411,10 +383,6 @@ else:
   print(number3 % athroisma)
 ```
 
-<!--
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_03/lecture_03_exercise_2.py).
--->
-
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_03/lecture_03_exercise_2x.py).
 
 [Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 7](lecture_07.md) | [Lect 8](lecture_08.md) | [Lect 9](lecture_09.md)

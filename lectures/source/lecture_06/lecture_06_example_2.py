@@ -4,4 +4,4 @@ athroisma = 0
 for item in lista:
     athroisma += item
 
-print(f"Άθροισμα: {athroisma}")
+print("Άθροισμα:", athroisma)
