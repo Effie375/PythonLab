@@ -233,6 +233,8 @@ else:
 # Αρχικοποίηση μεταβλητών
 MAX_ELEMENTS = 10
 lista = []
+thesiElaxistou = 0
+thesiMegistou = 0
 athroisma = 0
 even = 0
 odd = 0
@@ -250,41 +252,30 @@ while i < MAX_ELEMENTS:
   if number % 2 == 0:
     # Κάθε φορά προσθέτουμε στη μεταβλητη even 1
     even += 1
-  # Αλλιώς είναι μονός
-  else:
+  # Εάν ο αριθμός είναι μονός
+  if number % 2 == 1:
     # Κάθε φορά προσθέτουμε στη μεταβλητη odd 1
     odd += 1
+  # Εάν βρούμε στοιχείο μεγαλύτερο απο αυτό που έχουμε μέχρι στιγμής
+  if lista[i] > lista[thesiMegistou]:
+    # Αποθηκεύουμε το στοιχείο που βρήκαμε στο thesiMegistou
+    thesiMegistou = i
+  # Εάν βρούμε στοιχείο μικρότερο απο αυτό που έχουμε μέχρι στιγμής
+  if lista[i] < lista[thesiElaxistou]:
+    # Αποθηκεύουμε το μικρότερο στοιχείο στο thesiElaxistou
+    thesiElaxistou = i
   # Αυξάνουμε την μεταβλητή i κατά 1
   i += 1
+
+# Υπολογίζουμε την διαφορά του max με του min
+diafora = lista[thesiMegistou] - lista[thesiElaxistou]
 
 # Εκτύπωση αποτελεσμάτων
 print(f"\nTο άθροισμα των αριθμών είναι {athroisma}.")
 print(f"Tο πλήθος των περιττών είναι {odd}. ")
 print(f"Το πλήθος των άρτιων είναι {even}.")
-
-# Αρχικοποίηση μεταβλητών
-megisto = 0
-elaxistos = 0
-i = 0
-
-# Όσο το i είναι μικρότερο του MAX_ELEMENTS
-while i < MAX_ELEMENTS:
-  # Εάν βρούμε στοιχείο μεγαλύτερο απο αυτό που έχουμε μέχρι στιγμής
-  if lista[i] > lista[megisto]:
-    # Αποθηκεύουμε το στοιχείο που βρήκαμε στο megisto
-    megisto = i
-  # Αλλιώς εάν βρούμε στοιχείο μικρότερο απο αυτό που έχουμε μέχρι στιγμής
-  elif lista[i] < lista[elaxistos]:
-    # Αποθηκεύουμε το μικρότερο στοιχείο στο elaxistos
-    elaxistos = i
-  # Αυξάνουμε την μεταβλητή i κατά 1
-  i += 1
-
-# Υπολογίζουμε την διαφορά του max με του min
-diafora = lista[megisto] - lista[elaxistos]
-
-# Εκτύπωση αποτελέσματος
 print(f"H διαφορά max και min είναι {diafora}.")
+
 ```
 -->
 
@@ -292,6 +283,8 @@ print(f"H διαφορά max και min είναι {diafora}.")
 # Αρχικοποίηση μεταβλητών
 MAX_ELEMENTS = 10
 lista = []
+thesiElaxistou = 0
+thesiMegistou = 0
 athroisma = 0
 even = 0
 odd = 0
@@ -309,41 +302,30 @@ while i < MAX_ELEMENTS:
   if number % 2 == 0:
     # Κάθε φορά προσθέτουμε στη μεταβλητη even 1
     even += 1
-  # Αλλιώς είναι μονός
-  else:
+  # Εάν ο αριθμός είναι μονός
+  if number % 2 == 1:
     # Κάθε φορά προσθέτουμε στη μεταβλητη odd 1
     odd += 1
+  # Εάν βρούμε στοιχείο μεγαλύτερο απο αυτό που έχουμε μέχρι στιγμής
+  if lista[i] > lista[thesiMegistou]:
+    # Αποθηκεύουμε το στοιχείο που βρήκαμε στο thesiMegistou
+    thesiMegistou = i
+  # Εάν βρούμε στοιχείο μικρότερο απο αυτό που έχουμε μέχρι στιγμής
+  if lista[i] < lista[thesiElaxistou]:
+    # Αποθηκεύουμε το μικρότερο στοιχείο στο thesiElaxistou
+    thesiElaxistou = i
   # Αυξάνουμε την μεταβλητή i κατά 1
   i += 1
+
+# Υπολογίζουμε την διαφορά του max με του min
+diafora = lista[thesiMegistou] - lista[thesiElaxistou]
 
 # Εκτύπωση αποτελεσμάτων
 print("\nTο άθροισμα των αριθμών είναι %d." % athroisma)
 print("Tο πλήθος των περιττών είναι %d. " % odd)
 print("Το πλήθος των άρτιων είναι %d." % even)
-
-# Αρχικοποίηση μεταβλητών
-megisto = 0
-elaxistos = 0
-i = 0
-
-# Όσο το i είναι μικρότερο του MAX_ELEMENTS
-while i < MAX_ELEMENTS:
-  # Εάν βρούμε στοιχείο μεγαλύτερο απο αυτό που έχουμε μέχρι στιγμής
-  if lista[i] > lista[megisto]:
-    # Αποθηκεύουμε το στοιχείο που βρήκαμε στο megisto
-    megisto = i
-  # Αλλιώς εάν βρούμε στοιχείο μικρότερο απο αυτό που έχουμε μέχρι στιγμής
-  elif lista[i] < lista[elaxistos]:
-    # Αποθηκεύουμε το μικρότερο στοιχείο στο elaxistos
-    elaxistos = i
-  # Αυξάνουμε την μεταβλητή i κατά 1
-  i += 1
-
-# Υπολογίζουμε την διαφορά του max με του min
-diafora = lista[megisto] - lista[elaxistos]
-
-# Εκτύπωση αποτελέσματος
 print("H διαφορά max και min είναι %d." % diafora)
+
 ```
 
 <!--
