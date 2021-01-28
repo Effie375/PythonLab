@@ -74,7 +74,44 @@ print(f"Η υπολίστα με το μεγαλύτερο άθροισμα εί
 -->
 
 ```python
+# Αρχικοποίηση μεταβλητών
+MAX_ELEMENTS = 10
+MAX_LISTES = 5
+lista = []
 
+# MAX_LISTES
+for i in range(MAX_LISTES):
+    # Δημιουργία κενής λίστας
+    ypolista = []
+    # Για MAX_ELEMENTS
+    for j in range(MAX_ELEMENTS):
+        # Ζητάμε από το χρήστη να δώσει έναν αριθμό και το μετατρεπουμε σε ακέραιο
+        n = int(input("Δώσε αριθμό: "))
+        # Αποθηκεύουμε τον αριθμό στην υπολίστα
+        ypolista.append(n)
+    # Αποθηκεύουμε την υπολίστα στη λίστα
+    lista.append(ypolista)
+
+# Έστω ότι το μέγιστο άθροισμα το έχει η υπολίστα στη θέση 0
+megAthroisma = 0
+
+# Για κάθε υπολίστα της λίστας
+for ypolista in lista:
+  # Αρχικοποίηση του μετρητή
+  athroisma = 0
+  # Για κάθε στοιχείο της υπολίστας
+  for i in ypolista:
+    # Αυξάνουμε τη μεταβλητή athroisma κατά 1
+    athroisma += i
+  # Εάν το άθροισμα είναι μεγαλύτερο από αυτό που ορίσαμε
+  if athroisma > megAthroisma:
+    # Το αντικαθηστούμε με το πλεόν μεγαλύτερο
+    megAthroisma = athroisma
+    # Εκχωρούμε στη μεταβλητή megLista τη μεγαλύτερη υπολίστα
+    megLista = ypolista
+
+# Εκτύπωση της υπολίστας με το μεγαλύτερο άθροισμα
+print("Η υπολίστα με το μεγαλύτερο άθροισμα είναι %s" % megLista)
 ```
 
 <!--
@@ -143,12 +180,50 @@ for mathima in eksamino:
 # Εκτύπωση του μέσου όρου
 print(f"Ο μέσος όρος είναι: {souma / len(eksamino)}")
 # Εκτύπωση των περασμένων μαθημάτων
-print(f"Πέρασες: {perasmena}")
+print(f"Πέρασες {perasmena} μαθήματα.")
 ```
 -->
 
 ```python
+# Αρχικοποίηση μεταβλητών
+ΜAX_EXAMINA = 8
+MAX_MATHIMATA = 6
+eksamina = []
 
+# Για ΜAX_EXAMINA
+for i in range(ΜAX_EXAMINA):
+  # Δημιουργία κενής λίστας
+  vathmoi = []
+  # Για MAX_MATHIMATA
+  for j in range(MAX_MATHIMATA):
+    # Ζητάμε από το χρήστη να δώσει ένα βαθμό και το μετατρεπουμε σε πραγματικό
+    vathmos = float(input("Δώσε βαθμό για το %dο εξάμηνο: " % (i+1)))
+    # Αποθηκεύουμε το βαθμό στη υπολίστα vathmoi
+    vathmoi.append(vathmos)
+  # Αποθηκεύουμε τις υπολίστες στη λίστα eksamina
+  eksamina.append(vathmoi)
+
+# Ζητάμε από το χρήστη να δώσει ένα εξάμηνο και το μετατρεπουμε σε ακέραιο
+arEksaminou = int(input("Ποιο εξάμηνο θες να δείς; "))
+
+# Αρχικοποίηση μεταβλητών
+eksamino = eksamina[arEksaminou - 1]
+souma = 0
+perasmena = 0
+
+# Για κάθε μάθημα του εξαμήνου
+for mathima in eksamino:
+  # Αυξάνουμε τη σούμα κατα μάθημα
+  souma += mathima
+  # Εάν ο βαθμός του μαθήματος είναι μεγαλύτερος ή ίσος με το 5
+  if mathima >= 5:
+    # Αυξάνουμε τη μεταβλητή perasmena κατά 1
+    perasmena += 1
+
+# Εκτύπωση του μέσου όρου
+print("Ο μέσος όρος είναι: %.1f" % (souma / len(eksamino)))
+# Εκτύπωση των περασμένων μαθημάτων
+print("Πέρασες: %d μαθήματα." % perasmena)
 ```
 
 <!--
@@ -221,16 +296,69 @@ for i in range(seasons):
     maxMOSeason = i
 
 # Εκτύπωση επεισοδίων με μέγιστη τηλεθέαση
-print(f"Eπεισόδιο με μέγιστη τηλεθέαση: {maxThlSeason+1}x{maxThlEpi+1}")
+print(f"Eπεισόδιο με μέγιστη τηλεθέαση: {maxThlSeason + 1}x{maxThlEpi + 1}")
 # Εκτύπωση επεισοδίων με ελάχιστη τηλεθέαση
-print(f"Eπεισόδιο με ελάχιστη τηλεθέαση: {minThlSeason+1}x{minThlEpi+1}")
+print(f"Eπεισόδιο με ελάχιστη τηλεθέαση: {minThlSeason + 1}x{minThlEpi + 1}")
 # Εκτύπωση σεζόν με μεγαλύτερο μέσο όρο τηλεθέασης
-print(f"Σεζόν με μεγαλύτερο μέσο όρο τηλεθέασης: {maxMOSeason+1}")
+print(f"Σεζόν με μεγαλύτερο μέσο όρο τηλεθέασης: {maxMOSeason + 1}")
 ```
 -->
 
 ```python
+# Ζητάμε από το χρήστη να δώσει κύκλους και το μετατρεπουμε σε ακέραιο
+seasons = int(input("Δώσε κύκλους: "))
+# Ζητάμε από το χρήστη να δώσει κύκλους ανα επεισόδια και το μετατρεπουμε σε ακέραιο
+episodes = int(input("Δώσε επεισόδια άνα κύκλο: "))
 
+# Δημιουργία κενής λίστας
+thle8eash = []
+
+# Για κάθε seasons
+for i in range(seasons):
+  # Δημιουργία κενής λίστας
+  thlSeason = []
+  # Για κάθε episodes
+  for j in range(episodes):
+    # Ζητάμε από το χρήστη να δώσει τηλεθέαση και το μετατρεπουμε σε πραγματικό
+    thl = float(input("Δώσε τηλεθέαση %dx%d: " % ((i + 1), (j + 1))))
+    # Αποθηκεύουμε την τηλεθέαση στην υπολίστα thlSeason
+    thlSeason.append(thl)
+  # Αποθηκεύουμε στη λίστα thle8eash την υπολίστα thlSeason
+  thle8eash.append(thlSeason)
+
+# Έστω ότι το max και το min τηλεθέασης των season και επεισοδίων είναι η θέση 0
+maxThlSeason = 0
+maxThlEpi = 0
+minThlSeason = 0
+minThlEpi = 0
+
+# Έστω ότι ο max μέσος όρος είναι 0
+maxMO = 0
+
+# Για κάθε seasons
+for i in range(seasons):
+  # Αρχικοποίηση μεταβλητής
+  soumaSeason = 0
+  # Για κάθε episodes
+  for j in range(episodes):
+    if thle8eash[i][j] > thle8eash[maxThlSeason][maxThlEpi]:
+      maxThlSeason = i
+      maxThlEpi = j
+    if thle8eash[i][j] < thle8eash[minThlSeason][maxThlEpi]:
+      minThlSeason = i
+      minThlEpi = j
+    soumaSeason += thle8eash[i][j]
+
+  if maxMO < soumaSeason:
+    maxMO = soumaSeason
+    maxMOSeason = i
+
+# Εκτύπωση επεισοδίων με μέγιστη τηλεθέαση
+print("Eπεισόδιο με μέγιστη τηλεθέαση: %dx%d" % ((maxThlSeason + 1), (maxThlEpi + 1)))
+# Εκτύπωση επεισοδίων με ελάχιστη τηλεθέαση
+print("Eπεισόδιο με ελάχιστη τηλεθέαση: %dx%d" % ((minThlSeason + 1), (minThlEpi + 1)))
+# Εκτύπωση σεζόν με μεγαλύτερο μέσο όρο τηλεθέασης
+print("Σεζόν με μεγαλύτερο μέσο όρο τηλεθέασης: %d" % maxMOSeason + 1)
 ```
 
 <!--
@@ -265,10 +393,8 @@ for i in range(ΜΑΧ_ΕΧΑΜΗΝΑ):
   mathima = []
   # Για ΜAX_MATHIMATA
   for j in range(ΜAX_MATHIMATA):
-    # Αποθηκεύουμε στη μεταβλητή text το κείμενο που θέλουμε να εμφανίσουμε στο χρήστη
-    text = f"Βαθμός {i+1}ου εξαμήνου και {j+1}ο μάθημα: "
     # Ζητάμε από το χρήστη να δώσει βαθμό για το μάθημα του εξαμήνου
-    vathmos = input(text).strip()
+    vathmos = input(f"Βαθμός {i+1}ου εξαμήνου και {j+1}ο μάθημα: ").strip()
     # Το μετατρέπουμε σε πραγματική τιμή
     vathmos = float(vathmos)
     # Αποθηκεύουμε το βαθμό στην υπολίστα mathima
@@ -297,7 +423,43 @@ print(f"O μέγιστος βαθμός είναι: {megVathmos}")
 -->
 
 ```python
+# Αρχικοποίηση μεταβλητών
+ΜAX_MATHIMATA = 2
+ΜΑΧ_ΕΧΑΜΗΝΑ = 2
+eksamino = []
 
+# Για ΜΑΧ_ΕΧΑΜΗΝΑ
+for i in range(ΜΑΧ_ΕΧΑΜΗΝΑ):
+  # Δημιουργία κενής λίστας
+  mathima = []
+  # Για ΜAX_MATHIMATA
+  for j in range(ΜAX_MATHIMATA):
+    # Ζητάμε από το χρήστη να μας δώσει βαθμό για το μάθημα του εξαμήνου
+    vathmos = input("Βαθμός %dου εξαμήνου και %dο μάθημα: " % ((i + 1), (j + 1)))
+    # Το μετατρέπουμε σε πραγματική τιμή
+    vathmos = float(vathmos)
+    # Αποθηκεύουμε το βαθμό στην υπολίστα mathima
+    mathima.append(vathmos)
+  # Αποθηκεύουμε την υπολίστα mathima στη λίστα eksamino
+  eksamino.append(mathima)
+
+# Εκτύπωση των βαθμών του φοιτητή
+print("Οι βαθμοί του φοιτητή είναι: %d" % eksamino)
+
+# Έστω ότι ο μέγιστος βαθμός είναι ο βαθμός που βρίσκεται στη θέση 0
+megVathmos = mathima[0]
+
+# Για κάθε μάθημα του εξαμήνου
+for mathima in eksamino:
+  # Για κάθε στοιχείο στην υπολίστα
+  for i in mathima:
+    # Εάν ο μέγιστος βαθμός είναι μικρότερος από το στιγμιαίο στοιχείο της υπολίστας
+    if megVathmos < i:
+      # Εκχωρούμε στη μεταβλητή megVathmos το στιγμιαίο στοιχείο της υπολίστας
+      megVathmos = i
+
+# Εκτύπωση του μέγιστου βαθμού
+print("O μέγιστος βαθμός είναι: %d" % megVathmos)
 ```
 
 <!--
@@ -333,10 +495,8 @@ for i in range(MAX_ATHLIMATA):
   vathmoi = []
   # Για MAX_PROSPATHEIES
   for j in range(MAX_PROSPATHEIES):
-    # Αποθηκεύουμε στη μεταβλητή text το κείμενο που θέλουμε να εμφανίσουμε στο χρήστη
-    text = f"Βαθμός {i + 1}ου αθλήματος και {j + 1}η προσπάθεια: "
     # Ζητάμε από το χρήστη να μας δώσει βαθμό αθλήματος και την προσπάθειά του 
-    vathmos = input(text).strip()
+    vathmos = input(f"Βαθμός {i + 1}ου αθλήματος και {j + 1}η προσπάθεια: ").strip()
     # Το μετατρέπουμε σε πραγματική τιμή
     vathmos = float(vathmos)
     # Αποθηκεύουμε το βαθμό στην υπολίστα vathmos
@@ -396,7 +556,74 @@ print(f"O μέγιστος βαθμός βρέθηκε {vathmosCounter} φορέ
 -->
 
 ```python
+# Αρχικοποίηση μεταβλητών
+MAX_ATHLIMATA = 4
+MAX_PROSPATHEIES = 3
+athlimata = []
 
+# Για MAX_ATHLIMATA
+for i in range(MAX_ATHLIMATA):
+  # Δημιουργία κενής λίστας
+  vathmoi = []
+  # Για MAX_PROSPATHEIES
+  for j in range(MAX_PROSPATHEIES):
+    # Ζητάμε από το χρήστη να δώσει βαθμό αθλήματος και την προσπάθειά του
+    vathmos = input("Βαθμός %dου αθλήματος και %dη προσπάθεια: " % ((i + 1), (j + 1)))
+    # Το μετατρέπουμε σε πραγματική τιμή
+    vathmos = float(vathmos)
+    # Αποθηκεύουμε το βαθμό στην υπολίστα vathmos
+    vathmoi.append(vathmos)
+  # Αποθηκεύουμε την υπολίστα vathmoi στη λίστα athlimata
+  athlimata.append(vathmoi)
+
+# Έστω ότι το μεγαλύτερο άθροισμα βρίσκεται στην υπολίστα με τη θέση 0
+maxSum = 0
+
+# Για κάθε βαθμό των αθλημάτων
+for vathmoi in athlimata:
+  # Αρχικοποίηση μεταβλητής
+  sum = 0
+  # Για κάθε στοιχείο της υπολίστας vathmoi
+  for i in vathmoi:
+    # Αυξάνουμε τη μεταβλητή sum κατά 1
+    sum += i
+    # Εάν η τιμή της μεταβλητής sum είναι μεγαλύτερη από το maxSum που ορίσαμε
+    if sum > maxSum:
+      maxSum = sum
+      maxAthlima = vathmoi
+
+# Εκτύπωση του μέγιστου βαθμού και το άθροισμά της υπολίστας
+print("Ο max βαθμός είναι: %d και το άθροισμα είναι: %d" % (maxAthlima, maxSum))
+
+# Έστω ότι ο μέγιστος βαθμός βρίσκεται στην υπολίστα με τη θέση 0 και το στοιχείο της στη θέση 0
+megVathmos = athlimata[0][0]
+
+# Για κάθε βαθμό των αθλημάτων
+for vathmoi in athlimata:
+  # Για κάθε στοιχείο της υπολίστας vathmoi
+  for i in vathmoi:
+    # Εάν το στιγμιαίο στοιχείο της υπολίστας είναι μεγαλύτερο από το μέγιστο βαθμό που ορίσαμε
+    if i > megVathmos:
+      # Εκχωρούμε στη μεταβλητή megVathmos το στιγμιαίο στοιχείο της υπολίστας
+      megVathmos = i
+
+# Εκτύπωση του μέγιστου βαθμού του αθλητή
+print("Ο μέγιστος βαθμός του αθλητή είναι: %d" % megVathmos)
+
+# Αρχικοποίηση μεταβλητής
+vathmosCounter = 0
+
+# Για κάθε βαθμό των αθλημάτων
+for vathmoi in athlimata:
+  # Για κάθε στοιχείο της υπολίστας vathmoi
+  for i in vathmoi:
+    # Εάν το στιγμιαίο στοιχείο της υπολίστας είναι ίσο με το μέγιστο βαθμό
+    if i == megVathmos:
+      # Αυξάνουμε τη μεταβλητή vathmosCounter κατά 1
+      vathmosCounter += 1
+
+# Εκτύπωση των φορών που εμφανίζεται ο μέγιστος βαθμός
+print("O μέγιστος βαθμός βρέθηκε %d φορές." % vathmosCounter)
 ```
 
 <!--

@@ -10,14 +10,14 @@ for i in range(ΜAX_EXAMINA):
     # Για MAX_MATHIMATA
     for j in range(MAX_MATHIMATA):
         # Ζητάμε από το χρήστη να δώσει ένα βαθμό και το μετατρεπουμε σε πραγματικό
-        vathmos = float(input(f"Δώσε βαθμό για το {i+1}ο εξάμηνο: ").strip())
+        vathmos = float(input("Δώσε βαθμό για το %dο εξάμηνο: " % (i+1)))
         # Αποθηκεύουμε το βαθμό στη υπολίστα vathmoi
         vathmoi.append(vathmos)
     # Αποθηκεύουμε τις υπολίστες στη λίστα eksamina
     eksamina.append(vathmoi)
 
 # Ζητάμε από το χρήστη να δώσει ένα εξάμηνο και το μετατρεπουμε σε ακέραιο
-arEksaminou = int(input("Ποιο εξάμηνο θες να δείς; ").strip())
+arEksaminou = int(input("Ποιο εξάμηνο θες να δείς; "))
 
 # Αρχικοποίηση μεταβλητών
 eksamino = eksamina[arEksaminou - 1]
@@ -34,6 +34,6 @@ for mathima in eksamino:
         perasmena += 1
 
 # Εκτύπωση του μέσου όρου
-print(f"Ο μέσος όρος είναι: {souma / len(eksamino)}")
+print("Ο μέσος όρος είναι: %.1f" % (souma / len(eksamino)))
 # Εκτύπωση των περασμένων μαθημάτων
-print(f"Πέρασες {perasmena} μαθήματα.")
+print("Πέρασες: %d μαθήματα." % perasmena)
