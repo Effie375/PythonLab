@@ -157,7 +157,7 @@ print("Ο μέγιστος είναι ο", max)
 
 ---
 
-### [Παράδειγμα 1](source/lecture_03/lecture_03_example_1.py)
+### Παράδειγμα 1
 
 <!--
 ```python
@@ -203,7 +203,7 @@ print(apotelesma)
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_03/lecture_03_example_1.py).
 
-### [Παράδειγμα 2](source/lecture_03/lecture_03_example_2.py)
+### Παράδειγμα 2
 
 <!--
 ```python
@@ -257,7 +257,7 @@ else:
 
 ---
 
-### [Άσκηση 1](source/lecture_03/lecture_03_exercise_1.py)
+### Άσκηση 1
 
 Να γίνει πρόγραµµα σε Python το οποίο να εκτελεί τα εξής:
 
@@ -323,7 +323,7 @@ else:
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_03/lecture_03_exercise_1.py).
 
-### [Άσκηση 2](source/lecture_03/lecture_03_exercise_2.py)
+### Άσκηση 2
 
 Να γίνει πρόγραµµα σε Python το οποίο να εκτελεί τα εξής:
 

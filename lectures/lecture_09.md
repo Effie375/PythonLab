@@ -13,7 +13,7 @@
 
 ---
 
-### [Παράδειγμα 1](source/lecture_09/lecture_09_example_1.py)
+### Παράδειγμα 1
 
 ```python
 def sunolo(x, y):
@@ -38,7 +38,7 @@ sayHello()
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_1.py)
 
-### [Παράδειγμα 2](source/lecture_09/lecture_09_example_2.py)
+### Παράδειγμα 2
 
 ```python
 def sayHello(onoma="Human"):
@@ -59,7 +59,7 @@ a, b = modDiv(10, 3)
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_2.py)
 
-### [Παράδειγμα 3](source/lecture_09/lecture_09_example_3.py)
+### Παράδειγμα 3
 
 ```python
 def searchFunction(pLista, key):
@@ -89,7 +89,7 @@ print(results)
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_3.py)
 
-### [Παράδειγμα 4](source/lecture_09/lecture_09_example_4.py)
+### Παράδειγμα 4
 
 ```python
 def athroisma(listaNew):
@@ -115,7 +115,7 @@ for item in lista:
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_4.py)
 
-### [Παράδειγμα 5](source/lecture_09/lecture_09_example_5.py)
+### Παράδειγμα 5
 
 ```python
 def showList(lista2):
@@ -136,7 +136,7 @@ print(lista)
 
 ---
 
-### [Άσκηση 1](source/lecture_09/lecture_09_exercise_1.py)
+### Άσκηση 1
 
 ```python
 def foo(x):
@@ -149,7 +149,7 @@ print(foo(x))
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_exercise_1.py)
 
-### [Άσκηση 2](source/lecture_09/lecture_09_exercise_2.py)
+### Άσκηση 2
 
 Τι θα εµφανιστεί αν δώσουµε ως τιµή εισόδου στο πρόγραµµα την τιµή 5 και τι την τιµή 10.
 
@@ -177,7 +177,7 @@ else:
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_exercise_2.py)
 
-### [Άσκηση 3](source/lecture_09/lecture_09_exercise_3.py)
+### Άσκηση 3
 
 Να γραφεί µια συνάρτηση η οποία θα δέχεται µια λίστα µε αριθµούς και θα την ταξινοµεί.
 
