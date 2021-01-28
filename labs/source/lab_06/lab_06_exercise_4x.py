@@ -2,7 +2,7 @@
 alfabito = "abcdefghijklmnopqrstuvwxyz"
 
 # Ζητάμε από το χρήστη να δώσει μια λέξη
-leksi = input("Δώσε λέξη με λατινικούς χαρακτήρες: ").lower()
+leksi = input("Δώσε λέξη με λατινικούς χαρακτήρες: ").lower().strip()
 
 # Για κάθε γράμμα του λατινικού αλφαβήτου
 for gramma in alfabito:
@@ -16,7 +16,7 @@ for gramma in alfabito:
             counter += 1
     # Εάν ο μετρητής είναι 1
     if counter == 1:
-        print("To γράμμα '%s' εμφανίστηκε %d φορά." % (gramma, counter))
+        print(f"To γράμμα '{gramma}' εμφανίστηκε {counter} φορά.")
     # Αλλιώς εάν ο μετρητής δεν είναι ούτε 0 αλλά ούτε 1
     elif counter != 0:
-        print("To γράμμα '%s' εμφανίστηκε %d φορές." % (gramma, counter))
+        print(f"To γράμμα '{gramma}' εμφανίστηκε {counter} φορές.")

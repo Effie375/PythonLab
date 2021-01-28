@@ -1,10 +1,10 @@
 # Ζητάμε από το χρήστη να δώσει τον νιοστό όρο Fibonacci
-fibNo = input("Δώσε νιοστό όρο Fibonacci (int): ")
+fibNo = input("Δώσε νιοστό όρο Fibonacci (int): ").strip()
 
 # Όσο ο νιοστός όρος δεν είναι αριθμός
 while not fibNo.isdigit():
     # Ζητάμε από το χρήστη να δώσει σωστό νιοστό όρο Fibonacci
-    fibNo = input("Δώσε έναν ακέραιο νιοστό όρο Fibonacci: ")
+    fibNo = input("Δώσε έναν ακέραιο νιοστό όρο Fibonacci: ").strip()
 
 # Μετατρέπουμε τον νιοστό όρο σε ακέραιο αριθμό
 fibNo = int(fibNo)

@@ -7,7 +7,7 @@ consonants = "bcdfgjklmnpqrstvwxz"
 vowels = "aehyuio"
 
 # Ζητάμε από το χρήστη να δώσει μια λέξη
-word = input("Δώσε λέξη με λατινικούς χαρακτήρες: ").lower().strip()
+word = input("Δώσε λέξη με λατινικούς χαρακτήρες: ").lower()
 
 # Για κάθε γράμμα της λέξης
 while letter < len(word):
@@ -27,6 +27,6 @@ while letter < len(word):
     letter += 1
 
 # Εκτύπωση αποτελεσμάτων
-print(f"Τα φωνήεντα είναι {vowelCounter}.")
-print(f"Τα σύμφωνα είναι {consonantsCounter}.")
-print(f"Τα σύμβολα είναι {otherCounter}.")
+print("Τα φωνήεντα είναι %d." % vowelCounter)
+print("Τα σύμφωνα είναι %d." % consonantsCounter)
+print("Τα σύμβολα είναι %d." % otherCounter)

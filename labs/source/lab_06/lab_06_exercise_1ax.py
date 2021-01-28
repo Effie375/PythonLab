@@ -5,7 +5,7 @@ lista = []
 # Για κάθε MAX_ELEMENTS
 for i in range(MAX_ELEMENTS):
     # Διαβάζουμε από το χρήστη το βαθμό του και το μετατρεπουμε σε ακέραιο
-    vathmos = int(input("Δώσε βαθμό: "))
+    vathmos = int(input("Δώσε βαθμό: ").strip())
     # Αποθηκεύουμε το βαθμό στη λίστα
     lista.append(vathmos)
 
@@ -26,4 +26,4 @@ for agwnisma in lista:
 mo = athroisma / MAX_ELEMENTS
 
 # Εκτύπωση μέσου όρου
-print("Ο μέσος όρος είναι %.1f." % mo)
+print(f"Ο μέσος όρος είναι {mo:.1f}.")

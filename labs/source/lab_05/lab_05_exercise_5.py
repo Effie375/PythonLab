@@ -3,7 +3,7 @@ megisto = 0
 lista = []
 
 # Ζητάμε από το χρήστη να δώσει έναν αριθμό
-number = int(input("Δώσε αριθμό: ").strip())
+number = int(input("Δώσε αριθμό: "))
 
 # Όσο ο αριθμός είναι διάφορος του μηδενός
 while number != 0:
@@ -14,7 +14,7 @@ while number != 0:
         # Αποθηκεύουμε τον αριθμό σαν megisto
         megisto = number
     # Ζητάμε από το χρήστη να ξαναδώσει αριθμό
-    number = int(input("Δώσε αριθμό: ").strip())
+    number = int(input("Δώσε αριθμό: "))
     i = 1
 
 # Όσο το i είναι μικρότερο ή ίσο του μέγιστου αριθμού
@@ -32,9 +32,9 @@ while i <= megisto:
         j += 1
     # Εάν ο counter είναι 1
     if counter == 1:
-        print(f"Ο αριθμός {i} εισήχθη {counter} φορά.")
+        print("Ο αριθμός %d εισήχθη %d φορά." % (i, counter))
     # Αλλιώς εάν ο counter είναι διάφορος του μηδενός
     elif counter != 0:
-        print(f"Ο αριθμός {i} εισήχθη {counter} φορές.")
+        print("Ο αριθμός %d εισήχθη %d φορές." % (i, counter))
     # Αυξάνουμε την μεταβλητή i κατά 1
     i += 1

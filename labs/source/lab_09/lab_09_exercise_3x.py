@@ -10,7 +10,7 @@ for i in range(ΜΑΧ_ΕΧΑΜΗΝΑ):
     # Για ΜAX_MATHIMATA
     for j in range(ΜAX_MATHIMATA):
         # Ζητάμε από το χρήστη να μας δώσει βαθμό για το μάθημα του εξαμήνου
-        vathmos = input("Βαθμός %dου εξαμήνου και %dο μάθημα: " % ((i + 1), (j + 1)))
+        vathmos = input(f"Βαθμός {i + 1}ου εξαμήνου και {j + 1}ο μάθημα: ").strip()
         # Το μετατρέπουμε σε πραγματική τιμή
         vathmos = float(vathmos)
         # Αποθηκεύουμε το βαθμό στην υπολίστα mathima
@@ -19,7 +19,7 @@ for i in range(ΜΑΧ_ΕΧΑΜΗΝΑ):
     eksamino.append(mathima)
 
 # Εκτύπωση των βαθμών του φοιτητή
-print("Οι βαθμοί του φοιτητή είναι: %d" % eksamino)
+print(f"Οι βαθμοί του φοιτητή είναι: {eksamino}")
 
 # Έστω ότι ο μέγιστος βαθμός είναι ο βαθμός που βρίσκεται στη θέση 0
 megVathmos = mathima[0]
@@ -34,4 +34,4 @@ for mathima in eksamino:
             megVathmos = i
 
 # Εκτύπωση του μέγιστου βαθμού
-print("O μέγιστος βαθμός είναι: %d" % megVathmos)
+print(f"O μέγιστος βαθμός είναι: {megVathmos}")

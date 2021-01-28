@@ -5,12 +5,12 @@ players = []
 # Για MAX_PLAYERS
 for i in range(MAX_PLAYERS):
     # Ζητάμε από το χρήστη να δώσει το όνομά του
-    player = input("Δώσε όνομα παίκτη: ")
+    player = input("Δώσε όνομα παίκτη: ").strip()
     # Αποθηκεύουμε το όνομα στη λίστα players
     players.append(player)
 
 # Εκτύπωση της μη ταξινομημένης λίστας με τα ονόματα
-print("Μη ταξινομημένοι παίκτες: %s" % players)
+print(f"Μη ταξινομημένοι παίκτες: {players}")
 
 for i in range(1, MAX_PLAYERS):
     for j in range(MAX_PLAYERS - 1, i - 1, -1):
@@ -21,4 +21,4 @@ for i in range(1, MAX_PLAYERS):
             players[j] = temp
 
 # Εκτύπωση της μη ταξινομημένης λίστας με τα ονόματα
-print("Ταξινομημένοι παίκτες: %s" % players)
+print(f"Ταξινομημένοι παίκτες: {players}")

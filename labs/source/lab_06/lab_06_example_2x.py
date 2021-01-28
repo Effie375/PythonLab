@@ -2,7 +2,7 @@
 prime = True
 
 # Ζητάμε από το χρήστη να δώσει έναν φυσικό αριθμό
-number = int(input("Δώσε έναν φυσικό αριθμό: "))
+number = int(input("Δώσε έναν φυσικό αριθμό: ").strip())
 
 if number == 1:
     prime = False
@@ -16,6 +16,6 @@ else:
 
 # Εκτύπωση αποτελέσματος
 if prime == True:
-    print("\nO αριθμός %d είναι πρώτος αριθμός." % number)
+    print(f"\nO αριθμός {number} είναι πρώτος αριθμός.")
 else:
-    print("\nO αριθμός %d δεν είναι πρώτος αριθμός." % number)
+    print(f"\nO αριθμός {number} δεν είναι πρώτος αριθμός.")

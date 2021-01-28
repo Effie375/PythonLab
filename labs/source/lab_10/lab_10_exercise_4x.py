@@ -5,7 +5,7 @@ def eisagogiStoixeion():
     # Για 10 φορές
     for i in range(10):
         # Ζητάμε από το χρήστη να δώσει το όνομά του
-        name = input("Δώσε όνομα: ")
+        name = input("Δώσε όνομα: ").strip()
         # Αποθηκεύουμε το όνομα στη λίστα onomata
         onomata.append(name)
     # Επιστρέφει τη λίστα onomata
@@ -46,7 +46,7 @@ onomata = eisagogiStoixeion()
 print(monadikiLista(onomata))
 
 # Ζητάμε από το χρήστη να δώσει το όνομα που αναζητά
-stoixeio = input("Δώσε όνομα που αναζητάς: ")
+stoixeio = input("Δώσε όνομα που αναζητάς: ").strip()
 
 # Καλούμε τη συνάρτηση anazitisi
 done = anazitisi(stoixeio, onomata)
@@ -55,4 +55,4 @@ done = anazitisi(stoixeio, onomata)
 if done == True:
     print("Το όνομα που αναζητάς δεν είναι στη λίστα.")
 else:
-    print("Το όνομα %s είναι στη λίστα." % stoixeio)
+    print(f"Το όνομα {stoixeio} είναι στη λίστα.")

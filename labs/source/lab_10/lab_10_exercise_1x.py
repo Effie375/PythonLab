@@ -5,7 +5,7 @@ def readNames(plithos):
     # Για όσο είναι το plithos
     for i in range(plithos):
         # Ζητάμε από το χρήστη να δώσει το όνομά του
-        onoma = input("Δώσε όνομα:")
+        onoma = input("Δώσε όνομα:").strip()
         # Αποθηκεύουμε το όνομα στη λίστα onomata
         onomata.append(onoma)
     # Επιστρέφει τη λίστα onomata
@@ -25,11 +25,11 @@ def longestName(list):
 
 
 # Ζητάμε από το χρήστη να δώσει πλήθος και το μετατρέπουμε σε ακέραιο
-plithos = int(input("Δώσε πλήθος: "))
+plithos = int(input("Δώσε πλήθος: ").strip())
 # Καλούμε τη συνάρτηση readNames
 onomata = readNames(plithos)
 # Καλούμε τη συνάρτηση longestName
 x = longestName(onomata)
 
 # Εκτύπωση του μήκους από το μακρύτερο όνομα
-print("Το μακρύτερο όνομα έχει μήκος: %d" % x)
+print(f"Το μακρύτερο όνομα έχει μήκος: {x}")

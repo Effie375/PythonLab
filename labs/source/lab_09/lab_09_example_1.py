@@ -10,7 +10,7 @@ for i in range(MAX_LISTES):
     # Για MAX_ELEMENTS
     for j in range(MAX_ELEMENTS):
         # Ζητάμε από το χρήστη να δώσει έναν αριθμό και το μετατρεπουμε σε ακέραιο
-        n = int(input("Δώσε αριθμό: ").strip())
+        n = int(input("Δώσε αριθμό: "))
         # Αποθηκεύουμε τον αριθμό στην υπολίστα
         ypolista.append(n)
     # Αποθηκεύουμε την υπολίστα στη λίστα
@@ -35,4 +35,4 @@ for ypolista in lista:
         megLista = ypolista
 
 # Εκτύπωση της υπολίστας με το μεγαλύτερο άθροισμα
-print(f"Η υπολίστα με το μεγαλύτερο άθροισμα είναι {megLista}")
+print("Η υπολίστα με το μεγαλύτερο άθροισμα είναι %s" % megLista)

@@ -2,7 +2,7 @@
 athroisma = 0
 
 # Διαβάζουμε από το χρήστη έναν αριθμό και το μετατρέπουμε σε ακέραιο
-number = int(input("Δώσε έναν αριθμό: ").strip())
+number = int(input("Δώσε έναν αριθμό: "))
 
 while number:
     # Παίρνουμε το τελευταίο ψηφίο του αριθμού
@@ -13,4 +13,4 @@ while number:
     athroisma += telPshfio
 
 # Eκτύπωση αποτελέσματος
-print(f"Το άθροισμα των ψηφίων είναι {athroisma}.")
+print("Το άθροισμα των ψηφίων είναι %d." % athroisma)

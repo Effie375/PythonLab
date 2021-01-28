@@ -1,5 +1,5 @@
 # Διαβάζουμε από το χρήστη το βαθμό του
-number = input("Δώσε βαθμό (int): ")
+number = input("Δώσε βαθμό (int): ").strip()
 
 # Ελέγχουμε αν είναι αριθμός (int)
 if number.isdigit():

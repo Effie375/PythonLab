@@ -2,7 +2,7 @@
 athroisma = 0
 
 # Ζητάμε από το χρήστη να δώσει έναν αριθμό
-number = int(input("Δώσε αριθμό: ").strip())
+number = int(input("Δώσε αριθμό: "))
 
 # Για number φορές
 for i in range(number + 1):
@@ -11,4 +11,4 @@ for i in range(number + 1):
     athroisma = athroisma + i
 
 # Εκτύπωση αθροίσματος
-print(f"Άθροισμα: {athroisma}")
+print("Άθροισμα: %d" % athroisma)

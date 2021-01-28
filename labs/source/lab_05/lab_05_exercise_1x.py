@@ -11,7 +11,7 @@ i = 0
 # Όσο το i είναι μικρότερο του MAX_ELEMENTS
 while i < MAX_ELEMENTS:
     # Ζητάμε από το χρήστη να δώσει έναν αριθμό
-    number = int(input("Δώσε αριθμό: "))
+    number = int(input("Δώσε αριθμό: ").strip())
     # Αποθηκεύουμε τον αριθμό στη λίστα
     lista.append(number)
     # Προσθέτουμε κάθε φορά στο athroisma τον αριθμό
@@ -39,7 +39,7 @@ while i < MAX_ELEMENTS:
 diafora = lista[thesiMegistou] - lista[thesiElaxistou]
 
 # Εκτύπωση αποτελεσμάτων
-print("\nTο άθροισμα των αριθμών είναι %d." % athroisma)
-print("Tο πλήθος των περιττών είναι %d. " % odd)
-print("Το πλήθος των άρτιων είναι %d." % even)
-print("H διαφορά max και min είναι %d." % diafora)
+print(f"\nTο άθροισμα των αριθμών είναι {athroisma}.")
+print(f"Tο πλήθος των περιττών είναι {odd}. ")
+print(f"Το πλήθος των άρτιων είναι {even}.")
+print(f"H διαφορά max και min είναι {diafora}.")

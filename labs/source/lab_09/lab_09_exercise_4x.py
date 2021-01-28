@@ -10,7 +10,7 @@ for i in range(MAX_ATHLIMATA):
     # Για MAX_PROSPATHEIES
     for j in range(MAX_PROSPATHEIES):
         # Ζητάμε από το χρήστη να δώσει βαθμό αθλήματος και την προσπάθειά του
-        vathmos = input("Βαθμός %dου αθλήματος και %dη προσπάθεια: " % ((i + 1), (j + 1)))
+        vathmos = input(f"Βαθμός {i + 1}ου αθλήματος και {j + 1}η προσπάθεια: ").strip()
         # Το μετατρέπουμε σε πραγματική τιμή
         vathmos = float(vathmos)
         # Αποθηκεύουμε το βαθμό στην υπολίστα vathmos
@@ -35,7 +35,7 @@ for vathmoi in athlimata:
             maxAthlima = vathmoi
 
 # Εκτύπωση του μέγιστου βαθμού και το άθροισμά της υπολίστας
-print("Ο max βαθμός είναι: %d και το άθροισμα είναι: %d" % (maxAthlima, maxSum))
+print(f"Ο max βαθμός είναι: {maxAthlima} και το άθροισμα είναι: {maxSum}")
 
 # Έστω ότι ο μέγιστος βαθμός βρίσκεται στην υπολίστα με τη θέση 0 και το στοιχείο της στη θέση 0
 megVathmos = athlimata[0][0]
@@ -50,7 +50,7 @@ for vathmoi in athlimata:
             megVathmos = i
 
 # Εκτύπωση του μέγιστου βαθμού του αθλητή
-print("Ο μέγιστος βαθμός του αθλητή είναι: %d" % megVathmos)
+print(f"Ο μέγιστος βαθμός του αθλητή είναι: {megVathmos}")
 
 # Αρχικοποίηση μεταβλητής
 vathmosCounter = 0
@@ -65,4 +65,4 @@ for vathmoi in athlimata:
             vathmosCounter += 1
 
 # Εκτύπωση των φορών που εμφανίζεται ο μέγιστος βαθμός
-print("O μέγιστος βαθμός βρέθηκε %d φορές." % vathmosCounter)
+print(f"O μέγιστος βαθμός βρέθηκε {vathmosCounter} φορές.")

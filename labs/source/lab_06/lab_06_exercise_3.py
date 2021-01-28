@@ -1,5 +1,5 @@
 # Ζητάμε από το χρήστη να δώσει έναν αριθμό
-number = int(input("Δώσε αριθμό: ").strip())
+number = int(input("Δώσε αριθμό: "))
 
 # Για κάθε αριθμό από το 2 εώς και το number
 for i in range(2, number + 1):

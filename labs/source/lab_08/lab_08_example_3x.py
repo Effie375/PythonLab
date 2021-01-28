@@ -5,12 +5,12 @@ lista = []
 # Για MAX_ELEMENTS
 for i in range(MAX_ELEMENTS):
     # Ζητάμε από το χρήστη να δώσει ένα στοιχείο και το μετατρεπουμε σε ακέραιο
-    num = int(input("Δώσε στοιχείο: "))
+    num = int(input("Δώσε στοιχείο: ").strip())
     # Αποθηκεύουμε το στοιχείο στη λίστα
     lista.append(num)
 
 # Εκτύπωση της μη ταξινομημένης λίστας
-print("H μη ταξινομημένη λίστα είναι: %s" % lista)
+print(f"H μη ταξινομημένη λίστα είναι: {lista}")
 
 for i in range(1, 5):
     for j in range(4, i - 1, -1):
@@ -21,4 +21,4 @@ for i in range(1, 5):
             lista[j] = temp
 
 # Εκτύπωση της ταξινομημένης λίστας
-print("H ταξινομημένη λίστα είναι: %s" % lista)
+print(f"H ταξινομημένη λίστα είναι: {lista}")

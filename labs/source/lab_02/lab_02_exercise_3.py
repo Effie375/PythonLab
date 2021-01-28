@@ -1,10 +1,10 @@
 import datetime
 
 # Ζητάμε από το χρήστη να δώσει το όνομα του
-onoma = input("Ποιο είναι το όνομα σου: ").strip()
+onoma = input("Ποιο είναι το όνομα σου: ")
 
 # Ζητάμε από το χρήστη να δώσει την ηλικία του
-ilikia = input("Ποια είναι η ηλικία σου: ").strip()
+ilikia = input("Ποια είναι η ηλικία σου: ")
 
 # Μετατροπή από str σε int
 ilikia = int(ilikia)
@@ -27,4 +27,4 @@ if (onoma[-1] == 's') or (onoma[-1] == 'ς'):
 onoma = onoma[0].upper() + onoma[1:]
 
 # Εκτύπωση αποτελέσματος
-print(f"{onoma} θα γίνεις 100 το έτος {ekatoXronwn}.")
+print("%s θα γίνεις 100 το έτος %d." % (onoma, ekatoXronwn))

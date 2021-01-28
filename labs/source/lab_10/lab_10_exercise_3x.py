@@ -4,7 +4,7 @@ def readMarks(N):
     marks = []
     for i in range(N):
         # Ζητάμε από το χρήστη να δώσει βαθμό και το μετατρέπουμε σε ακέραιο
-        mark = int(input("Δώσε βαθμό: "))
+        mark = int(input("Δώσε βαθμό: ").strip())
         # Αποθηκεύουμε το mark στη λίστα marks
         marks.append(mark)
     # Επιστρέφει το marks
@@ -36,12 +36,12 @@ def getMO(listaP):
 
 
 # Ζητάμε από το χρήστη να δώσει τα μαθήματα που δώθηκαν και το μετατρέπουμε σε ακέραιο
-plithos = int(input("Πόσοι δώσανε το μάθημα:"))
+plithos = int(input("Πόσοι δώσανε το μάθημα:").strip())
 
 # Καλούμε τη συνάρτηση readMarks
 vathmoi = readMarks(plithos)
 
 # Εκτύπωση του μέγιστου
-print("Μέγιστος: %d" % getMax(vathmoi))
+print(f"Μέγιστος: {getMax(vathmoi)}")
 # Εκτύπωση του μέσου όρου
-print("Mέσος όρος: %d" % getMO(vathmoi))
+print(f"Mέσος όρος: {getMO(vathmoi)}")
