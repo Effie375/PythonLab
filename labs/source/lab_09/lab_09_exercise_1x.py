@@ -10,7 +10,7 @@ for i in range(ΜAX_EXAMINA):
     # Για MAX_MATHIMATA
     for j in range(MAX_MATHIMATA):
         # Ζητάμε από το χρήστη να δώσει ένα βαθμό και το μετατρεπουμε σε πραγματικό
-        vathmos = float(input("Δώσε βαθμό για το %dο εξάμηνο: " % (i+1)))
+        vathmos = float(input("Δώσε βαθμό για το %dο εξάμηνο: " % (i + 1)))
         # Αποθηκεύουμε το βαθμό στη υπολίστα vathmoi
         vathmoi.append(vathmos)
     # Αποθηκεύουμε τις υπολίστες στη λίστα eksamina
