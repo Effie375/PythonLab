@@ -1,7 +1,12 @@
+# Αρχικοποίηση μεταβλητών
+MAX_ELEMENTS = 100
 lista = []
 
-for i in range(100):
+# Για MAX_ELEMENTS
+for i in range(MAX_ELEMENTS):
+    # Ζητάμε από το χρήστη να δώσει αριθμό, το μετατρέπουμε σε ακέραιο και το αποθηκεύουμε στη λίστα
     lista.append(int(input("Δώσε αριθμό: ")))
 
-for i in range(99, -1, -1):
+for i in range(MAX_ELEMENTS-1, -1, -1):
+    # Εκτύπωση κάθε φορά το στιγμιαίο στοιχείο
     print(lista[i])
