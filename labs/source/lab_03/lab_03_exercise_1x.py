@@ -20,6 +20,6 @@ onoma = onoma[0].upper() + onoma[1:]
 
 # Ελέγχουμε εάν ο τελικός βαθμός είναι πάνω από 5
 if telikosVathmos >= 5:
-    print(onoma, "πέρασες!")
+    print(f"{onoma} πέρασες!")
 else:
-    print(onoma, "απέτυχες!")
+    print(f"{onoma} απέτυχες!")

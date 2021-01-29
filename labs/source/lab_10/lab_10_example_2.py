@@ -12,7 +12,7 @@ def sort(listaP):
 
 
 # Δημιουργία λίστας
-list = [5, 7, 8, 9, 3]
+lista = [5, 7, 8, 9, 3]
 
-x = sort(list[:])
+x = sort(lista[:])
 print(x)
