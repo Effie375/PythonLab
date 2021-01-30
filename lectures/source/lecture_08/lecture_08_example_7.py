@@ -15,6 +15,6 @@ for ypolista in lista:
         if megistoGrammhs < i:
             # Εκχωρούμε στο megistoGrammhs το i
             megistoGrammhs = i
-    
+
     # Εκτύπωση το μέγιστο γραμμής
     print("Μέγιστο γραμμής: %d" % megistoGrammhs)
