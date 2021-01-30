@@ -1,10 +1,19 @@
+# Aρχικοποίηση μεταβλητών
+MAX_ELEMENTS = 5
 lista = []
 
-for i in range(5):
+# Για MAX_ELEMENTS
+for i in range(MAX_ELEMENTS):
+    # Δημιουργία κενής λίστας
     ypolista = []
-    for j in range(4):
-        new_num = int(input("Δώσε αριθμό: ").strip())
-        ypolista.append(new_num)
+    # Για MAX_ELEMENTS - 1
+    for j in range(MAX_ELEMENTS - 1):
+        # Ζητάμε από το χρήστη να δώσει αριθμό και το μετατρέπουμε σε ακέραιο
+        newNum = int(input("Δώσε αριθμό: ").strip())
+        # Αποθηκεύουμε τον αριθμό στην υπολίστα
+        ypolista.append(newNum)
+    # Αποθηκεύουμε την υπολίστα στη λίστα
     lista.append(ypolista)
 
+# Εκτύπωση της λίστας
 print(lista)

@@ -547,19 +547,19 @@ def athroisma(plist):
 
 
 # Αρχικοποίηση μεταβλητών
-PAIKTES = 10
-AGWNES = 15
+ΜΑΧ_PAIKTES = 10
+ΜΑΧ_AGWNES = 15
 pontoi = []
 names = []
 
-# Για PAIKTES
-for i in range(PAIKTES):
+# Για ΜΑΧ_PAIKTES
+for i in range(ΜΑΧ_PAIKTES):
   # Ζητάμε από το χρήστη να δώσει όνομα παίκτη
   name = input("\nΔώσε το όνομα του %dου παίκτη: " % (i + 1))
   # Αποθηκεύουμε το όνομα στη λίστα names
   names.append(name)
-  # Για AGWNES
-  for j in range(AGWNES):
+  # Για ΜΑΧ_AGWNES
+  for j in range(ΜΑΧ_AGWNES):
     # Ζητάμε από το χρήστη να δώσει πόντους για τον αγώνα και το μετατρέπουμε σε ακέραιο
     pontos = int(input("Δώσε πόντους για τον %do αγώνα: " % (j + 1)))
     # Εάν το i είναι ίσο με το 0
@@ -570,7 +570,7 @@ for i in range(PAIKTES):
     pontoi[j].append(pontos)
 
 # Τρέχει για κάθε αγώνα
-for agwnas in range(AGWNES):
+for agwnas in range(ΜΑΧ_AGWNES):
   # Καλούμε τη συνάρτηση και παίρνουμε το άθροισμα των πόντων ανα αγώνα
   synoloPonton = athroisma(pontoi[agwnas])
   # Εκτύπωση αγώνας
@@ -582,12 +582,13 @@ for agwnas in range(AGWNES):
   # Έστω ο καλύτερος παίκτης με τους περισσότερους πόντους είναι ο πρώτος
   best = pontoi[agwnas][bestThesi]
   # Τρέχει για κάθε παίκτη
-  for paiktis in range(PAIKTES):
+  for paiktis in range(ΜΑΧ_PAIKTES):
     if pontoi[agwnas][paiktis] > best:
       # Εκχωρούμε στη bestThesi το paiktis
       bestThesi = paiktis
+
   # Εκτύπωση του καλύτερου παίκτη
-  print("Καλύτερος παίκτης: %s" % names[best_thesi])
+  print("Καλύτερος παίκτης: %s" % names[bestThesi])
   # Εκτύπωση τους πόντους του καλύτερου παίκτη
   print("Πόντοι καλύτερου παίκτη: %d" % pontoi[agwnas][bestThesi])
 ```

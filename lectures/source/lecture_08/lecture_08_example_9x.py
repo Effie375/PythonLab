@@ -1,16 +1,26 @@
+# Δημιουργία λίστας
 lista = [[2, 3, 4, 1],
          [7, 3, 3, 9],
          [6, 5, 5, 8],
          [1, 9, 4, 1],
          [0, 4, 7, 4]]
 
+# Ζητάμε από το χρήστη να δώσει στοιχείο που αναζητά και το μετατρέπουμε σε ακέραιο
 key = int(input("Δώσε στοιχείο που αναζητάς: ").strip())
 
-key_counter = 0
+# Αρχικοποίηση μεταβλητών
+MAX_ELEMENTS = 5
+keyCounter = 0
 
-for i in range(5):
-    for j in range(4):
+# Για MAX_ELEMENTS
+for i in range(MAX_ELEMENTS):
+    # Για MAX_ELEMENTS - 1
+    for j in range(MAX_ELEMENTS - 1):
         if key == lista[i][j]:
-            print(i, j)
-            key_counter += 1
-print(f"Βρέθηκε {key_counter} φορές.")
+            # Εκτύπωση σε ποιο σημείο βρίσκεται το στοιχείο που αναζητά ο χρήστης
+            print("Βρίσκεται στην %d υπολίστα στην %d θέση" % (i, j))
+            # Αυξάνουμε τον keyCounter κατά 1
+            keyCounter += 1
+
+# Εκτύπωση το πόσες φορές βρέθηκε το στοιχείο που αναζητά ο χρήστης
+print(f"Βρέθηκε {keyCounter} φορές.")

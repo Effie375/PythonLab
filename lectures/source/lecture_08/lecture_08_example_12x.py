@@ -4,14 +4,17 @@ lista = [[2, 3, 4, 1],
          [1, 2, 4, 3],
          [0, 4, 7, 5]]
 
-print(f"Η μη ταξινομημένη λίστα είναι: {lista}")
+# Εκτύπωση της λίστας πριν την ταξινόμηση
+print(f"Η λίστα πριν την ταξινόμηση είναι: {lista}")
 
 for k in range(4):
     for i in range(1, 5):
         for j in range(4, i - 1, -1):
             if lista[j - 1][k] > lista[j][k]:
+                # Swap lista
                 temp = lista[j - 1][k]
                 lista[j - 1][k] = lista[j][k]
                 lista[j][k] = temp
 
-print(f"Η ταξινομημένη λίστα: {lista}")
+# Εκτύπωση της λίστας μετά την ταξινόμηση
+print(f"Η λίστα μετά την ταξινόμηση είναι: {lista}")
