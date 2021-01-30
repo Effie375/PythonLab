@@ -33,7 +33,7 @@ for i in range(ΜΑΧ_PAIKTES):
         pontoi[j].append(pontos)
 
 # Τρέχει για κάθε αγώνα
-for agwnas in range(AGWNES):
+for agwnas in range(ΜΑΧ_AGWNES):
     # Καλούμε τη συνάρτηση και παίρνουμε το άθροισμα των πόντων ανα αγώνα
     synolo_ponton = athroisma(pontoi[agwnas])
     # Εκτύπωση αγώνας
