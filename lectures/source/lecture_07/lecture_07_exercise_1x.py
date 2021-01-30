@@ -35,7 +35,6 @@ for i in range(MAX_NUMBERS):
     # Αποθηκεύουμε τον αριθμό στη λίστα
     lista.append(num)
 
-
 if not sortFunction(lista):
     # Εκτύπωση του μεγαλύτερου αριθμού της λίστας
     print(f"\nΟ μεγαλύτερος αριθμός είναι το {lista[len(lista) - 1]}.")
