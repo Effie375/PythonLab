@@ -1,9 +1,9 @@
 # Δημιουργία συνάρτησης athroisma
-def athroisma(plist):
+def athroisma(pList):
     # Αρχικοποίηση μεταβλητής
     sum = 0
     # Για κάθε στοιχέιο της λίστας
-    for item in plist:
+    for item in pList:
         # Αυξάνουμε το sum κατά item
         sum += item
     # Επιστρέφει το sum

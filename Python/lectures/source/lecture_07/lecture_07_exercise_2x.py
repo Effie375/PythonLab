@@ -1,17 +1,17 @@
 # Δημιουργία συνάρτησης sortFunction
-def sortFunction(pnames, pvathmoi):
+def sortFunction(pNames, pVathmoi):
     try:
-        for i in range(len(pvathmoi) - 1):
-            for j in range(len(pvathmoi) - 1, i, -1):
-                if pvathmoi[j - 1] < pvathmoi[j]:
-                    # Swap pvathmoi
-                    temp1 = pvathmoi[j - 1]
-                    pvathmoi[j - 1] = pvathmoi[j]
-                    pvathmoi[j] = temp1
-                    # Swap pnames
-                    temp2 = pnames[j - 1]
-                    pnames[j - 1] = pnames[j]
-                    pnames[j] = temp2
+        for i in range(len(pVathmoi) - 1):
+            for j in range(len(pVathmoi) - 1, i, -1):
+                if pvathmoi[j - 1] < pVathmoi[j]:
+                    # Swap pVathmoi
+                    temp1 = pVathmoi[j - 1]
+                    pVathmoi[j - 1] = pVathmoi[j]
+                    pVathmoi[j] = temp1
+                    # Swap pNames
+                    temp2 = pNames[j - 1]
+                    pNames[j - 1] = pNames[j]
+                    pNames[j] = temp2
     except:
         # Eκτύπωση κάτι πήγε στραβά
         print("Κάτι πήγε στραβά!")

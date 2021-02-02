@@ -1,14 +1,14 @@
 # Δημιουργία συνάρτησης sort
-def sort(listaP):
-    for i in range(1, len(listaP)):
-        for j in range(len(listaP) - 1, i - 1, -1):
-            if listaP[j - 1] > listaP[j]:
-                # Swap listaP
-                temp = listaP[j - 1]
-                listaP[j - 1] = listaP[j]
-                listaP[j] = temp
-    # Επιστρέφει τη listaP
-    return listaP
+def sort(pList):
+    for i in range(1, len(pList)):
+        for j in range(len(pList) - 1, i - 1, -1):
+            if pList[j - 1] > pList[j]:
+                # Swap pList
+                temp = pList[j - 1]
+                pList[j - 1] = pList[j]
+                pList[j] = temp
+    # Επιστρέφει τη pList
+    return pList
 
 
 # Δημιουργία λίστας

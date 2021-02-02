@@ -1,13 +1,13 @@
 # Δημιουργία συνάρτησης sortFunction
-def sortFunction(plist):
+def sortFunction(pList):
     try:
-        for index in range(len(plist) - 1):
-            for j in range(len(plist) - 1, index, -1):
-                if plist[j - 1] > plist[j]:
-                    # Swap plist
-                    temp = plist[j - 1]
-                    plist[j - 1] = plist[j]
-                    plist[j] = temp
+        for index in range(len(pList) - 1):
+            for j in range(len(pList) - 1, index, -1):
+                if pList[j - 1] > pList[j]:
+                    # Swap pList
+                    temp = pList[j - 1]
+                    pList[j - 1] = pList[j]
+                    pList[j] = temp
     except:
         # Εκτύπωση κάτι πήγε στραβά
         print("Κάτι πήγε στραβά!")

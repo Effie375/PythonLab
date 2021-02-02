@@ -420,15 +420,15 @@ print(grades)
 
 <!--
 # Δημιουργία συνάρτησης sortFunction
-def sortFunction(plist):
+def sortFunction(pList):
   try:
-    for index in range(len(plist) - 1):
-      for j in range(len(plist) - 1, index, -1):
-          if plist[j - 1] > plist[j]:
-            # Swap plist
-            temp = plist[j - 1]
-            plist[j - 1] = plist[j]
-            plist[j] = temp
+    for index in range(len(pList) - 1):
+      for j in range(len(pList) - 1, index, -1):
+          if pList[j - 1] > pList[j]:
+            # Swap pList
+            temp = pList[j - 1]
+            pList[j - 1] = pList[j]
+            pList[j] = temp
   except:
     # Εκτύπωση κάτι πήγε στραβά
     print("Κάτι πήγε στραβά!")
@@ -465,15 +465,15 @@ if not sortFunction(lista):
 
 ```python
 # Δημιουργία συνάρτησης sortFunction
-def sortFunction(plist):
+def sortFunction(pList):
   try:
-    for index in range(len(plist) - 1):
-      for j in range(len(plist) - 1, index, -1):
-        if plist[j - 1] > plist[j]:
-          # Swap plist
-          temp = plist[j - 1]
-          plist[j - 1] = plist[j]
-          plist[j] = temp
+    for index in range(len(pList) - 1):
+      for j in range(len(pList) - 1, index, -1):
+        if pList[j - 1] > pList[j]:
+          # Swap pList
+          temp = pList[j - 1]
+          pList[j - 1] = pList[j]
+          pList[j] = temp
   except:
     # Εκτύπωση κάτι πήγε στραβά
     print("Κάτι πήγε στραβά!")
@@ -580,7 +580,7 @@ if not sortFunction(names, vathmoi):
 
 ```python
 # Δημιουργία συνάρτησης sortFunction
-def sort_function(pnames, pvathmoi):
+def sort_function(pNames, pvathmoi):
   try:
     for i in range(len(pvathmoi) - 1):
       for j in range(len(pvathmoi) - 1, i, -1):
@@ -589,10 +589,10 @@ def sort_function(pnames, pvathmoi):
           temp1 = pvathmoi[j - 1]
           pvathmoi[j - 1] = pvathmoi[j]
           pvathmoi[j] = temp1
-          # Swap pnames
-          temp2 = pnames[j - 1]
-          pnames[j - 1] = pnames[j]
-          pnames[j] = temp2
+          # Swap pNames
+          temp2 = pNames[j - 1]
+          pNames[j - 1] = pNames[j]
+          pNames[j] = temp2
   except:
     # Eκτύπωση κάτι πήγε στραβά
     print("Κάτι πήγε στραβά!")

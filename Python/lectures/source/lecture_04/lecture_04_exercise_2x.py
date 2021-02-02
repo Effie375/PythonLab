@@ -1,11 +1,11 @@
 # Αρχικοποίηση μεταβλητών
-AKSIA = 3000
+MAX_AKSIA = 3000
 weeks = 0
 dosi = 20
 tameio = 0
 
-# Για όσο το ταμείο είναι μικρότερο ή ίσο από την AKSIA
-while tameio <= AKSIA:
+# Για όσο το ταμείο είναι μικρότερο ή ίσο από την MAX_AKSIA
+while tameio <= MAX_AKSIA:
     # Αυξάνουμε το ταμείο κατά δόση
     tameio += dosi
     # Αυξάνουμε τη μεταβλητή weeks κατά 1
@@ -16,7 +16,7 @@ while tameio <= AKSIA:
 # Εκτύπωση τις εβδομάδες
 print(weeks)
 
-# Εάν το ταμείο είναι μεγαλύτερη από την AKSIA
-if tameio > AKSIA:
+# Εάν το ταμείο είναι μεγαλύτερη από την MAX_AKSIA
+if tameio > MAX_AKSIA:
     # Εκτύπωση πόσα ευρώ περίσσεψαν
-    print(f"Περίσσεψαν {tameio - AKSIA} Ευρώ.")
+    print(f"Περίσσεψαν {tameio - MAX_AKSIA} Ευρώ.")
