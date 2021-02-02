@@ -1,9 +1,9 @@
 # Αρχικοποίηση μεταβλητών
 MAX_ELEMENTS = 10
-lista = []
 thesiElaxistou = 0
 thesiMegistou = 0
 athroisma = 0
+lista = []
 even = 0
 odd = 0
 i = 0

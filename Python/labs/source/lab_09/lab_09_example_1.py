@@ -3,7 +3,7 @@ MAX_ELEMENTS = 10
 MAX_LISTES = 5
 lista = []
 
-# MAX_LISTES
+# Για MAX_LISTES
 for i in range(MAX_LISTES):
     # Δημιουργία κενής λίστας
     ypolista = []

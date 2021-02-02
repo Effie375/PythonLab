@@ -22,7 +22,7 @@
   - `myList[n] = var1`
 - Πρόσθεση στοιχείων
   - `myList.append(a)`. *Εισάγει την τιμή της μεταβλητής a στο τέλος.*
-  - `myList.extend(new_list)`. *Εισάγει ένα-ένα τα στοιχεία της λίστας new_list στο τέλος.*
+  - `myList.extend(newList)`. *Εισάγει ένα-ένα τα στοιχεία της λίστας newList στο τέλος.*
     - `myList.insert(n, var1)`. *Εισάγει την τιμή της μεταβλητής var1 στη θέση n.*
 - Αφαίρεση στοιχείων
   - `myList.remove(x)`. *Αφαιρεί το πρώτο στοιχείο με τιμή x της λίστας.*
@@ -212,9 +212,9 @@ else:
 ```python
 # Αρχικοποίηση μεταβλητών
 MAX_ELEMENTS = 10
-lista = []
 thesiElaxistou = 0
 thesiMegistou = 0
+lista = []
 athroisma = 0
 even = 0
 odd = 0
@@ -262,10 +262,10 @@ print(f"H διαφορά max και min είναι {diafora}.")
 ```python
 # Αρχικοποίηση μεταβλητών
 MAX_ELEMENTS = 10
-lista = []
 thesiElaxistou = 0
 thesiMegistou = 0
 athroisma = 0
+lista = []
 even = 0
 odd = 0
 i = 0

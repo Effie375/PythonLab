@@ -18,7 +18,7 @@
   - `a = myList[x][y][z]...`
   - `myList[x][y] = var1`
 - Πρόσθεση στοιχείων
-  - `myList[x].append(a)`. Εισάγει την τιμή της μεταβλητής a στο τέλος της λίστας που βρίσκεται στη θέση «x» της λίστας my_list.
+  - `myList[x].append(a)`. Εισάγει την τιμή της μεταβλητής a στο τέλος της λίστας που βρίσκεται στη θέση «x» της λίστας myList.
 
 ## 9.2 Παράδειγμα
 
@@ -33,7 +33,7 @@ MAX_ELEMENTS = 10
 MAX_LISTES = 5
 lista = []
 
-# MAX_LISTES
+# Για MAX_LISTES
 for i in range(MAX_LISTES):
   # Δημιουργία κενής λίστας
   ypolista = []
@@ -75,7 +75,7 @@ MAX_ELEMENTS = 10
 MAX_LISTES = 5
 lista = []
 
-# MAX_LISTES
+# Για MAX_LISTES
 for i in range(MAX_LISTES):
     # Δημιουργία κενής λίστας
     ypolista = []
