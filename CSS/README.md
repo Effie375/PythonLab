@@ -16,6 +16,7 @@
 
 - [Η σύνταξη και οι μορφές της γλώσσας](docs/syntax.md)
 - [Επιλογείς CSS](docs/selectors.md)
+- [Kείμενα CSS](docs/text.md)
 - [Yπερχείληση CSS](docs/overflow.md)
 - [Λίστες CSS](docs/lists.md)
 - [Σύνορα CSS](docs/borders.md)
