@@ -1,12 +1,21 @@
-# C - Programming
+# Eισαγωγή στη C
 
-Repo is implemented in two main stages. In the first stage, basic ones are analyzed algorithmic techniques in the **C programming language**, such as:
+To μάθημα αφορά στην ανάπτυξη αλγορίθμων με τις αρχές του δομημένου διαδικαστικού προγραμματισμού. Επιλέχτηκε η γλώσσα **C**, ως η πλέον χαρακτηριστική γλώσσα για τη διδασκαλία τόσο του δομημένου προγραμματισμού όσο και των βασικών δομών δεδομένων. Η **C** αποτελεί επίσης τη βάση για τις πιο σύγχρονες γλώσσες αντικειμενοστρεφούς προγραμματισμού όπως η C++, η Java και η C#.
 
-- its syntax language (variables, constants, expressions, basic data types, sentences,
-operators),
-- data entry / output,
-- flow control commands iterations,
-- tables,
-- subprograms.
-  
- In the second stage the dynamic data structures are analyzed such as *queues, stacks and trees.*
+---
+
+## Περιεχόμενα
+
+1. Βασικές έννοιες
+2. Τύποι δεδομένων (```Ιnt, Char, Float & Double```) / Μέγεθος και διεύθυνση μεταβλητής / Το πρώτο μου πρόγραμμα στη C / Παραστάσεις και τελεστές
+3. Οι συναρτήσεις ```printf()``` και ```scanf()```
+4. Συναρτήσεις βιβλιοθήκης
+5. Εντολές συνθήκης (```if, switch, case & break```)
+6. Εντολές επανάληψης (```while, do-while, for```)
+7. Συναρτήσεις (ορισμός και κλήση συναρτήσεων)
+8. Μεταβίβαση παραμέτρων σε συναρτήσεις (εμβέλεια μεταβλητών)
+9. Δείκτες / Πίνακες μιας διάστασης / Σχέση δεικτών και πινάκων
+10. Πίνακες χαρακτήρων (```C-strings```) / Πίνακες πολλών διαστάσεων / Μεταβίβαση πίνακα σε συνάρτηση
+11. Δομές
+12. Κανάλια επικοινωνίας και διαχείρηση αρχείων
+13. Ανακεφαλαίωση
