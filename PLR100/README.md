@@ -1,0 +1,65 @@
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Feffie375.github.io%2FPLR100%2F&count_bg=%23D321DF&title_bg=%23555555&icon=apachecassandra.svg&icon_color=%23E5DEDE&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+[![Gitter](https://badges.gitter.im/TPTE_Python/community.svg)](https://gitter.im/TPTE_Python/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+![flake8 Lint](https://github.com/Effie375/PLR100/workflows/flake8%20Lint/badge.svg)
+![Lines of code](https://img.shields.io/tokei/lines/github/Effie375/PLR100)
+![GitHub issues](https://img.shields.io/github/issues-raw/Effie375/PLR100)
+![GitHub](https://img.shields.io/github/license/Effie375/PLR100)
+
+# Εισαγωγή στον Προγραμματισμό 🐍
+
+Το μάθημα αυτό απευθύνεται σε φοιτητές/τριες που θέλουν να μάθουν προγραμματισμό εύκολα και σχετικά γρήγορα. Τα παραδείγματα αναπτύχθηκαν στην έκδοση **3.8.2** της Python και σε περιβάλλον **Windows**. Γενικότερα, η Python μπορεί να χρησιμοποιηθεί για τη γρήγορη ανάπτυξη ολοκληρωμένων εφαρμογών σε διάφορες περιοχές ενδιαφέροντος και στις περισσότερες πλατφόρμες υλικού υπολογιστών και Λειτουργικών Συστημάτων (Windows, Unix, Linux, Mac OS X, κ.λπ.). Διαθέτει πληθώρα έτοιμων βιβλιοθηκών που είναι δυνατό να χρησιμοποιηθούν εύκολα και άμεσα. Τα προγράμματα σε Python είναι συμπαγή, ευανάγνωστα και γράφονται γρηγορότερα σε σχέση με άλλες δημοφιλείς γλώσσες προγραμματισμού όπως οι C, C++ και Java.
+
+Το μάθημα περιλαμβάνει τη διδασκαλία σε:
+
+- γενικές αρχές σχεδίασης προγραμμάτων
+- αλγόριθμοι
+- λογικά διαγράμματα ροής
+- τεχνικές σχεδιασμού αλγορίθμου
+- επίλυση αλγοριθμικών προβλημάτων
+
+Συντακτικό της γλώσσας:
+
+- Μεταβλητές
+- Σταθερές
+- Εκφράσεις
+- Βασικοί τύποι δεδομένων
+- Προτάσεις
+- Τελεστές
+- Είσοδος/έξοδος δεδομένων
+- Εντολές ελέγχου ροής
+- Επαναλήψεις
+- Λίστες
+- Υποπρογράμματα
+
+## 📁 Διαλέξεις
+
+- [01 Βασικές έννοιες](lectures/lecture_01.md)
+- [02 Τύποι μεταβλητών - Απλές εντολές](lectures/lecture_02.md)
+- [03 Εντολή επιλογής](lectures/lecture_03.md)
+- [04 Δομή πολλαπλής επιλογής / Μη-προκαθορισμένες επαναλήψεις - while](lectures/lecture_04.md)
+- [05 Εισαγωγή στις Λίστες](lectures/lecture_05.md)
+- [06 Δομή Επανάληψης - Η εντολή for](lectures/lecture_06.md)
+- [07 Μονοδιάστατες Λίστες - Αναζήτηση - Ταξινόμηση](lectures/lecture_07.md)
+- [08 Δομές Δεδομένων - Πολυδιάστατες Λίστες](lectures/lecture_08.md)
+- [09 Υποπρογράμματα](lectures/lecture_09.md)
+
+## 📁 Εργαστήρια
+
+- [01 Εισαγωγή στην Python](labs/lab_01.md)
+- [02 Βασικές εντολές](labs/lab_02.md)
+- [03 Εντολές επιλογής](labs/lab_03.md)
+- [04 Εντολή επιλογής - επανάληψης](labs/lab_04.md)
+- [05 Λίστες](labs/lab_05.md)
+- [06 Δομή Επανάληψης - Η εντολή for](labs/lab_06.md)
+- [07 Εντολή επανάληψης - Λίστες](labs/lab_07.md)
+- [08 Αναζήτηση - Ταξινόμηση σε Λίστα](labs/lab_08.md)
+- [09 Δομές Δεδομένων - Πολυδιάστατες Λίστες](labs/lab_09.md)
+- [10 Υποπρογράμματα](labs/lab_10.md)
+
+## Quiz
+
+- [Βασικές εντολές](https://forms.gle/YJEUsiR8aKk4WjLT8)
+- [Λίστες Ι](https://forms.gle/gxi5QTjU3iLDU4rr7)
+- [Λίστες ΙΙ](https://forms.gle/7WapsSYNN7keri7P6)
+- [If - While - For](https://forms.gle/wfSRmQKTitLN6Nar5)
+- [Υποπρογράμματα](https://forms.gle/DPkpA7CWBj5avRVU7)
