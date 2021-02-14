@@ -22,6 +22,7 @@ def readAndCheck():
 
 # Δημιουργία συνάρτησης sort
 def sort(listP):
+    """ Αυτή η συνάρτηση ταξινομεί τη λίστα κατά αύξουσα σειρά."""
     for i in range(1, len(listP)):
         for j in range(len(listP) - 1, 0, -1):
             if listP[j - 1] > listP[j]:

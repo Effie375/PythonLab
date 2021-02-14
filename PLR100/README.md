@@ -1,9 +1,8 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Feffie375.github.io%2FPLR100%2F&count_bg=%23D321DF&title_bg=%23555555&icon=apachecassandra.svg&icon_color=%23E5DEDE&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-[![Gitter](https://badges.gitter.im/TPTE_Python/community.svg)](https://gitter.im/TPTE_Python/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Gitter](https://badges.gitter.im/ΤΠΤΕ-AEGEAN/PLR100_Python.svg)](https://gitter.im/ΤΠΤΕ-AEGEAN/PLR100_Python?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+<!--
 ![flake8 Lint](https://github.com/Effie375/PLR100/workflows/flake8%20Lint/badge.svg)
-![Lines of code](https://img.shields.io/tokei/lines/github/Effie375/PLR100)
-![GitHub issues](https://img.shields.io/github/issues-raw/Effie375/PLR100)
-![GitHub](https://img.shields.io/github/license/Effie375/PLR100)
+-->
 
 # Εισαγωγή στον Προγραμματισμό 🐍
 

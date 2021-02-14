@@ -120,8 +120,10 @@ def readAndCheck():
   # Επιστρέφει το num
   return num
 
+
 # Δημιουργία συνάρτησης sort
 def sort(listP):
+  """ Αυτή η συνάρτηση ταξινομεί τη λίστα κατά αύξουσα σειρά."""
   for i in range(1, len(listP)):
     for j in range(len(listP) - 1, 0, -1):
       if listP[j - 1] > listP[j]:
@@ -131,6 +133,7 @@ def sort(listP):
         listP[j] = temp
   # Επιστρέφει το listP
   return listP
+
 
 # Δημιουργία συνάρτησης readMarks
 def readMarks():
@@ -142,6 +145,7 @@ def readMarks():
     vathmoi.append(readAndCheck())
   # Επιστρέφει το vathmoi
   return vathmoi
+
 
 # Αρχικοποίηση μεταβλητής
 MAX_ELEMENTS = 10
@@ -180,6 +184,7 @@ def readAndCheck():
 
 # Δημιουργία συνάρτησης sort
 def sort(listP):
+  """ Αυτή η συνάρτηση ταξινομεί τη λίστα κατά αύξουσα σειρά."""
   for i in range(1, len(listP)):
     for j in range(len(listP) - 1, 0, -1):
       if listP[j - 1] > listP[j]:
@@ -245,6 +250,7 @@ def readNames(plithos):
   # Επιστρέφει τη λίστα onomata
   return onomata
 
+
 # Δημιουργία συνάρτησης longestName
 def longestName(list):
   # Αρχικοποίηση μεταβλητής
@@ -255,6 +261,7 @@ def longestName(list):
       maxLength = len(onoma)
   # Επιστρέφει το maxLength
   return maxLength
+
 
 # Ζητάμε από το χρήστη να δώσει πλήθος και το μετατρέπουμε σε ακέραιο
 plithos = int(input("Δώσε πλήθος: ").strip())
@@ -324,6 +331,7 @@ def square(number):
   number *= number
   # Επιστρέφει το number
   return number
+
 
 # Ζητάμε από το χρήστη να δώσει αριθμό και το μετατρέπουμε σε ακέραιο
 num = int(input("Δώσε αριθμό: ").strip())
@@ -396,6 +404,7 @@ def readMarks(N):
   # Επιστρέφει το marks
   return marks
 
+
 # Δημιουργία συνάρτησης getMax
 def getMax(listaP):
   # Αρχικοποίηση μεταβλητής
@@ -408,6 +417,7 @@ def getMax(listaP):
   # Επιστρέφει το megisto
   return megisto
 
+
 # Δημιουργία συνάρτησης getMO
 def getMO(listaP):
   # Αρχικοποίηση μεταβλητής
@@ -417,6 +427,7 @@ def getMO(listaP):
     souma += i
   # Επιστρέφει στη main το souma / len(listaP)
   return souma / len(listaP)
+
 
 # Ζητάμε από το χρήστη να δώσει τα μαθήματα που δώθηκαν και το μετατρέπουμε σε ακέραιο
 plithos = int(input("Πόσοι δώσανε το μάθημα:").strip())
@@ -509,6 +520,7 @@ def eisagogiStoixeion():
   # Επιστρέφει τη λίστα onomata
   return onomata
 
+
 # Δημιουργία συνάρτησης monadikiLista
 def monadikiLista(listaP):
   # Δημιουργία κενής λίστας
@@ -522,6 +534,7 @@ def monadikiLista(listaP):
   # Επιστρέφει τη neaLista
   return neaLista
 
+
 # Δημιουργία συνάρτησης anazitisi
 def anazitisi(key, listaP):
   # Αρχικοποίηση μεταβλητής
@@ -534,6 +547,7 @@ def anazitisi(key, listaP):
       done = False
   # Επιστρέφει το done
   return done
+
 
 # Καλούμε τη συνάρτηση eisagogiStoixeion
 onomata = eisagogiStoixeion()

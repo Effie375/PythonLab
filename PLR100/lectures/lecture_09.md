@@ -291,6 +291,7 @@ else:
 ```python
 # Δημιουργία συνάρτησης sort
 def sort(pList):
+  """ Αυτή η συνάρτηση ταξινομεί τη λίστα κατά αύξουσα σειρά."""
   for i in range(1, len(pList)):
     for j in range(len(pList) - 1, i - 1, -1):
       if pList[j - 1] > pList[j]:

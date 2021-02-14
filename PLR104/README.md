@@ -1,4 +1,7 @@
-# Τεχνολογίες Διαδικτύου ΠΛΡ104
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Feffie375.github.io%2FPLR104%2F&count_bg=%23D321DF&title_bg=%23555555&icon=apachecassandra.svg&icon_color=%23E5DEDE&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+[![Gitter](https://badges.gitter.im/ΤΠΤΕ-AEGEAN/PLR104_HTML_CSS_JS.svg)](https://gitter.im/ΤΠΤΕ-AEGEAN/PLR104_HTML_CSS_JS?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
+# Τεχνολογίες Διαδικτύου
 
 ## Περιεχόμενο Μαθήματος
 
