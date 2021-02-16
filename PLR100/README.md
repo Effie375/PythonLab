@@ -57,8 +57,12 @@
 
 ## Quiz
 
+Τα QUIZ δεν είναι ακόμα διαθέσιμα!
+
+<!-- 
 - [Βασικές εντολές](https://forms.gle/YJEUsiR8aKk4WjLT8)
 - [Λίστες Ι](https://forms.gle/gxi5QTjU3iLDU4rr7)
 - [Λίστες ΙΙ](https://forms.gle/7WapsSYNN7keri7P6)
 - [If - While - For](https://forms.gle/wfSRmQKTitLN6Nar5)
 - [Υποπρογράμματα](https://forms.gle/DPkpA7CWBj5avRVU7)
+-->
