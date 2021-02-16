@@ -5,14 +5,14 @@
 **Μάθημα 1** (*Lect 1 / Lab 1 / Lab 2*) – 20.02.2021
 
 - [ ] [Repl.it & Github](labs/lab_01.md)
-- [ ] [Μεταβλητές](lectures/lecture_01.md)
-- [ ] [Εκχώρηση σε μεταβλητή](lectures/lecture_01.md)
+- [x] [Μεταβλητές](lectures/lecture_01.md)
+- [x] [Εκχώρηση σε μεταβλητή](lectures/lecture_01.md)
 - [ ] [Τελεστές (αριθμητικοί και συγκριτικοί)](lectures/lecture_01.md)
 - [ ] [Μαθημάτικες πράξεις](lectures/lecture_01.md)
 - [ ] [DIV και MOD](lectures/lecture_01.md)
 - [ ] [Δεσμευμένες Λέξεις](lectures/lecture_01.md)
 - [ ] [Ιεραρχία πράξεων](lectures/lecture_01.md)
-- [ ] [Σχόλια](lectures/lecture_01.md)
+- [x] [Σχόλια](lectures/lecture_01.md)
 - [ ] [Ονομασία μεταβλητών](labs/lab_02.md)
 
 ---
