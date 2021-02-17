@@ -88,7 +88,7 @@
 - [Υποπρογράμματα](https://forms.gle/DPkpA7CWBj5avRVU7)
 -->
 
-## Πηγές και Βιβλιογραφία
+## Βιβλιογραφία
 
 - [Εισαγωγή στον προγραμματισμό με την Python](http://aggelid.mysch.gr/pythonbook/INTRODUCTION_TO_COMPUTER_PROGRAMMING_WITH_PYTHON.pdf). (ΝΙΚΟΛΑΟΣ Α. ΑΓΓΕΛΙΔΑΚΗΣ).
 - [Περίγραμμα μαθήματος](http://www.ct.aegean.gr/Home/Proptyxiako) από τα μαθήματα εξαμήνων του τμήματος ΤΠΤΕ (Α΄ Έτος 1ο Εξάμηνο).
