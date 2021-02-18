@@ -90,6 +90,11 @@
 - [If - While - For](https://forms.gle/wfSRmQKTitLN6Nar5)
 -->
 
+## Περισσότερες ασκήσεις
+
+- [Η εντολή if](misc/docs/if_exercises.md)
+- [Η εντολή while](misc/docs/while_exercises.md)
+
 ## Βιβλιογραφία
 
 - [Εισαγωγή στον προγραμματισμό με την Python](http://aggelid.mysch.gr/pythonbook/INTRODUCTION_TO_COMPUTER_PROGRAMMING_WITH_PYTHON.pdf). (ΝΙΚΟΛΑΟΣ Α. ΑΓΓΕΛΙΔΑΚΗΣ).
