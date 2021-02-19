@@ -82,6 +82,8 @@
 - [Η εντολή επιλογής if](https://forms.gle/RZUFRsUiPdPFRjkW9)
 - [Η εντολή επανάληψης while](https://forms.gle/CbPtBfprGQ9LPgqg7)
 - [Λίστες 1](https://forms.gle/tiiPPRpcML3BaRhYA)
+- [Λίστες 2](https://forms.gle/4dxdY98kRxBN5JTa7)
+- [Η εντολή επανάληψης for](https://forms.gle/JWpCTGXkEqZ9kWCcA)
 - [Υποπρογράμματα 1](https://forms.gle/zM7QFk66ZA9W376p7)
 - [Υποπρογράμματα 2](https://forms.gle/TcerN71VjnGjbV6fA)
 

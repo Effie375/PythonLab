@@ -4,5 +4,5 @@ def x(n):
     else:
         return x(n-1)
 
-print(x(3))
 
+print(x(3))

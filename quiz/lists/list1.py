@@ -1,4 +1,4 @@
-x = 0
-for stoixeio in lista:
-    if stoixeio % 2 == 1:
-        x += 1
+lista = [1, 5, 4, 3]
+lista.insert(2, 2)
+
+print(lista)
