@@ -51,7 +51,7 @@
 - Λίστες
 - Υποπρογράμματα
 
-## 📁 Διαλέξεις
+## Διαλέξεις
 
 - [01 Βασικές έννοιες](lectures/lecture_01.md)
 - [02 Τύποι μεταβλητών - Απλές εντολές](lectures/lecture_02.md)
@@ -63,7 +63,7 @@
 - [08 Δομές Δεδομένων - Πολυδιάστατες Λίστες](lectures/lecture_08.md)
 - [09 Υποπρογράμματα](lectures/lecture_09.md)
 
-## 📁 Εργαστήρια
+## Εργαστήρια
 
 - [01 Εισαγωγή στην Python](labs/lab_01.md)
 - [02 Βασικές εντολές](labs/lab_02.md)
@@ -92,11 +92,13 @@
 
 ## Περισσότερες ασκήσεις
 
-- [Η εντολή if](misc/docs/if_exercises.md)
-- [Η εντολή while](misc/docs/while_exercises.md)
+
+- [Η εντολή if](more/docs/if_exercises.md)
+- [Η εντολή while](more/docs/while_exercises.md)
 
 ## Βιβλιογραφία
 
 - [Εισαγωγή στον προγραμματισμό με την Python](http://aggelid.mysch.gr/pythonbook/INTRODUCTION_TO_COMPUTER_PROGRAMMING_WITH_PYTHON.pdf). (ΝΙΚΟΛΑΟΣ Α. ΑΓΓΕΛΙΔΑΚΗΣ).
 - [Περίγραμμα μαθήματος](http://www.ct.aegean.gr/Home/Proptyxiako) από τα μαθήματα εξαμήνων του τμήματος ΤΠΤΕ (Α΄ Έτος 1ο Εξάμηνο).
 - Διαλέξεις και εργαστήρια του κ. Καλλονιάτη και κ. Σίμου.
+- Βιβλίο Προγραμματισμπύ Υπολογιστών Γ ́Τάξης ΕΠΑ.Λ.
