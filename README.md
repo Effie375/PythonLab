@@ -78,8 +78,9 @@
 
 ## Quiz
 
-- [Υποπρογράμματα (Μέρος 1)](https://forms.gle/zM7QFk66ZA9W376p7)
-- [Υποπρογράμματα (Μέρος 2)](https://forms.gle/TcerN71VjnGjbV6fA)
+- [Λίστες I](https://forms.gle/tiiPPRpcML3BaRhYA)
+- [Υποπρογράμματα I](https://forms.gle/zM7QFk66ZA9W376p7)
+- [Υποπρογράμματα II)](https://forms.gle/TcerN71VjnGjbV6fA)
 
 Σε λίγες μέρες θα ανέβουν και άλλα **Quiz**!
 
