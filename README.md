@@ -78,11 +78,13 @@
 
 ## Quiz
 
+- [Βασικές έννοιες](https://forms.gle/KDL7dgS5xqitsSKb7)
 - [Τύποι μεταβλητών - Απλές εντολές](https://forms.gle/DnMXaDK4GG7KDZo49)
-- [Η εντολή επιλογής if](https://forms.gle/RZUFRsUiPdPFRjkW9)
+- [Η εντολή επιλογής if - Λογικές παραστάσεις](https://forms.gle/RZUFRsUiPdPFRjkW9)
 - [Η εντολή επανάληψης while](https://forms.gle/CbPtBfprGQ9LPgqg7)
 - [Λίστες 1](https://forms.gle/tiiPPRpcML3BaRhYA)
 - [Λίστες 2](https://forms.gle/4dxdY98kRxBN5JTa7)
+- [Λίστες 3](https://forms.gle/JS7prqxCapoWE3vS9)
 - [Η εντολή επανάληψης for](https://forms.gle/JWpCTGXkEqZ9kWCcA)
 - [Υποπρογράμματα 1](https://forms.gle/zM7QFk66ZA9W376p7)
 - [Υποπρογράμματα 2](https://forms.gle/TcerN71VjnGjbV6fA)
