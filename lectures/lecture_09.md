@@ -314,4 +314,39 @@ print(sort(lista[:]))
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_exercise_3.py)
 
+### Άσκηση 4
+
+Ένας μεταπτυχιακός φοιτητής για να μπορέσει να πάρει πτυχίο πρέπει να περάσει συγκεκριμένο αριθμό μαθημάτων ανάλογα με το Τμήμα που φοιτά. Στο παρακάτω πρόγραμμα ένας φοιτητής δίνει τον αριθμό των μαθημάτων που χρειάζεται για να πάρει πτυχίο και στη συνέχεια καταχωρεί τη βαθμολογία των μαθημάτων σε μία λίστα με τη χρήση συνάρτησης. Το πρόγραμμα με τη χρήση συνάρτησης υπολογίζει το μέσο όρο. Ο μέσος όρος εμφανίζεται στην οθόνη και έπειτα χρησιμοποιώντας εκ νέου μία συνάρτηση εμφανίζει αν ο φοιτητής πέρασε ή κόπηκε. Βρείτε όλα τα λάθη (συντακτικά ή λογικά) που υπάρχουν στον παρακάτω κώδικα.
+
+```python
+def readNums(x):
+lista = []
+for numbers in range():
+arithmos = float(input("Δώσε αριθμό: "))
+lista.append(arithmos)
+return list
+
+def mesosOros(y):
+athroisma = 0
+for stoixeio in x:
+athroisma = stoixeio
+mo = athroisma / len(x)
+return mo
+
+def vathmologia(a):
+if a >= 5:
+print("Πέρασες")
+else
+print("Κόπηκες")
+
+
+stoixeio = int(input("Δώσε στοιχεία που περιέχει η λίστα: ")
+numbers = readNums()
+mesosoros = mesosOros(numbers)
+print("Ο μέσος όρος είναι", mesooros)
+vatmologia(mesosoros)
+```
+
+Για να κατεβάσετε την **ΛΥΣΗ** πατήστε [εδώ](source/lecture_09/lecture_09_exercise_4.py)
+
 [Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 7](lecture_07.md) | [Lect 8](lecture_08.md) | [Lect 9](lecture_09.md)

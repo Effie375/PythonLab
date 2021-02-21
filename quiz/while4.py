@@ -1,5 +1,5 @@
 i = 1
 
-while i <= 100:
+while ...:
     print(i)
     i += 1
