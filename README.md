@@ -91,15 +91,6 @@
 - [Υποπρογράμματα 1](https://forms.gle/zM7QFk66ZA9W376p7)
 - [Υποπρογράμματα 2](https://forms.gle/TcerN71VjnGjbV6fA)
 
-Σε λίγες μέρες θα ανέβουν και άλλα **Quiz**!
-
-<!-- 
-- [Βασικές εντολές](https://forms.gle/YJEUsiR8aKk4WjLT8)
-- [Λίστες Ι](https://forms.gle/gxi5QTjU3iLDU4rr7)
-- [Λίστες ΙΙ](https://forms.gle/7WapsSYNN7keri7P6)
-- [If - While - For](https://forms.gle/wfSRmQKTitLN6Nar5)
--->
-
 ## Περισσότερες ασκήσεις
 
 
