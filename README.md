@@ -106,6 +106,7 @@
 
 ## Περισσότερες ασκήσεις
 
+- [Μεταβλητές και εκχώρηση τιμής](more/docs/variables.md)
 - [Η εντολή if](more/docs/if_exercises.md)
 - [Η εντολή while](more/docs/while_exercises.md)
 
