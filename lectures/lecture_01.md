@@ -194,15 +194,13 @@
 Καθώς γράφουμε όλο και μεγαλύτερα προγράμματα, μεγαλώνει και η δυσκολία να καταλαβαίνουμε αυτά που γράφουμε. Πολύ περισσότερο όμως, αν προσπαθήσει να τα διαβάσει κάποιος τρίτος. Χρειάζεται λοιπόν να προσθέτουμε σχόλια (comments) στα προγράμματα που γράφουμε. Τα σχόλια στη Python ξεκινούν με το χαρακτήρα `#`. Οτιδήποτε ακολουθεί μετά το `#` αγνοείται από την Python μέχρι το τέλος της γραμμής. Ένα σχόλιο μπορεί να εμφανιστεί στην αρχή μιας γραμμής ή μετά από κώδικα, αλλά
 όχι μέσα σε ένα *string*. Μερικά παραδείγματα:
 
-<iframe height="400px" width="100%" src="https://repl.it/@IoannisChristod/Lecture1?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-<!--
 ```python
 # Αυτό είναι ένα σχόλιο
 arithmos = 4 # και αυτό είναι ένα άλλο σχόλιο
 onoma = "# Αυτό δεν είναι σχόλιο!"
 ```
--->
+
+Για να δοκιμάσετε το πρόγραμμα στο Repl.it πατήστε [εδώ](https://repl.it/@IoannisChristod/Lecture1#comments.py).
 
 ## 1.11 Τι είναι οι μεταβλητές
 
