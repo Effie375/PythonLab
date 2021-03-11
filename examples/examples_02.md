@@ -25,7 +25,7 @@ foros = int(input('Δώσε ποσοστό φόρου: '))
 telikosMisthos = arxikosMisthos - arxikosMisthos * (foros / 100)
 
 # Εκτύπωση του ονόματος
-print('Όνομα: %s' % onoma)
+print('Όνομα:', onoma)
 # Εκτύπωση του μισθού
-print('Μισθός: %.2f' % telikosMisthos)
+print('Μισθός:', telikosMisthos)
 ```
