@@ -128,3 +128,4 @@
 - [Strephonsays](https://el.strephonsays.com/difference-between-translator-and-interpreter-in-programming-language)
 - [Εισαγωγή στον Προγραμματισμό - Στέφανος Ουγιάρογλου](https://people.iee.ihu.gr/~stoug/themata/aeppkef6.pdf)
 - [Τμήμα Μηχανολόγων Μηχανικών / Ελληνικό Μεσογειακό Πανεπιστήμιο](https://mech.hmu.gr/proptyxiakes/katanomh-mathhmatwn-eksamhno/plhrophorikh/)
+- [Repl.it / Αθανάσιος Μουρτζούκος](https://msc.cs.uowm.gr)
