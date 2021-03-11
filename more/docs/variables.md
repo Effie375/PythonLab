@@ -16,7 +16,7 @@
 |ipsos|1.79|πραγματικός αριθμός|
 
 ```python
-onoma = "Yoda"
+onoma = "Giannis"
 ilikia = 25
 print("To onoma mou einai", onoma)
 print("Eimai", ilikia, "xronon.")
