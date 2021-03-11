@@ -89,7 +89,7 @@
 - [09 Δομές Δεδομένων - Πολυδιάστατες Λίστες](labs/lab_09.md)
 - [10 Υποπρογράμματα](labs/lab_10.md)
 
-## Quiz
+## Κουίζ
 
 - [Βασικές έννοιες](https://forms.gle/KDL7dgS5xqitsSKb7)
 - [Τύποι μεταβλητών - Απλές εντολές](https://forms.gle/DnMXaDK4GG7KDZo49)
@@ -104,7 +104,7 @@
 - [Υποπρογράμματα 1](https://forms.gle/zM7QFk66ZA9W376p7)
 - [Υποπρογράμματα 2](https://forms.gle/TcerN71VjnGjbV6fA)
 
-## Περισσότερες ασκήσεις
+## Ασκήσεις για λύση και εξάσκηση
 
 - [Μεταβλητές και εκχώρηση τιμής](more/docs/variables.md)
 - [Η εντολή if](more/docs/if_exercises.md)
