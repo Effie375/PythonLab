@@ -1,3 +1,5 @@
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FEffie375%2FTPTE_PLR&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
 # Ασκήσεις
 
 Εδώ θα βρείτε ένα σύνολο με ασκήσεις που βασίζονται στην ύλη του κεφαλαίου και αναδεικνύουν τις ιδιαιτερότητες του. Οι λύσεις των ασκήσεων βρίσκονται ακριβώς κάτω από κάθε εκφωνήση.
@@ -14,7 +16,7 @@
 2. Να υπολογίζει το άθροισµά τους.
 3. Αν το άθροισµα είναι µεγαλύτερο του 100 τότε να υπολογίζει και να εµφανίζει το γινόµενο των δύο πρώτων αριθµών αλλιώς θα εµφανίζει την απόλυτη τιµή της διαφοράς των δύο τελευταίων.
 
-Για να δείτε τη ΛΥΣΗ πατήστε [εδώ](https://github.com/Programming-in-TPTE/PLR100/blob/main/lectures/source/lecture_03/lecture_03_exercise_1.py).
+Για να δείτε τη ΛΥΣΗ πατήστε [εδώ](../lectures/source/lecture_03/lecture_03_exercise_1.py).
 
 ## Άσκηση 2
 
@@ -30,4 +32,4 @@
 υπόλοιπο της διαίρεσης του τρίτου µε το άθροισµα των δύο
 πρώτων.
 
-Για να δείτε τη ΛΥΣΗ πατήστε [εδώ](https://github.com/Programming-in-TPTE/PLR100/blob/main/lectures/source/lecture_03/lecture_03_exercise_2.py).
+Για να δείτε τη ΛΥΣΗ πατήστε [εδώ](../lectures/source/lecture_03/lecture_03_exercise_2.py).
