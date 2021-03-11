@@ -89,34 +89,34 @@ int main(){
 - Λίστες
 - Υποπρογράμματα
 
-## Πρόγραμμα Διαλέξεων
+## Διαλέξεις
 
 Εδώ περιλαμβάνονται τα βασικότερα σημεία που παρουσιάστηκαν κατά την διάρκεια των διαλέξεων του μαθήματος και ως εκ τούτου αποτελεί ένα βοήθημα μελέτης για την προετοιμασία των φοιτητών εν όψει της τελικής εξέτασης. Η εξεταστέα ύλη καλύπτεται πλήρως από το υλικό που περιλαμβάνεται εδώ.
 
-- [Βασικές έννοιες](lectures/lecture_01.md)
-- [Τύποι μεταβλητών - Απλές εντολές](lectures/lecture_02.md)
-  - [Παραδείγματα](examples/examples_02.md)
-- [Εντολή επιλογής](lectures/lecture_03.md)
-  - [Παραδείγματα](examples/examples_03.md)
-  - [Ασκήσεις](exercises/exercises_03.md)
-- [Δομή πολλαπλής επιλογής / Μη-προκαθορισμένες επαναλήψεις - while](lectures/lecture_04.md)
-  - [Παραδείγματα](examples/examples_04.md)
-  - [Ασκήσεις](exercises/exercises_04.md)
-- [Εισαγωγή στις Λίστες](lectures/lecture_05.md)
-  - [Παραδείγματα](examples/examples_05.md)
-  - [Ασκήσεις](exercises/exercises_05.md)
-- [Δομή Επανάληψης - Η εντολή for](lectures/lecture_06.md)
-  - [Παραδείγματα](examples/examples_06.md)
-  - [Ασκήσεις](exercises/exercises_06.md)
-- [Μονοδιάστατες Λίστες - Αναζήτηση - Ταξινόμηση](lectures/lecture_07.md)
-  - [Παραδείγματα](examples/examples_07.md)
-  - [Ασκήσεις](exercises/exercises_07.md)
-- [Δομές Δεδομένων - Πολυδιάστατες Λίστες](lectures/lecture_08.md)
-  - [Παραδείγματα](examples/examples_08.md)
-  - [Ασκήσεις](exercises/exercises_08.md)
-- [Υποπρογράμματα](lectures/lecture_09.md)
-  - [Παραδείγματα](examples/examples_09.md)
-  - [Ασκήσεις](exercises/exercises_09.md)
+- [1 Βασικές έννοιες](lectures/lecture_01.md)
+- [2 Τύποι μεταβλητών - Απλές εντολές](lectures/lecture_02.md)
+  - [2.1 Λυμένα Παραδείγματα](examples/examples_02.md)
+- [3 Εντολή επιλογής](lectures/lecture_03.md)
+  - [3.1 Λυμένα Παραδείγματα](examples/examples_03.md)
+  - [3.2 Ασκήσεις](exercises/exercises_03.md)
+- [4 Δομή πολλαπλής επιλογής / Μη-προκαθορισμένες επαναλήψεις - while](lectures/lecture_04.md)
+  - [4.1 Λυμένα Παραδείγματα](examples/examples_04.md)
+  - [4.2 Ασκήσεις](exercises/exercises_04.md)
+- [5 Εισαγωγή στις Λίστες](lectures/lecture_05.md)
+  - [5.1 Λυμένα Παραδείγματα](examples/examples_05.md)
+  - [5.2 Ασκήσεις](exercises/exercises_05.md)
+- [6 Δομή Επανάληψης - Η εντολή for](lectures/lecture_06.md)
+  - [6.1 Λυμένα Παραδείγματα](examples/examples_06.md)
+  - [6.2 Ασκήσεις](exercises/exercises_06.md)
+- [7. Μονοδιάστατες Λίστες - Αναζήτηση - Ταξινόμηση](lectures/lecture_07.md)
+  - [7.1 Λυμένα Παραδείγματα](examples/examples_07.md)
+  - [7.2 Ασκήσεις](exercises/exercises_07.md)
+- [8 Δομές Δεδομένων - Πολυδιάστατες Λίστες](lectures/lecture_08.md)
+  - [8.1 Λυμένα Παραδείγματα](examples/examples_08.md)
+  - [8.2 Ασκήσεις](exercises/exercises_08.md)
+- [9 Υποπρογράμματα](lectures/lecture_09.md)
+  - [9.1 Λυμένα Παραδείγματα](examples/examples_09.md)
+  - [9.2 Ασκήσεις](exercises/exercises_09.md)
 
 ## Εργαστήρια
 
