@@ -70,13 +70,21 @@
 
 - [01 Βασικές έννοιες](lectures/lecture_01.md)
 - [02 Τύποι μεταβλητών - Απλές εντολές](lectures/lecture_02.md)
+  - [Παραδείγματα](examples/examples_02.md)
 - [03 Εντολή επιλογής](lectures/lecture_03.md)
+  - [Παραδείγματα](examples/examples_03.md)
 - [04 Δομή πολλαπλής επιλογής / Μη-προκαθορισμένες επαναλήψεις - while](lectures/lecture_04.md)
+  - [Παραδείγματα](examples/examples_04.md)
 - [05 Εισαγωγή στις Λίστες](lectures/lecture_05.md)
+  - [Παραδείγματα](examples/examples_05.md)
 - [06 Δομή Επανάληψης - Η εντολή for](lectures/lecture_06.md)
+  - [Παραδείγματα](examples/examples_06.md)
 - [07 Μονοδιάστατες Λίστες - Αναζήτηση - Ταξινόμηση](lectures/lecture_07.md)
+  - [Παραδείγματα](examples/examples_07.md)
 - [08 Δομές Δεδομένων - Πολυδιάστατες Λίστες](lectures/lecture_08.md)
+  - [Παραδείγματα](examples/examples_08.md)
 - [09 Υποπρογράμματα](lectures/lecture_09.md)
+  - [Παραδείγματα](examples/examples_09.md)
 
 ## Εργαστήρια
 
@@ -110,7 +118,7 @@
 - [Υποπρογράμματα 1](https://forms.gle/zM7QFk66ZA9W376p7)
 - [Υποπρογράμματα 2](https://forms.gle/TcerN71VjnGjbV6fA)
 
-## Ασκήσεις για λύση και εξάσκηση
+## Επιπλέον ασκήσεις για λύση και εξάσκηση
 
 - [Μεταβλητές και εκχώρηση τιμής](more/docs/variables.md)
 - [Η εντολή if](more/docs/if_exercises.md)
