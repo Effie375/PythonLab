@@ -71,7 +71,6 @@
 - [Βασικές έννοιες](lectures/lecture_01.md)
 - [Τύποι μεταβλητών - Απλές εντολές](lectures/lecture_02.md)
   - [Παραδείγματα](examples/examples_02.md)
-  - [Ασκήσεις](exercises/exercises_02.md)
 - [Εντολή επιλογής](lectures/lecture_03.md)
   - [Παραδείγματα](examples/examples_03.md)
   - [Ασκήσεις](exercises/exercises_03.md)
