@@ -167,7 +167,7 @@ def showList(lista2):
 lista = [1, 4, 3, 5, 6]
 
 # Καλούμε τη συνάρτηση showList
-showList(lista[:])
+showList(lista)
 
 # Εκτύπωση λίστας
 print(lista)
