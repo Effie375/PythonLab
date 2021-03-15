@@ -61,7 +61,6 @@
 - [3 Εντολή επιλογής](lectures/lecture_03.md)
   - [3.1 Ασκήσεις](exercises/exercises_03.md)
 - [4 Δομή πολλαπλής επιλογής](lectures/lecture_04.md)
-  - [4.1 Ασκήσεις](exercises/exercises_04.md)
 - [5 Μη-προκαθορισμένες επαναλήψεις - Η εντολή while](lectures/lecture_05.md)
   - [5.1 Ασκήσεις](exercises/exercises_05.md)
 - [6 Εισαγωγή στις Λίστες](lectures/lecture_06.md)
