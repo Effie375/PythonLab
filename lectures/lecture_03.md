@@ -15,6 +15,7 @@
 - 3.5 If Statement - 1η Μορφή
 - 3.6 If Statement - 2η Μορφή
 - 3.7 Υπολογισμός μέγιστου τριών αριθμών
+- 3.8 Λυμένα Παραδείγματα
 
 ## 3.1 Εντολές
 
@@ -153,4 +154,60 @@ if z > max:
 print("Ο μέγιστος είναι ο", max)
 ```
 
-[Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 7](lecture_07.md) | [Lect 9](lecture_09.md) | [Lect 10](lecture_10.md)
+## 3.8 Λυμένα Παραδείγματα
+
+---
+
+### 3.8.1 Παράδειγμα 1
+
+---
+
+Να γραφεί πρόγραµµα το οποίο να ...
+
+```python
+# Ζητάμε από το χρήστη έναν αριθμό και το μετατρέπουμε σε ακέραιο
+number1 = int(input("Δώσε έναν αριθμό: "))
+
+# Ζητάμε από το χρήστη έναν αριθμό και το μετατρέπουμε σε ακέραιο
+number2 = int(input("Δώσε έναν αριθμό: "))
+
+# Εάν η τιμή της μεταβλητής number1 είναι μεγαλύτερη από τη τιμή της μεταβλητής number2
+if number1 > number2:
+  # Υπολογίζουμε το άθροισμα των αριθμών
+  apotelesma = number1 + number2
+# Αλλιώς όταν η τιμή της μεταβλητής number2 είναι μεγαλύτερη από τη τιμή της μεταβλητής number1
+else:
+  # Υπολογίζουμε το γινόμενο των αριθμών
+  apotelesma = number1 * number2
+
+# Εκτύπωση του αποτελέσματος
+print(apotelesma)
+```
+
+### 3.8.2 Παράδειγμα 2
+
+---
+
+```python
+# Ζητάμε από το χρήστη έναν αριθμό και το μετατρέπουμε σε ακέραιο
+number1 = int(input("Δώσε έναν αριθμό: "))
+
+# Ζητάμε από το χρήστη έναν αριθμό και το μετατρέπουμε σε ακέραιο
+number2 = int(input("Δώσε έναν αριθμό: "))
+
+# Εάν η τιμή της μεταβλητής number1 είναι μεγαλύτερη από τη τιμή της μεταβλητής number2
+if number1 > number2:
+  # Υπολογίζουμε το άθροισμα των αριθμών
+  athroisma = number1 + number2
+  # Υπολογίζουμε το γινόμενο των αριθμών
+  ginomeno = number1 * number2
+  # Εκτύπωση του αθροίσματος και του γινομένου
+  print(athroisma, ginomeno)
+else:
+  # Υπολογίζουμε τη διαφορά των αριθμών
+  diafora = number1 - number2
+  # Εκτύπωση της διαφοράς των αριθμών
+  print(diafora)
+```
+
+[Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 8](lecture_08.md) | [Lect 9](lecture_09.md) | [Lect 10](lecture_10.md)

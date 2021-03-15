@@ -1,6 +1,6 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FEffie375%2FTPTE_PLR&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-# 7 Μονοδιάστατες Λίστες - Αναζήτηση - Ταξινόμηση
+# 8 Μονοδιάστατες Λίστες - Αναζήτηση - Ταξινόμηση
 
 ---
 
@@ -8,14 +8,14 @@
 
 ---
 
-- 7.1 Αναζήτηση στοιχείων I
-- 7.2 Αναζήτηση στοιχείων II
-- 7.3 Αναζήτηση στοιχείων III
-- 7.4 Ταξινόμηση - Bubble Sort
-- 7.5 Ταξινόμηση - Διπλή αντιμετάθεση
-- 7.6 Διπλή ταξινόμηση
+- 8.1 Αναζήτηση στοιχείων I
+- 8.2 Αναζήτηση στοιχείων II
+- 8.3 Αναζήτηση στοιχείων III
+- 8.4 Ταξινόμηση - Bubble Sort
+- 8.5 Ταξινόμηση - Διπλή αντιμετάθεση
+- 8.6 Διπλή ταξινόμηση
 
-## Αναζήτηση στοιχείων I
+## 8.1 Αναζήτηση στοιχείων I
 
 ---
 
@@ -41,7 +41,7 @@ for i in lista:
   thesi += 1
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_1a.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_1a.py).
 
 **2ος τρόπος:**
 
@@ -66,9 +66,9 @@ for i in lista:
 print("Το %d έχει εισαχθεί %d φορές." % (key, k))
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_1b.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_1b.py).
 
-## Αναζήτηση στοιχείων II
+## 8.2 Αναζήτηση στοιχείων II
 
 ---
 
@@ -105,9 +105,9 @@ else:
   print("Το %d δε βρίσκεται στη λίστα %d." % (key, thesi))
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_2.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_2.py).
 
-## Αναζήτηση στοιχείων III
+## 8.3 Αναζήτηση στοιχείων III
 
 ---
 
@@ -143,9 +143,9 @@ else:
   print("Το %d δε βρίσκεται στη λίστα %s." % (key, lista))
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_3.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_3.py).
 
-## 7.4 Ταξινόμηση - Bubble Sort
+## 8.4 Ταξινόμηση - Bubble Sort
 
 ---
 
@@ -168,9 +168,9 @@ for i in range(len(lista)):
 print("Η λίστα μας μετά την ταξινόμηση είναι: %s" % lista)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_4.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_4.py).
 
-## 7.5 Ταξινόμηση - Διπλή αντιμετάθεση
+## 8.5 Ταξινόμηση - Διπλή αντιμετάθεση
 
 ---
 
@@ -197,9 +197,9 @@ print(names)
 print(grades)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_5.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_5.py).
 
-## 7.6 Διπλή ταξινόμηση
+## 8.6 Διπλή ταξινόμηση
 
 ---
 
@@ -232,6 +232,6 @@ print(names)
 print(grades)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_6.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_6.py).
 
-[Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 7](lecture_07.md) | [Lect 9](lecture_09.md) | [Lect 10](lecture_10.md)
+[Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 8](lecture_08.md) | [Lect 9](lecture_09.md) | [Lect 10](lecture_10.md)
