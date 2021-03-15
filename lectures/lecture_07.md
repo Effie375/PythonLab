@@ -1,6 +1,6 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FEffie375%2FTPTE_PLR&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-# 6 Δομή Επανάληψης - Η εντολή for
+# 7 Δομή Επανάληψης - Η εντολή for
 
 ---
 
@@ -8,19 +8,19 @@
 
 ---
 
-- 6.1 Η εντολή for
-- 6.2 Η συνάρτηση range
-- 6.3 Αποθήκευση στοιχείων
-- 6.4 Άθροισμα στοιχείων
-- 6.5 Έυρεση MAX
-- 6.6 Έυρεση MIN
-- 6.7 Έυρεση MAX με θέση Ι
-- 6.8 Έυρεση MAX με θέση ΙΙ
-- 6.9 Αναζήτηση στοιχείων I
-- 6.10 Αναζήτηση στοιχείων II
-- 6.11 Αναζήτηση αριθμού στοιχείων
+- 7.1 Η εντολή for
+- 7.2 Η συνάρτηση range
+- 7.3 Αποθήκευση στοιχείων
+- 7.4 Άθροισμα στοιχείων
+- 7.5 Έυρεση MAX
+- 7.6 Έυρεση MIN
+- 7.7 Έυρεση MAX με θέση Ι
+- 7.8 Έυρεση MAX με θέση ΙΙ
+- 7.9 Αναζήτηση στοιχείων I
+- 7.10 Αναζήτηση στοιχείων II
+- 7.11 Αναζήτηση αριθμού στοιχείων
 
-## 6.1 Η εντολή for
+## 7.1 Η εντολή for
 
 ---
 
@@ -41,7 +41,7 @@ for i in range(10):
   print(i)
 ```
 
-## 6.2 Η συνάρτηση range
+## 7.2 Η συνάρτηση range
 
 ---
 
@@ -55,7 +55,7 @@ range([start], stop, [step])
 - stop, δημιούργησε αριθμούς μέχρι (αλλά χωρίς) τον stop
 - step, η διαφορά μεταξύ δύο αριθμών (Προαιρετικό, Αρχική Τιμή = 1)
 
-## 6.3 Αποθήκευση στοιχείων
+## 7.3 Αποθήκευση στοιχείων
 
 ---
 
@@ -75,9 +75,9 @@ for n in range(ΜAX_ELEMENTS):
 print(lista)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_1.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_1.py).
 
-## 6.4 Άθροισμα στοιχείων
+## 7.4 Άθροισμα στοιχείων
 
 ---
 
@@ -95,9 +95,9 @@ for item in lista:
 print("Άθροισμα:", athroisma)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_2.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_2.py).
 
-## 6.5 Έυρεση MAX
+## 7.5 Έυρεση MAX
 
 ---
 
@@ -130,9 +130,9 @@ print("Μέγιστο: %d" % megisto)
 print("Ελάχιστο: %d" % elaxisto)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_3.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_3.py).
 
-## 6.6 Έυρεση MIN
+## 7.6 Έυρεση MIN
 
 ---
 
@@ -164,9 +164,9 @@ for i in range(len(lista)):
 print("H maxThesi με τον 2ο τρόπο: %d" % maxThesi)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_4.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_4.py).
 
-## 6.7 Έυρεση MAX με θέση I
+## 7.7 Έυρεση MAX με θέση I
 
 ---
 
@@ -188,9 +188,9 @@ for i in range(len(lista)):
 print("Το %d βρίσκεται στη θέση %d." % (key, thesi))
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_5.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_5.py).
 
-## 6.8 Έυρεση MAX με θέση II
+## 7.8 Έυρεση MAX με θέση II
 
 ---
 
@@ -222,9 +222,9 @@ while (i < len(lista)) and (not found):
 print("Το %d βρίσκεται στη θέση %d." % (key, thesi))
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_6.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_6.py).
 
-## 6.9 Αναζήτηση στοιχείων I
+## 7.9 Αναζήτηση στοιχείων I
 
 ---
 
@@ -249,9 +249,9 @@ for k in lista:
 print("Ο αριθμός %d έχει εισαχθεί %d φορές." % (key, counter))
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_7.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_7.py).
 
-## 6.10 Αναζήτηση στοιχείων II
+## 7.10 Αναζήτηση στοιχείων II
 
 ---
 
@@ -281,9 +281,9 @@ while (i < len(lista)) and (not found):
 print("Το στοιχείο που αναζητάς βρίσκεται στη θέση: %d" % thesi)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_8.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_8.py).
 
-## 6.11 Αναζήτηση αριθμού στοιχείων
+## 7.11 Αναζήτηση αριθμού στοιχείων
 
 ---
 
@@ -308,6 +308,6 @@ for k in lista:
 print("Το στοιχείο που αναζητάς εμφανίζεται %d φορές στη λίστα." % counter)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_9.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_07/lecture_07_example_9.py).
 
-[Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 8](lecture_08.md) | [Lect 9](lecture_09.md) | [Lect 10](lecture_10.md)
+[Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 7](lecture_07.md) | [Lect 8](lecture_08.md) | [Lect 9](lecture_09.md) | [Lect 10](lecture_10.md)
