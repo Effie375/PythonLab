@@ -1,6 +1,6 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FEffie375%2FTPTE_PLR&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-# 8 Δομές Δεδομένων - Πολυδιάστατες Λίστες
+# 9 Δομές Δεδομένων - Πολυδιάστατες Λίστες
 
 ---
 
@@ -8,26 +8,26 @@
 
 ---
 
-- 8.1 Πολυδιάστατες Λίστες
-- 8.2 Αποθήκευση στοιχείων
-- 8.3 Άθροισμα στοιχείων
-- 8.4 Έυρεση MAX
-- 8.5 Έυρεση MAX με θέση
-- 8.6 Άθροισμα στοιχείων κατά γραμμή
-- 8.7 Άθροισμα στοιχείων κατά στήλη
-- 8.8 Έυρεση μέγιστου κατά γραμμή
-- 8.9 Έυρεση μέγιστου κατά στήλη
-- 8.10 Αναζήτηση στοιχείων I
-- 8.11 Αναζήτηση στοιχείων II
-- 8.12 Ταξινόμηση στοιχείων ανά γραμμή
-- 8.13 Ταξινόμηση στοιχείων ανά στήλη
-- 8.14 Τετραγωνικός πίνακας
+- 9.1 Πολυδιάστατες Λίστες
+- 9.2 Αποθήκευση στοιχείων
+- 9.3 Άθροισμα στοιχείων
+- 9.4 Έυρεση MAX
+- 9.5 Έυρεση MAX με θέση
+- 9.6 Άθροισμα στοιχείων κατά γραμμή
+- 9.7 Άθροισμα στοιχείων κατά στήλη
+- 9.8 Έυρεση μέγιστου κατά γραμμή
+- 9.9 Έυρεση μέγιστου κατά στήλη
+- 9.10 Αναζήτηση στοιχείων I
+- 9.11 Αναζήτηση στοιχείων II
+- 9.12 Ταξινόμηση στοιχείων ανά γραμμή
+- 9.13 Ταξινόμηση στοιχείων ανά στήλη
+- 9.14 Τετραγωνικός πίνακας
 
-## 8.1 Πολυδιάστατες Λίστες
+## 9.1 Πολυδιάστατες Λίστες
 
 ---
 
-## 8.2 Αποθήκευση στοιχείων
+## 9.2 Αποθήκευση στοιχείων
 
 ---
 
@@ -53,9 +53,9 @@ for i in range(MAX_ELEMENTS):
 print(lista)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_1.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_1.py).
 
-## 8.3 Άθροισμα στοιχείων
+## 9.3 Άθροισμα στοιχείων
 
 ---
 
@@ -81,9 +81,9 @@ for ypolista in lista:
 print(athroisma)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_2.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_2.py).
 
-## 8.4 Έυρεση MAX
+## 9.4 Έυρεση MAX
 
 ---
 
@@ -111,9 +111,9 @@ for ypolista in lista:
 print(megisto)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_3.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_3.py).
 
-## 8.5 Έυρεση MAX με θέση
+## 9.5 Έυρεση MAX με θέση
 
 ---
 
@@ -143,9 +143,9 @@ print(megistoX)
 print(megistoY)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_4.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_4.py).
 
-## 8.6 Άθροισμα στοιχείων κατά γραμμή
+## 9.6 Άθροισμα στοιχείων κατά γραμμή
 
 ---
 
@@ -170,9 +170,9 @@ for ypolista in lista:
     print("Άθροισμα γραμμής: %d" % sumGrammhs)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_5.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_5.py).
 
-## 8.7 Άθροισμα στοιχείων κατά στήλη
+## 9.7 Άθροισμα στοιχείων κατά στήλη
 
 ---
 
@@ -197,9 +197,9 @@ for j in range(MAX_ELEMENTS):
   print("Άθροισμα στήλης: %d" % sumSthlhs)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_6.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_6.py).
 
-## 8.8 Έυρεση μέγιστου κατά γραμμή
+## 9.8 Έυρεση μέγιστου κατά γραμμή
 
 ---
 
@@ -226,9 +226,9 @@ for ypolista in lista:
   print("Μέγιστο γραμμής: %d" % megistoGrammhs)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_7.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_7.py).
 
-## 8.9 Έυρεση μέγιστου κατά στήλη
+## 9.9 Έυρεση μέγιστου κατά στήλη
 
 ---
 
@@ -253,9 +253,9 @@ for j in range(MAX_ELEMENTS):
   print("Μέγιστο στήλης: %d" % megistoSthlhs)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_8.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_8.py).
 
-## 8.10 Αναζήτηση στοιχείων I
+## 9.10 Αναζήτηση στοιχείων I
 
 ---
 
@@ -288,9 +288,9 @@ for i in range(MAX_ELEMENTS):
 print("Βρέθηκε %d φορές." % keyCounter)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_9.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_9.py).
 
-## 8.11 Αναζήτηση στοιχείων II
+## 9.11 Αναζήτηση στοιχείων II
 
 ---
 
@@ -327,9 +327,9 @@ while i < 5 and not found:
   i += 1
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_10.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_10.py).
 
-## 8.12 Ταξινόμηση στοιχείων ανά γραμμή
+## 9.12 Ταξινόμηση στοιχείων ανά γραμμή
 
 ---
 
@@ -357,9 +357,9 @@ for k in range(5):
 print("Η λίστα μετά την ταξινόμηση: %s" % lista)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_11.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_11.py).
 
-## 8.13 Ταξινόμηση στοιχείων ανά στήλη
+## 9.13 Ταξινόμηση στοιχείων ανά στήλη
 
 ---
 
@@ -387,9 +387,9 @@ for k in range(4):
 print("Η λίστα μετά την ταξινόμηση: %s" % lista)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_12.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_12.py).
 
-## 8.14 Τετραγωνικός πίνακας
+## 9.14 Τετραγωνικός πίνακας
 
 ---
 
@@ -421,6 +421,6 @@ for i in range(MAX_ELEMENTS):
 print(sum1, sum2)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_08/lecture_08_example_13.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_13.py).
 
-[Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 7](lecture_07.md) | [Lect 8](lecture_08.md) | [Lect 10](lecture_10.md)
+[Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 7](lecture_07.md) | [Lect 9](lecture_09.md) | [Lect 10](lecture_10.md)

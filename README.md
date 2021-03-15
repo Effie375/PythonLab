@@ -108,12 +108,11 @@ int main(){
   - [6.1 Ασκήσεις](exercises/exercises_06.md)
 - [7. Μονοδιάστατες Λίστες - Αναζήτηση - Ταξινόμηση](lectures/lecture_07.md)
   - [7.1 Ασκήσεις](exercises/exercises_07.md)
-- [8 Δομές Δεδομένων - Πολυδιάστατες Λίστες](lectures/lecture_08.md)
-  - [8.1 Λυμένα Παραδείγματα](examples/examples_08.md)
-  - [8.2 Ασκήσεις](exercises/exercises_08.md)
+- [9 Δομές Δεδομένων - Πολυδιάστατες Λίστες](lectures/lecture_09.md)
+  - [9.1 Λυμένα Παραδείγματα](examples/examples_09.md)
+  - [9.2 Ασκήσεις](exercises/exercises_09.md)
 - [10 Υποπρογράμματα](lectures/lecture_10.md)
-  - [10.1 Λυμένα Παραδείγματα](examples/examples_10.md)
-  - [10.2 Ασκήσεις](exercises/exercises_10.md)
+  - [10.1 Ασκήσεις](exercises/exercises_10.md)
 
 ## Εργαστήρια
 
