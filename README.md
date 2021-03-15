@@ -66,7 +66,7 @@
   - [5.1 Ασκήσεις](exercises/ex_lectures_05.md)
 - [6 Η εντολή επανάληψης for](lectures/lecture_06.md)
   - [6.1 Ασκήσεις](exercises/ex_lectures_06.md)
-- [7. Αναζήτηση και Ταξινόμηση μονοδιάστατων λιστών](lectures/lecture_07.md)
+- [7. Αναζήτηση και ταξινόμηση μονοδιάστατων λιστών](lectures/lecture_07.md)
   - [7.1 Ασκήσεις](exercises/ex_lectures_07.md)
 - [8 Πολυδιάστατες Λίστες](lectures/lecture_08.md)
   - [8.1 Ασκήσεις](exercises/ex_lectures_08.md)
