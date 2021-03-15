@@ -108,14 +108,14 @@
 ## Επιπλέον ασκήσεις για λύση και εξάσκηση
 
 - [Μεταβλητές και εκχώρηση τιμής](more/docs/variables.md)
-- [Η εντολή if](more/docs/if_exercises.md)
-- [Η εντολή while](more/docs/while_exercises.md)
+- [Η εντολή επιλογής if](more/docs/if_exercises.md)
+- [Η εντολή επανάληψης while](more/docs/while_exercises.md)
 
 ## Βιβλιογραφία
 
-- [Εισαγωγή στον προγραμματισμό με την Python](http://aggelid.mysch.gr/pythonbook/INTRODUCTION_TO_COMPUTER_PROGRAMMING_WITH_PYTHON.pdf). (ΝΙΚΟΛΑΟΣ Α. ΑΓΓΕΛΙΔΑΚΗΣ).
-- [Περίγραμμα μαθήματος](http://www.ct.aegean.gr/Home/Proptyxiako) από τα μαθήματα εξαμήνων του τμήματος ΤΠΤΕ (Α΄ Έτος 1ο Εξάμηνο).
 - Διαλέξεις και εργαστήρια του κ. Καλλονιάτη και κ. Σίμου.
+- [Εισαγωγή στον προγραμματισμό με την Python](http://aggelid.mysch.gr/pythonbook/INTRODUCTION_TO_COMPUTER_PROGRAMMING_WITH_PYTHON.pdf).
+- [Περίγραμμα μαθήματος από τα μαθήματα εξαμήνων του τμήματος ΤΠΤΕ (Α΄ Έτος 1ο Εξάμηνο)](http://www.ct.aegean.gr/Home/Proptyxiako).
 - [Βιβλίο Προγραμματισμoύ Υπολογιστών Γ ́Τάξης ΕΠΑ.Λ.](http://users.sch.gr/iliadisk/site/PDFs/24-0576-01_Programmatismos-Ypologiston_C-EPAL_BM.pdf)
 - [Πληροφορική Α΄, Β΄, Γ΄ Γυμνασίου](http://ebooks.edu.gr/ebooks/v/html/8547/2759/Pliroforiki_A-B-G-Gymnasiou_html-empl/index.html)
 - [Πληροφορική στο ΕΠΑ.Λ.](https://sites.google.com/view/pliroforikiepal/home)
