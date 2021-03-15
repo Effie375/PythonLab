@@ -1,6 +1,6 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FEffie375%2FTPTE_PLR&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-# 5 Εισαγωγή στις Λίστες
+# 6 Εισαγωγή στις Λίστες
 
 ---
 
@@ -8,17 +8,17 @@
 
 ---
 
-- 5.1 Μονοδιάστατη Λίστα
-- 5.2 Αποθήκευση στοιχείων
-- 5.3 Άθροισμα στοιχείων
-- 5.4 Έυρεση MAX
-- 5.5 Έυρεση MIN
-- 5.6 Έυρεση MAX με θέση
-- 5.7 Αναζήτηση στοιχείων I
-- 5.8 Αναζήτηση στοιχείων II
-- 5.9 Αναζήτηση αριθμού στοιχείων
+- 6.1 Μονοδιάστατη Λίστα
+- 6.2 Αποθήκευση στοιχείων
+- 6.3 Άθροισμα στοιχείων
+- 6.4 Έυρεση MAX
+- 6.5 Έυρεση MIN
+- 6.6 Έυρεση MAX με θέση
+- 6.7 Αναζήτηση στοιχείων I
+- 6.8 Αναζήτηση στοιχείων II
+- 6.9 Αναζήτηση αριθμού στοιχείων
 
-## 5.1 Μονοδιάστατη Λίστα
+## 6.1 Μονοδιάστατη Λίστα
 
 ---
 
@@ -43,7 +43,7 @@ lista[2] = 4
 lista[0] = input("Δώσε τιμή: ")
 ```
 
-## 5.2 Αποθήκευση στοιχείων
+## 6.2 Αποθήκευση στοιχείων
 
 ---
 
@@ -66,9 +66,9 @@ while i < MAX_ELEMENTS:
 print("Η λίστα μας είναι: %s" % lista)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_05/lecture_05_example_1.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_1.py).
 
-## 5.3 Άθροισμα στοιχείων
+## 6.3 Άθροισμα στοιχείων
 
 ---
 
@@ -89,9 +89,9 @@ while i < len(lista):
 print("Άθροισμα: %d" % athroisma)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_05/lecture_05_example_2.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_2.py).
 
-## 5.4 Έυρεση MAX
+## 6.4 Έυρεση MAX
 
 ---
 
@@ -129,9 +129,9 @@ while i < len(lista):
 print("Ο ελάχιστος αριθμός είναι το: %d" % elaxisto)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_05/lecture_05_example_3.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_3.py).
 
-## 5.5 Έυρεση MIN
+## 6.5 Έυρεση MIN
 
 ---
 
@@ -154,9 +154,9 @@ while i < len(lista):
 print("Ελάχιστο:", elaxisto)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_05/lecture_05_example_4.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_4.py).
 
-## 5.6 Έυρεση MAX με θέση
+## 6.6 Έυρεση MAX με θέση
 
 ---
 
@@ -178,9 +178,9 @@ while i < len(lista):
 print("Μέγιστη θέση:", maxThesi)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_05/lecture_05_example_5.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_5.py).
 
-## 5.7 Αναζήτηση στοιχείων I
+## 6.7 Αναζήτηση στοιχείων I
 
 ---
 
@@ -207,9 +207,9 @@ while i < len(lista):
 print("Το στοιχείο που αναζητάς βρίσκεται στη θέση:", thesi)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_05/lecture_05_example_6.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_6.py).
 
-## 5.8 Αναζήτηση στοιχείων II
+## 6.8 Αναζήτηση στοιχείων II
 
 ---
 
@@ -239,9 +239,9 @@ while (i < len(lista)) and (not found):
 print("Το στοιχείο που αναζητάς βρίσκεται στη θέση:", thesi)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_05/lecture_05_example_7.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_7.py).
 
-## 5.9 Αναζήτηση αριθμού στοιχείων
+## 6.9 Αναζήτηση αριθμού στοιχείων
 
 ---
 
@@ -269,6 +269,6 @@ while i < len(lista):
 print("Το στοιχείο που αναζητάς εμφανίζεται %d φορές στη λίστα." % counter)
 ```
 
-Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_05/lecture_05_example_8.py).
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_06/lecture_06_example_8.py).
 
-[Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 7](lecture_07.md) | [Lect 8](lecture_08.md) | [Lect 9](lecture_09.md) | [Lect 10](lecture_10.md)
+[Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 6](lecture_06.md) | [Lect 7](lecture_07.md) | [Lect 8](lecture_08.md) | [Lect 9](lecture_09.md) | [Lect 10](lecture_10.md)
