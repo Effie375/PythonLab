@@ -179,6 +179,8 @@ print("Το τετράδιο κοστίζει %.2f Ευρώ" % (timi))
 print("%d + %d = %d" % (arithmos1, arithmos2, athroisma))
 ```
 
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_02_variable_1.py).
+
 Οι μεταβλητές όπως είδαμε παραπάνω έχουν τύπους και μπορούμε να ρωτήσουμε την Python ποιοι είναι. Με την σύνταξη **type** (όνομα μεταβλητής) μπορούμε να ελέγξουμε τον τύπο των μεταβλητών οι οποίες ήδη έχουν ορισθεί (έχουν τιμές). Για να χρησιμοποιήσουμε μια μεταβλητή, χρειάζεται απλά να γνωρίζουμε το όνομά της.
 
 ```python
@@ -208,6 +210,8 @@ print(PI)
 print(type(PI))
 ```
 
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_02_variable_2.py).
+
 Στο παραπάνω παράδειγμα έχουμε τρεις εντολές εκχώρησης:
 
 - Η συμβολοσειρά `'Δευτέρα'` ή `"Δευτέρα"` εκχωρείται στη νέα μεταβλητή που ονομάζεται day.
@@ -236,6 +240,8 @@ athroisma = x + y
 # Εκτύπωση του αθροίσματος των δυο αριθμών
 print("Το άθροισμα των αριθμών %d και %d είναι %d." % (x, y, athroisma))
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_02_input.py).
 
 Στο παράδειγμα αυτό βλέπουμε ξεκάθαρα ότι η συνάρτηση `input` επιστρέφει  πάντα συμβολοσειρά **string** και έτσι οι μεταβλητές `x` και `y` δεν δείχνουν σε αριθμό. Συνεπώς πρέπει να μετατρέψουμε και τις δύο μεταβλητές σε **integer**.
 
@@ -271,4 +277,6 @@ print('Όνομα:', onoma)
 print('Μισθός:', telikosMisthos)
 ```
 
-[Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 7](lecture_07.md) | [Lect 8](lecture_08.md) | [Lect 9](lecture_09.md) | [Lect 10](lecture_10.md)
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_02_example_1.py).
+
+[Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 7](lecture_07.md) | [Lect 8](lecture_08.md) | [Lect 9](lecture_09.md)
