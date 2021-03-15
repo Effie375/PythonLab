@@ -22,6 +22,7 @@
 - 9.12 Ταξινόμηση στοιχείων ανά γραμμή
 - 9.13 Ταξινόμηση στοιχείων ανά στήλη
 - 9.14 Τετραγωνικός πίνακας
+- 9.15 Λυμένα Παραδείγματα
 
 ## 9.1 Πολυδιάστατες Λίστες
 
@@ -422,5 +423,62 @@ print(sum1, sum2)
 ```
 
 Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09/lecture_09_example_13.py).
+
+## 9.15 Λυμένα Παραδείγματα
+
+---
+
+### 9.15.1 Παράδειγμα 1
+
+---
+
+```python
+# Δημιουργία κενής λίστας
+lista = []
+
+# Για κάθε υπολίστα της λίστας
+for ypolista in lista:
+  # Αρχικοποίηση μεταβλητής
+  sum = 0
+  # Για κάθε στοιχείο της υπολίστας
+  for i in ypolista:
+    # Αυξάνουμε το sum κατά i
+    sum += i
+
+# Αποθηκεύουμε το sum στη λίστα
+lista.append(sum)
+```
+
+### 9.15.2 Παράδειγμα 2
+
+---
+
+```python
+# Δημιουργία λιστών
+lista1 = [[1, 2, 3],
+          [1, 1, 1],
+          [2, 3, 4]]
+lista2 = [1, 2, 5]
+# Δημιούργια κενής λίστας
+lista3 = []
+
+# Για κάθε στοιχείο της lista2
+for key in lista2:
+  # Αρχικοποίηση μεταβλητής
+  counter = 0
+  # Για κάθε υπολίστας της lista1
+  for ypolista in lista1:
+    # Για κάθε στοιχείο της υπολίστας
+    for i in ypolista:
+      # Εάν το στιγμιαίο στοιχείο της υπολίστας είναι ίσο με το key
+      if i == key:
+        # Αυξάνουμε τον counter κατά 1
+        counter += 1
+  # Αποθηκεύουμε τον counter στη lista3
+  lista3.append(counter)
+
+# Eκτυπώση της lista3
+print(lista3)
+```
 
 [Home](../README.md) | [Lect 1](lecture_01.md) | [Lect 2](lecture_02.md) | [Lect 3](lecture_03.md) | [Lect 4](lecture_04.md) | [Lect 5](lecture_05.md) | [Lect 6](lecture_06.md) | [Lect 7](lecture_07.md) | [Lect 9](lecture_09.md) | [Lect 10](lecture_10.md)
