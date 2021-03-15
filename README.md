@@ -77,39 +77,39 @@
 
 Τα εργαστήρια αφορούν στην πρακτική εφαρμογή όσων διδάσκονται στις διαλέξεις.
 
-- [Εισαγωγή στην Python - Βασικές έννοιες](labs/lab_01.md)
-- [Βασικές εντολές](labs/lab_02.md)
-- [Εντολές επιλογής](labs/lab_03.md)
-- [Εντολή επιλογής - επανάληψης](labs/lab_04.md)
-- [Λίστες](labs/lab_05.md)
-- [Δομή Επανάληψης - Η εντολή for 1](labs/lab_06.md)
-- [Εντολή επανάληψης - Λίστες](labs/lab_07.md)
-- [Αναζήτηση - Ταξινόμηση σε Λίστα](labs/lab_08.md)
-- [Δομές Δεδομένων - Πολυδιάστατες Λίστες](labs/lab_09.md)
-- [Υποπρογράμματα](labs/lab_10.md)
+- [1 Εισαγωγή στην Python - Βασικές έννοιες](labs/lab_01.md)
+- [2 Βασικές εντολές](labs/lab_02.md)
+- [3 Εντολές επιλογής](labs/lab_03.md)
+- [4 Εντολή επιλογής - επανάληψης](labs/lab_04.md)
+- [5 Λίστες](labs/lab_05.md)
+- [6 Δομή Επανάληψης - Η εντολή for 1](labs/lab_06.md)
+- [7 Εντολή επανάληψης - Λίστες](labs/lab_07.md)
+- [8 Αναζήτηση - Ταξινόμηση σε Λίστα](labs/lab_08.md)
+- [9 Δομές Δεδομένων - Πολυδιάστατες Λίστες](labs/lab_09.md)
+- [10 Υποπρογράμματα](labs/lab_10.md)
 
 ## Κουίζ
 
 Στην ενότητα Κουίζ θα βρείτε τεστ πολλαπλής απάντησης με ερωτήσεις επάνω στις βασικές έννοιες που έχετε διδαχθεί. Είναι ένας τρόπος να καταλάβετε αν έχετε κατανοήσει πλήρως τις διαλέξεις. Αφιερώστε χρόνο για να τα κάνετε. Αν έχετε κάνει λάθη να τα επαναλάβετε όσες φορές χρειαστεί μέχρι να πάρετε ένα υψηλό ποσοστό! Αυτά τα Κουίζ, πέρα του ότι θα σας βοηθήσουν αφάνταστα για να κατανοήσετε ότι διδάσκεστε, θα αποτελέσουν τη βάση των περισσότερων ερωτήσεων στις εξέτάσεις, αλλά και σε μια πρόοδο που ίσως κληθείτε να δώσετε.
 
-- [Βασικές έννοιες](https://forms.gle/KDL7dgS5xqitsSKb7)
-- [Τύποι μεταβλητών - Απλές εντολές](https://forms.gle/DnMXaDK4GG7KDZo49)
-- [Η εντολή επιλογής if - Λογικές παραστάσεις](https://forms.gle/RZUFRsUiPdPFRjkW9)
-- [Η εντολή επανάληψης while](https://forms.gle/CbPtBfprGQ9LPgqg7)
-- [Λίστες 1](https://forms.gle/tiiPPRpcML3BaRhYA)
-- [Λίστες 2](https://forms.gle/4dxdY98kRxBN5JTa7)
-- [Λίστες 3](https://forms.gle/JS7prqxCapoWE3vS9)
-- [Η εντολή επανάληψης for 1](https://forms.gle/JWpCTGXkEqZ9kWCcA)
-- [Η εντολή επανάληψης for 2](https://forms.gle/HSvRsCtJPXBA8EWm8)
-- [Ταξινόμηση σε Λίστα](https://forms.gle/EW827grJZb1hkq9C7)
-- [Υποπρογράμματα 1](https://forms.gle/zM7QFk66ZA9W376p7)
-- [Υποπρογράμματα 2](https://forms.gle/TcerN71VjnGjbV6fA)
+- [1 Βασικές έννοιες](https://forms.gle/KDL7dgS5xqitsSKb7)
+- [2 Τύποι μεταβλητών - Απλές εντολές](https://forms.gle/DnMXaDK4GG7KDZo49)
+- [3 Η εντολή επιλογής if - Λογικές παραστάσεις](https://forms.gle/RZUFRsUiPdPFRjkW9)
+- [4 Η εντολή επανάληψης while](https://forms.gle/CbPtBfprGQ9LPgqg7)
+- [5 Λίστες Α](https://forms.gle/tiiPPRpcML3BaRhYA)
+- [6 Λίστες Β](https://forms.gle/4dxdY98kRxBN5JTa7)
+- [7 Λίστες Γ](https://forms.gle/JS7prqxCapoWE3vS9)
+- [8 Η εντολή επανάληψης for Α](https://forms.gle/JWpCTGXkEqZ9kWCcA)
+- [9 Η εντολή επανάληψης for Β](https://forms.gle/HSvRsCtJPXBA8EWm8)
+- [10 Ταξινόμηση σε Λίστα](https://forms.gle/EW827grJZb1hkq9C7)
+- [11 Υποπρογράμματα Α](https://forms.gle/zM7QFk66ZA9W376p7)
+- [12 Υποπρογράμματα Β](https://forms.gle/TcerN71VjnGjbV6fA)
 
 ## Επιπλέον ασκήσεις για λύση και εξάσκηση
 
-- [Μεταβλητές και εκχώρηση τιμής](more/docs/variables.md)
-- [Η εντολή επιλογής if](more/docs/if_exercises.md)
-- [Η εντολή επανάληψης while](more/docs/while_exercises.md)
+- [1 Μεταβλητές και εκχώρηση τιμής](more/docs/variables.md)
+- [2 Η εντολή επιλογής if](more/docs/if_exercises.md)
+- [3 Η εντολή επανάληψης while](more/docs/while_exercises.md)
 
 ## Βιβλιογραφία
 
