@@ -171,6 +171,8 @@ print(athroisma)
 sayHello()
 ```
 
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09_example_1.py).
+
 ### 9.8.2 Παράδειγμα 2
 
 ---
@@ -198,6 +200,8 @@ sayHello()
 sayHello("Chris")
 a, b = modDiv(10, 3)
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09_example_2.py).
 
 ### 9.8.3 Παράδειγμα 3
 
@@ -244,6 +248,8 @@ for key in searchKey:
 print(results)
 ```
 
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09_example_3.py).
+
 ### 9.8.4 Παράδειγμα 4
 
 ---
@@ -279,6 +285,8 @@ for item in lista:
   print(item)
 ```
 
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09_example_4.py).
+
 ### 9.8.5 Παράδειγμα 5
 
 ---
@@ -301,6 +309,8 @@ showList(lista)
 # Εκτύπωση λίστας
 print(lista)
 ```
+
+Για να κατεβάσετε τον κώδικα πατήστε [εδώ](source/lecture_09_example_5.py).
 
 ---
 
