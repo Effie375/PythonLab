@@ -1,20 +1,20 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FEffie375%2FTPTE_PLR&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-# 9.2 Ασκήσεις
+# 10.2 Ασκήσεις
 
 ---
 
 Εδώ θα βρείτε ένα σύνολο με ασκήσεις που βασίζονται στην ύλη του κεφαλαίου και αναδεικνύουν τις ιδιαιτερότητες του. Οι λύσεις των ασκήσεων βρίσκονται ακριβώς κάτω από κάθε εκφωνήση.
 
-## 9.2.1 Άσκηση 1
+## 10.2.1 Άσκηση 1
 
 ---
 
 Αρχικά ζητάμε από το χρήστη να δώσει αριθμό για διαίρεση με το 5. Στη συνέχεια καλούμε τη συνάρτηση `foo` και παίρνει σαν παράμετρο τον αριθμό που δήλωσε ο χρήστης προηγουμένος. Τέλος εμφανίζουμε το αποτέλεσμα της διάιρεσης της παραμέτρου με το 5 στην οθόνη του χρήστη.
 
-Για να δείτε τη **ΛΥΣΗ** πατήστε [εδώ](../lectures/source/lecture_09/lecture_09_exercise_1.py)
+Για να δείτε τη **ΛΥΣΗ** πατήστε [εδώ](../lectures/source/lecture_10/lecture_10_exercise_1.py)
 
-## 9.2.2 Άσκηση 2
+## 10.2.2 Άσκηση 2
 
 ---
 
@@ -40,15 +40,15 @@ else:
   print(apot(a))
 ```
 
-Για να δείτε τη **ΛΥΣΗ** πατήστε [εδώ](../lectures/source/lecture_09/lecture_09_exercise_2.py)
+Για να δείτε τη **ΛΥΣΗ** πατήστε [εδώ](../lectures/source/lecture_10/lecture_10_exercise_2.py)
 
-## 9.2.3 Άσκηση 3
+## 10.2.3 Άσκηση 3
 
 ---
 
 Να γραφεί µια συνάρτηση η οποία θα δέχεται µια λίστα µε αριθµούς και θα την ταξινοµεί.
 
-Για να δείτε τη **ΛΥΣΗ** πατήστε [εδώ](../lectures/source/lecture_09/lecture_09_exercise_3.py)
+Για να δείτε τη **ΛΥΣΗ** πατήστε [εδώ](../lectures/source/lecture_10/lecture_10_exercise_3.py)
 
 <!--
 ## 9.2.4 Άσκηση 4
@@ -86,5 +86,5 @@ print("Ο μέσος όρος είναι", mesooros)
 vatmologia(mesosoros)
 ```
 
-Για να δείτε τη **ΛΥΣΗ** πατήστε [εδώ](../lectures/source/lecture_09/lecture_09_exercise_4.py)
+Για να δείτε τη **ΛΥΣΗ** πατήστε [εδώ](../lectures/source/lecture_10/lecture_10_exercise_4.py)
 -->
