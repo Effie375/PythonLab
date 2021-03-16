@@ -7,13 +7,11 @@ number2 = int(input("Δώσε έναν αριθμό: "))
 # Εάν η τιμή της μεταβλητής number1 είναι μεγαλύτερη από τη τιμή της μεταβλητής number2
 if number1 > number2:
     # Υπολογίζουμε το άθροισμα των αριθμών
-    athroisma = number1 + number2
-    # Υπολογίζουμε το γινόμενο των αριθμών
-    ginomeno = number1 * number2
-    # Εκτύπωση του αθροίσματος και του γινομένου
-    print(athroisma, ginomeno)
+    apotelesma = number1 + number2
+# Αλλιώς όταν η τιμή της μεταβλητής number2 είναι μεγαλύτερη ή ίση από τη τιμή της μεταβλητής number1
 else:
-    # Υπολογίζουμε τη διαφορά των αριθμών
-    diafora = number1 - number2
-    # Εκτύπωση της διαφοράς των αριθμών
-    print(diafora)
+    # Υπολογίζουμε το γινόμενο των αριθμών
+    apotelesma = number1 * number2
+
+# Εκτύπωση του αποτελέσματος
+print(apotelesma)
